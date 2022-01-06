@@ -1,0 +1,3996 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://gbfs.org/reference/">
+      
+      <link rel="icon" href="../assets/org.svg">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
+    
+    
+      
+        <title>Reference - General Bikeshare Feed Specification</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bb3983ee.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="General Bikeshare Feed Specification's RSS Feed" href="https://gbfs.org/feed_rss_created.xml">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#general-bikeshare-feed-specification-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="General Bikeshare Feed Specification" class="md-header__button md-logo" aria-label="General Bikeshare Feed Specification" data-md-component="logo">
+      <img id="logo_light_mode" src="../assets/org.svg" alt="logo">
+<img id="logo_dark_mode" src="../assets/org-dark.svg" alt="logo">
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            General Bikeshare Feed Specification
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/nabsa/gbfs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="General Bikeshare Feed Specification" class="md-nav__button md-logo" aria-label="General Bikeshare Feed Specification" data-md-component="logo">
+      <img id="logo_light_mode" src="../assets/org.svg" alt="logo">
+<img id="logo_dark_mode" src="../assets/org-dark.svg" alt="logo">
+    </a>
+    General Bikeshare Feed Specification
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/nabsa/gbfs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Reference
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reference-version" class="md-nav__link">
+    Reference version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    Terminology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-endpoints" class="md-nav__link">
+    Version Endpoints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#term-definitions" class="md-nav__link">
+    Term Definitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    Accessibility
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feed-availability" class="md-nav__link">
+    Feed Availability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seasonal-shutdowns-disruptions-of-service" class="md-nav__link">
+    Seasonal Shutdowns, Disruptions of Service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-requirements" class="md-nav__link">
+    File Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="File Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-distribution" class="md-nav__link">
+    File Distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-discovery" class="md-nav__link">
+    Auto-Discovery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localization" class="md-nav__link">
+    Localization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-fields-and-naming" class="md-nav__link">
+    Text Fields and Naming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coordinate-precision" class="md-nav__link">
+    Coordinate Precision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-latency" class="md-nav__link">
+    Data Latency
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licensing" class="md-nav__link">
+    Licensing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-types" class="md-nav__link">
+    Field Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensions-outside-of-the-specification" class="md-nav__link">
+    Extensions Outside of the Specification
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json-files" class="md-nav__link">
+    JSON Files
+  </a>
+  
+    <nav class="md-nav" aria-label="JSON Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output-format" class="md-nav__link">
+    Output Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Output Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gbfsjson" class="md-nav__link">
+    gbfs.json
+  </a>
+  
+    <nav class="md-nav" aria-label="gbfs.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gbfs_versionsjson-added-in-v11" class="md-nav__link">
+    gbfs_versions.json (added in v1.1)
+  </a>
+  
+    <nav class="md-nav" aria-label="gbfs_versions.json (added in v1.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_informationjson" class="md-nav__link">
+    system_information.json
+  </a>
+  
+    <nav class="md-nav" aria-label="system_information.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle_typesjson-added-in-v21" class="md-nav__link">
+    vehicle_types.json (added in v2.1)
+  </a>
+  
+    <nav class="md-nav" aria-label="vehicle_types.json (added in v2.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_4" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station_informationjson" class="md-nav__link">
+    station_information.json
+  </a>
+  
+    <nav class="md-nav" aria-label="station_information.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-physical-station" class="md-nav__link">
+    Example 1: Physical station
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-virtual-station" class="md-nav__link">
+    Example 2: Virtual station
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station_statusjson" class="md-nav__link">
+    station_status.json
+  </a>
+  
+    <nav class="md-nav" aria-label="station_status.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_5" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#free_bike_statusjson" class="md-nav__link">
+    free_bike_status.json
+  </a>
+  
+    <nav class="md-nav" aria-label="free_bike_status.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_6" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_hoursjson" class="md-nav__link">
+    system_hours.json
+  </a>
+  
+    <nav class="md-nav" aria-label="system_hours.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_7" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_calendarjson" class="md-nav__link">
+    system_calendar.json
+  </a>
+  
+    <nav class="md-nav" aria-label="system_calendar.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_8" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_regionsjson" class="md-nav__link">
+    system_regions.json
+  </a>
+  
+    <nav class="md-nav" aria-label="system_regions.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_9" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_pricing_plansjson" class="md-nav__link">
+    system_pricing_plans.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-added-in-v22" class="md-nav__link">
+    Examples (added in v2.2)
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples (added in v2.2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_alertsjson" class="md-nav__link">
+    system_alerts.json
+  </a>
+  
+    <nav class="md-nav" aria-label="system_alerts.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_10" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geofencing_zonesjson-added-in-v21" class="md-nav__link">
+    geofencing_zones.json (added in v2.1)
+  </a>
+  
+    <nav class="md-nav" aria-label="geofencing_zones.json (added in v2.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_11" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-links-added-in-v11" class="md-nav__link">
+    Deep Links (added in v1.1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analytics-added-in-v11" class="md-nav__link">
+    Analytics (added in v1.1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-added-in-v11" class="md-nav__link">
+    Examples (added in v1.1)
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples (added in v1.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-app-links-on-android-and-universal-links-on-ios-are-supported" class="md-nav__link">
+    Example 1 - App Links on Android and Universal Links on iOS are supported:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_informationjson_1" class="md-nav__link">
+    system_information.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station_informationjson_1" class="md-nav__link">
+    station_information.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-app-links-are-not-supported-on-android-and-universal-links-are-not-supported-on-ios-but-deep-links-are-still-supported-on-android-and-ios" class="md-nav__link">
+    Example 2 - App Links are not supported on Android and Universal Links are not supported on iOS, but deep links are still supported on Android and iOS:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_informationjson_2" class="md-nav__link">
+    system_information.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station_informationjson_2" class="md-nav__link">
+    station_information.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-deep-link-web-urls-are-supported-but-not-android-or-ios-native-apps" class="md-nav__link">
+    Example 3 - Deep link web URLs are supported, but not Android or iOS native apps:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station_informationjson_3" class="md-nav__link">
+    station_information.json
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disclaimers" class="md-nav__link">
+    Disclaimers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../major-change-proposals/" class="md-nav__link">
+        Major Change Proposals
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../tools-services/">Tools & Services</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Tools & Services" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Tools & Services
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools-services/policy-guides/" class="md-nav__link">
+        Policy Guides
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools-services/articles/" class="md-nav__link">
+        Articles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools-services/data/" class="md-nav__link">
+        Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools-services/software-for-creating-apis/" class="md-nav__link">
+        Software for Creating APIs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools-services/apps/" class="md-nav__link">
+        Apps
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools-services/visualizations/" class="md-nav__link">
+        Visualizations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools-services/gbfs/" class="md-nav__link">
+        GBFS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools-services/multimodal/" class="md-nav__link">
+        Other Multimodal Data Formats
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../faq/">FAQ</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="FAQ" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          FAQ
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/open-data-standards/" class="md-nav__link">
+        Open Data Standards
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/uses-of-gbfs/" class="md-nav__link">
+        Uses of GBFS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/systems/" class="md-nav__link">
+        systems.csv
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/shared-mobility/" class="md-nav__link">
+        Shared Mobility
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/governance/" class="md-nav__link">
+        Governance and Change Process
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/github/" class="md-nav__link">
+        GitHub
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/working-with-gbfs/" class="md-nav__link">
+        Working with GBFS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/mobilitydata/" class="md-nav__link">
+        MobilityData
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reference-version" class="md-nav__link">
+    Reference version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    Terminology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-endpoints" class="md-nav__link">
+    Version Endpoints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#term-definitions" class="md-nav__link">
+    Term Definitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    Accessibility
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feed-availability" class="md-nav__link">
+    Feed Availability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seasonal-shutdowns-disruptions-of-service" class="md-nav__link">
+    Seasonal Shutdowns, Disruptions of Service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-requirements" class="md-nav__link">
+    File Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="File Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-distribution" class="md-nav__link">
+    File Distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-discovery" class="md-nav__link">
+    Auto-Discovery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localization" class="md-nav__link">
+    Localization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-fields-and-naming" class="md-nav__link">
+    Text Fields and Naming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coordinate-precision" class="md-nav__link">
+    Coordinate Precision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-latency" class="md-nav__link">
+    Data Latency
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licensing" class="md-nav__link">
+    Licensing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-types" class="md-nav__link">
+    Field Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensions-outside-of-the-specification" class="md-nav__link">
+    Extensions Outside of the Specification
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json-files" class="md-nav__link">
+    JSON Files
+  </a>
+  
+    <nav class="md-nav" aria-label="JSON Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output-format" class="md-nav__link">
+    Output Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Output Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gbfsjson" class="md-nav__link">
+    gbfs.json
+  </a>
+  
+    <nav class="md-nav" aria-label="gbfs.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gbfs_versionsjson-added-in-v11" class="md-nav__link">
+    gbfs_versions.json (added in v1.1)
+  </a>
+  
+    <nav class="md-nav" aria-label="gbfs_versions.json (added in v1.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_informationjson" class="md-nav__link">
+    system_information.json
+  </a>
+  
+    <nav class="md-nav" aria-label="system_information.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle_typesjson-added-in-v21" class="md-nav__link">
+    vehicle_types.json (added in v2.1)
+  </a>
+  
+    <nav class="md-nav" aria-label="vehicle_types.json (added in v2.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_4" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station_informationjson" class="md-nav__link">
+    station_information.json
+  </a>
+  
+    <nav class="md-nav" aria-label="station_information.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-physical-station" class="md-nav__link">
+    Example 1: Physical station
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-virtual-station" class="md-nav__link">
+    Example 2: Virtual station
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station_statusjson" class="md-nav__link">
+    station_status.json
+  </a>
+  
+    <nav class="md-nav" aria-label="station_status.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_5" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#free_bike_statusjson" class="md-nav__link">
+    free_bike_status.json
+  </a>
+  
+    <nav class="md-nav" aria-label="free_bike_status.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_6" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_hoursjson" class="md-nav__link">
+    system_hours.json
+  </a>
+  
+    <nav class="md-nav" aria-label="system_hours.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_7" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_calendarjson" class="md-nav__link">
+    system_calendar.json
+  </a>
+  
+    <nav class="md-nav" aria-label="system_calendar.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_8" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_regionsjson" class="md-nav__link">
+    system_regions.json
+  </a>
+  
+    <nav class="md-nav" aria-label="system_regions.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_9" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_pricing_plansjson" class="md-nav__link">
+    system_pricing_plans.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-added-in-v22" class="md-nav__link">
+    Examples (added in v2.2)
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples (added in v2.2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_alertsjson" class="md-nav__link">
+    system_alerts.json
+  </a>
+  
+    <nav class="md-nav" aria-label="system_alerts.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_10" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geofencing_zonesjson-added-in-v21" class="md-nav__link">
+    geofencing_zones.json (added in v2.1)
+  </a>
+  
+    <nav class="md-nav" aria-label="geofencing_zones.json (added in v2.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_11" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-links-added-in-v11" class="md-nav__link">
+    Deep Links (added in v1.1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analytics-added-in-v11" class="md-nav__link">
+    Analytics (added in v1.1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-added-in-v11" class="md-nav__link">
+    Examples (added in v1.1)
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples (added in v1.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-app-links-on-android-and-universal-links-on-ios-are-supported" class="md-nav__link">
+    Example 1 - App Links on Android and Universal Links on iOS are supported:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_informationjson_1" class="md-nav__link">
+    system_information.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station_informationjson_1" class="md-nav__link">
+    station_information.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-app-links-are-not-supported-on-android-and-universal-links-are-not-supported-on-ios-but-deep-links-are-still-supported-on-android-and-ios" class="md-nav__link">
+    Example 2 - App Links are not supported on Android and Universal Links are not supported on iOS, but deep links are still supported on Android and iOS:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system_informationjson_2" class="md-nav__link">
+    system_information.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station_informationjson_2" class="md-nav__link">
+    station_information.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-deep-link-web-urls-are-supported-but-not-android-or-ios-native-apps" class="md-nav__link">
+    Example 3 - Deep link web URLs are supported, but not Android or iOS native apps:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station_informationjson_3" class="md-nav__link">
+    station_information.json
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disclaimers" class="md-nav__link">
+    Disclaimers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/nabsa/gbfs/edit/master/docs/reference.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+<h1 id="general-bikeshare-feed-specification-reference">General Bikeshare Feed Specification Reference<a class="headerlink" href="#general-bikeshare-feed-specification-reference" title="Permanent link">&para;</a></h1>
+<p>This document explains the types of files and data that comprise the General Bikeshare Feed Specification (GBFS) and defines the fields used in all of those files.</p>
+<h3 id="reference-version">Reference version<a class="headerlink" href="#reference-version" title="Permanent link">&para;</a></h3>
+<p>This documentation refers to <strong>v2.2</strong>. <br>
+For past and upcoming versions see the <a href="README.md#read-the-spec--version-history">README</a>.</p>
+<h3 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Permanent link">&para;</a></h3>
+<p>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in <a href="https://tools.ietf.org/html/rfc2119">RFC2119</a>, <a href="https://tools.ietf.org/html/bcp14">BCP 14</a> and <a href="https://tools.ietf.org/html/rfc8174">RFC8174</a> when, and only when, they appear in all capitals, as shown here.</p>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#version-endpoints">Version Endpoints</a></li>
+<li><a href="#term-definitions">Term Definitions</a></li>
+<li><a href="#files">Files</a></li>
+<li><a href="#accessibility">Accessibility</a></li>
+<li><a href="#file-requirements">File Requirements</a></li>
+<li><a href="#licensing">Licensing</a></li>
+<li><a href="#field-types">Field Types</a></li>
+<li><a href="#files">Files</a><ul>
+<li><a href="#gbfsjson">gbfs.json</a></li>
+<li><a href="#gbfs_versionsjson-added-in-v11">gbfs_versions.json</a> <em>(added in v1.1)</em></li>
+<li><a href="#system_informationjson">system_information.json</a></li>
+<li><a href="#vehicle_typesjson-added-in-v21">vehicle_types.json</a> <em>(added in v2.1)</em></li>
+<li><a href="#station_informationjson">station_information.json</a></li>
+<li><a href="#station_statusjson">station_status.json</a></li>
+<li><a href="#free_bike_statusjson">free_bike_status.json</a></li>
+<li><a href="#system_hoursjson">system_hours.json</a></li>
+<li><a href="#system_calendarjson">system_calendar.json</a></li>
+<li><a href="#system_regionsjson">system_regions.json</a></li>
+<li><a href="#system_pricing_plansjson">system_pricing_plans.json</a></li>
+<li><a href="#system_alertsjson">system_alerts.json</a></li>
+<li><a href="#geofencing_zonesjson-added-in-v21">geofencing_zones.json</a> <em>(added in v2.1)</em></li>
+</ul>
+</li>
+<li><a href="#deep-links-added-in-v11">Deep Links - Analytics and Examples</a> <em>(added in v1.1)</em></li>
+</ul>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This specification has been designed with the following concepts in mind:</p>
+<ul>
+<li>Provide the status of the system at this moment</li>
+<li>Do not provide information whose primary purpose is historical</li>
+</ul>
+<p>The specification supports real-time travel advice in GBFS-consuming applications.</p>
+<h2 id="version-endpoints">Version Endpoints<a class="headerlink" href="#version-endpoints" title="Permanent link">&para;</a></h2>
+<p>The version of the GBFS specification to which a feed conforms is declared in the <code>version</code> field in all files. See <a href="#output-format">Output Format</a>.<br /></p>
+<p>GBFS Best Practice defines that:<br /></p>
+<p><em>GBFS producers</em> SHOULD provide endpoints that conform to both the current specification long term support (LTS) branch as well as the latest release branch within at least 3 months of a new spec <em>MAJOR</em> or <em>MINOR</em> version release. It is not necessary to support more than one <em>MINOR</em> release of the same <em>MAJOR</em> release group because <em>MINOR</em> releases are backwards-compatible. See <a href="https://github.com/NABSA/gbfs/blob/master/README.md#specification-versioning">specification versioning</a><br /></p>
+<p><em>GBFS consumers</em> SHOULD, at a minimum, support the current LTS branch. It is highly RECOMMENDED that GBFS consumers support later releases.<br /></p>
+<p>Default GBFS feed URLs, e.g. <code>https://www.example.com/data/gbfs.json</code> or <code>https://www.example.com/data/fr/system_information.json</code> MUST direct consumers to the feed that conforms to the current LTS documentation branch.</p>
+<h2 id="term-definitions">Term Definitions<a class="headerlink" href="#term-definitions" title="Permanent link">&para;</a></h2>
+<p>This section defines terms that are used throughout this document.</p>
+<ul>
+<li>JSON - (JavaScript Object Notation) is a lightweight format for storing and transporting data. This document uses many terms defined by the JSON standard, including field, array, and object. (https://www.w3schools.com/js/js_json_datatypes.asp)</li>
+<li>Field - In JSON, a name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value. (https://www.w3schools.com/js/js_json_syntax.asp)</li>
+<li>GeoJSON - GeoJSON is a format for encoding a variety of geographic data structures. (https://geojson.org/)</li>
+<li>REQUIRED - The field MUST be included in the dataset, and a value MUST be provided in that field for each record.</li>
+<li>OPTIONAL - The field MAY be omitted from the dataset. If an OPTIONAL column is included, some of the entries in that field MAY be empty strings. An omitted field is equivalent to a field that is empty.</li>
+<li>Conditionally REQUIRED - The field or file is REQUIRED under certain conditions, which are outlined in the field or file description. Outside of these conditions, this field or file is OPTIONAL.</li>
+</ul>
+<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>File Name</th>
+<th>REQUIRED</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gbfs.json</td>
+<td>Yes <br/><em>(as of v2.0)</em></td>
+<td>Auto-discovery file that links to all of the other files published by the system.</td>
+</tr>
+<tr>
+<td>gbfs_versions.json <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>Lists all feed endpoints published according to versions of the GBFS documentation.</td>
+</tr>
+<tr>
+<td>system_information.json</td>
+<td>Yes</td>
+<td>Details including system operator, system location, year implemented, URL, contact info, time zone.</td>
+</tr>
+<tr>
+<td>vehicle_types.json <br/><em>(added in v2.1)</em></td>
+<td>Conditionally REQUIRED</td>
+<td>Describes the types of vehicles that System operator has available for rent. REQUIRED of systems that include information about vehicle types in the <code>free_bike_status</code> file. If this file is not included, then all vehicles in the feed are assumed to be non-motorized bicycles.</td>
+</tr>
+<tr>
+<td>station_information.json</td>
+<td>Conditionally REQUIRED</td>
+<td>List of all stations, their capacities and locations. REQUIRED of systems utilizing docks.</td>
+</tr>
+<tr>
+<td>station_status.json</td>
+<td>Conditionally REQUIRED</td>
+<td>Number of available vehicles and docks at each station and station availability. REQUIRED of systems utilizing docks.</td>
+</tr>
+<tr>
+<td>free_bike_status.json</td>
+<td>Conditionally REQUIRED</td>
+<td><em>(as of v2.1)</em> Describes all vehicles that are not currently in active rental. REQUIRED for free floating (dockless) vehicles. OPTIONAL for station based (docked) vehicles. Vehicles that are part of an active rental MUST NOT appear in this feed.</td>
+</tr>
+<tr>
+<td>system_hours.json</td>
+<td>OPTIONAL</td>
+<td>Hours of operation for the system.</td>
+</tr>
+<tr>
+<td>system_calendar.json</td>
+<td>OPTIONAL</td>
+<td>Dates of operation for the system.</td>
+</tr>
+<tr>
+<td>system_regions.json</td>
+<td>OPTIONAL</td>
+<td>Regions the system is broken up into.</td>
+</tr>
+<tr>
+<td>system_pricing_plans.json</td>
+<td>OPTIONAL</td>
+<td>System pricing scheme.</td>
+</tr>
+<tr>
+<td>system_alerts.json</td>
+<td>OPTIONAL</td>
+<td>Current system alerts.</td>
+</tr>
+<tr>
+<td>geofencing_zones.json <br/><em>(added in v2.1)</em></td>
+<td>OPTIONAL</td>
+<td>Geofencing zones and their associated rules and attributes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="accessibility">Accessibility<a class="headerlink" href="#accessibility" title="Permanent link">&para;</a></h2>
+<p>Datasets SHOULD be published at an easily accessible, public, permanent URL. (e.g., www.agency.org/gbfs/v2-2/gbfs.json). The URL SHOULD be directly available without requiring login to access the file to facilitate download by consuming software applications.  </p>
+<p>To be compliant with GBFS, all systems MUST have an entry in the <a href="https://github.com/NABSA/gbfs/blob/master/systems.csv">systems.csv</a> file.</p>
+<h3 id="feed-availability">Feed Availability<a class="headerlink" href="#feed-availability" title="Permanent link">&para;</a></h3>
+<p>Automated tools for application performance monitoring SHOULD be used to ensure feed availability.<br />
+Producers SHOULD provide a technical contact who can respond to feed outages in the <code>feed_contact_email</code> field in the <code>system_information.json</code> file.</p>
+<h3 id="seasonal-shutdowns-disruptions-of-service">Seasonal Shutdowns, Disruptions of Service<a class="headerlink" href="#seasonal-shutdowns-disruptions-of-service" title="Permanent link">&para;</a></h3>
+<p>Feeds SHOULD continue to be published during seasonal or temporary shutdowns.  Feed URLs SHOULD NOT return a 404.  An empty bikes array SHOULD be returned by <code>free_bike_status.json</code>. Stations in <code>station_status.json</code> SHOULD be set to <code>is_renting:false</code>, <code>is_returning:false</code> and <code>is_installed:false</code> where applicable. Seasonal shutdown dates SHOULD be reflected in <code>system_calendar.json</code>.</p>
+<p>Announcements for disruptions of service, including disabled stations or temporary closures of stations or systems SHOULD be made in <code>system_alerts.json</code>.</p>
+<h2 id="file-requirements">File Requirements<a class="headerlink" href="#file-requirements" title="Permanent link">&para;</a></h2>
+<ul>
+<li>All files SHOULD be valid JSON</li>
+<li>All files in the spec MAY be published at a URL path or with an alternate name (e.g., <code>station_info</code> instead of <code>station_information.json</code>) <em>(as of v2.0)</em>.</li>
+<li>All data SHOULD be UTF-8 encoded</li>
+<li>Line breaks SHOULD be represented by unix newline characters only (\n)</li>
+<li>Pagination is not supported.</li>
+</ul>
+<h3 id="file-distribution">File Distribution<a class="headerlink" href="#file-distribution" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Files are distributed as individual HTTP endpoints.<ul>
+<li>REQUIRED files MUST NOT 404. They MUST return a properly formatted JSON file as defined in <a href="#output-format">Output Format</a>.</li>
+<li>OPTIONAL files MAY 404. A 404 of an OPTIONAL file SHOULD NOT be considered an error.</li>
+</ul>
+</li>
+</ul>
+<h3 id="auto-discovery">Auto-Discovery<a class="headerlink" href="#auto-discovery" title="Permanent link">&para;</a></h3>
+<p>Publishers SHOULD implement auto-discovery of GBFS feeds by linking to the location of the <code>gbfs.json</code> auto-discovery endpoint.
+ * The location of the auto-discovery file SHOULD be provided in the HTML area of the shared mobility landing page hosted at the URL specified in the URL field of the <code>system_infomation.json</code> file.</p>
+<ul>
+<li>This is referenced via a <em>link</em> tag with the following format:<ul>
+<li><code>&lt;link rel="gbfs" type="application/json" href="https://www.example.com/data/gbfs.json" /&gt;</code></li>
+<li>References:</li>
+<li>http://microformats.org/wiki/existing-rel-values</li>
+<li>http://microformats.org/wiki/rel-faq#How_is_rel_used</li>
+</ul>
+</li>
+<li>A shared mobility landing page MAY contain links to auto-discovery files for multiple systems.</li>
+</ul>
+<h3 id="localization">Localization<a class="headerlink" href="#localization" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Each set of data files SHOULD be distributed in a single language as defined in system_information.json.</li>
+<li>A system that wants to publish feeds in multiple languages SHOULD do so by publishing multiple distributions, such as:<ul>
+<li><code>https://www.example.com/data/en/system_information.json</code></li>
+<li><code>https://www.example.com/data/fr/system_information.json</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="text-fields-and-naming">Text Fields and Naming<a class="headerlink" href="#text-fields-and-naming" title="Permanent link">&para;</a></h3>
+<p>Rich text SHOULD NOT be stored in free form text fields. Fields SHOULD NOT contain HTML.</p>
+<p>All customer-facing text strings (including station names) SHOULD use Mixed Case (not ALL CAPS), following local conventions for capitalization of place names on displays capable of displaying lower case characters.</p>
+<ul>
+<li>Examples:<ul>
+<li>Central Park South</li>
+<li>Villiers-sur-Marne</li>
+<li>Market Street</li>
+</ul>
+</li>
+</ul>
+<p>Abbreviations SHOULD NOT be used for names and other text (e.g. St. for Street) unless a location is called by its abbreviated name (e.g. “JFK Airport”). Abbreviations may be problematic for accessibility by screen reader software and voice user interfaces. Consuming software can be engineered to reliably convert full words to abbreviations for display, but converting from abbreviations to full words is prone to more risk of error.</p>
+<p>Names used for stations, virtual stations and geofenced areas SHOULD be human readable. Naming conventions used for locations SHOULD consider a variety of use cases including both text and maps. </p>
+<p>Descriptions SHOULD NOT include information so specific that it could be used in tracking of vehicles or trips.</p>
+<h3 id="coordinate-precision">Coordinate Precision<a class="headerlink" href="#coordinate-precision" title="Permanent link">&para;</a></h3>
+<p>Feeds SHOULD provide 6 digits (0.000001) of precision for decimal degrees lat/lon coordinates.</p>
+<table>
+<thead>
+<tr>
+<th>Decimal places</th>
+<th>Degrees</th>
+<th>Distance at the Equator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1.0</td>
+<td>111 km</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.1</td>
+<td>11.1 km</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.01</td>
+<td>1.11 km</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.001</td>
+<td>111 m</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0.0001</td>
+<td>11.1 m</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0.00001</td>
+<td>1.11 m</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>0.000001</strong></td>
+<td><strong>0.11 m</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td>0.0000001</td>
+<td>1.11 cm</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-latency">Data Latency<a class="headerlink" href="#data-latency" title="Permanent link">&para;</a></h3>
+<p>The data returned by the near-realtime endpoints <code>station_status.json</code> and <code>free_bike_status.json</code> SHOULD be as close to realtime as possible, but in no case should it be more than 5 minutes out-of-date.  Appropriate values SHOULD be set using the <code>ttl</code> property for each endpoint based on how often the data in feeds are refreshed or updated. For near-realtime endpoints where the data should always be refreshed the <code>ttl</code> value SHOULD be <code>0</code>. The<code>last_updated</code> timestamp represents the publisher's knowledge of the current state of the system at this point in time. The <code>last_reported</code> timestamp represents the last time a station or vehicle reported its status to the operator's backend.</p>
+<h2 id="licensing">Licensing<a class="headerlink" href="#licensing" title="Permanent link">&para;</a></h2>
+<p>It is RECOMMENDED that all GBFS data sets be offered under an open data license. Open data licenses allow consumers to freely use, modify and share GBFS data for any purpose in perpetuity. Licensing of GBFS data provides certainty to GBFS consumers, allowing them to integrate GBFS data into their work. All GBFS data sets SHOULD specify a license using the <code>license_id</code> field with an <a href="https://spdx.org/licenses/">SPDX identifier</a> or by using the <code>license_url</code> field with a URL pointing to a custom license in <code>system_information.json</code>. See the GBFS repo for a <a href="https://github.com/NABSA/gbfs/blob/master/data-licenses.md">comparison of a subset of standard licenses</a>. </p>
+<h2 id="field-types">Field Types<a class="headerlink" href="#field-types" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Array - A JSON element consisting of an ordered sequence of zero or more values.</li>
+<li>Boolean - One of two possible values, <code>true</code>or <code>false</code>. Boolean values MUST be JSON booleans, not strings (i.e. <code>true</code> or <code>false</code>, not <code>"true"</code> or <code>"false"</code>). <em>(as of v2.0)</em></li>
+<li>Date - Service day in the YYYY-MM-DD format. Example: <code>2019-09-13</code> for September 13th, 2019.</li>
+<li>Email - An email address. Example: <code>example@example.com</code></li>
+<li>Enum (Enumerable values) - An option from a set of predefined constants in the "Defines" column. Enum values SHOULD be lowercase.
+Example: The <code>rental_methods</code> field contains values <code>creditcard</code>, <code>paypass</code>, etc...</li>
+<li>Float <em>(added in v2.1)</em> - A 32-bit floating point number.</li>
+<li>GeoJSON FeatureCollection - A FeatureCollection as described by the IETF RFC 7946 https://tools.ietf.org/html/rfc7946#section-3.3.</li>
+<li>GeoJSON Multipolygon - A Geometry Object as described by the IETF RFC https://tools.ietf.org/html/rfc7946#section-3.1.7.</li>
+<li>ID - Should be represented as a string that identifies that particular entity. An ID:<ul>
+<li>MUST be unique within like fields (e.g. <code>station_id</code> MUST be unique among stations)</li>
+<li>does not have to be globally unique, unless otherwise specified</li>
+<li>MUST NOT contain spaces</li>
+<li>MUST be persistent for a given entity (station, plan, etc). An exception is floating bike <code>bike_id</code>, which MUST NOT be persistent for privacy reasons (see <code>free_bike_status.json</code>). <em>(as of v2.0)</em></li>
+</ul>
+</li>
+<li>Language - An IETF BCP 47 language code. For an introduction to IETF BCP 47, refer to http://www.rfc-editor.org/rfc/bcp/bcp47.txt and http://www.w3.org/International/articles/language-tags/. Examples: <code>en</code> for English, <code>en-US</code> for American English, or <code>de</code> for German.</li>
+<li>Latitude - WGS84 latitude in decimal degrees. The value MUST be greater than or equal to -90.0 and less than or equal to 90.0. Example: <code>41.890169</code> for the Colosseum in Rome.</li>
+<li>Longitude - WGS84 longitude in decimal degrees. The value MUST be greater than or equal to -180.0 and less than or equal to 180.0. Example: <code>12.492269</code> for the Colosseum in Rome.</li>
+<li>Non-negative Float - A 32-bit floating point number greater than or equal to 0.</li>
+<li>Non-negative Integer - An integer greater than or equal to 0.</li>
+<li>Object - A JSON element consisting of key-value pairs (fields).</li>
+<li>String - Can only contain text. Strings MUST NOT contain any formatting codes (including HTML) other than newlines.</li>
+<li>Time - Service time in the HH:MM:SS format for the time zone indicated in system_information.json (00:00:00 - 47:59:59). Time can stretch up to one additional day in the future to accommodate situations where, for example, a system was open from 11:30pm - 11pm the next day (i.e. 23:30:00-47:00:00).</li>
+<li>Timestamp - Timestamp fields MUST be represented as integers in POSIX time. (e.g., the number of seconds since January 1st 1970 00:00:00 UTC)</li>
+<li>Timezone - TZ timezone from the https://www.iana.org/time-zones. Timezone names never contain the space character but MAY contain an underscore. Refer to http://en.wikipedia.org/wiki/List_of_tz_zones for a list of valid values.
+Example: <code>Asia/Tokyo</code>, <code>America/Los_Angeles</code> or <code>Africa/Cairo</code>.</li>
+<li>URI <em>(added in v1.1)</em> - A fully qualified URI that includes the scheme (e.g., <code>com.abcrental.android://</code>), and any special characters in the URI MUST be correctly escaped. See the following http://www.w3.org/Addressing/URL/4_URI_Recommentations.html for a description of how to create fully qualified URI values. Note that URIs MAY be URLs.</li>
+<li>URL - A fully qualified URL that includes <code>http://</code> or <code>https://</code>, and any special characters in the URL MUST be correctly escaped. See the following http://www.w3.org/Addressing/URL/4_URI_Recommentations.html for a description of how to create fully qualified URL values.</li>
+</ul>
+<h3 id="extensions-outside-of-the-specification">Extensions Outside of the Specification<a class="headerlink" href="#extensions-outside-of-the-specification" title="Permanent link">&para;</a></h3>
+<p>To accommodate the needs of feed producers and consumers prior to the adoption of a change, additional fields can be added to feeds even if these fields are not part of the official specification. Custom extensions that may provide value to the GBFS community and align with the <a href="https://github.com/NABSA/gbfs/blob/master/README.md#guiding-principles">GBFS Guiding Principles</a> SHOULD be proposed for inclusion in the specification through the change process.</p>
+<p>Field names of extensions SHOULD be prefixed with an underscore ( _) character. It is strongly RECOMMENDED that these additional fields be documented on the <a href="https://github.com/NABSA/gbfs/wiki">wiki</a> page of the GBFS repository in this format:</p>
+<table>
+<thead>
+<tr>
+<th>Submitted by</th>
+<th>Field Name</th>
+<th>File Name</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Publisher's name</td>
+<td>_field_name</td>
+<td>Name of GBFS endpoint where field is used</td>
+<td>Description of purpose of use</td>
+</tr>
+</tbody>
+</table>
+<h2 id="json-files">JSON Files<a class="headerlink" href="#json-files" title="Permanent link">&para;</a></h2>
+<h3 id="output-format">Output Format<a class="headerlink" href="#output-format" title="Permanent link">&para;</a></h3>
+<p>Every JSON file presented in this specification contains the same common header information at the top level of the JSON response object:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>last_updated</code></td>
+<td>Yes</td>
+<td>Timestamp</td>
+<td>Indicates the last time data in the feed was updated. This timestamp represents the publisher's knowledge of the current state of the system at this point in time.</td>
+</tr>
+<tr>
+<td><code>ttl</code></td>
+<td>Yes</td>
+<td>Non-negative integer</td>
+<td>Number of seconds before the data in the feed will be updated again (0 if the data should always be refreshed).</td>
+</tr>
+<tr>
+<td><code>version</code> <br/><em>(added in v1.1)</em></td>
+<td>Yes</td>
+<td>String</td>
+<td>GBFS version number to which the feed confirms, according to the versioning framework.</td>
+</tr>
+<tr>
+<td><code>data</code></td>
+<td>Yes</td>
+<td>Object</td>
+<td>Response data in the form of name:value pairs.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example">Example:<a class="headerlink" href="#example" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span> <span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Citi Bike&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;system_id&quot;</span><span class="p">:</span> <span class="s2">&quot;citibike_com&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="gbfsjson">gbfs.json<a class="headerlink" href="#gbfsjson" title="Permanent link">&para;</a></h3>
+<p>The <code>gbfs.json</code> discovery file SHOULD represent a single system or geographic area in which vehicles are operated. The location (URL) of the <code>gbfs.json</code> file SHOULD be made available to the public using the specification’s <a href="#auto-discovery">auto-discovery</a> function. </p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>language</code></td>
+<td>Yes</td>
+<td>Language</td>
+<td>The language that will be used throughout the rest of the files. It MUST match the value in the <a href="#system_informationjson">system_information.json</a> file.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>feeds</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>An array of all of the feeds that are published by this auto-discovery file. Each element in the array is an object with the keys below.</td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>name</code></td>
+<td>Yes</td>
+<td>String</td>
+<td>Key identifying the type of feed this is. The key MUST be the base file name defined in the spec for the corresponding feed type (<code>system_information</code> for <code>system_information.json</code> file, <code>station_information</code> for <code>station_information.json</code> file).</td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>url</code></td>
+<td>Yes</td>
+<td>URL</td>
+<td>URL for the feed. Note that the actual feed endpoints (urls) MAY NOT be defined in the <code>file_name.json</code> format. For example, a valid feed endpoint could end with <code>station_info</code> instead of <code>station_information.json</code>.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example_1">Example:<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span> <span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;en&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;feeds&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;system_information&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.example.com/gbfs/1/en/system_information&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;station_information&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.example.com/gbfs/1/en/station_information&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;fr&quot;</span> <span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;feeds&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;system_information&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.example.com/gbfs/1/fr/system_information&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;station_information&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.example.com/gbfs/1/fr/station_information&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="gbfs_versionsjson-added-in-v11">gbfs_versions.json <em>(added in v1.1)</em><a class="headerlink" href="#gbfs_versionsjson-added-in-v11" title="Permanent link">&para;</a></h3>
+<p>Each expression of a GBFS feed describes all of the versions that are available.</p>
+<p>The following fields are all attributes within the main "data" object for this feed.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>versions</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>Contains one object, as defined below, for each of the available versions of a feed. The array MUST be sorted by increasing MAJOR and MINOR version number.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>version</code></td>
+<td>Yes</td>
+<td>String</td>
+<td>The semantic version of the feed in the form <code>X.Y</code>.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>url</code></td>
+<td>Yes</td>
+<td>URL</td>
+<td>URL of the corresponding gbfs.json endpoint.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example_2">Example:<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span> <span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;versions&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.example.com/gbfs/2/gbfs&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.example.com/gbfs/2-2/gbfs&quot;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="system_informationjson">system_information.json<a class="headerlink" href="#system_informationjson" title="Permanent link">&para;</a></h3>
+<p>The following fields are all attributes within the main "data" object for this feed.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>system_id</code></td>
+<td>Yes</td>
+<td>ID</td>
+<td>This is a globally unique identifier for the vehicle share system.  It is up to the publisher of the feed to guarantee uniqueness and MUST be checked against existing <code>system_id</code> fields in <a href="https://github.com/NABSA/gbfs/blob/master/systems.csv">systems.txt</a> to ensure this. This value is intended to remain the same over the life of the system. <br><br>Each distinct system or geographic area in which vehicles are operated SHOULD have its own <code>system_id</code>. Systems IDs SHOULD be recognizable as belonging to a particular system as opposed to random strings - for example, <code>bcycle_austin</code> or <code>biketown_pdx</code>.</td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td>Yes</td>
+<td>Language</td>
+<td>The language that will be used throughout the rest of the files. It MUST match the value in the <a href="#gbfsjson">gbfs.json</a> file.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Yes</td>
+<td>String</td>
+<td>Name of the system to be displayed to customers.</td>
+</tr>
+<tr>
+<td><code>short_name</code></td>
+<td>OPTIONAL</td>
+<td>String</td>
+<td>OPTIONAL abbreviation for a system.</td>
+</tr>
+<tr>
+<td><code>operator</code></td>
+<td>OPTIONAL</td>
+<td>String</td>
+<td>Name of the system operator.</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>OPTIONAL</td>
+<td>URL</td>
+<td>The URL of the vehicle share system.</td>
+</tr>
+<tr>
+<td><code>purchase_url</code></td>
+<td>OPTIONAL</td>
+<td>URL</td>
+<td>URL where a customer can purchase a membership.</td>
+</tr>
+<tr>
+<td><code>start_date</code></td>
+<td>OPTIONAL</td>
+<td>Date</td>
+<td>Date that the system began operations.</td>
+</tr>
+<tr>
+<td><code>phone_number</code></td>
+<td>OPTIONAL</td>
+<td>Phone Number</td>
+<td>This OPTIONAL field SHOULD contain a single voice telephone number for the specified system’s customer service department. It can and SHOULD contain punctuation marks to group the digits of the number. Dialable text (for example, Capital Bikeshare’s "877-430-BIKE") is permitted, but the field MUST NOT contain any other descriptive text.</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>OPTIONAL</td>
+<td>Email</td>
+<td>This OPTIONAL field SHOULD contain a single contact email address actively monitored by the operator’s customer service department. This email address SHOULD be a direct contact point where riders can reach a customer service representative.</td>
+</tr>
+<tr>
+<td><code>feed_contact_email</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>Email</td>
+<td>This OPTIONAL field SHOULD contain a single contact email for feed consumers to report technical issues with the feed.</td>
+</tr>
+<tr>
+<td><code>timezone</code></td>
+<td>Yes</td>
+<td>Timezone</td>
+<td>The time zone where the system is located.</td>
+</tr>
+<tr>
+<td><code>license_url</code></td>
+<td>Conditionally REQUIRED <br/><em>(as of v3.0-RC)</em></td>
+<td>URL</td>
+<td>REQUIRED if the dataset is provided under a customized license. A fully qualified URL of a page that defines the license terms for the GBFS data for this system. Do not specify a <code>license_url</code> if <code>license_id</code> is specified. If the <code>license_id</code> and <code>license_url</code> fields are blank or omitted, this indicates that the feed is provided under the <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">Creative Commons Universal Public Domain Dedication</a>. <em>(as of v3.0-RC)</em></td>
+</tr>
+<tr>
+<td><code>rental_apps</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>Object</td>
+<td>Contains rental app information in the android and ios JSON objects.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>android</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>Object</td>
+<td>Contains rental app download and app discovery information for the Android platform in the <code>store_uri</code> and <code>discovery_uri</code> fields. See <a href="#examples-added-in-v11">examples</a> of how to use these fields and <a href="#analytics-added-in-v11">supported analytics</a>.</td>
+</tr>
+<tr>
+<td>&emsp;- <code>store_uri</code> <br/><em>(added in v1.1)</em></td>
+<td>Conditionally REQUIRED</td>
+<td>URI</td>
+<td>URI where the rental Android app can be downloaded from. Typically this will be a URI to an app store such as Google Play. If the URI points to an app store such as Google Play, the URI SHOULD follow Android best practices so the viewing app can directly open the URI to the native app store app instead of a website. <br><br> If a <code>rental_uris</code>.<code>android</code> field is populated then this field is REQUIRED, otherwise it is OPTIONAL. <br><br>See the <a href="#analytics-added-in-v11">Analytics</a> section for how viewing apps can report the origin of the deep link to rental apps. <br><br>Example value: <code>https://play.google.com/store/apps/details?id=com.abcrental.android</code></td>
+</tr>
+<tr>
+<td>&emsp;- <code>discovery_uri</code> <br/><em>(added in v1.1)</em></td>
+<td>Conditionally REQUIRED</td>
+<td>URI</td>
+<td>URI that can be used to discover if the rental Android app is installed on the device (e.g., using <a href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentActivities"><code>PackageManager.queryIntentActivities()</code></a>). This intent is used by viewing apps to prioritize rental apps for a particular user based on whether they already have a particular rental app installed. <br><br>This field is REQUIRED if a <code>rental_uris</code>.<code>android</code> field is populated, otherwise it is OPTIONAL. <br><br>Example value: <code>com.abcrental.android://</code></td>
+</tr>
+<tr>
+<td>-&nbsp;<code>ios</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>Object</td>
+<td>Contains rental information for the iOS platform in the <code>store_uri</code> and <code>discovery_uri</code> fields. See <a href="#examples-added-in-v11">examples</a> of how to use these fields and <a href="#analytics-added-in-v11">supported analytics</a>.</td>
+</tr>
+<tr>
+<td>&emsp;- <code>store_uri</code> <br/><em>(added in v1.1)</em></td>
+<td>Conditionally REQUIRED</td>
+<td>URI</td>
+<td>URI where the rental iOS app can be downloaded from. Typically this will be a URI to an app store such as the Apple App Store. If the URI points to an app store such as the Apple App Store, the URI SHOULD follow iOS best practices so the viewing app can directly open the URI to the native app store app instead of a website. <br><br>If a <code>rental_uris</code>.<code>ios</code> field is populated then this field is REQUIRED, otherwise it is OPTIONAL. <br><br>See the <a href="#analytics-added-in-v11">Analytics</a> section for how viewing apps can report the origin of the deep link to rental apps. <br><br>Example value: <code>https://apps.apple.com/app/apple-store/id123456789</code></td>
+</tr>
+<tr>
+<td>&emsp;- <code>discovery_uri</code> <br/><em>(added in v1.1)</em></td>
+<td>Conditionally REQUIRED</td>
+<td>URI</td>
+<td>URI that can be used to discover if the rental iOS app is installed on the device (e.g., using <a href="https://developer.apple.com/documentation/uikit/uiapplication/1622952-canopenurl?language=objc"><code>UIApplication canOpenURL:</code></a>). This intent is used by viewing apps to prioritize rental apps for a particular user based on whether they already have a particular rental app installed. <br><br>This field is REQUIRED if a <code>rental_uris</code>.<code>ios</code> field is populated, otherwise it is OPTIONAL. <br><br>Example value: <code>com.abcrental.ios://</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="example_3">Example:<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1611598155</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">1800</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+    <span class="nt">&quot;phone_number&quot;</span><span class="p">:</span><span class="s2">&quot;1-800-555-1234&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Example Ride&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;operator&quot;</span><span class="p">:</span><span class="s2">&quot;Example Sharing, Inc&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;start_date&quot;</span><span class="p">:</span><span class="s2">&quot;2010-06-10&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;purchase_url&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.exampleride.org&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;timezone&quot;</span><span class="p">:</span><span class="s2">&quot;US/Central&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;license_url&quot;</span><span class="p">:</span><span class="s2">&quot;https://exampleride.org/data-license.html&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;short_name&quot;</span><span class="p">:</span><span class="s2">&quot;Example Ride&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="s2">&quot;customerservice@exampleride.org&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="s2">&quot;http://www.exampleride.org&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;feed_contact_email&quot;</span><span class="p">:</span> <span class="err">da</span><span class="kc">tafee</span><span class="err">d@exampleride.org</span><span class="p">,</span>
+    <span class="nt">&quot;system_id&quot;</span><span class="p">:</span><span class="s2">&quot;exampleride&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="vehicle_typesjson-added-in-v21">vehicle_types.json <em>(added in v2.1)</em><a class="headerlink" href="#vehicle_typesjson-added-in-v21" title="Permanent link">&para;</a></h3>
+<p>REQUIRED of systems that include information about vehicle types in the <code>free_bike_status</code> file. If this file is not included, then all vehicles in the feed are assumed to be non-motorized bicycles. This file SHOULD be published by systems offering multiple vehicle types for rental, for example pedal bikes and ebikes. <br/>The following fields are all attributes within the main "data" object for this feed.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>vehicle_types</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>Array that contains one object per vehicle type in the system as defined below.</td>
+</tr>
+<tr>
+<td>- <code>vehicle_type_id</code></td>
+<td>Yes</td>
+<td>ID</td>
+<td>Unique identifier of a vehicle type. See <a href="#field-types">Field Types</a> above for ID field requirements.</td>
+</tr>
+<tr>
+<td>- <code>form_factor</code></td>
+<td>Yes</td>
+<td>Enum</td>
+<td>The vehicle's general form factor. <br /><br />Current valid values are:<br /><ul><li><code>bicycle</code></li><li><code>car</code></li><li><code>moped</code></li><li><code>scooter</code></li><li><code>other</code></li></ul></td>
+</tr>
+<tr>
+<td>- <code>propulsion_type</code></td>
+<td>Yes</td>
+<td>Enum</td>
+<td>The primary propulsion type of the vehicle. <br /><br />Current valid values are:<br /><ul><li><code>human</code> <em>(Pedal or foot propulsion)</em></li><li><code>electric_assist</code> <em>(Provides power only alongside human propulsion)</em></li><li><code>electric</code> <em>(Contains throttle mode with a battery-powered motor)</em></li><li><code>combustion</code> <em>(Contains throttle mode with a gas engine-powered motor)</em></li></ul> This field was inspired by, but differs from the propulsion types field described in the <a href="https://github.com/openmobilityfoundation/mobility-data-specification/blob/master/provider/README.md#propulsion-types">Open Mobility Foundation Mobility Data Specification</a>.</td>
+</tr>
+<tr>
+<td>- <code>max_range_meters</code></td>
+<td>Conditionally REQUIRED</td>
+<td>Non-negative float</td>
+<td>If the vehicle has a motor (as indicated by having a value other than <code>human</code> in the <code>propulsion_type</code> field), this field is REQUIRED. This represents the furthest distance in meters that the vehicle can travel without recharging or refueling when it has the maximum amount of energy potential (for example, a full battery or full tank of gas).</td>
+</tr>
+<tr>
+<td>- <code>name</code></td>
+<td>OPTIONAL</td>
+<td>String</td>
+<td>The public name of this vehicle type.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example_4">Example:<a class="headerlink" href="#example_4" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span> <span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;vehicle_types&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;vehicle_type_id&quot;</span><span class="p">:</span> <span class="s2">&quot;abc123&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;form_factor&quot;</span><span class="p">:</span> <span class="s2">&quot;bicycle&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;propulsion_type&quot;</span><span class="p">:</span> <span class="s2">&quot;human&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Example Basic Bike&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;vehicle_type_id&quot;</span><span class="p">:</span> <span class="s2">&quot;def456&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;form_factor&quot;</span><span class="p">:</span> <span class="s2">&quot;scooter&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;propulsion_type&quot;</span><span class="p">:</span> <span class="s2">&quot;electric&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Example E-scooter V2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;max_range_meters&quot;</span><span class="p">:</span> <span class="mi">12345</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;vehicle_type_id&quot;</span><span class="p">:</span> <span class="s2">&quot;car1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;form_factor&quot;</span><span class="p">:</span> <span class="s2">&quot;car&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;propulsion_type&quot;</span><span class="p">:</span> <span class="s2">&quot;combustion&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Foor-door Sedan&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;max_range_meters&quot;</span><span class="p">:</span> <span class="mi">523992</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="station_informationjson">station_information.json<a class="headerlink" href="#station_informationjson" title="Permanent link">&para;</a></h3>
+<p>All stations included in <code>station_information.json</code> are considered public (e.g., can be shown on a map for public use). If there are private stations (such as Capital Bikeshare’s White House station), these SHOULD NOT be included here. Any station that is represented in <code>station_information.json</code> MUST have a corresponding entry in <code>station_status.json</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>stations</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>Array that contains one object per station as defined below.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>station_id</code></td>
+<td>Yes</td>
+<td>ID</td>
+<td>Identifier of a station.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>name</code></td>
+<td>Yes</td>
+<td>String</td>
+<td>The public name of the station for display in maps, digital signage and other text applications. Names SHOULD reflect the station location through the use of a cross street or local landmark. Abbreviations SHOULD NOT be used for names and other text (e.g. St. for Street) unless a location is called by its abbreviated name (e.g. “JFK Airport”). See <a href="#text-fields-and-naming">Text Fields and Naming</a>. <br>Examples: <ul><li>Broadway and East 22nd Street</li><li>Convention Center</li><li>Central Park South</li></ul></td>
+</tr>
+<tr>
+<td>-&nbsp;<code>short_name</code></td>
+<td>OPTIONAL</td>
+<td>String</td>
+<td>Short name or other type of identifier.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>lat</code></td>
+<td>Yes</td>
+<td>Latitude</td>
+<td>Latitude of the station in decimal degrees. This field SHOULD have a precision of 6 decimal places (0.000001). See <a href="#coordinate-precision">Coordinate Precision</a>.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>lon</code></td>
+<td>Yes</td>
+<td>Longitude</td>
+<td>Longitude of the station in decimal degrees. This field SHOULD have a precision of 6 decimal places (0.000001). See <a href="#coordinate-precision">Coordinate Precision</a>.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>address</code></td>
+<td>OPTIONAL</td>
+<td>String</td>
+<td>Address (street number and name) where station is located. This MUST be a valid address, not a free-form text description. Example: 1234 Main Street</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>cross_street</code></td>
+<td>OPTIONAL</td>
+<td>String</td>
+<td>Cross street or landmark where the station is located.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>region_id</code></td>
+<td>OPTIONAL</td>
+<td>ID</td>
+<td>Identifier of the region where station is located. See <a href="#system_regionsjson">system_regions.json</a>.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>post_code</code></td>
+<td>OPTIONAL</td>
+<td>String</td>
+<td>Postal code where station is located.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>rental_methods</code></td>
+<td>OPTIONAL</td>
+<td>Array</td>
+<td>Payment methods accepted at this station. <br /> Current valid values are:<br /> <ul><li><code>key</code> (e.g. operator issued vehicle key / fob / card)</li><li><code>creditcard</code></li><li><code>paypass</code></li><li><code>applepay</code></li><li><code>androidpay</code></li><li><code>transitcard</code></li><li><code>accountnumber</code></li><li><code>phone</code></li></ul></td>
+</tr>
+<tr>
+<td>-&nbsp;<code>is_virtual_station</code> <br/><em>(added in v2.1)</em></td>
+<td>OPTIONAL</td>
+<td>Boolean</td>
+<td>Is this station a location with or without physical infrastructures (docks)? <br /><br /> <code>true</code> - The station is a location without physical infrastructure, defined by a point (lat/lon) and/or <code>station_area</code> (below). <br /> <code>false</code> - The station consists of physical infrastructure (docks). <br /><br /> If this field is empty, it means the station consists of physical infrastructure (docks).<br><br>This field SHOULD be published in systems that have station locations without standard, internet connected physical docking infrastructure. These may be racks or geofenced areas designated for rental and/or return of vehicles. Locations that fit within this description SHOULD have the <code>is_virtual_station</code> boolean set to <code>true</code>.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>station_area</code> <br/><em>(added in v2.1)</em></td>
+<td>OPTIONAL</td>
+<td>GeoJSON Multipolygon</td>
+<td>A GeoJSON multipolygon that describes the area of a virtual station. If <code>station_area</code> is supplied then the record describes a virtual station. <br /><br /> If lat/lon and <code>station_area</code> are both defined, the lat/lon is the significant coordinate of the station (e.g. dock facility or valet drop-off and pick up point). The <code>station_area</code> takes precedence over any <code>ride_allowed</code> rules in overlapping <code>geofencing_zones</code>.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>capacity</code></td>
+<td>OPTIONAL</td>
+<td>Non-negative integer</td>
+<td>Number of total docking points installed at this station, both available and unavailable, regardless of what vehicle types are allowed at each dock. <br/><br/>If this is a virtual station defined using the <code>is_virtual_station</code> field, this number represents the total number of vehicles of all types that can be parked at the virtual station.<br/><br/>If the virtual station is defined by <code>station_area</code>, this is the number that can park within the station area. If <code>lat</code>/<code>lon</code> are defined, this is the number that can park at those coordinates.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>vehicle_capacity</code> <br/><em>(added in v2.1)</em></td>
+<td>OPTIONAL</td>
+<td>Object</td>
+<td>An object used to describe the parking capacity of virtual stations (defined using the <code>is_virtual_station</code> field), where each key is a <code>vehicle_type_id</code> as described in <a href="#vehicle_typesjson-added-in-v21">vehicle_types.json</a> and the value is a number representing the total number of vehicles of this type that can park within the virtual station.<br/><br/>If the virtual station is defined by <code>station_area</code>, this is the number that can park within the station area. If <code>lat</code>/<code>lon</code> is defined, this is the number that can park at those coordinates.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>vehicle_type_capacity</code> <br/><em>(added in v2.1)</em></td>
+<td>OPTIONAL</td>
+<td>Object</td>
+<td>An object used to describe the docking capacity of a station where each key is a <code>vehicle_type_id</code> as described in <a href="#vehicle_typesjson-added-in-v21">vehicle_types.json</a> and the value is a number representing the total docking points installed at this station, both available and unavailable for the specified vehicle type.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>is_valet_station</code> <br/><em>(added in v2.1)</em></td>
+<td>OPTIONAL</td>
+<td>Boolean</td>
+<td>Are valet services provided at this station? <br /><br /> <code>true</code> - Valet services are provided at this station. <br /> <code>false</code> - Valet services are not provided at this station. <br /><br /> If this field is empty, it is assumed that valet services are not provided at this station. <br><br>This field’s boolean SHOULD be set to <code>true</code> during the hours which valet service is provided at the station. Valet service is defined as providing unlimited capacity at a station.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>rental_uris</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>Object</td>
+<td>Contains rental URIs for Android, iOS, and web in the android, ios, and web fields. See <a href="#examples-added-in-v11">examples</a> of how to use these fields and <a href="#analytics-added-in-v11">supported analytics</a>.</td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>android</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>URI</td>
+<td>URI that can be passed to an Android app with an <code>android.intent.action.VIEW</code> Android intent to support Android Deep Links (https://developer.android.com/training/app-links/deep-linking). Please use Android App Links (https://developer.android.com/training/app-links) if possible so viewing apps don’t need to manually manage the redirect of the user to the app store if the user doesn’t have the application installed. <br><br>This URI SHOULD be a deep link specific to this station, and SHOULD NOT be a general rental page that includes information for more than one station. The deep link SHOULD take users directly to this station, without any prompts, interstitial pages, or logins. Make sure that users can see this station even if they never previously opened the application.  <br><br>If this field is empty, it means deep linking isn’t supported in the native Android rental app. <br><br>Note that URIs do not necessarily include the station_id for this station - other identifiers can be used by the rental app within the URI to uniquely identify this station. <br><br>See the <a href="#analytics-added-in-v11">Analytics</a> section for how viewing apps can report the origin of the deep link to rental apps. <br><br>Android App Links example value: <code>https://www.abc.com/app?sid=1234567890&amp;platform=android</code> <br><br>Deep Link (without App Links) example value: <code>com.abcrental.android://open.abc.app/app?sid=1234567890</code></td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>ios</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>URI</td>
+<td>URI that can be used on iOS to launch the rental app for this station. More information on this iOS feature can be found <a href="https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content/communicating_with_other_apps_using_custom_urls?language=objc">here</a>. Please use iOS Universal Links (https://developer.apple.com/ios/universal-links/) if possible so viewing apps don’t need to manually manage the redirect of the user to the app store if the user doesn’t have the application installed. <br><br>This URI SHOULD be a deep link specific to this station, and SHOULD NOT be a general rental page that includes information for more than one station.  The deep link SHOULD take users directly to this station, without any prompts, interstitial pages, or logins. Make sure that users can see this station even if they never previously opened the application.  <br><br>If this field is empty, it means deep linking isn’t supported in the native iOS rental app. <br><br>Note that the URI does not necessarily include the station_id - other identifiers can be used by the rental app within the URL to uniquely identify this station. <br><br>See the <a href="#analytics-added-in-v11">Analytics</a> section for how viewing apps can report the origin of the deep link to rental apps. <br><br>iOS Universal Links example value: <code>https://www.abc.com/app?sid=1234567890&amp;platform=ios</code> <br><br>Deep Link (without Universal Links) example value: <code>com.abcrental.ios://open.abc.app/app?sid=1234567890</code></td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>web</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>URL</td>
+<td>URL that can be used by a web browser to show more information about renting a vehicle at this station. <br><br>This URL SHOULD be a deep link specific to this station, and SHOULD NOT be a general rental page that includes information for more than one station.  The deep link SHOULD take users directly to this station, without any prompts, interstitial pages, or logins. Make sure that users can see this station even if they never previously opened the application.  <br><br>If this field is empty, it means deep linking isn’t supported for web browsers. <br><br>Example value: <code>https://www.abc.com/app?sid=1234567890</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="example-1-physical-station">Example 1: Physical station<a class="headerlink" href="#example-1-physical-station" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span> <span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;stations&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;station_id&quot;</span><span class="p">:</span> <span class="s2">&quot;pga&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Parking garage A&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;lat&quot;</span><span class="p">:</span> <span class="mf">12.345678</span><span class="p">,</span>
+        <span class="nt">&quot;lon&quot;</span><span class="p">:</span> <span class="mf">45.678901</span><span class="p">,</span>
+        <span class="nt">&quot;vehicle_type_capacity&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;abc123&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+          <span class="nt">&quot;def456&quot;</span><span class="p">:</span> <span class="mi">9</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h5 id="example-2-virtual-station">Example 2: Virtual station<a class="headerlink" href="#example-2-virtual-station" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+    <span class="nt">&quot;stations&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;station_id&quot;</span><span class="p">:</span><span class="s2">&quot;station12&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;station_name&quot;</span><span class="p">:</span><span class="s2">&quot;SE Belmont &amp; SE 10 th &quot;</span><span class="p">,</span>
+        <span class="nt">&quot;is_valet_station&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;is_virtual_station&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;station_area&quot;</span><span class="p">:{</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;MultiPolygon&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;coordinates&quot;</span><span class="p">:[</span>
+            <span class="p">[</span>
+              <span class="p">[</span>
+                <span class="p">[</span>
+                  <span class="mf">-122.655775</span><span class="p">,</span>
+                  <span class="mf">45.516445</span>
+                <span class="p">],</span>
+                <span class="p">[</span>
+                  <span class="mf">-122.655705</span><span class="p">,</span>
+                  <span class="mf">45.516445</span>
+                <span class="p">],</span>
+                <span class="p">[</span>
+                  <span class="mf">-122.655705</span><span class="p">,</span>
+                  <span class="mf">45.516495</span>
+                <span class="p">],</span>
+                <span class="p">[</span>
+                  <span class="mf">-122.655775</span><span class="p">,</span>
+                  <span class="mf">45.516495</span>
+                <span class="p">],</span>
+                <span class="p">[</span>
+                  <span class="mf">-122.655775</span><span class="p">,</span>
+                  <span class="mf">45.516445</span>
+                <span class="p">]</span>
+              <span class="p">]</span>
+            <span class="p">]</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;capacity&quot;</span><span class="p">:</span><span class="mi">16</span><span class="p">,</span>
+        <span class="nt">&quot;vehicle_capacity&quot;</span><span class="p">:{</span>
+          <span class="nt">&quot;abc123&quot;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>
+          <span class="nt">&quot;def456&quot;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>
+          <span class="nt">&quot;ghi789&quot;</span><span class="p">:</span><span class="mi">16</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="station_statusjson">station_status.json<a class="headerlink" href="#station_statusjson" title="Permanent link">&para;</a></h3>
+<p>Describes the capacity and rental availability of a station. Data returned SHOULD be as close to realtime as possible, but in no case should it be more than 5 minutes out-of-date.  See <a href="#data-latentcy">Data Latency</a>. Data reflects the operator's most recent knowledge of the station’s status. Any station that is represented in <code>station_status.json</code> MUST have a corresponding entry in <code>station_information.json</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>stations</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>Array that contains one object per station in the system as defined below.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>station_id</code></td>
+<td>Yes</td>
+<td>ID</td>
+<td>Identifier of a station see <a href="#station_informationjson">station_information.json</a>.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>num_bikes_available</code></td>
+<td>Yes</td>
+<td>Non-negative integer</td>
+<td>Number of functional vehicles physically at the station that may be offered for rental. To know if the vehicles are available for rental, see <code>is_renting</code>. <br/><br/>If <code>is_renting</code> = <code>true</code> this is the number of vehicles that are currently available for rent. If <code>is_renting</code> =<code>false</code> this is the number of vehicles that would be available for rent if the station were set to allow rentals.</td>
+</tr>
+<tr>
+<td>- <code>vehicle_types_available</code> <br/><em>(added in v2.1)</em></td>
+<td>Conditionally REQUIRED</td>
+<td>Array</td>
+<td>This field is REQUIRED if the <a href="#vehicle_typesjson">vehicle_types.json</a> file has been defined. This field's value is an array of objects. Each of these objects is used to model the total number of each defined vehicle type available at a station. The total number of vehicles from each of these objects SHOULD add up to match the value specified in the <code>num_bikes_available</code>  field.</td>
+</tr>
+<tr>
+<td>&emsp;- <code>vehicle_type_id</code> <br/><em>(added in v2.1)</em></td>
+<td>Yes</td>
+<td>ID</td>
+<td>The <code>vehicle_type_id</code> of each vehicle type at the station as described in <a href="#vehicle_typesjson">vehicle_types.json</a>. This field is REQUIRED if the <a href="#vehicle_typesjson">vehicle_types.json</a> is defined.</td>
+</tr>
+<tr>
+<td>&emsp;- <code>count</code> <br/><em>(added in v2.1)</em></td>
+<td>Yes</td>
+<td>Non-negative integer</td>
+<td>A number representing the total number of available vehicles of the corresponding <code>vehicle_type_id</code> as defined in <a href="#vehicle_typesjson">vehicle_types.json</a> at the station.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>num_bikes_disabled</code></td>
+<td>OPTIONAL</td>
+<td>Non-negative integer</td>
+<td>Number of disabled vehicles of any type at the station. Vendors who do not want to publicize the number of disabled vehicles or docks in their system can opt to omit station <code>capacity</code> (in <a href="#station_informationjson">station_information.json</a>, <code>num_bikes_disabled</code>, and <code>num_docks_disabled</code> <em>(as of v2.0)</em>. If station <code>capacity</code> is published, then broken docks/vehicles can be inferred (though not specifically whether the decreased capacity is a broken vehicle or dock).</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>num_docks_available</code></td>
+<td>Conditionally REQUIRED <br/><em>(as of v2.0)</em></td>
+<td>Non-negative integer</td>
+<td>REQUIRED except for stations that have unlimited docking capacity (e.g. virtual stations) <em>(as of v2.0)</em>. Number of functional docks physically at the station that are able to accept vehicles for return. To know if the docks are accepting vehicle returns, see <code>is_returning</code>. <br /><br/> If <code>is_returning</code> = <code>true</code> this is the number of docks that are currently available to accept vehicle returns. If <code>is_returning</code> = <code>false</code> this is the number of docks that would be available if the station were set to allow returns.</td>
+</tr>
+<tr>
+<td>- <code>vehicle_docks_available</code> <br/><em>(added in v2.1)</em></td>
+<td>Conditionally REQUIRED</td>
+<td>Array</td>
+<td>This field is REQUIRED in feeds where the <a href="#vehicle_typesjson">vehicle_types.json</a> is defined and where certain docks are only able to accept certain vehicle types. If every dock at the station is able to accept any vehicle type, then this field is not REQUIRED. This field's value is an array of objects. Each of these objects is used to model the number of docks available for certain vehicle types. The total number of docks from each of these objects SHOULD add up to match the value specified in the <code>num_docks_available</code> field.</td>
+</tr>
+<tr>
+<td>&emsp;- <code>vehicle_type_ids</code> <br/><em>(added in v2.1)</em></td>
+<td>Yes</td>
+<td>Array</td>
+<td>An array of strings where each string represents a <code>vehicle_type_id</code> that is able to use a particular type of dock at the station</td>
+</tr>
+<tr>
+<td>&emsp;- <code>count</code> <br/><em>(added in v2.1)</em></td>
+<td>Yes</td>
+<td>Non-negative integer</td>
+<td>A number representing the total number of available vehicles of the corresponding vehicle type as defined in the <code>vehicle_types</code> array at the station that can accept vehicles of the specified types in the <code>vehicle_types</code> array.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>num_docks_disabled</code></td>
+<td>OPTIONAL</td>
+<td>Non-negative integer</td>
+<td>Number of disabled dock points at the station.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>is_installed</code></td>
+<td>Yes</td>
+<td>Boolean</td>
+<td>Is the station currently on the street?<br/><br/><code>true</code> - Station is installed on the street.<br/><code>false</code> - Station is not installed on the street.<br/><br/>Boolean SHOULD be set to <code>true</code> when equipment is present on the street. In seasonal systems where equipment is removed during winter, boolean SHOULD be set to <code>false</code> during the off season. May also be set to false to indicate planned (future) stations which have not yet been installed.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>is_renting</code></td>
+<td>Yes</td>
+<td>Boolean</td>
+<td>Is the station currently renting vehicles? <br /><br /><code>true</code> - Station is renting vehicles. Even if the station is empty, if it would otherwise allow rentals, this value MUST be <code>true</code>.<br/><code>false</code> - Station is not renting vehicles.<br/><br/>If the station is temporarily taken out of service and not allowing rentals, this field MUST be set to <code>false</code>.<br/><br/>If a station becomes inaccessible to users due to road construction or other factors this field SHOULD be set to <code>false</code>. Field SHOULD be set to <code>false</code> during hours or days when the system is not offering vehicles for rent.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>is_returning</code></td>
+<td>Yes</td>
+<td>Boolean</td>
+<td>Is the station accepting vehicle returns? <br /><br /><code>true</code> - Station is accepting vehicle returns. Even if the station is full, if it would otherwise allow vehicle returns, this value MUST be <code>true</code>.<br /> <code>false</code> - Station is not accepting vehicle returns.<br/><br/>If the station is temporarily taken out of service and not allowing vehicle returns, this field MUST be set to <code>false</code>.<br/><br/>If a station becomes inaccessible to users due to road construction or other factors, this field SHOULD be set to <code>false</code>.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>last_reported</code></td>
+<td>Yes</td>
+<td>Timestamp</td>
+<td>The last time this station reported its status to the operator's backend.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example_5">Example:<a class="headerlink" href="#example_5" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span> <span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;stations&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;station_id&quot;</span><span class="p">:</span> <span class="s2">&quot;station 1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;is_installed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;is_renting&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;is_returning&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;last_reported&quot;</span><span class="p">:</span> <span class="mi">1609866125</span><span class="p">,</span>
+        <span class="nt">&quot;num_docks_available&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="nt">&quot;vehicle_docks_available&quot;</span><span class="p">:</span> <span class="p">[{</span>
+          <span class="nt">&quot;vehicle_type_ids&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;abc123&quot;</span><span class="p">],</span>
+          <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">2</span>
+        <span class="p">},</span> <span class="p">{</span>
+          <span class="nt">&quot;vehicle_type_ids&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;def456&quot;</span><span class="p">],</span>
+          <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">}],</span>
+        <span class="nt">&quot;num_bikes_available&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;vehicle_types_available&quot;</span><span class="p">:</span> <span class="p">[{</span>
+          <span class="nt">&quot;vehicle_type_id&quot;</span><span class="p">:</span> <span class="s2">&quot;abc123&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">},</span> <span class="p">{</span>
+          <span class="nt">&quot;vehicle_type_id&quot;</span><span class="p">:</span> <span class="s2">&quot;def456&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">0</span>
+        <span class="p">}]</span>        
+      <span class="p">},</span> <span class="p">{</span>
+        <span class="nt">&quot;station_id&quot;</span><span class="p">:</span> <span class="s2">&quot;station 2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;is_installed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;is_renting&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;is_returning&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;last_reported&quot;</span><span class="p">:</span> <span class="mi">1609866106</span><span class="p">,</span>
+        <span class="nt">&quot;num_docks_available&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="nt">&quot;vehicle_docks_available&quot;</span><span class="p">:</span> <span class="p">[{</span>
+          <span class="nt">&quot;vehicle_type_ids&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;abc123&quot;</span><span class="p">],</span>
+          <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">6</span>
+        <span class="p">},</span> <span class="p">{</span>
+          <span class="nt">&quot;vehicle_type_ids&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;def456&quot;</span><span class="p">],</span>
+          <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">2</span>
+        <span class="p">}],</span>
+        <span class="nt">&quot;num_bikes_available&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+        <span class="nt">&quot;vehicle_types_available&quot;</span><span class="p">:</span> <span class="p">[{</span>
+          <span class="nt">&quot;vehicle_type_id&quot;</span><span class="p">:</span> <span class="s2">&quot;abc123&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">2</span>
+        <span class="p">},</span> <span class="p">{</span>
+          <span class="nt">&quot;vehicle_type_id&quot;</span><span class="p">:</span> <span class="s2">&quot;def456&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">4</span>
+        <span class="p">}]</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="free_bike_statusjson">free_bike_status.json<a class="headerlink" href="#free_bike_statusjson" title="Permanent link">&para;</a></h3>
+<p><em>(as of v2.1)</em> Describes all vehicles that are not currently in active rental. REQUIRED for free floating (dockless) vehicles. OPTIONAL for station based (docked) vehicles. Data returned SHOULD be as close to realtime as possible, but in no case should it be more than 5 minutes out-of-date.  See <a href="#data-latentcy">Data Latency</a>. Vehicles that are part of an active rental MUST NOT appear in this feed. Vehicles listed as available for rental MUST be in the field and accessible to users. Vehicles that are not accessible (e.g. in a warehouse or in transit) MUST NOT appear as available for rental.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bikes</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>Array that contains one object per vehicle that is currently stopped as defined below.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>bike_id</code></td>
+<td>Yes</td>
+<td>ID</td>
+<td>Identifier of a vehicle. The <code>bike_id</code> identifier MUST be rotated to a random string after each trip to protect user privacy <em>(as of v2.0)</em>. Use of persistent vehicle IDs poses a threat to user privacy. The <code>bike_id</code> identifier SHOULD only be rotated once per trip.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>lat</code></td>
+<td>Conditionally REQUIRED <br/><em>(as of v2.1)</em></td>
+<td>Latitude</td>
+<td>Latitude of the vehicle in decimal degrees. <em>(as of v2.1)</em> This field is REQUIRED if <code>station_id</code> is not provided for this vehicle (free floating). This field SHOULD have a precision of 6 decimal places (0.000001). See <a href="#coordinate-precision">Coordinate Precision</a>.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>lon</code></td>
+<td>Conditionally REQUIRED <br/><em>(as of v2.1)</em></td>
+<td>Longitude</td>
+<td>Longitude of the vehicle. <em>(as of v2.1)</em> This field is REQUIRED if <code>station_id</code> is not provided for this vehicle (free floating).</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>is_reserved</code></td>
+<td>Yes</td>
+<td>Boolean</td>
+<td>Is the vehicle currently reserved? <br /><br /> <code>true</code> - Vehicle is currently reserved. <br /> <code>false</code> - Vehicle is not currently reserved.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>is_disabled</code></td>
+<td>Yes</td>
+<td>Boolean</td>
+<td>Is the vehicle currently disabled? <br /><br /> <code>true</code> - Vehicle is currently disabled. <br /> <code>false</code> - Vehicle is not currently disabled.<br><br>This field is used to indicate vehicles that are in the field but not available for rental.  This may be due to a mechanical issue, low battery etc. Publishing this data may prevent users from attempting to rent vehicles that are disabled and not available for rental.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>rental_uris</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>Object</td>
+<td>JSON object that contains rental URIs for Android, iOS, and web in the android, ios, and web fields. See <a href="#examples-added-in-v11">examples</a> of how to use these fields and <a href="#analytics-added-in-v11">supported analytics</a>.</td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>android</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>URI</td>
+<td>URI that can be passed to an Android app with an android.intent.action.VIEW Android intent to support Android Deep Links (https://developer.android.com/training/app-links/deep-linking). Please use Android App Links (https://developer.android.com/training/app-links) if possible, so viewing apps do not need to manually manage the redirect of the user to the app store if the user does not have the application installed. <br><br>This URI SHOULD be a deep link specific to this vehicle, and SHOULD NOT be a general rental page that includes information for more than one vehicle. The deep link SHOULD take users directly to this vehicle, without any prompts, interstitial pages, or logins. Make sure that users can see this vehicle even if they never previously opened the application. Note that as a best practice providers SHOULD rotate identifiers within deep links after each rental to avoid unintentionally exposing private vehicle trip origins and destinations.<br><br>If this field is empty, it means deep linking is not supported in the native Android rental app.<br><br>Note that URIs do not necessarily include the bike_id for this vehicle - other identifiers can be used by the rental app within the URI to uniquely identify this vehicle. <br><br>See the <a href="#analytics-added-in-v11">Analytics</a> section for how viewing apps can report the origin of the deep link to rental apps. <br><br>Android App Links example value: <code>https://www.abc.com/app?sid=1234567890&amp;platform=android</code> <br><br>Deep Link (without App Links) example value: <code>com.abcrental.android://open.abc.app/app?sid=1234567890</code></td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>ios</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>URI</td>
+<td>URI that can be used on iOS to launch the rental app for this vehicle. More information on this iOS feature can be found <a href="https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content/communicating_with_other_apps_using_custom_urls?language=objc">here</a>. Please use iOS Universal Links (https://developer.apple.com/ios/universal-links/) if possible, so viewing apps do not need to manually manage the redirect of the user to the app store if the user does not have the application installed. <br><br>This URI SHOULD be a deep link specific to this vehicle, and SHOULD NOT be a general rental page that includes information for more than one vehicle.  The deep link SHOULD take users directly to this vehicle, without any prompts, interstitial pages, or logins. Make sure that users can see this vehicle even if they never previously opened the application. Note that as a best practice providers SHOULD rotate identifiers within deep links after each rental to avoid unintentionally exposing private vehicle trip origins and destinations. <br><br>If this field is empty, it means deep linking is not supported in the native iOS rental app.<br><br>Note that the URI does not necessarily include the bike_id - other identifiers can be used by the rental app within the URL to uniquely identify this vehicle. <br><br>See the <a href="#analytics-added-in-v11">Analytics</a> section for how viewing apps can report the origin of the deep link to rental apps. <br><br>iOS Universal Links example value: <code>https://www.abc.com/app?sid=1234567890&amp;platform=ios</code> <br><br>Deep Link (without Universal Links) example value: <code>com.abcrental.ios://open.abc.app/app?sid=1234567890</code></td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>web</code> <br/><em>(added in v1.1)</em></td>
+<td>OPTIONAL</td>
+<td>URL</td>
+<td>URL that can be used by a web browser to show more information about renting a vehicle at this vehicle. <br><br>This URL SHOULD be a deep link specific to this vehicle, and SHOULD NOT be a general rental page that includes information for more than one vehicle.  The deep link SHOULD take users directly to this vehicle, without any prompts, interstitial pages, or logins. Make sure that users can see this vehicle even if they never previously opened the application. Note that as a best practice providers SHOULD rotate identifiers within deep links after each rental to avoid unintentionally exposing private vehicle trip origins and destinations.<br><br>If this field is empty, it means deep linking isn’t supported for web browsers. <br><br>Example value: https://www.abc.com/app?sid=1234567890</td>
+</tr>
+<tr>
+<td>- <code>vehicle_type_id</code> <br/><em>(added in v2.1)</em></td>
+<td>Conditionally REQUIRED</td>
+<td>ID</td>
+<td>The <code>vehicle_type_id</code> of this vehicle as described in <a href="#vehicle_typesjson-added-in-v21">vehicle_types.json</a>. This field is REQUIRED if the <a href="#vehicle_typesjson-added-in-v21">vehicle_types.json</a> is defined.</td>
+</tr>
+<tr>
+<td>- <code>last_reported</code> <br/><em>(added in v2.1)</em></td>
+<td>OPTIONAL</td>
+<td>Timestamp</td>
+<td>The last time this vehicle reported its status to the operator's backend.</td>
+</tr>
+<tr>
+<td>- <code>current_range_meters</code> <br/><em>(added in v2.1)</em></td>
+<td>Conditionally REQUIRED</td>
+<td>Non-negative float</td>
+<td>If the corresponding <code>vehicle_type</code> definition for this vehicle has a motor, then this field is REQUIRED. This value represents the furthest distance in meters that the vehicle can travel without recharging or refueling with the vehicle's current charge or fuel.</td>
+</tr>
+<tr>
+<td>- <code>station_id</code> <br/><em>(added in v2.1)</em></td>
+<td>Conditionally REQUIRED</td>
+<td>ID</td>
+<td>Identifier referencing the <code>station_id</code> field in <a href="#system_informationjson">system_information.json</a>. REQUIRED only if the vehicle is currently at a station and the <a href="#vehicle_typesjson">vehicle_types.json</a> file has been defined.</td>
+</tr>
+<tr>
+<td>- <code>pricing_plan_id</code> <br/><em>(added in v2.1)</em></td>
+<td>OPTIONAL</td>
+<td>ID</td>
+<td>The <code>plan_id</code> of the pricing plan this vehicle is eligible for as described in <a href="#system_pricing_plans.json">system_pricing_plans.json</a>.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example_6">Example:<a class="headerlink" href="#example_6" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+    <span class="nt">&quot;bikes&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;bike_id&quot;</span><span class="p">:</span><span class="s2">&quot;ghi789&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;last_reported&quot;</span><span class="p">:</span><span class="mi">1609866109</span><span class="p">,</span>
+        <span class="nt">&quot;lat&quot;</span><span class="p">:</span><span class="mf">12.34</span><span class="p">,</span>
+        <span class="nt">&quot;lon&quot;</span><span class="p">:</span><span class="mf">56.78</span><span class="p">,</span>
+        <span class="nt">&quot;is_reserved&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;is_disabled&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;vehicle_type_id&quot;</span><span class="p">:</span><span class="s2">&quot;abc123&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;bike_id&quot;</span><span class="p">:</span><span class="s2">&quot;jkl012&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;last_reported&quot;</span><span class="p">:</span><span class="mi">1609866204</span><span class="p">,</span>
+        <span class="nt">&quot;is_reserved&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;is_disabled&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;vehicle_type_id&quot;</span><span class="p">:</span><span class="s2">&quot;def456&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;current_range_meters&quot;</span><span class="p">:</span><span class="mi">6543</span><span class="p">,</span>
+        <span class="nt">&quot;station_id&quot;</span><span class="p">:</span><span class="mi">86</span><span class="p">,</span>
+        <span class="nt">&quot;pricing_plan_id&quot;</span><span class="p">:</span><span class="s2">&quot;plan3&quot;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="system_hoursjson">system_hours.json<a class="headerlink" href="#system_hoursjson" title="Permanent link">&para;</a></h3>
+<p>This OPTIONAL file is used to describe hours and days of operation when vehicles are available for rental. If <code>system_hours.json</code> is not published, it indicates that vehicles are available for rental 24 hours a day, 7 days a week.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rental_hours</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>Array of objects as defined below. The array MUST contain a minimum of one object identifying hours for every day of the week or a maximum of two for each day of the week  objects ( one for each user type).</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>user_types</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>An array of <code>member</code> and/or <code>nonmember</code> value(s). This indicates that this set of rental hours applies to either members or non-members only.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>days</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>An array of abbreviations (first 3 letters) of English names of the days of the week for which this object applies (e.g. <code>["mon", "tue", "wed", "thu", "fri", "sat, "sun"]</code>). Rental hours MUST NOT be defined more than once for each day and user type.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>start_time</code></td>
+<td>Yes</td>
+<td>Time</td>
+<td>Start time for the hours of operation of the system in the time zone indicated in <a href="#system_informationjson">system_information.json</a>.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>end_time</code></td>
+<td>Yes</td>
+<td>Time</td>
+<td>End time for the hours of operation of the system in the time zone indicated in <a href="#system_informationjson">system_information.json</a>.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example_7">Example:<a class="headerlink" href="#example_7" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span> <span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span> <span class="mi">86400</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;rental_hours&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;user_types&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;member&quot;</span> <span class="p">],</span>
+        <span class="nt">&quot;days&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;sat&quot;</span><span class="p">,</span> <span class="s2">&quot;sun&quot;</span><span class="p">],</span>
+        <span class="nt">&quot;start_time&quot;</span><span class="p">:</span> <span class="s2">&quot;00:00:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end_time&quot;</span><span class="p">:</span> <span class="s2">&quot;23:59:59&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;user_types&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;nonmember&quot;</span> <span class="p">],</span>
+        <span class="nt">&quot;days&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;sat&quot;</span><span class="p">,</span> <span class="s2">&quot;sun&quot;</span><span class="p">],</span>
+        <span class="nt">&quot;start_time&quot;</span><span class="p">:</span> <span class="s2">&quot;05:00:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end_time&quot;</span><span class="p">:</span> <span class="s2">&quot;23:59:59&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;user_types&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;member&quot;</span><span class="p">,</span> <span class="s2">&quot;nonmember&quot;</span> <span class="p">],</span>
+        <span class="nt">&quot;days&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;mon&quot;</span><span class="p">,</span> <span class="s2">&quot;tue&quot;</span><span class="p">,</span> <span class="s2">&quot;wed&quot;</span><span class="p">,</span> <span class="s2">&quot;thu&quot;</span><span class="p">,</span> <span class="s2">&quot;fri&quot;</span><span class="p">],</span>
+        <span class="nt">&quot;start_time&quot;</span><span class="p">:</span> <span class="s2">&quot;00:00:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end_time&quot;</span><span class="p">:</span> <span class="s2">&quot;23:59:59&quot;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="system_calendarjson">system_calendar.json<a class="headerlink" href="#system_calendarjson" title="Permanent link">&para;</a></h3>
+<p>Describes the operating calendar for a system. This OPTIONAL file SHOULD be published by systems that operate seasonally or do not offer continuous year-round service.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>calendars</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>Array of objects describing the system operational calendar. A minimum of one calendar object is REQUIRED. If start and end dates are the same every year, then start_year and end_year SHOULD be omitted.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>start_month</code></td>
+<td>Yes</td>
+<td>Non-negative Integer</td>
+<td>Starting month for the system operations (<code>1</code>-<code>12</code>).</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>start_day</code></td>
+<td>Yes</td>
+<td>Non-negative Integer</td>
+<td>Starting date for the system operations (<code>1</code>-<code>31</code>).</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>start_year</code></td>
+<td>OPTIONAL</td>
+<td>Non-negative Integer</td>
+<td>Starting year for the system operations.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>end_month</code></td>
+<td>Yes</td>
+<td>Non-negative Integer</td>
+<td>Ending month for the system operations (<code>1</code>-<code>12</code>).</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>end_day</code></td>
+<td>Yes</td>
+<td>Non-negative Integer</td>
+<td>Ending date for the system operations (<code>1</code>-<code>31</code>).</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>end_year</code></td>
+<td>OPTIONAL</td>
+<td>Non-negative Integer</td>
+<td>Ending year for the system operations.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example_8">Example:<a class="headerlink" href="#example_8" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1604333830</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">86400</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+    <span class="nt">&quot;calendars&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;start_month&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+        <span class="nt">&quot;start_day&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;start_year&quot;</span><span class="p">:</span><span class="mi">2020</span><span class="p">,</span>
+        <span class="nt">&quot;end_month&quot;</span><span class="p">:</span><span class="mi">11</span><span class="p">,</span>
+        <span class="nt">&quot;end_day&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
+        <span class="nt">&quot;end_year&quot;</span><span class="p">:</span><span class="mi">2020</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="system_regionsjson">system_regions.json<a class="headerlink" href="#system_regionsjson" title="Permanent link">&para;</a></h3>
+<p>Describe regions for a system that is broken up by geographic or political region.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>regions</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>Array of objects as defined below.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>region_id</code></td>
+<td>Yes</td>
+<td>ID</td>
+<td>Identifier for the region.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>name</code></td>
+<td>Yes</td>
+<td>String</td>
+<td>Public name for this region.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example_9">Example:<a class="headerlink" href="#example_9" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1604332380</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">86400</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+    <span class="nt">&quot;regions&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;North&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;region_id&quot;</span><span class="p">:</span><span class="s2">&quot;3&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;East&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;region_id&quot;</span><span class="p">:</span><span class="s2">&quot;4&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;South&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;region_id&quot;</span><span class="p">:</span><span class="s2">&quot;5&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;West&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;region_id&quot;</span><span class="p">:</span><span class="s2">&quot;6&quot;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="system_pricing_plansjson">system_pricing_plans.json<a class="headerlink" href="#system_pricing_plansjson" title="Permanent link">&para;</a></h3>
+<p>Describes pricing for the system.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>plans</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>Array of objects as defined below.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>plan_id</code></td>
+<td>Yes</td>
+<td>ID</td>
+<td>Identifier for a pricing plan in the system.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>url</code></td>
+<td>OPTIONAL</td>
+<td>URL</td>
+<td>URL where the customer can learn more about this pricing plan.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>name</code></td>
+<td>Yes</td>
+<td>String</td>
+<td>Name of this pricing plan.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>currency</code></td>
+<td>Yes</td>
+<td>String</td>
+<td>Currency used to pay the fare. <br /><br /> This pricing is in ISO 4217 code: http://en.wikipedia.org/wiki/ISO_4217 <br />(e.g. <code>CAD</code> for Canadian dollars, <code>EUR</code> for euros, or <code>JPY</code> for Japanese yen.)</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>price</code></td>
+<td>Yes</td>
+<td>Non-Negative float OR String</td>
+<td>Fare price, in the unit specified by currency. If string, MUST be in decimal monetary value. <br/><em>(added in v2.2)</em> Note: v3.0 may only allow non-negative float, therefore future implementations SHOULD be non-negative float.<br /><br />In case of non-rate price, this field is the total price. In case of rate price, this field is the base price that is charged only once per trip (e.g., price for unlocking) in addition to <code>per_km_pricing</code> and/or <code>per_min_pricing</code>.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>is_taxable</code></td>
+<td>Yes</td>
+<td>Boolean</td>
+<td>Will additional tax be added to the base price?<br /><br /><code>true</code> - Yes.<br />  <code>false</code> - No.  <br /><br /><code>false</code> MAY be used to indicate that tax is not charged or that tax is included in the base price.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>description</code></td>
+<td>Yes</td>
+<td>String</td>
+<td>Customer-readable description of the pricing plan. This SHOULD include the duration, price, conditions, etc. that the publisher would like users to see.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>per_km_pricing</code> <br/><em>(added in v2.2)</em></td>
+<td>OPTIONAL</td>
+<td>Array</td>
+<td>Array of segments when the price is a function of distance travelled, displayed in kilometers.<br /><br />Total price is the addition of <code>price</code> and all segments in <code>per_km_pricing</code> and <code>per_min_pricing</code>. If this array is not provided, there are no variable prices based on distance.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp;<code>start</code> <br/><em>(added in v2.2)</em></td>
+<td>Yes</td>
+<td>Non-Negative Integer</td>
+<td>The kilometer at which this segment rate starts being charged <em>(inclusive)</em>.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp;<code>rate</code> <br/><em>(added in v2.2)</em></td>
+<td>Yes</td>
+<td>Float</td>
+<td>Rate that is charged for each kilometer <code>interval</code> after the <code>start</code>. Can be a negative number, which indicates that the traveller will receive a discount.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp;<code>interval</code> <br/><em>(added in v2.2)</em></td>
+<td>Yes</td>
+<td>Non-Negative Integer</td>
+<td>Interval in kilometers at which the <code>rate</code> of this segment is either reapplied indefinitely, or if defined, up until (but not including) <code>end</code> kilometer.<br /><br />An interval of 0 indicates the rate is only charged once.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp; <code>end</code> <br/><em>(added in v2.2)</em></td>
+<td>OPTIONAL</td>
+<td>Non-Negative Integer</td>
+<td>The kilometer at which the rate will no longer apply <em>(exclusive)</em> e.g. if <code>end</code> is <code>20</code> the rate no longer applies at 20.00 km.<br /><br /> If this field is empty, the price issued for this segment is charged until the trip ends, in addition to following segments.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>per_min_pricing</code> <br/><em>(added in v2.2)</em></td>
+<td>OPTIONAL</td>
+<td>Array</td>
+<td>Array of segments when the price is a function of time travelled, displayed in minutes.<br /><br />Total price is the addition of <code>price</code> and all segments in <code>per_km_pricing</code> and <code>per_min_pricing</code>. If this array is not provided, there are no variable prices based on time.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp;<code>start</code> <br/><em>(added in v2.2)</em></td>
+<td>Yes</td>
+<td>Non-Negative Integer</td>
+<td>The minute at which this segment rate starts being charged <em>(inclusive)</em>.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp;<code>rate</code> <br/><em>(added in v2.2)</em></td>
+<td>Yes</td>
+<td>Float</td>
+<td>Rate that is charged for each minute <code>interval</code> after the <code>start</code>. Can be a negative number, which indicates that the traveller will receive a discount.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp;<code>interval</code> <br/><em>(added in v2.2)</em></td>
+<td>Yes</td>
+<td>Non-Negative Integer</td>
+<td>Interval in minutes at which the <code>rate</code> of this segment is either reapplied indefinitely, or if defined, up until (but not including) <code>end</code> minute.<br /><br />An interval of 0 indicates the rate is only charged once.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp; <code>end</code> <br/><em>(added in v2.2)</em></td>
+<td>OPTIONAL</td>
+<td>Non-Negative Integer</td>
+<td>The minute at which the rate will no longer apply  <em>(exclusive)</em> e.g. if <code>end</code> is <code>20</code> the rate no longer applies after 19:59.<br /><br />If this field is empty, the price issued for this segment is charged until the trip ends, in addition to following segments.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>surge_pricing</code> <br/><em>(added in v2.2)</em></td>
+<td>OPTIONAL</td>
+<td>Boolean</td>
+<td>Is there currently an increase in price in response to increased demand in this pricing plan? If this field is empty, it means these is no surge pricing in effect.<br /><br /><code>true</code> - Surge pricing is in effect.<br />  <code>false</code> - Surge pricing is not in effect.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples-added-in-v22">Examples <em>(added in v2.2)</em><a class="headerlink" href="#examples-added-in-v22" title="Permanent link">&para;</a></h3>
+<h5 id="example-1">Example 1:<a class="headerlink" href="#example-1" title="Permanent link">&para;</a></h5>
+<p>The user does not pay more than the base price for the first 10 km. After 10 km the user pays $1 per km. After 25 km the user pays $0.50 per km and an additional $3 every 5 km, the extension price, in addition to $0.50 per km. </p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span> <span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;plans&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;plan_id&quot;</span><span class="p">:</span> <span class="s2">&quot;plan2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;One-Way&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;USD&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="nt">&quot;is_taxable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Includes 10km, overage fees apply after 10km.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;per_km_pricing&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+            <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&quot;interval&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="mi">25</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+            <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+            <span class="nt">&quot;interval&quot;</span><span class="p">:</span> <span class="mi">1</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+            <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="nt">&quot;interval&quot;</span><span class="p">:</span> <span class="mi">5</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h5 id="example-2">Example 2:<a class="headerlink" href="#example-2" title="Permanent link">&para;</a></h5>
+<p>This example demonstrates a pricing scheme that has a rate both by minute and by km. The user is charged $0.25 per km as well as $0.50 per minute. Both of these rates happen concurrently and are not dependent on one another. 
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span> <span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;plans&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;plan_id&quot;</span><span class="p">:</span> <span class="s2">&quot;plan3&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Simple Rate&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;CAD&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="nt">&quot;is_taxable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;$3 unlock fee, $0.25 per kilometer and 0.50 per minute.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;per_km_pricing&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mf">0.25</span><span class="p">,</span>
+            <span class="nt">&quot;interval&quot;</span><span class="p">:</span> <span class="mi">1</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;per_min_pricing&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mf">0.50</span><span class="p">,</span>
+            <span class="nt">&quot;interval&quot;</span><span class="p">:</span> <span class="mi">1</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="system_alertsjson">system_alerts.json<a class="headerlink" href="#system_alertsjson" title="Permanent link">&para;</a></h3>
+<p>This feed is intended to inform customers about changes to the system that do not fall within the normal system operations. For example, system closures due to weather would be listed here, but a system that only operated for part of the year would have that schedule listed in the system_calendar.json feed.<br />
+Obsolete alerts SHOULD be removed so the client application can safely present to the end user everything present in the feed.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>alerts</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>Array of objects each indicating a system alert as defined below.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>alert_id</code></td>
+<td>Yes</td>
+<td>ID</td>
+<td>Identifier for this alert.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>type</code></td>
+<td>Yes</td>
+<td>Enum</td>
+<td>Valid values are:<br /><br /><ul><li><code>system_closure</code></li><li><code>station_closure</code></li><li><code>station_move</code></li><li><code>other</code></li></ul></td>
+</tr>
+<tr>
+<td>-&nbsp;<code>times</code></td>
+<td>OPTIONAL</td>
+<td>Array</td>
+<td>Array of objects with the fields <code>start</code> and <code>end</code> indicating when the alert is in effect (e.g. when the system or station is actually closed, or when it is scheduled to be moved).</td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>start</code></td>
+<td>Yes</td>
+<td>Timestamp</td>
+<td>Start time of the alert.</td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>end</code></td>
+<td>OPTIONAL</td>
+<td>Timestamp</td>
+<td>End time of the alert. If there is currently no end time planned for the alert, this can be omitted.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>station_ids</code></td>
+<td>OPTIONAL</td>
+<td>Array</td>
+<td>If this is an alert that affects one or more stations, include their ID(s). Otherwise omit this field. If both <code>station_id</code> and <code>region_id</code> are omitted, this alert affects the entire system.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>region_ids</code></td>
+<td>OPTIONAL</td>
+<td>Array</td>
+<td>If this system has regions, and if this alert only affects certain regions, include their ID(s). Otherwise, omit this field. If both <code>station_id</code>s and <code>region_id</code>s are omitted, this alert affects the entire system.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>url</code></td>
+<td>OPTIONAL</td>
+<td>URL</td>
+<td>URL where the customer can learn more information about this alert.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>summary</code></td>
+<td>Yes</td>
+<td>String</td>
+<td>A short summary of this alert to be displayed to the customer.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>description</code></td>
+<td>OPTIONAL</td>
+<td>String</td>
+<td>Detailed description of the alert.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>last_updated</code></td>
+<td>OPTIONAL</td>
+<td>Timestamp</td>
+<td>Indicates the last time the info for the alert was updated.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example_10">Example:<a class="headerlink" href="#example_10" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1604198100</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">60</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+    <span class="nt">&quot;alerts&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;alert_id&quot;</span><span class="p">:</span><span class="s2">&quot;21&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;station_closure&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;station_ids&quot;</span><span class="p">:[</span>
+          <span class="s2">&quot;123&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;456&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;789&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;times&quot;</span><span class="p">:[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="s2">&quot;1604448000&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;end&quot;</span><span class="p">:</span><span class="s2">&quot;1604674800&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="s2">&quot;https://example.com/more-info&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="s2">&quot;Disruption of Service&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;The three stations on Broadway will be out of service</span>
+<span class="s2">         from 12:00am Nov 3 to 3:00pm Nov 6th to accommodate road work&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1604519393</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="geofencing_zonesjson-added-in-v21">geofencing_zones.json <em>(added in v2.1)</em><a class="headerlink" href="#geofencing_zonesjson-added-in-v21" title="Permanent link">&para;</a></h3>
+<p>Describes geofencing zones and their associated rules and attributes.<br />
+Geofenced areas are delineated using GeoJSON in accordance with <a href="https://tools.ietf.org/html/rfc7946">RFC 7946</a>. By default, no restrictions apply everywhere. Geofencing zones SHOULD be modeled according to restrictions rather than allowance. An operational area (outside of which vehicles cannot be used) SHOULD be defined with a counterclockwise polygon, and a limitation area (in which vehicles can be used under certain restrictions) SHOULD be defined with a clockwise polygon.<br><br>Geofences and GPS operate in two dimensions. Restrictions placed on an overpass or bridge will also  be applied to the roadway or path beneath.<br><br>Care SHOULD be taken when developing geofence based policies that rely on location data.  Location data from GPS, cellular and Wi-Fi signals are subject to interference resulting in accuracy levels in the tens of meters or greater.  This may result in vehicles being placed within a geofenced zone when they are actually outside or adjacent to the zone. Transit time between server and client can also impact when a user is notified of a geofence based policy. A vehicle traveling at 15kph can be well inside of a restricted zone before a notification is received. </p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>REQUIRED</th>
+<th>Type</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>geofencing_zones</code></td>
+<td>Yes</td>
+<td>GeoJSON FeatureCollection</td>
+<td>Each geofenced zone and its associated rules and attributes is described as an object within the array of features, as follows.</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>type</code></td>
+<td>Yes</td>
+<td>String</td>
+<td>“FeatureCollection” (as per IETF <a href="https://tools.ietf.org/html/rfc7946#section-3.3">RFC 7946</a>).</td>
+</tr>
+<tr>
+<td>-&nbsp;<code>features</code></td>
+<td>Yes</td>
+<td>Array</td>
+<td>Array of objects as defined below.</td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>type</code></td>
+<td>Yes</td>
+<td>String</td>
+<td>“Feature” (as per IETF <a href="https://tools.ietf.org/html/rfc7946#section-3.3">RFC 7946</a>).</td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>geometry</code></td>
+<td>Yes</td>
+<td>GeoJSON Multipolygon</td>
+<td>A polygon that describes where rides might not be able to start, end, go through, or have other limitations. A clockwise arrangement of points defines the area enclosed by the polygon, while a counterclockwise order defines the area outside the polygon (<a href="https://tools.ietf.org/html/rfc7946#section-3.1.6">right-hand rule</a>). All geofencing zones contained in this list are public (i.e., can be shown on a map for public use).</td>
+</tr>
+<tr>
+<td>&emsp;-&nbsp;<code>properties</code></td>
+<td>Yes</td>
+<td>Object</td>
+<td>Properties: As defined below, describing travel allowances and limitations.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp;<code>name</code></td>
+<td>OPTIONAL</td>
+<td>String</td>
+<td>Public name of the geofencing zone.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp;<code>start</code></td>
+<td>OPTIONAL</td>
+<td>Timestamp</td>
+<td>Start time of the geofencing zone. If the geofencing zone is always active, this can be omitted.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp;<code>end</code></td>
+<td>OPTIONAL</td>
+<td>Timestamp</td>
+<td>End time of the geofencing zone. If the geofencing zone is always active, this can be omitted.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;-&nbsp;<code>rules</code></td>
+<td>OPTIONAL</td>
+<td>Array</td>
+<td>Array that contains one object per rule as defined below. <br /><br /> In the event of colliding rules within the same polygon, the earlier rule (in order of the JSON file) takes precedence. <br> In the case of overlapping polygons, the combined set of rules associated with the overlapping polygons applies to the union of the polygons. In the event of colliding rules in this set, the earlier rule (in order of the JSON file) also takes precedence.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;-&nbsp;<code>vehicle_type_id</code></td>
+<td>OPTIONAL</td>
+<td>Array</td>
+<td>Array of IDs of vehicle types for which any restrictions SHOULD be applied (see vehicle type definitions in <a href="https://github.com/NABSA/gbfs/pull/136">PR #136</a>). If vehicle_type_ids are not specified, then restrictions apply to all vehicle types.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;-&nbsp;<code>ride_allowed</code></td>
+<td>Conditionally REQUIRED</td>
+<td>Boolean</td>
+<td>REQUIRED if <code>rules</code> array is defined. Is the undocked (“free bike”) ride allowed to start and end in this zone? <br /><br /> <code>true</code> - Undocked (“free bike”) ride can start and end in this zone. <br /> <code>false</code> - Undocked (“free bike”) ride cannot start and end in this zone.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;-&nbsp;<code>ride_through_allowed</code></td>
+<td>Conditionally REQUIRED</td>
+<td>Boolean</td>
+<td>REQUIRED if <code>rules</code> array is defined. Is the ride allowed to travel through this zone? <br /><br /> <code>true</code> - Ride can travel through this zone. <br /> <code>false</code> - Ride cannot travel through this zone.</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;-&nbsp;<code>maximum_speed_kph</code></td>
+<td>OPTIONAL</td>
+<td>Non-negative Integer</td>
+<td>What is the maximum speed allowed, in kilometers per hour? <br /><br /> If there is no maximum speed to observe, this can be omitted.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="example_11">Example:<a class="headerlink" href="#example_11" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1604198100</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">60</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+    <span class="nt">&quot;geofencing_zones&quot;</span><span class="p">:{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;FeatureCollection&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;features&quot;</span><span class="p">:[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;geometry&quot;</span><span class="p">:{</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;MultiPolygon&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;coordinates&quot;</span><span class="p">:[</span>
+              <span class="p">[</span>
+                <span class="p">[</span>
+                  <span class="p">[</span>
+                    <span class="mf">-122.578067</span><span class="p">,</span>
+                    <span class="mf">45.562982</span>
+                  <span class="p">],</span>
+                  <span class="p">[</span>
+                    <span class="mf">-122.661838</span><span class="p">,</span>
+                    <span class="mf">45.562741</span>
+                  <span class="p">],</span>
+                  <span class="p">[</span>
+                    <span class="mf">-122.661151</span><span class="p">,</span>
+                    <span class="mf">45.504542</span>
+                  <span class="p">],</span>
+                  <span class="p">[</span>
+                    <span class="mf">-122.578926</span><span class="p">,</span>
+                    <span class="mf">45.5046625</span>
+                  <span class="p">],</span>
+                  <span class="p">[</span>
+                    <span class="mf">-122.578067</span><span class="p">,</span>
+                    <span class="mf">45.562982</span>
+                  <span class="p">]</span>
+                <span class="p">]</span>
+              <span class="p">],</span>
+              <span class="p">[</span>
+                <span class="p">[</span>
+                  <span class="p">[</span>
+                    <span class="mf">-122.650680</span><span class="p">,</span>
+                    <span class="mf">45.548197</span>
+                  <span class="p">],</span>
+                  <span class="p">[</span>
+                    <span class="mf">-122.650852</span><span class="p">,</span>
+                    <span class="mf">45.534731</span>
+                  <span class="p">],</span>
+                  <span class="p">[</span>
+                    <span class="mf">-122.630939</span><span class="p">,</span>
+                    <span class="mf">45.535212</span>
+                  <span class="p">],</span>
+                  <span class="p">[</span>
+                    <span class="mf">-122.630424</span><span class="p">,</span>
+                    <span class="mf">45.548197</span>
+                  <span class="p">],</span>
+                  <span class="p">[</span>
+                    <span class="mf">-122.650680</span><span class="p">,</span>
+                    <span class="mf">45.548197</span>
+                  <span class="p">]</span>
+                <span class="p">]</span>
+              <span class="p">]</span>
+            <span class="p">]</span>
+          <span class="p">},</span>
+          <span class="nt">&quot;properties&quot;</span><span class="p">:{</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;NE 24th/NE Knott&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="mi">1593878400</span><span class="p">,</span>
+            <span class="nt">&quot;end&quot;</span><span class="p">:</span><span class="mi">1593907260</span><span class="p">,</span>
+            <span class="nt">&quot;rules&quot;</span><span class="p">:[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;vehicle_type_id&quot;</span><span class="p">:[</span>
+                  <span class="s2">&quot;moped1&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;car1&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;ride_allowed&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;ride_through_allowed&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;maximum_speed_kph&quot;</span><span class="p">:</span><span class="mi">10</span>
+              <span class="p">}</span>
+            <span class="p">]</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="deep-links-added-in-v11">Deep Links <em>(added in v1.1)</em><a class="headerlink" href="#deep-links-added-in-v11" title="Permanent link">&para;</a></h2>
+<p>Deep links to iOS, Android, and web apps are supported via URIs in the <code>system_information.json</code>, <code>station_information.json</code>, and <code>free_bike_status.json</code> files. The following sections describe how analytics can be added to these URIs, as well as some examples. For further examples, see <a href="https://medium.com/@mobilitydata/whats-new-in-gbfs-v2-0-63eb46e6bdc4">"What's New in GBFS"</a>.</p>
+<h2 id="analytics-added-in-v11">Analytics <em>(added in v1.1)</em><a class="headerlink" href="#analytics-added-in-v11" title="Permanent link">&para;</a></h2>
+<p>In all of the rental URI fields, a viewing app can report the origin of a deep link to request to a rental app by appending the <code>client_id</code> <em>(added in v1.1)</em> parameter to the URI along with the domain name for the viewing app.</p>
+<p>For example, if Google is the viewing app, it can append:</p>
+<p><code>client_id=google.com</code></p>
+<p>...to the URI field to report that Google is the originator of the deep link request. If the Android URI is:</p>
+<p><code>com.abcrental.android://open.abc.app/stations?id=1234567890</code></p>
+<p>...then the URI used by Google would be: <code>com.abcrental.android://open.abc.app/stations?id=1234567890&amp;client_id=google.com</code></p>
+<p>Other supported parameters include:</p>
+<ol>
+<li><code>ad_id</code> <em>(added in v1.1)</em> - Advertising ID issued to the viewing app (e.g., IFDA on iOS)</li>
+<li><code>token</code> <em>(added in v1.1)</em> - A token identifier that was issued by the rental app to the viewing app.</li>
+</ol>
+<h2 id="examples-added-in-v11">Examples <em>(added in v1.1)</em><a class="headerlink" href="#examples-added-in-v11" title="Permanent link">&para;</a></h2>
+<h5 id="example-1-app-links-on-android-and-universal-links-on-ios-are-supported">Example 1 - App Links on Android and Universal Links on iOS are supported:<a class="headerlink" href="#example-1-app-links-on-android-and-universal-links-on-ios-are-supported" title="Permanent link">&para;</a></h5>
+<h5 id="system_informationjson_1"><em>system_information.json</em><a class="headerlink" href="#system_informationjson_1" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1572447999</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">60</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+    <span class="nt">&quot;system_id&quot;</span><span class="p">:</span><span class="s2">&quot;abc_cityname&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;short_name&quot;</span><span class="p">:</span><span class="s2">&quot;ABC Bike Rental&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;rental_apps&quot;</span><span class="p">:{</span>
+      <span class="nt">&quot;android&quot;</span><span class="p">:{</span>
+        <span class="nt">&quot;discovery_uri&quot;</span><span class="p">:</span><span class="s2">&quot;com.abcrental.android://&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;ios&quot;</span><span class="p">:{</span>
+        <span class="nt">&quot;discovery_uri&quot;</span><span class="p">:</span><span class="s2">&quot;com.abcrental.ios://&quot;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="err">...</span>
+</code></pre></div>
+<h5 id="station_informationjson_1"><em>station_information.json</em><a class="headerlink" href="#station_informationjson_1" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">60</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+    <span class="nt">&quot;stations&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;station_id&quot;</span><span class="p">:</span><span class="s2">&quot;425&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Coppertail&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;lat&quot;</span><span class="p">:</span><span class="mf">27.9563335328521</span><span class="p">,</span>
+        <span class="nt">&quot;lon&quot;</span><span class="p">:</span><span class="mf">-82.430436084371</span><span class="p">,</span>
+        <span class="nt">&quot;rental_uris&quot;</span><span class="p">:{</span>
+          <span class="nt">&quot;android&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.abc.com/app?sid=1234567890&amp;platform=android&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;ios&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.abc.com/app?sid=1234567890&amp;platform=ios&quot;</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+  <span class="err">...</span>
+</code></pre></div>
+<p>Note that the Android URI and iOS Universal Link URLs don’t necessarily use the same identifier as the station_id.</p>
+<h5 id="example-2-app-links-are-not-supported-on-android-and-universal-links-are-not-supported-on-ios-but-deep-links-are-still-supported-on-android-and-ios">Example 2 - App Links are not supported on Android and Universal Links are not supported on iOS, but deep links are still supported on Android and iOS:<a class="headerlink" href="#example-2-app-links-are-not-supported-on-android-and-universal-links-are-not-supported-on-ios-but-deep-links-are-still-supported-on-android-and-ios" title="Permanent link">&para;</a></h5>
+<h5 id="system_informationjson_2"><em>system_information.json</em><a class="headerlink" href="#system_informationjson_2" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span> <span class="mi">1572447999</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">60</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;system_id&quot;</span><span class="p">:</span> <span class="s2">&quot;abc_cityname&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;short_name&quot;</span><span class="p">:</span> <span class="s2">&quot;ABC Bike Rental&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;rental_apps&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;android&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;discovery_uri&quot;</span><span class="p">:</span> <span class="nt">&quot;com.abcrental.android://&quot;</span>
+        <span class="nt">&quot;store_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;https://play.google.com/store/apps/details?id=com.abcrental.android&quot;</span><span class="p">,</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;ios&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;store_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;https://apps.apple.com/app/apple-store/id123456789&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;discovery_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;com.abcrental.ios://&quot;</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="err">...</span>
+</code></pre></div>
+<h5 id="station_informationjson_2"><em>station_information.json</em><a class="headerlink" href="#station_informationjson_2" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">60</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+    <span class="nt">&quot;stations&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;station_id&quot;</span><span class="p">:</span><span class="s2">&quot;425&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Coppertail&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;lat&quot;</span><span class="p">:</span><span class="mf">27.9563335328521</span><span class="p">,</span>
+        <span class="nt">&quot;lon&quot;</span><span class="p">:</span><span class="mf">-82.430436084371</span><span class="p">,</span>
+        <span class="nt">&quot;rental_uris&quot;</span><span class="p">:{</span>
+          <span class="nt">&quot;android&quot;</span><span class="p">:</span><span class="s2">&quot;com.abcrental.android://open.abc.app/app?sid=1234567890&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;ios&quot;</span><span class="p">:</span><span class="s2">&quot;com.abcrental.ios://open.abc.app/app?sid=1234567890&quot;</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+  <span class="err">...</span>
+</code></pre></div>
+<h5 id="example-3-deep-link-web-urls-are-supported-but-not-android-or-ios-native-apps">Example 3 - Deep link web URLs are supported, but not Android or iOS native apps:<a class="headerlink" href="#example-3-deep-link-web-urls-are-supported-but-not-android-or-ios-native-apps" title="Permanent link">&para;</a></h5>
+<h5 id="station_informationjson_3"><em>station_information.json</em><a class="headerlink" href="#station_informationjson_3" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;last_updated&quot;</span><span class="p">:</span><span class="mi">1609866247</span><span class="p">,</span>
+  <span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">60</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;2.2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+    <span class="nt">&quot;stations&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;station_id&quot;</span><span class="p">:</span><span class="s2">&quot;425&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Coppertail&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;lat&quot;</span><span class="p">:</span><span class="mf">27.9563335328521</span><span class="p">,</span>
+        <span class="nt">&quot;lon&quot;</span><span class="p">:</span><span class="mf">-82.430436084371</span><span class="p">,</span>
+        <span class="nt">&quot;rental_uris&quot;</span><span class="p">:{</span>
+          <span class="nt">&quot;web&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.abc.com/app?sid=1234567890&quot;</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+  <span class="err">...</span>
+</code></pre></div>
+<h2 id="disclaimers">Disclaimers<a class="headerlink" href="#disclaimers" title="Permanent link">&para;</a></h2>
+<p><em>Apple Pay, PayPass and other third-party product and service names are trademarks or registered trademarks of their respective owners.</em></p>
+<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
+<p>Except as otherwise noted, the content of this page is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        <c>Platform maintained by </c>
+        <a class="footer-link" href="https://mobilitydata.org/" target="_blank" rel="noopener">
+          <img src="/partials/md-black.png#only-light" width=100em style="vertical-align:middle" style="float:left">
+          <img src="/partials/md-white.png#only-dark" width=100em style="vertical-align:middle" style="float:left">
+        </a>
+        
+      </div>
+      <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/MobilityData" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/mobilitydata" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://bit.ly/mobilitydata-slack" target="_blank" rel="noopener" title="bit.ly" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+    </a>
+  
+</div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.361d90f1.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.289a2a4b.min.js"></script>
+      
+    
+  </body>
+</html>
