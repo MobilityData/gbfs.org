@@ -1,0 +1,7 @@
+mkdocs
+mkdocs-awesome-pages-plugin
+mkdocs-material
+mkdocs-redirects
+mkdocs-static-i18n
+mkdocs-simple-hooks
+mkdocs-video

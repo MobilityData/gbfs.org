@@ -1,0 +1,21 @@
+{% import "partials/language.html" as lang with context %}
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        {% if config.copyright %}
+          <div class="md-footer-copyright__highlight">
+            {{ config.copyright }}
+          </div>
+        {% endif %}
+        <c>Platform maintained by </c>
+        <a class="footer-link" href="https://mobilitydata.org/" target="_blank" rel="noopener">
+          <img src="/partials/md-black.png#only-light" width=100em style="vertical-align:middle" style="float:left">
+          <img src="/partials/md-white.png#only-dark" width=100em style="vertical-align:middle" style="float:left">
+        </a>
+        {{ extracopyright }}
+      </div>
+      {% include "partials/social.html" %}
+    </div>
+  </div>
+</footer>
