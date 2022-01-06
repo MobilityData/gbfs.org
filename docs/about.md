@@ -27,8 +27,8 @@ On the first Wednesday of the month, MobilityData hosts a GBFS Advisory Meeting 
 More information about MobilityData can be found on our website: [mobilitydata.org](https://mobilitydata.org/){target=_blank}
 
 <a href="https://mobilitydata.org/" target="_blank" rel="noopener" alt="MobilityData">
-    <img src="/partials/md-black.png#only-light" width=150rem style="float: left">
-    <img src="/partials/md-white.png#only-dark" width=150rem style="float: left">
+    <img src="https://raw.githubusercontent.com/MobilityData/gbfs.org/master/theme_overrides/partials/md-black.png?token=APAKORF6ORSJEAOQULIAS5DB4B3KM#only-light" width=150rem style="float: left">
+    <img src="https://raw.githubusercontent.com/MobilityData/gbfs.org/master/theme_overrides/partials/md-white.png?token=APAKORHAC324XGTIQUDWFA3B4B3NG#only-dark" width=150rem style="float: left">
 </a>
 
 <br>
