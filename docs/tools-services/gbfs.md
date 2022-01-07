@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # GBFS
 
 - [GBFS Specification on GitHub](https://github.com/NABSA/gbfs){target=_blank}

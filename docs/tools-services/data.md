@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Data
 
 ## Third Party GBFS URL Directories

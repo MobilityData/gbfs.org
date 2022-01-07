@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Governance and Change Process
 
 **How is the specification updated?**

@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Major Change Proposals
 
 ## GBFS-Carsharing

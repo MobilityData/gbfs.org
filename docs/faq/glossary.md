@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Glossary
 
 * **API** - An API (Application Program Interface) communicates with two applications. A common analogy for explaining an API is to think of a restaurant; you are one “system”, and the kitchen is another. An intermediary is needed to communicate what you want the kitchen to do for you. That intermediary, in this case the server, is the equivalent of an API. 

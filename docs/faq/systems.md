@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # systems.csv
 
 **What is systems.csv?**

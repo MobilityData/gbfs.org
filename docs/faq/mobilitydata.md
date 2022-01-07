@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # MobilityData
 
 **How do I get involved?**

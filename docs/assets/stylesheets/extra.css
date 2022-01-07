@@ -15,6 +15,7 @@
   /* --md-primary-bg-color: #f8f8f8; */
   --md-primary-fg-color: #f0f0f0;
   --md-footer-bg-color--dark: #f0f0f0;
+  --md-footer-bg-color: var(--md-footer-bg-color--dark);
   --md-footer-fg-color: var(--md-typeset-color);
   /* --md-footer-fg-color--lighter: red; */
   --md-footer-fg-color--light: var(--md-primary-bg-color--light);
@@ -37,7 +38,6 @@
 [data-md-color-scheme="slate"] table {
   background-color: var(--md-code-bg-color) !important; 
   }
-  
   
 /* table font size */
 th, td {
@@ -85,3 +85,15 @@ div.md-footer-copyright {
 c {
   opacity: 56%; 
 }
+
+/* 
+footer {
+  position: fixed !important;
+  left: 0 !important;;
+  bottom: 0 !important;
+  width: 100% !important;
+} */
+
+/* nav.md-footer__inner.md-grid .md-ellipsis {
+  font-size: 80% !important;
+} */

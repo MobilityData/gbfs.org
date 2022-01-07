@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # GBFS
 
 ## What is GBFS?

@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Open Data Standards
 
 **What is an open data standard?**

@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Apps
 
 ## Web Apps

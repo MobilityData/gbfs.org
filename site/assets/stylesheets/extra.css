@@ -20,9 +20,11 @@
   --md-footer-fg-color--light: var(--md-primary-bg-color--light);
   --md-typeset-a-color: var(--md-accent-fg-color);
   --md-code-bg-color: #fff;
-  --md-typeset__table: red;
   }
-
+[data-md-color-scheme="default"] table {
+  background-color: #fff !important;
+  }
+  
 /* slate theme overrides */
 [data-md-color-scheme="slate"] {
   --md-footer-logo-dark-mode: block;
@@ -32,6 +34,10 @@
   --md-footer-bg-color--dark: #2e303e;
   --md-typeset-a-color: var(--md-accent-fg-color);
   }
+[data-md-color-scheme="slate"] table {
+  background-color: var(--md-code-bg-color) !important; 
+  }
+  
   
 /* table font size */
 th, td {

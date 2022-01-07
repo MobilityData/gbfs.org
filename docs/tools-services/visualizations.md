@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Visualizations 
 
 - [GBFS/Open Data Viewer](https://share.municipal.systems/oJl_L-B8f){target=_blank}: Visualize micromobility and other open data.

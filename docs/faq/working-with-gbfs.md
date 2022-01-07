@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Working with GBFS
 
 ## Best Practices

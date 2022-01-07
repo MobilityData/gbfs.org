@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Other Multimodal Data Formats
 
 - [Alliance for Parking Data Standards (APDS)](https://www.allianceforparkingdatastandards.org/){target=_blank}: Formed by the [International Parking Institute](https://www.parking.org/){target=_blank}, the [British Parking Association](http://www.britishparking.co.uk/){target=_blank}, and the [European Parking Association](http://www.europeanparking.eu/){target=_blank}, APDS is a not-for-profit organization with the mission to develop, promote, manage, and maintain a uniform global standard that will allow organizations to share parking data across platforms worldwide. 

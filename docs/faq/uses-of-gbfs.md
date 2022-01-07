@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Uses of GBFS
 
 **Why was GBFS created?**

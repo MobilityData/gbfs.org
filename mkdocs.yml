@@ -27,6 +27,7 @@ theme:
     code: Source Code Pro
   features:
     #  - navigation.tracking
+    #  - toc.integrate
      - navigation.indexes
      - navigation.top
   custom_dir: theme_overrides

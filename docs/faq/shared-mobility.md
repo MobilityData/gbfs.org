@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Shared Mobility
 
 **What is shared mobility?**

@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Software for Creating APIs
 
 - [mapintelligenceagency/gbfsQL](https://github.com/mapintelligenceagency/gbfsQL){target=_blank}: Wraps any number of GBFS feeds into an easily consumable GraphQL API. Merges relevant feeds and supports real-time updates for clients via Websockets/GraphQL Subscriptions.
