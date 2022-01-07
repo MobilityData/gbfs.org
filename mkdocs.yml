@@ -23,10 +23,10 @@ theme:
   name: material
   favicon: assets/org.svg
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Helvetica
+    code: Source Code Pro
   features:
-     - navigation.tracking
+    #  - navigation.tracking
      - navigation.indexes
      - navigation.top
   custom_dir: theme_overrides

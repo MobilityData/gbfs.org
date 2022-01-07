@@ -4,7 +4,7 @@
 
 GBFS (General Bikeshare Feed Specification) is an open data standard for shared mobility. GBFS makes real-time information available to travellers to help them discover and use shared mobility services.
 
-[**See the GBFS Specification**](/spec/)
+[**See the GBFS Specification**](/reference/)
 
 <hr>
 
@@ -12,10 +12,10 @@ GBFS (General Bikeshare Feed Specification) is an open data standard for shared 
 
 Not sure how to approach GBFS? Our team at MobilityData is hard at work bringing you how-to guides and explainers for all things GBFS. Click the articles below to read more! Additional guides and translations are available on the Tools & Services Page.
 
-- **[GBFS and Shared Mobility Policy](https://mobilitydata.org/gbfs-and-shared-mobility-data-policy/){target=_blank} (Americas):** The guide describes how GBFS can advance cities’ efforts to support sustainable transportation and how developing more comprehensive GBFS policies can benefit everyone. Also available in [Español](https://mobilitydata.org/gbfs-y-politica-de-datos-de-movilidad-compartida/){target=_blank} and [Português](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada/){target=_blank}.
+- [GBFS and Shared Mobility Policy](https://mobilitydata.org/gbfs-and-shared-mobility-data-policy/){target=_blank} (Americas): The guide describes how GBFS can advance cities’ efforts to support sustainable transportation and how developing more comprehensive GBFS policies can benefit everyone. Also available in [Español](https://mobilitydata.org/gbfs-y-politica-de-datos-de-movilidad-compartida/){target=_blank} and [Português](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada/){target=_blank}.
 
 
-- **[GBFS and Shared Mobility Policy](https://mobilitydata.org/gbfs-and-shared-mobility-data-policy-in-europe/){target=_blank} (Europe):** The guide describes how GBFS can advance cities’ efforts to support sustainable transportation and how developing more comprehensive GBFS policies can benefit everyone. Also available in [Français](https://mobilitydata.org/gbfs-et-les-donnees-de-mobilite-partagee-des-politiques-publiques-au-service-des-villes-europeennes/){target=_blank}, [Español](https://mobilitydata.org/gbfs-y-politica-de-datos-de-movilidad-compartida-2/){target=_blank}, and [Português](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada-2/){target=_blank}. 
+- [GBFS and Shared Mobility Policy](https://mobilitydata.org/gbfs-and-shared-mobility-data-policy-in-europe/){target=_blank} (Europe): The guide describes how GBFS can advance cities’ efforts to support sustainable transportation and how developing more comprehensive GBFS policies can benefit everyone. Also available in [Français](https://mobilitydata.org/gbfs-et-les-donnees-de-mobilite-partagee-des-politiques-publiques-au-service-des-villes-europeennes/){target=_blank}, [Español](https://mobilitydata.org/gbfs-y-politica-de-datos-de-movilidad-compartida-2/){target=_blank}, and [Português](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada-2/){target=_blank}. 
 
 <hr>
 
@@ -23,9 +23,9 @@ Not sure how to approach GBFS? Our team at MobilityData is hard at work bringing
 
 Read the latest about GBFS on the MobilityData blog page! Click the headline below to read more. Articles in French and Spanish can be found on our blog directly or on the Tools & Services page. 
 
-- **[GBFS v2.3-RC is here to fix (some) of your problems](https://mobilitydata.org/gbfs-v2-3-rc-is-here-to-fix-some-of-your-problems/){target=_blank}:** But even though we love v2.2, GBFS was ready for a few improvements. Let us introduce you to v2.3-RC!
-- **[Cities, GBFS v2.2 is here for you](https://mobilitydata.org/cities-gbfs-v2-2-is-here-for-you/){target=_blank}:** What you’re missing out on if you’re still stuck with v1.0 data.
-- **[The price is right! 💸](https://mobilitydata.org/the-price-is-right-%F0%9F%92%B8/){target=_blank}:** Previously in GBFS, pricing wasn’t described in much detail. To put it simply, operators could only share a sentence that included the pricing information.
+- [GBFS v2.3-RC is here to fix (some) of your problems](https://mobilitydata.org/gbfs-v2-3-rc-is-here-to-fix-some-of-your-problems/){target=_blank}: But even though we love v2.2, GBFS was ready for a few improvements. Let us introduce you to v2.3-RC!
+- [Cities, GBFS v2.2 is here for you](https://mobilitydata.org/cities-gbfs-v2-2-is-here-for-you/){target=_blank}: What you’re missing out on if you’re still stuck with v1.0 data.
+- [The price is right! 💸](https://mobilitydata.org/the-price-is-right-%F0%9F%92%B8/){target=_blank}: Previously in GBFS, pricing wasn’t described in much detail. To put it simply, operators could only share a sentence that included the pricing information.
 
 [**Go to MobilityData's Blog**](https://mobilitydata.org/news/){target=_blank}
 
