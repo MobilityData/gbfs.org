@@ -10,11 +10,11 @@
 [data-md-color-scheme="default"] {
   --md-footer-logo-dark-mode: none;
   --md-footer-logo-light-mode: block;
-  --md-default-bg-color: #f0f0f0;
+  --md-default-bg-color: #f4f4f4;
   --md-accent-fg-color: #318ecc;
   /* --md-primary-bg-color: #f8f8f8; */
-  --md-primary-fg-color: #f0f0f0;
-  --md-footer-bg-color--dark: #f0f0f0;
+  --md-primary-fg-color: var(--md-default-bg-color);
+  --md-footer-bg-color--dark: var(--md-default-bg-color);;
   --md-footer-bg-color: var(--md-footer-bg-color--dark);
   --md-footer-fg-color: var(--md-typeset-color);
   /* --md-footer-fg-color--lighter: red; */
