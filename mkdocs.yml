@@ -3,9 +3,8 @@ site_url: https://gbfs.org
 repo_url: https://github.com/nabsa/gbfs
 
 theme:
-  logo: assets/org.svg
-  logo_light_mode: assets/org.svg
-  logo_dark_mode: assets/org-dark.svg
+  logo_light_mode: https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/.icons/material/library.svg
+  logo_dark_mode: assets/library-white.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -21,13 +20,13 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
   name: material
-  favicon: assets/org.svg
+  # favicon: assets/org.svg
   font:
     text: Helvetica
     code: Source Code Pro
   features:
     #  - navigation.tracking
-    #  - toc.integrate
+     - toc.integrate
      - navigation.indexes
      - navigation.top
   custom_dir: theme_overrides
