@@ -22,12 +22,11 @@ theme:
   name: material
   # favicon: assets/org.svg
   font:
-    text: Helvetica
-    code: Source Code Pro
+    text: Roboto
+    code: Roboto Mono
   features:
-    #  - navigation.tracking
-    #  - navigation.tabs
-    #  - toc.integrate
+     - navigation.tabs
+     - toc.integrate
      - navigation.indexes
      - navigation.top
   custom_dir: theme_overrides
