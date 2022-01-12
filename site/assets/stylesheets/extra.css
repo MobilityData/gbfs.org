@@ -10,20 +10,19 @@
 [data-md-color-scheme="default"] {
   --md-footer-logo-dark-mode: none;
   --md-footer-logo-light-mode: block;
-  --md-default-bg-color: #f4f4f4;
-  --md-accent-fg-color: #318ecc;
+  --md-default-bg-color: #fff;
+  --md-accent-fg-color: #3294d4;
   /* --md-primary-bg-color: #f8f8f8; */
-  --md-primary-fg-color: var(--md-default-bg-color);
-  --md-footer-bg-color--dark: var(--md-default-bg-color);;
-  --md-footer-bg-color: var(--md-footer-bg-color--dark);
+  --md-primary-fg-color: #f5f5f5;
+  --md-footer-bg-color--dark: var(--md-primary-fg-color);
   --md-footer-fg-color: var(--md-typeset-color);
   /* --md-footer-fg-color--lighter: red; */
   --md-footer-fg-color--light: var(--md-primary-bg-color--light);
   --md-typeset-a-color: var(--md-accent-fg-color);
-  --md-code-bg-color: #fff;
+  --md-code-bg-color: #f5f5f5;
   }
-[data-md-color-scheme="default"] table {
-  background-color: #fff !important;
+[data-md-color-scheme="default"] tr:hover {
+  background-color: #f5f5f58c !important;
   }
   
 /* slate theme overrides */
@@ -38,6 +37,7 @@
 [data-md-color-scheme="slate"] table {
   background-color: var(--md-code-bg-color) !important; 
   }
+  
   
 /* table font size */
 th, td {
@@ -86,14 +86,15 @@ c {
   opacity: 56%; 
 }
 
-/* 
-footer {
-  position: fixed !important;
-  left: 0 !important;;
-  bottom: 0 !important;
-  width: 100% !important;
-} */
+table, th, td {
+  border-left: none !important;
+  border-right: none !important;
+}
 
-/* nav.md-footer__inner.md-grid .md-ellipsis {
-  font-size: 80% !important;
-} */
+.md-nav__list {
+  font-size: 99%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal !important;
+}
