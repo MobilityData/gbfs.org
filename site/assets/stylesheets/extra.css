@@ -11,9 +11,9 @@
   --md-footer-logo-dark-mode: none;
   --md-footer-logo-light-mode: block;
   --md-default-bg-color: #fff;
-  --md-accent-fg-color: #3294d4;
+  /* --md-accent-fg-color: #3294d4; */
   /* --md-primary-bg-color: #f8f8f8; */
-  --md-primary-fg-color: #f5f5f5;
+  --md-primary-fg-color: #fff;
   --md-footer-bg-color--dark: var(--md-primary-fg-color);
   --md-footer-fg-color: var(--md-typeset-color);
   /* --md-footer-fg-color--lighter: red; */
@@ -22,7 +22,7 @@
   --md-code-bg-color: #f5f5f5;
   }
 [data-md-color-scheme="default"] tr:hover {
-  background-color: #f5f5f58c !important;
+  background-color: #f5f5f5 !important;
   }
   
 /* slate theme overrides */
@@ -41,7 +41,7 @@
   
 /* table font size */
 th, td {
-  font-size: 118%;
+  font-size: 122%;
 }
 
 /* table wrapping */
@@ -79,7 +79,7 @@ div.md-footer-copyright {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 1em;
-  font-size: 78%;
+  font-size: 48%;
 }
 
 c {
@@ -95,6 +95,11 @@ table, th, td {
   font-size: 99%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-weight: normal !important;
+}
+
+.md-typeset {
+  line-height: 1.5;
+  font-size: 165%;
 }

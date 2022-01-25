@@ -22,8 +22,8 @@ theme:
   name: material
   # favicon: assets/org.svg
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Helvetica
+    code: Source Code Pro
   features:
      - navigation.tabs
      - toc.integrate

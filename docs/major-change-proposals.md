@@ -16,14 +16,14 @@ Carsharing has become increasingly popular, especially in Europe. Incorporating 
 
 Links
 
-- [Working document:](https://docs.google.com/document/d/16NKnf10SjmBBVwUlKrc7oeuxzeWqS_dQvztlT2F4dH8/edit#){target=_blank} GBFS-Carsharing v2
-- [Pull request #255:](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FNABSA%2Fgbfs%2Fpull%2F255&sa=D&sntz=1&usg=AFQjCNFGL-_ZQSegR1338kwck6Ch1AJzFQ){target=_blank} Support for carsharing
+- [Working document:](https://docs.google.com/document/d/16NKnf10SjmBBVwUlKrc7oeuxzeWqS_dQvztlT2F4dH8/edit#) GBFS-Carsharing v2
+- [Pull request #255:](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FNABSA%2Fgbfs%2Fpull%2F255&sa=D&sntz=1&usg=AFQjCNFGL-_ZQSegR1338kwck6Ch1AJzFQ) Support for carsharing
 
 <hr>
 
 ### Want to suggest a modification to the specification?
 
-Check us out on [GitHub](https://github.com/NABSA/gbfs){target=_blank} and join the conversation!
+Check us out on [GitHub](https://github.com/NABSA/gbfs) and join the conversation!
 
 ### Not sure how to go about suggesting a modification? 
 Read our [FAQ](/faq/governance) page for more details.

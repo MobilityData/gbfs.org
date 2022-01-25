@@ -41,7 +41,7 @@
   
 /* table font size */
 th, td {
-  font-size: 122%;
+  font-size: 121.5%;
 }
 
 /* table wrapping */
@@ -101,5 +101,5 @@ h1, h2, h3 {
 
 .md-typeset {
   line-height: 1.5;
-  font-size: 165%;
+  font-size: 163%;
 }
