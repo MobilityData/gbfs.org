@@ -3,32 +3,24 @@ site_url: https://gbfs.org
 repo_url: https://github.com/nabsa/gbfs
 
 theme:
-  logo_light_mode: https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/.icons/material/library.svg
+  logo_light_mode: assets/org-white.svg
   logo_dark_mode: assets/library-white.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: white
+      primary: blue
       accent: blue
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      accent: blue
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
   name: material
-  # favicon: assets/org.svg
+  custom_dir: overrides
+  favicon: assets/org.svg
   font:
-    text: Helvetica
-    code: Source Code Pro
+    text: SF Pro
+    code: SF Mono
   features:
      - navigation.tabs
-     - toc.integrate
      - navigation.indexes
      - navigation.top
+     - toc.integrate
   custom_dir: theme_overrides
 extra_css:
   - assets/stylesheets/extra.css
@@ -64,25 +56,6 @@ nav:
 - Home: index.md
 - Reference: reference.md
 - Major Change Proposals: major-change-proposals.md
-- Tools & Services: 
-  - tools-services/index.md
-  - Policy Guides: tools-services/policy-guides.md
-  - Articles: tools-services/articles.md
-  - Data: tools-services/data.md
-  - Software for Creating APIs: tools-services/software-for-creating-apis.md
-  - Apps: tools-services/apps.md
-  - Visualizations: tools-services/visualizations.md
-  - GBFS: tools-services/gbfs.md
-  - Other Multimodal Data Formats: tools-services/multimodal.md
-- FAQ: 
-  - faq/index.md
-  - Open Data Standards: faq/open-data-standards.md
-  - Uses of GBFS: faq/uses-of-gbfs.md
-  - systems.csv: faq/systems.md
-  - Shared Mobility: faq/shared-mobility.md
-  - Governance and Change Process: faq/governance.md
-  - GitHub: faq/github.md
-  - Working with GBFS: faq/working-with-gbfs.md
-  - Glossary: faq/glossary.md
-  - MobilityData: faq/mobilitydata.md
+- Resources: resources.md
+- FAQ: faq.md
 - About: about.md

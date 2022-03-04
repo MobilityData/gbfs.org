@@ -1,13 +1,13 @@
-# General Bikeshare Feed Specification Reference
+# General Bikeshare Feed Specification (GBFS)
 
 This document explains the types of files and data that comprise the General Bikeshare Feed Specification (GBFS) and defines the fields used in all of those files.
 
-### Reference version
+## Reference version
 
 This documentation refers to **v2.2**. <br>
-For past and upcoming versions see the [README](https://github.com/NABSA/gbfs/blob/master/README.md#read-the-spec--version-history).
+For past and upcoming versions see the [README](README.md#read-the-spec--version-history).
 
-### Terminology
+## Terminology
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC2119](https://tools.ietf.org/html/rfc2119), [BCP 14](https://tools.ietf.org/html/bcp14) and [RFC8174](https://tools.ietf.org/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
@@ -94,12 +94,12 @@ Datasets SHOULD be published at an easily accessible, public, permanent URL. (e.
 
 To be compliant with GBFS, all systems MUST have an entry in the [systems.csv](https://github.com/NABSA/gbfs/blob/master/systems.csv) file.
 
-**Feed Availability**
+### Feed Availability 
 
 Automated tools for application performance monitoring SHOULD be used to ensure feed availability.  
 Producers SHOULD provide a technical contact who can respond to feed outages in the `feed_contact_email` field in the `system_information.json` file.
  
-**Seasonal Shutdowns, Disruptions of Service**
+### Seasonal Shutdowns, Disruptions of Service
 
 Feeds SHOULD continue to be published during seasonal or temporary shutdowns.  Feed URLs SHOULD NOT return a 404.  An empty bikes array SHOULD be returned by `free_bike_status.json`. Stations in `station_status.json` SHOULD be set to `is_renting:false`, `is_returning:false` and `is_installed:false` where applicable. Seasonal shutdown dates SHOULD be reflected in `system_calendar.json`.
 
@@ -120,7 +120,6 @@ Announcements for disruptions of service, including disabled stations or tempora
     * OPTIONAL files MAY 404. A 404 of an OPTIONAL file SHOULD NOT be considered an error.
     
 ### Auto-Discovery 
-
 Publishers SHOULD implement auto-discovery of GBFS feeds by linking to the location of the `gbfs.json` auto-discovery endpoint.
  * The location of the auto-discovery file SHOULD be provided in the HTML area of the shared mobility landing page hosted at the URL specified in the URL field of the `system_infomation.json` file.
 
@@ -130,9 +129,7 @@ Publishers SHOULD implement auto-discovery of GBFS feeds by linking to the locat
       * http://microformats.org/wiki/existing-rel-values
       * http://microformats.org/wiki/rel-faq#How_is_rel_used
  * A shared mobility landing page MAY contain links to auto-discovery files for multiple systems.
-
 ### Localization
-
 * Each set of data files SHOULD be distributed in a single language as defined in system_information.json.
 * A system that wants to publish feeds in multiple languages SHOULD do so by publishing multiple distributions, such as:
     * `https://www.example.com/data/en/system_information.json`
@@ -209,7 +206,7 @@ Example: `Asia/Tokyo`, `America/Los_Angeles` or `Africa/Cairo`.
 * URL - A fully qualified URL that includes `http://` or `https://`, and any special characters in the URL MUST be correctly escaped. See the following http://www.w3.org/Addressing/URL/4_URI_Recommentations.html for a description of how to create fully qualified URL values.
 
 
-## Extensions Outside of the Specification
+### Extensions Outside of the Specification
 
 To accommodate the needs of feed producers and consumers prior to the adoption of a change, additional fields can be added to feeds even if these fields are not part of the official specification. Custom extensions that may provide value to the GBFS community and align with the [GBFS Guiding Principles](https://github.com/NABSA/gbfs/blob/master/README.md#guiding-principles) SHOULD be proposed for inclusion in the specification through the change process.
 
@@ -231,7 +228,6 @@ Field Name | REQUIRED | Type | Defines
 `ttl` | Yes | Non-negative integer | Number of seconds before the data in the feed will be updated again (0 if the data should always be refreshed).
 `version` <br/>*(added in v1.1)* | Yes | String | GBFS version number to which the feed confirms, according to the versioning framework.
 `data` | Yes | Object | Response data in the form of name:value pairs.
-
 
 **Example:**
 
@@ -676,6 +672,7 @@ Field Name | REQUIRED | Type | Defines
 ```
 
 ### system_hours.json
+
 This OPTIONAL file is used to describe hours and days of operation when vehicles are available for rental. If `system_hours.json` is not published, it indicates that vehicles are available for rental 24 hours a day, 7 days a week.
 
 Field Name | REQUIRED | Type | Defines
@@ -719,7 +716,6 @@ Field Name | REQUIRED | Type | Defines
 ```
 
 ### system_calendar.json
-
 Describes the operating calendar for a system. This OPTIONAL file SHOULD be published by systems that operate seasonally or do not offer continuous year-round service.
 
 Field Name | REQUIRED | Type | Defines
@@ -823,7 +819,7 @@ Field Name | REQUIRED | Type | Defines
 
 ### Examples *(added in v2.2)*
 
-**Example 1:** 
+**Example 1:**
 
 The user does not pay more than the base price for the first 10 km. After 10 km the user pays $1 per km. After 25 km the user pays $0.50 per km and an additional $3 every 5 km, the extension price, in addition to $0.50 per km. 
 
@@ -868,6 +864,7 @@ The user does not pay more than the base price for the first 10 km. After 10 km 
 **Example 2:**
 
 This example demonstrates a pricing scheme that has a rate both by minute and by km. The user is charged $0.25 per km as well as $0.50 per minute. Both of these rates happen concurrently and are not dependent on one another. 
+
 ```json
 {
   "last_updated": 1609866247,
@@ -1093,9 +1090,9 @@ Other supported parameters include:
 
 ## Examples *(added in v1.1)*
 
-#### Example 1 - App Links on Android and Universal Links on iOS are supported:
+**Example 1 - App Links on Android and Universal Links on iOS are supported:**
 
-*system_information.json*
+***system_information.json***
 
 ```json
 {
@@ -1116,7 +1113,7 @@ Other supported parameters include:
   ...
 ```
 
-*station_information.json*
+***station_information.json***
 
 ```json
 {
@@ -1142,9 +1139,9 @@ Other supported parameters include:
 Note that the Android URI and iOS Universal Link URLs don’t necessarily use the same identifier as the station_id.
 
 
-#### Example 2 - App Links are not supported on Android and Universal Links are not supported on iOS, but deep links are still supported on Android and iOS:
+**Example 2 - App Links are not supported on Android and Universal Links are not supported on iOS, but deep links are still supported on Android and iOS:**
 
-*system_information.json*
+***system_information.json***
 
 ```json
 {
@@ -1167,7 +1164,7 @@ Note that the Android URI and iOS Universal Link URLs don’t necessarily use th
     ...
 ```
 
-*station_information.json*
+***station_information.json***
 
 ```json
 {
@@ -1189,9 +1186,9 @@ Note that the Android URI and iOS Universal Link URLs don’t necessarily use th
   ...
 ```
 
-#### Example 3 - Deep link web URLs are supported, but not Android or iOS native apps:
+**Example 3 - Deep link web URLs are supported, but not Android or iOS native apps:**
 
-*station_information.json*
+***station_information.json***
 
 ```json
 {

@@ -1,8 +1,12 @@
-# GBFS
+# General Bikeshare Feed Specification (GBFS)
 
 ## What is GBFS?
 
 GBFS (General Bikeshare Feed Specification) is an open data standard for shared mobility. GBFS makes real-time information available to travellers to help them discover and use shared mobility services.
+
+<br><div class="landing-page">
+    <a class="button" href="reference">Reference</a><a class="button" href="major-change-proposals">Major Change Proposals</a><a class="button" href="resources">Resources</a><a class="button" href="resources/#articles">Blog</a><a class="button" href="faq">FAQ</a>
+</div>
 
 [**See the GBFS Specification**](/reference/)
 
@@ -28,35 +32,3 @@ Read the latest about GBFS on the MobilityData blog page! Click the headline bel
 - [The price is right! 💸](https://mobilitydata.org/the-price-is-right-%F0%9F%92%B8/): Previously in GBFS, pricing wasn’t described in much detail. To put it simply, operators could only share a sentence that included the pricing information.
 
 [**Go to MobilityData's Blog**](https://mobilitydata.org/news/)
-
-<hr>
-
-## Major Change Proposals
-
-GBFS is continually being modified and updated to reflect the needs of the shared mobility industry. To see what we are currently working on, visit our Major Change Proposals page. To see what we are planning on working on, visit our roadmap at [https://github.com/NABSA/gbfs/wiki/Roadmap](https://github.com/NABSA/gbfs/wiki/Roadmap). If you have a specific need that is not being met by the specification or by one of these proposals, please do not hesitate to join the conversation at [https://github.com/NABSA/gbfs](https://github.com/NABSA/gbfs) or at [https://mobilitydata-io.herokuapp.com](https://mobilitydata-io.herokuapp.com). 
-
-[**See the Major Changes Proposals**](/major-change-proposals/)
-
-<hr>
-
-## Tools & Services
-
-Looking for GBFS-related software, services, or tools? Over the years, the GBFS community has created a large variety of open source tools that can help you create, edit, validate, and visualize GBFS.
-
-[**See the Tools & Services**](/tools-services/)
-
-<hr>
-
-## Need More Help?
-
-If you cannot find the answers to your questions by looking at our specification or through any of the tools and services, do not worry! Head over to our FAQ page for a list of Frequently Asked Questions (with answers of course!) and other support.  
-
-[**See the FAQ**](/faq/)
-
-<hr>
-
-## About
-
-Looking to learn more about who we are and the history of GBFS? Our About page is what you need.  
-
-[**Learn More**](/about/)
