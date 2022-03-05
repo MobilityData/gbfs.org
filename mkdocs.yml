@@ -3,12 +3,12 @@ site_url: https://gbfs.org
 repo_url: https://github.com/nabsa/gbfs
 
 theme:
-  logo_light_mode: assets/org-white.svg
+  logo_light_mode: assets/org.svg
   logo_dark_mode: assets/library-white.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue
+      primary: white
       accent: blue
   name: material
   custom_dir: overrides
@@ -17,10 +17,11 @@ theme:
     text: SF Pro
     code: SF Mono
   features:
-     - navigation.tabs
+     - navigation.sections
+    #  - navigation.tabs
      - navigation.indexes
      - navigation.top
-     - toc.integrate
+    #  - toc.integrate
   custom_dir: theme_overrides
 extra_css:
   - assets/stylesheets/extra.css
