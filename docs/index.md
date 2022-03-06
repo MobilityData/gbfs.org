@@ -1,5 +1,6 @@
 ---
 hide: toc
+hide: navigation
 ---
 
 # General Bikeshare Feed Specification

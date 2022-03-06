@@ -1,3 +1,7 @@
+---
+hide: navigation
+---
+
 # GBFS Reference
 
 This document explains the types of files and data that comprise the General Bikeshare Feed Specification (GBFS) and defines the fields used in all of those files.

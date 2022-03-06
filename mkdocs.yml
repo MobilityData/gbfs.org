@@ -17,8 +17,9 @@ theme:
     text: SF Pro
     code: SF Mono
   features:
-     - navigation.sections
-    #  - navigation.tabs
+    #  - navigation.sections
+     - navigation.tabs
+     - navigation.tabs.sticky
      - navigation.indexes
      - navigation.top
     #  - toc.integrate
