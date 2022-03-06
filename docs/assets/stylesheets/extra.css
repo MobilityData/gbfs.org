@@ -132,12 +132,6 @@ c {
   display: inline-block;
   padding: 10px 20px;
   text-align: center;
-  text-decoration: none;
-  color: #ffffff !important;
-  font-weight: bold;
-  background-color: #1363FF;
-  border-radius: 6px;
-  outline: none;
   margin: 0 1em 1em 1em;
   min-width: 10em;
 }
@@ -224,12 +218,6 @@ c {
       padding: 10px 20px;
       text-align: center;
       align-items: center;
-      text-decoration: none;
-      color: #ffffff !important;
-      font-weight: bold;
-      background-color: #1363FF;
-      border-radius: 6px;
-      outline: none;
       margin: 0.5em 1em;
       min-width: 90vw;
     }
@@ -305,4 +293,14 @@ c {
     margin: -120px 0 -25px 0;
     padding: 140px 10px 140px 10px;
     outline: 1px solid #d3dce4;
+}
+
+.button {
+  text-decoration: none;
+  color: #4486ff !important;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 3px;
+  outline: 1px solid #3b454e85;  
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
