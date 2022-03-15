@@ -1,14 +1,9 @@
----
-hide: toc
-hide: navigation
----
-
 # General Bikeshare Feed Specification
 
 The General Bikeshare Feed Specification (GBFS) is an open data standard for shared mobility. GBFS makes real-time information available to travellers to help them discover and use shared mobility services.
 
 <div class="landing-page">
-    <a class="button" href="reference">Reference</a><a class="button" href="major-change-proposals">Major Change Proposals</a><a class="button" href="resources">Resources</a><a class="button" href="resources/#articles">Blog</a><a class="button" href="faq">FAQ</a>
+    <a class="button" href="specification">Specification</a><a class="button" href="toolbox">Toolbox</a><a class="button" href="learn">Learn</a><a class="button" href="participate">Participate</a>
 </div>
 
 <hr>

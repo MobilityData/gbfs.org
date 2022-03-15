@@ -1,8 +1,4 @@
----
-hide: toc
----
-
-# Major Change Proposals
+# Change Proposals
 
 GBFS is continually being modified and updated to reflect the needs of the shared mobility industry. To see what we are currently working on, visit our Major Change Proposals page. To see what we are planning on working on, visit our roadmap at [https://github.com/NABSA/gbfs/wiki/Roadmap](https://github.com/NABSA/gbfs/wiki/Roadmap). If you have a specific need that is not being met by the specification or by one of these proposals, please do not hesitate to join the conversation at [https://github.com/NABSA/gbfs](https://github.com/NABSA/gbfs) or at [https://mobilitydata-io.herokuapp.com](https://mobilitydata-io.herokuapp.com). 
 

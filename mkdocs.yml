@@ -3,12 +3,12 @@ site_url: https://gbfs.org
 repo_url: https://github.com/nabsa/gbfs
 
 theme:
-  logo_light_mode: assets/org.svg
+  logo_light_mode: assets/venn.svg
   logo_dark_mode: assets/library-white.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: white
+      primary: blue
       accent: blue
   name: material
   custom_dir: overrides
@@ -19,10 +19,10 @@ theme:
   features:
     #  - navigation.sections
      - navigation.tabs
-     - navigation.tabs.sticky
+    #  - navigation.tabs.sticky
      - navigation.indexes
      - navigation.top
-    #  - toc.integrate
+     - toc.integrate
   custom_dir: theme_overrides
 extra_css:
   - assets/stylesheets/extra.css
@@ -56,8 +56,29 @@ plugins:
 
 nav:
 - Home: index.md
-- Reference: reference.md
-- Major Change Proposals: major-change-proposals.md
-- Resources: resources.md
-- FAQ: faq.md
-- About: about.md
+- Specification:
+  - specification/index.md
+  - Current Version: specification/reference.md
+  - Change Proposals: specification/proposals.md
+- Toolbox: 
+  - toolbox/index.md
+  - Community Tools and Resources: toolbox/resources.md
+  - Glossary: toolbox/glossary.md
+- Learn:
+  - learn/index.md
+  - Guides: learn/guides.md
+  - Articles: learn/articles.md
+  - White Papers: learn/white-papers.md
+  - FAQ: learn/faq.md
+- Participate:
+  - participate/index.md
+  - Governance Process: participate/process.md
+  - Contributing to the Site: participate/contribute.md
+  - Upcoming: participate/upcoming.md
+
+
+# - Reference: reference.md
+# - Major Change Proposals: major-change-proposals.md
+# - Resources: resources.md
+# - FAQ: faq.md
+# - About: about.md
