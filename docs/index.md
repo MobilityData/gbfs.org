@@ -19,7 +19,7 @@ GBFS is a real-time data specification that describes the current status of a mo
 
 ### About this site
 
-This site is maintained by [MobilityData](https://www.mobilitydta.org) as a resource for GBFS data producers and consumers as well as regulators of shared mobility services. Got a question about GBFS that’s not addressed here? Send it to us at: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org)
+This site is maintained by [MobilityData](https://www.mobilitydata.org) as a resource for GBFS data producers and consumers as well as regulators of shared mobility services. Got a question about GBFS that’s not addressed here? Send it to us at: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org)
 
 
 

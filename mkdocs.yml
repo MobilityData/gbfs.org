@@ -12,7 +12,7 @@ theme:
       accent: blue
   name: material
   custom_dir: overrides
-  favicon: assets/org.svg
+  favicon: assets/venn-black.svg
   font:
     text: SF Pro
     code: SF Mono
