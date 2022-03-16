@@ -17,7 +17,7 @@
   --md-footer-fg-color: var(--md-default-bg-color);
   --md-footer-fg-color--light: rgba(255, 255, 255, 0.56);
   --md-typeset-a-color: var(--md-accent-fg-color);
-  --md-code-bg-color: #efefef;
+  --md-code-bg-color: #f5f5f5;
 }
 
 [data-md-color-scheme="default"] tr:hover {
