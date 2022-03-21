@@ -251,6 +251,10 @@ c {
       margin: 0.5em 1em;
       min-width: 90vw;
     }
+  .toolbox {
+    margin: 1em 0.5em !important;
+    padding: 10px 20px !important;
+  }
 }
 
 .accordion {
@@ -309,3 +313,10 @@ c {
 .announce {
   color: white;
 }
+
+.toolbox {
+  border: #efefef;
+  border-style: solid;
+  padding: 0 20px !important;
+  margin: 0 1em 1em 1em;
+  border-radius: 6px;

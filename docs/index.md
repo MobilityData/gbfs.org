@@ -1,7 +1,7 @@
 # GBFS: A Common Language for Shared Mobility
 
 <div class="landing-page">
-    <a class="button" href="specification">Specification</a><a class="button" href="toolbox">Toolbox</a><a class="button" href="learn">Learn</a><a class="button" href="participate">Participate</a></div>
+    <a class="button" href="specification">Specification</a><a class="button" href="toolbox">Toolbox</a><a class="button" href="learn">Learn</a><a class="button" href="about">About</a></div>
 
 <!-- <img align="right"  src="assets/gbfs-phone-home.png"> -->
 
@@ -21,10 +21,4 @@ In addition, GBFS provides municipalities and agencies with a standardized way t
 GBFS enables the exchange of information in a way that ensures all parties agree on what the information represents. You can think of it like a dictionary, where each term has a definition and a set of rules for how it can be used.
 
 GBFS is a real-time data specification that describes the current status of a mobility system. GBFS does not support, and is not intended for, historical data such as trip or maintenance records.
-
-**About this site**
-
-This site is maintained by [MobilityData](https://www.mobilitydata.org) as a resource for GBFS data producers and consumers as well as regulators of shared mobility services. Got a question about GBFS that’s not addressed here? Send it to us at: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org)
-
-
 
