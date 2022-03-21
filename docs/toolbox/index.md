@@ -8,13 +8,15 @@ The Canonical GBFS Validator is a tool to check the conformity of a GBFS feed ag
 
 <a class="button" href="https://gbfs-validator.netlify.app/">Canonical GBFS Validator</a>
 
+### JSON Schemas
 
 A set of JSON schemas is available for each version of the specification as well as the current release candidate. The Canonical GBFS Validator is based on these schemas.
 
 <a class="button" href="https://github.com/MobilityData/gbfs-json-schema">GBFS JSON Schemas</a>
 
 ### Glossary
-Definitions for terms used in the GBFS speciification and shared mobility induestry.
+
+Definitions for terms used in the GBFS specification and shared mobility industry.
 
 <a class="button" href="glossary">Glossary</a>
 
