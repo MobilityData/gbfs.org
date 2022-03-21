@@ -1,11 +1,11 @@
-# GBFS Reference
+# GBFS Version 2.2
 
-This document explains the types of files and data that comprise the General Bikeshare Feed Specification (GBFS) and defines the fields used in all of those files.
+This documentation refers to **v2.2**, which is the current official specification version. <br>
+For information on all supported  and upcoming versions see the [README](README.md#read-the-spec--version-history) on the GBFS repo.
 
-## Reference version
 
-This documentation refers to **v2.2**. <br>
-For past and upcoming versions see the [README](https://github.com/NABSA/gbfs/blob/v2.2/README.md#read-the-spec--version-history).
+<em>Note: This version is limited in its support for carsharing. Significant additions were made to the specification in support of carsharing  in the current release candidate, [v2.3-RC2](https://github.com/NABSA/gbfs/blob/v2.3-RC2/gbfs.md) .</em>
+
 
 ## Terminology
 
