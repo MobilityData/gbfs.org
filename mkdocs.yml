@@ -59,7 +59,6 @@ nav:
 - Specification:
   - specification/index.md
   - Current Version: specification/reference.md
-  - Change Proposals: specification/proposals.md
 - Toolbox: 
   - toolbox/index.md
   - Community Tools and Resources: toolbox/resources.md

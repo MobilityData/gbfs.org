@@ -1,11 +1,13 @@
 # GBFS Version 2.2
 
-This documentation refers to **v2.2**, which is the current official specification version. <br>
-For information on all supported  and upcoming versions see the [README](README.md#read-the-spec--version-history) on the GBFS repo.
+This documentation refers to **v2.2**, which is the current official specification version.
+
+For information on all supported  and upcoming versions see the [complete version history](https://github.com/NABSA/gbfs/wiki/Complete-Version-History) on the GBFS repo.
 
 
-<em>Note: This version is limited in its support for carsharing. Significant additions were made to the specification in support of carsharing  in the current release candidate, [v2.3-RC2](https://github.com/NABSA/gbfs/blob/v2.3-RC2/gbfs.md) .</em>
+!!! note
 
+    This version is limited in its support for carsharing. Significant additions were made to the specification in support of carsharing  in the current release candidate, [v2.3-RC2](https://github.com/NABSA/gbfs/blob/v2.3-RC2/gbfs.md)
 
 ## Terminology
 
