@@ -3,7 +3,9 @@
 This documentation refers to **v2.2**, which is the current official specification version. <br>
 For information on all supported  and upcoming versions see the [README](README.md#read-the-spec--version-history) on the GBFS repo.
 
+
 <em>Note: This version is limited in its support for carsharing. Significant additions were made to the specification in support of carsharing  in the current release candidate, [v2.3-RC2](https://github.com/NABSA/gbfs/blob/v2.3-RC2/gbfs.md) .</em>
+
 
 ## Terminology
 
@@ -532,7 +534,7 @@ Field Name | REQUIRED | Type | Defines
 
 ### station_status.json
 
-Describes the capacity and rental availability of a station. Data returned SHOULD be as close to realtime as possible, but in no case should it be more than 5 minutes out-of-date.  See [Data Latency](#data-latentcy). Data reflects the operator's most recent knowledge of the station’s status. Any station that is represented in `station_status.json` MUST have a corresponding entry in `station_information.json`.
+Describes the capacity and rental availability of a station. Data returned SHOULD be as close to realtime as possible, but in no case should it be more than 5 minutes out-of-date.  See [Data Latency](#data-latency). Data reflects the operator's most recent knowledge of the station’s status. Any station that is represented in `station_status.json` MUST have a corresponding entry in `station_information.json`.
 
 Field Name | REQUIRED | Type | Defines
 ---|---|---|---
@@ -615,7 +617,7 @@ Field Name | REQUIRED | Type | Defines
 
 ### free_bike_status.json
 
-*(as of v2.1)* Describes all vehicles that are not currently in active rental. REQUIRED for free floating (dockless) vehicles. OPTIONAL for station based (docked) vehicles. Data returned SHOULD be as close to realtime as possible, but in no case should it be more than 5 minutes out-of-date.  See [Data Latency](#data-latentcy). Vehicles that are part of an active rental MUST NOT appear in this feed. Vehicles listed as available for rental MUST be in the field and accessible to users. Vehicles that are not accessible (e.g. in a warehouse or in transit) MUST NOT appear as available for rental.
+*(as of v2.1)* Describes all vehicles that are not currently in active rental. REQUIRED for free floating (dockless) vehicles. OPTIONAL for station based (docked) vehicles. Data returned SHOULD be as close to realtime as possible, but in no case should it be more than 5 minutes out-of-date.  See [Data Latency](#data-latency). Vehicles that are part of an active rental MUST NOT appear in this feed. Vehicles listed as available for rental MUST be in the field and accessible to users. Vehicles that are not accessible (e.g. in a warehouse or in transit) MUST NOT appear as available for rental.
 
 Field Name | REQUIRED | Type | Defines
 ---|---|---|---
