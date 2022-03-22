@@ -34,55 +34,51 @@ GeoJSON is an open data standard for denoting geographical features (lines and p
 
 GBFS was created to make real-time shared mobility information available in a standardized format to support the development of traveler facing applications.
 
-GBFS specifies how shared mobility data should be structured for proper interoperability of systems. Before the creation of GBFS, bike sharing systems each used  different proprietary data formats, making it difficult for application developers to create tools for travellers.
+GBFS specifies how shared mobility data should be structured for proper interoperability of systems. Before the creation of GBFS, shared mobility systems each used  different proprietary data formats, making it difficult for application developers to create tools for travellers.
 
 <br>**Why is it important for GBFS data to be openly available?**
 
-Public GBFS feeds help facilitate the discovery of mobility services, increasing access to shared mobility. They also provide transparency around businesses that are permitted to operate in the public right of way. This transparency can increase public trust of shared mobility operators and their services.
+Public GBFS feeds help facilitate the discovery of mobility services, increasing access to shared mobility. Third party application built using these data can lead to increased visibility and customer acquisition for shared mobility services. Public data provide transparency around businesses that are permitted to operate in the public right of way. This transparency can increase public trust of shared mobility operators and their services.
 
 <br>**Do private GBFS feeds exist?**
 
-GBFS is a specification for public data, however some GBFS producers have elected to publish private feeds that require authentication using an API key or login. Great care has been taken in the development of GBFS to ensure that data contained in the specification does not adversely affect user privacy. Requiring authentication of GBFS data greatly diminishes it’s value as a source of public information.
-
-<br>**What is GBFS-Private?**
-
-GBFS-Private is a new project undertaken by MobilityData to develop guidance on publishing certain types of information that may be too sensitive in nature to include in public GBFS feeds. The goal of the project is to preserve public data while continuing to protect user privacy.
+GBFS is a specification for public data, however some GBFS producers have elected to publish private feeds that require authentication using an API key or login. Great care has been taken in the development of GBFS to ensure that data contained in the specification does not adversely affect user privacy. Requiring authentication of GBFS data greatly diminishes its value as a source of public information.
 
 <br>**How is GBFS different from MDS?**
 
-GBFS is a real-time public data specification for consumer-facing applications, whereas MDS is not public data and is intended for use only by regulators. GBFS provides real-time data to support the discovery and use of mobility systems by travelers. MDS contains both real-time and historical data that is used by cities to monitor and regulate shared mobility operators. 
+GBFS is a real-time public data specification for consumer-facing applications, whereas [MDS](https://www.openmobilityfoundation.org/about-mds/) is not public data and is intended for use only by regulators. GBFS provides real-time data to support the discovery and use of mobility systems by travelers. MDS contains both real-time and historical data that is used by cities to monitor and regulate shared mobility operators. 
 
-All MDS Provider feeds are required to also publish a public GBFS feed.
+All MDS compatible Provider feeds must also publish a public GBFS feed.
 
 <br>**What are the benefits of using GBFS?**
 
 For providers, GBFS means an end to a patch-work of regulation that requires different data in different formats for each city in which they operate. Standardization provides assurance to providers that data requests can be clearly defined and are fully implementable. As a consensus-based, open source standard, providers have an equal voice along with cities in the ongoing development of the GBFS specification. Comprehensive documentation and resources are available to cities and providers alike to aid in implementation.
 
-For consumers, data standardization allows application developers to aggregate data from multiple providers across multiple markets. GBFS can eliminate the need for bespoke solutions for each mobility system.
+For consumers, data standardization allows application developers to aggregate data from multiple providers across multiple markets. GBFS can eliminate the need for bespoke solutions for each mobility service.
 
-For cities, requiring GBFS data as part of a shared mobility program can help to increase access to shared mobility services. Standardization of mobility data through GBFS has resulted in a growing marketplace of data management software and services. These products and services are used to assist cities in working with GBFS data to effectively manage and regulate mobility services. 
+For cities, requiring GBFS data as part of a shared mobility program can help to increase access to shared mobility services. GBFS provides municipalities and agencies with a standardized way to ingest, analyze, and compare data generated by shared mobility systems. Standardization of mobility data through GBFS has resulted in a growing marketplace of data management software and services. These products and services are used to assist cities in working with GBFS data to effectively manage and regulate mobility services. 
 
 <br>**Does GBFS contain personal data?**
 
-GBFS does not contain personal data. Given the real-time nature of the data, as well as other safety measures such as rotating bike_id, a user’s information will never be shared and a user or individual trips will not be able to be traced. 
+GBFS does not contain personal data. Given the real-time nature of the data, as well as other safety measures such as rotating vehicle IDs, a user’s information will never be shared and a user or individual trips will not be able to be traced. 
 
 <br>**Does GBFS contain operational data?**
 
 GBFS does not contain operational data. GBFS only contains real-time data that is beneficial to the customer for their trips. 
 
-## systems.csv
+## GBFS Data Sources
 
-**What is systems.csv?**
+**Where can I find GBFS data?**
 
-systems.csv is a list of all the known systems that publish public GBFS feeds.
+A catalog of public GBFS data sources, know as [systems.csv](https://github.com/NABSA/gbfs/blob/master/systems.csv), is maintained on the GBFS GitHub repository. 
 
 <br>**Why is systems.csv important?**
 
-systems.csv is the primary index of GBFS data sources, it allows developers to build software on top of it, provides a source for research projects, and demonstrates the reach of the specification worldwide. 
+The [systems.csv](https://github.com/NABSA/gbfs/blob/master/systems.csv) catalog is the primary index of GBFS data sources, it allows developers to build software on top of it, provides a source for research projects, and demonstrates the reach of the specification worldwide. 
 
-<br>**Who updates systems.csv?**
+<br>**Who maintains systems.csv?**
 
-systems.csv is currently maintained by MobilityData and community members. If you have or are aware of a system that does not appear on the list please add it by opening a pull request.
+The [systems.csv](https://github.com/NABSA/gbfs/blob/master/systems.csv) catalog is currently maintained by MobilityData and the GBFS community. If you have or are aware of a system that does not appear on the list please add it by opening a pull request or notify MoblityData at: [sharedmobility@mobilitydata.org](href="mailto:sharedmoblity@mobilitydata.org").
 
 <br>**Are all of the systems in systems.csv compliant with the specification?**
 
@@ -92,15 +88,15 @@ No - there is no compliance or validation requirement for inclusion in systems.c
 
 **What is shared mobility?**
 
-Shared mobility encompasses both micromobility, such as bikeshare and scooters, as well as other larger types of mobility, such as carsharing. 
+Shared mobility in the context of GBFS refers to transportation services where resources like vehicles are shared between users. Examples of the types shared mobility services represented by GBFS are shared bikes, scooters, mopeds and cars.
 
 <br>**What is shared micromobility?**
 
-Shared micromobility typically refers to small, lightweight mobility devices with speeds below 25km/h that are hired by the end user. Examples include bikes, ebikes, scooters, etc. 
+Shared micromobility typically refers to small, lightweight vehicles that are hired by the end user. Examples include bikes, ebikes, scooters, etc. 
 
 <br>**Why is GBFS named GBFS if it covers modes other than bikes?**
 
-While GBFS has its roots in bikeshare, it has been expanded as the shared mobility industry has evolved to encompass all forms of shared mobility vehicles.
+While GBFS, or the General Bikeshare Feed Specification, has its roots in bikesharing, it has been expanded as the shared mobility industry has evolved to encompass all forms of shared mobility vehicles. The GBFS name is now familiar across the industry and the community had agreed that a name change at this point would be a source of confusion.
 
 ## Governance and Change Process
 
@@ -154,9 +150,9 @@ If you notice a data feed does not conform to Best Practices, you can try to con
 
 If you would like to propose a modification to Best Practices, please do so by either opening an Issue or Pull Request via GitHub. 
 
-<br>**What does is mean to rotate `bike_id` and why is it important?**
+<br>**What does it mean to rotate `bike_id` and why is it important?**
 
-The `bike_id` field is a unique identifier for each vehicle in a system. Rotating `bike_id` means that a vehicle’s ID will change to a random string each time a rental ends. Use of persistent vehicle IDs poses a threat to user privacy. This is especially important for dockless mobility systems, where a user may end or begin their trip in front of their home or other frequently visited locations. 
+The `bike_id` or `vehicle_id` field is a unique identifier for each vehicle in a system. Rotating `bike_id` means that a vehicle’s ID will change to a random string each time a rental ends. Use of persistent vehicle IDs poses a threat to user privacy. This is especially important for dockless mobility systems, where a user may end or begin their trip in front of their home or other frequently visited locations. Failure to rotate these IDs after each rental can lead to the re-identification of trip origin and destination pairs which may compromise user privacy.
 
 ### Validation
 
@@ -166,50 +162,21 @@ Using a validator ensures that your data conforms to the requirements set out by
 
 <br>**Does MobilityData have a GBFS validator?**
 
-Currently, MobilityData does not have a GBFS validator, however we have plans to build a canonical validator in 2021. In the meantime, there are a handful of community-built validators and other tools available; check out our [Tools page](/tools-services/) for the list.
+Yes. The [Canonical GBFS Validator](https://gbfs-validator.netlify.app/) is a tool to check the conformity of a GBFS feed against the official specification including past releases and release candidates. 
 
-## Glossary
-
-* **API** - An API (Application Program Interface) communicates with two applications. A common analogy for explaining an API is to think of a restaurant; you are one “system”, and the kitchen is another. An intermediary is needed to communicate what you want the kitchen to do for you. That intermediary, in this case the server, is the equivalent of an API. 
-
-* **API endpoint** - An API endpoint is the specific digital location where requests for information are sent by one program and where the resource lives.
-
-* **Consumer** - A consumer is someone who is using GBFS data. Examples of GBFS consumers are trip planning applications, researchers and regulators.
-
-* **Deeplink** - A deeplink is a link that takes you to specific content rather than a general homepage. In the context of GBFS, a deeplink would take you to the rental page for that specific vehicle or station, rather than the system’s homepage. 
-
-* **Geofencing** - A geofence is a virtual boundary that defines a geographic area.  When a shared mobility vehicle enters or exits a geofenced area, events can be triggered, for example a push notification can be sent to a user’s phone. Geofencing may be used to delineate pick up and drop off zones, no-ride zones, speed limit zones, equity zones, etc.
-
-* **Provider** - A producer is the entity that is publishing GBFS, most often the system operator.
-
-* **Station** - A station is a location where shared mobility vehicles are made available for rent. Stations may include physical infrastructure like rental kiosks, docks or racks, or they may be virtual, delineated by pavement markings. 
-
-* **System** - A system is the entirety of the shared mobility service from a single provider.  Systems can be made up of docking stations, vehicles, and other infrastructure, and are typically limited to the local geography in which they operate. 
-
-* **Vehicle** - A system’s fleet is made up of individual vehicles. Some systems may have multiple vehicle types, whereas others may only have one. Examples of shared mobility vehicles are bikes, ebikes, scooters, and mopeds.
 
 ## MobilityData
+
+**What is MobilityData?**
+
+MobilityData is a non-profit organization that improves and extends data formats, making them easier to use through training, documentation, open-source software, online services, and more. We also create spaces for knowledge exchange, bringing together public and private stakeholders to build the mobility of today and tomorrow.
 
 **How do I get involved?**
 
 There are a number of ways you can get involved with our organization and the Shared Mobility community! 
 
+- Learn more about us: [www.mobilitydata.org](https://www.mobilitydata.org)
 - Join our slack: [bit.ly/mobilitydata-slack](https://bit.ly/mobilitydata-slack)
 - Join us on Github: [github.com/NABSA/gbfs](https://github.com/NABSA/gbfs)
 - Become a member: [bit.ly/Membership-form-2021](https://bit.ly/Membership-form-2021)
 
-<br>**What does it mean to be a MobilityData member?**
-
-MobilityData has two membership types:
-
-- **Core Member**: Core Members are voting members, who have the opportunity to join any working group, an invitation to send up to two representatives to any of our workshops with no fee, early access to new tools and services (exclusive access for the first three months), a stronger influence on our roadmap, and recognition on MobilityData’s website as a Core Member.
-
-- **Regular Member**: Regular Members are non-voting members who receive updates on MobilityData’s projects, an invitation for one representative to attend one MobilityData workshop each year, occasional invitations to selected working groups and discussions, and recognition on MobilityData’s website as a Regular Member.
-
-For more information check out [MobilityData's website](https://mobilitydata.org/members/).
-
-<br>**How do I become a MobilityData member?**
-
-To become a MobilityData member, please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSdPI7fg2RvB8xjFZsshC4lonnhP4drlVWBAvoLu4bCE1cRwFw/viewform).
-
-If you have questions about membership, please contact [gretchen@mobilitydata.org](mailto:gretchen@mobilitydata.org)
