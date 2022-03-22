@@ -74,8 +74,8 @@ nav:
   - Articles: learn/articles.md
   - White Papers: learn/white-papers.md
   - FAQ: learn/faq.md
-- About: about.md
-# - Participate:
+- Participate: participate.md
 #   - participate/index.md
 #   - Governance Process: participate/process.md
 #   - Contributing to the Site: participate/contribute.md
+- About: about.md
