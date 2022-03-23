@@ -28,6 +28,7 @@ To propose a feature, content addition, or UI/UX improvement, open an [issue](ht
 Except as otherwise noted, the content of this site is licensed under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
 
 ## Contact
+To join MobilityData's public slack channel, please fill out [this form](https://bit.ly/mobilitydata-slack). 
 For any documentation needs, you can contact the High Quality Data Team at [documentation@mobilitydata.org](mailto:documentation@mobilitydata.org).
 For questions concerning the specification or shared mobility needs broadly, you can reach the Shared Mobility Team at [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org). 
 For partnership opportunities at MobilityData, our Partnerships Team is reachable at [partnerships@mobilitydata.org](mailto:partnerships@mobilitydata.org).
