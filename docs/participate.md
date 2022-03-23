@@ -5,6 +5,12 @@ The GBFS Documentation Platform is maintained by [MobilityData](https://mobility
 ## News
 
 ## Contributing to GBFS
+Anyone can contribute to GBFS. The full governance rules can be found on the GBFS repository on Github [here](https://github.com/NABSA/gbfs#governance--overview-of-the-change-process). The highlights of the governance process are: 
+- Anyone can propose a change by opening a [Pull Request](https://github.com/NABSA/gbfs/pulls) on Github, or anyone can raise a question or issue by opening a [Github Issue](https://github.com/NABSA/gbfs/issues).
+- Once a general consensus has been reached, the change goes to a vote. 
+- A successful vote requires at least 3 unanimous votes, in addition to the person who authored the change, including one from a data consumer and one from a data producer. 
+- Once passed, the vote enters the Release Candidate stage. 
+- Once both a producer and consumer have implemented the change, the change becomes official. 
 
 ## Become a MobilityData Member
 
