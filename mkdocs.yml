@@ -50,6 +50,9 @@ markdown_extensions:
 
 plugins:
   - search
+  # - redirects:
+  #     redirect_maps:
+  #       '': ''
   - mkdocs-simple-hooks:
       hooks:
         on_config: "hooks.on_config:deploy_hooks"
@@ -59,26 +62,20 @@ nav:
 - Specification:
   - specification/index.md
   - Current Version: specification/reference.md
-  - Change Proposals: specification/proposals.md
+  - Change Proposals: specification/change-proposals.md
+  - Governance Process: specification/process.md
 - Toolbox: 
   - toolbox/index.md
   - Community Tools and Resources: toolbox/resources.md
   - Glossary: toolbox/glossary.md
 - Learn:
   - learn/index.md
-  - Guides: learn/guides.md
+  - Policy Guides: learn/policy-guides.md
   - Articles: learn/articles.md
   - White Papers: learn/white-papers.md
   - FAQ: learn/faq.md
-- Participate:
-  - participate/index.md
-  - Governance Process: participate/process.md
-  - Contributing to the Site: participate/contribute.md
-  - Upcoming: participate/upcoming.md
-
-
-# - Reference: reference.md
-# - Major Change Proposals: major-change-proposals.md
-# - Resources: resources.md
-# - FAQ: faq.md
-# - About: about.md
+- Participate: participate.md
+#   - participate/index.md
+#   - Governance Process: participate/process.md
+#   - Contributing to the Site: participate/contribute.md
+- About: about.md

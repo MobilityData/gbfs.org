@@ -1,6 +1,7 @@
 # Learn
 
 <div class="landing-page">
+<<<<<<< gbfs-docs-031622
 
 ### Frequently Asked Questions
 Quick answers to common questions about GBFS, it's development and use.
@@ -21,4 +22,7 @@ Quick answers to common questions about GBFS, it's development and use.
 * **[Ciudades, la v2.2 del GBFS está aquí para ustedes](https://mobilitydata.org/ciudades-la-v2-2-del-gbfs-esta-aqui-para-ustedes/)**
 * **[Municipalités, le GBFS v2.2 est là pour vous aider](https://mobilitydata.org/municipalites-le-gbfs-v2-2-est-arrive-pour-vous-servir/)**
 * **[The price is right!](https://mobilitydata.org/the-price-is-right-%f0%9f%92%b8/)**
+=======
+    <a class="button" href="policy-guides">Policy Guides</a><a class="button" href="articles">Articles</a><a class="button" href="white-papers">White Papers</a><a class="button" href="faq">FAQ</a>
+>>>>>>> master
 </div>
