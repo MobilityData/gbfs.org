@@ -27,6 +27,9 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
 extra:
+  analytics:
+    provider: google
+    property: G-N7RXJMH84M
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/MobilityData
@@ -34,7 +37,6 @@ extra:
       link: https://www.linkedin.com/company/mobilitydata
     - icon: fontawesome/brands/slack
       link: https://bit.ly/mobilitydata-slack
-
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -70,12 +72,11 @@ nav:
   - Glossary: toolbox/glossary.md
 - Learn:
   - learn/index.md
-  - Policy Guides: learn/policy-guides.md
-  - Articles: learn/articles.md
-  - White Papers: learn/white-papers.md
+  - White Papers: 
+    - learn/white-papers/index.md
+    - Data Policy: learn/white-papers/data-policy.md
+    - Data Policy Europe: learn/white-papers/data-policy-europe.md
+  # - Articles: learn/articles.md
+  # - White Papers: learn/white-papers.md
   - FAQ: learn/faq.md
 - Participate: participate.md
-#   - participate/index.md
-#   - Governance Process: participate/process.md
-#   - Contributing to the Site: participate/contribute.md
-- About: about.md

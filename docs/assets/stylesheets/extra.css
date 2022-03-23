@@ -320,3 +320,11 @@ c {
   padding: 0 20px !important;
   margin: 0 1em 1em 1em;
   border-radius: 6px;
+}
+
+.fineprint {
+  font-size: 0.8em;
+  line-height: 1.15;
+  opacity: 50%;
+}
+  
