@@ -5,6 +5,7 @@
 GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. Anyone can propose a change to the specification by opening a pull request on the GBFS GitHub repository.
 
 All change proposals are subject to the GBFS governance process.
+
 - The proposal must remain open for a period of time to allow the committee to give feedback and iterate on the proposed change.
 - Once a consensus is reached, the change goes to a vote.
 - At least 3 votes in favor, and none opposed, are required for the change to be adopted. One vote must be from a data producer and one from a data consumer. The party proposing the change is not eligible to vote.
