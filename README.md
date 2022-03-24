@@ -10,9 +10,7 @@ To edit the General Bikeshare Feed Specification reference, go to the [nabsa/gbf
 
 To propose a feature, content addition, or UI/UX improvement, open an [issue](https://github.com/MobilityData/gbfs.mobilitydata.org/issues/new) or [pull request](https://github.com/MobilityData/gbfs.mobilitydata.org/pulls) on this repository. 
 
-Alternatively, you can provide feedback on this site by using the form below.
-
-<div data-tf-widget="BCiwESfg" data-tf-iframe-props="title=GBFS Documentation Platform Feedback" data-tf-medium="snippet" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+Alternatively, you can provide feedback using this [form](https://mobilitydata.typeform.com/to/BCiwESfg).
 
 ## Building the site locally
 
