@@ -32,6 +32,11 @@
   background-color: var(--md-primary-fg-color);
 }
 
+/* type color */
+.md-typeset:not(.md-dialog__inner) {
+  color: #1d2327 !important;
+}
+
 /* h1 style */
 .md-typeset h1 {
   font-size: 180% !important;
@@ -53,12 +58,11 @@ h1, h2, h3 {
   line-height: 1.5;
 }
 
+/* inline code style */
 code:not(.highlight code) {
   color: var(--md-typesetcolor);
-  /* color: #e83f8b !important; */
   background-color: #efefef;
   border-radius: 5px;
-  /* font-weight: 500 !important; */
 }
 
 /* hover highlight */
@@ -72,11 +76,9 @@ table, th, td {
   border-right: none !important;
   font-size: 120%;
 }
-
 td, th {
   padding: 0.75em !important;
 }
-
 td code {
   white-space: nowrap;
 }
@@ -86,7 +88,7 @@ td:nth-child(1) {
   white-space: nowrap;
 }
 
-/* best practice nested tables style */
+/* nested tables style */
 table.example {
   font-size: 0.61rem;
 }
@@ -97,9 +99,9 @@ table.example {
 }
 
 /* side nav style */
-.md-nav__list {
+/* .md-nav__list {
   font-size: 100%;
-}
+} */
 
 /* footer styles */
 a.footer-link:not(:hover) {
@@ -142,15 +144,39 @@ c {
     min-width: 12em;
   }
 
-/* details {
-  width: 25%;
-} */
+/* side nav */
+.md-sidebar__scrollwrap {
+  color: #343a3f;
+  background-color: #f4f7f9;
+}
+.md-sidebar--secondary {
+  order: 0;
+}
+.md-tabs__link {
+  font-size: 150%;
+}
 
-/* .language-menu {
-  color: var(--md-typeset-color) !important;
-} */
+/* announcement bar style */
+.announce {
+  color: white;
+}
 
+/* quick links border */
+.toolbox {
+  border: #efefef;
+  border-style: solid;
+  padding: 0 20px !important;
+  margin: 0 1em 1em 1em;
+  border-radius: 6px;
+}
 
+/* small text in data policy guides */
+.fineprint {
+  font-size: 0.8em;
+  line-height: 1.15;
+  opacity: 50%;
+}
+  
 
 @media only screen and (max-width: 550px) {
   .md-tabs {
@@ -165,14 +191,11 @@ c {
 }
 
 @media only screen and (min-width: 1220px) {
-
   body {
       display: flex;
-      /* min-height: 100vh; */
       min-width: 100vw;
       flex-direction: column;
     }
-
   .md-main, .md-main__inner {
       display: flex;
       flex-direction: row;
@@ -187,11 +210,9 @@ c {
       box-shadow: none !important;
       z-index: 4;
   }
-
   .md-content {
       margin: 15px;
   }
-
   .md-sidebar.md-sidebar--primary {
       width: 200px;
   }
@@ -201,38 +222,13 @@ c {
     order: -1;
     width: 200px;
     z-index: -1;
-    margin: -120px 0 -25px 0;
-    padding: 140px 20px 140px 20px;
+    margin: -80px 0 -25px 0;
+    padding: 102px 20px 140px 20px;
     box-shadow: -1px 0 10px -7px #888 inset;
   }
-  .md-sidebar--secondary .md-sidebar__scrollwrap {
-    background-color: #efefef;
-    flex: 0 0 12em;
-    order: -1;
-    width: 200px !important;
-    z-index: -1;
-    margin: -120px 0 -25px 0;
-    padding: 140px 20px 140px 20px;
-    box-shadow: -1px 0 10px -7px #888 inset;
-  }
-  
-  /* .md-sidebar--secondary {
-    background-color: #efefef;
-    flex: 0 0 12em;
-    order: 1;
-    margin-right: auto;
-    width: 200px;
-    z-index: -1;
-    box-shadow: 1px 0 10px -7px #888 inset;
-} */
-
   .md-footer {
       z-index: 1;
   }
-
-  /* .md-sidebar--primary .md-sidebar__inner {
-    display: none;
-  } */
 }
 
 @media only screen and (max-width: 479px) {
@@ -256,75 +252,3 @@ c {
     padding: 10px 20px !important;
   }
 }
-
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-/* .panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-} */
-
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-.md-typeset {
-  color: #1d2327 !important;
-}
-
-.md-sidebar__scrollwrap {
-  color: #343a3f;
-  background-color: #f4f7f9;
-}
-
-.md-sidebar--secondary {
-  order: 0;
-}
-
-.md-tabs__link {
-  font-size: 150%;
-}
-
-.announce {
-  color: white;
-}
-
-.toolbox {
-  border: #efefef;
-  border-style: solid;
-  padding: 0 20px !important;
-  margin: 0 1em 1em 1em;
-  border-radius: 6px;
-}
-
-.fineprint {
-  font-size: 0.8em;
-  line-height: 1.15;
-  opacity: 50%;
-}
-  
