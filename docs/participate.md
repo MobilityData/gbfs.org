@@ -27,7 +27,10 @@ Questions can also be addressed to the community via the [public GBFS Slack chan
 ## Contributing to this site
 
 To propose changes or additions to this site, [open an issue](https://github.com/MobilityData/gbfs.mobilitydata.org/issues/new) on the MobilityData GBFS Documentation repository.
-Alternatively, you can provide feedback on this site by using the [feedback form](https://mobilitydata.typeform.com/to/BCiwESfg).
+
+Alternatively, you can provide feedback on this site by using the form below.
+
+<div data-tf-widget="BCiwESfg" data-tf-iframe-props="title=GBFS Documentation Platform Feedback" data-tf-medium="snippet" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
 
 <hr>
 
