@@ -13,7 +13,7 @@ An open data standard is a documented set of requirements that describe how peop
 
 <br>**What open data standards is GBFS built on?**
 
-Follow any of links the below to learn more about teh open data standards used by GBFS:
+Follow any of links the below to learn more about the open data standards used by GBFS:
 
 - [JSON](https://www.w3schools.com/whatis/whatis_json.asp)
 - [GeoJSON](https://datatracker.ietf.org/doc/html/rfc7946)
