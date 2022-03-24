@@ -13,7 +13,7 @@ The current official version of GBFS is [v2.2](reference).
 
     This version is limited in its support for carsharing. Significant additions were made to the specification in support of carsharing  in the current release candidate, [v2.3-RC2](https://github.com/NABSA/gbfs/blob/v2.3-RC2/gbfs.md)
 
-As described in the [GBFS governance](../participate/process),
+As described in the [GBFS governance](process),
 when changes are made to the specification, the changes are placed into Release Candidate (RC) status. The changes remain in RC status pending implementation.
 
 * **Implementation requirements are that at least 1 producer and 1 consumer implement the changes.**
@@ -34,7 +34,7 @@ GBFS is an open source project developed under a consensus-based governance mode
 
 ## Governance Process
 
-GBFS is an open specification, developed and maintained by the community of producers and consumers of GBFS data.
-The specification is not fixed or unchangeable. As the shared mobility industry evolves, it is expected that the specification will be extended by the GBFS community to include new features and capabilities over time. If you are new to engaging with the community on this repository, firstly welcome! Please identify which organization you represent when posting. 
+GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. Anyone can propose a change to the specification by opening a pull request on the GBFS GitHub repository.
+
 
 **[See the Governance Process](process)**
