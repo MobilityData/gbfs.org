@@ -13,18 +13,22 @@ All change proposals are subject to the GBFS governance process.
 
 The full text of the [project governance and change process](https://github.com/NABSA/gbfs#governance--overview-of-the-change-process) can be found on the project GitHub repository.
 
-##Comments and Questions
+<hr>
+
+## Comments and Questions
+
 Comments or questions can be addressed to the community by [opening an issue](https://github.com/NABSA/gbfs/issues) on the project GitHub repository. Proposals for changes or additions to the specification can be made through GitHub [pull requests](https://github.com/NABSA/gbfs/pulls).
 
 Questions can also be addressed to the community via the [public GBFS Slack channel](https://bit.ly/mobilitydata-slack) or to the shared mobility staff at MobilityData: <sharedmobility@mobilitydata.org>.
 
+<hr>
 
 ## Contributing to this site
 
 To propose changes or additions to this site, [open an issue](https://github.com/MobilityData/gbfs.mobilitydata.org/issues/new) on the MobilityData GBFS Documentation repository.
 Alternatively, you can provide feedback on this site by using the [feedback form](https://mobilitydata.typeform.com/to/BCiwESfg).
 
-
+<hr>
 
 ## Contact
 
@@ -32,8 +36,7 @@ Alternatively, you can provide feedback on this site by using the [feedback form
 - Documentation needs: [documentation@mobilitydata.org](mailto:documentation@mobilitydata.org)
 - Join MobilityData's public [slack channel](https://bit.ly/mobilitydata-slack)
 
-
-
+<hr>
 
 ## About MobilityData
 This site is maintained by [MobilityData](https://mobilitydata.org/), a Canadian non-profit that aims to broaden adoption and increase the functionality of the GTFS & GBFS data formats.
@@ -42,6 +45,7 @@ MobilityData accelerates the development and adoption of mobility specifications
 
 Learn more at [mobilitydata.org](https://mobilitydata.org).
 
+<hr>
 
 ### License
 

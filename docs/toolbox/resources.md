@@ -2,6 +2,8 @@
 
 There are a multitude of tools and services available to help with the creation, implementation, and consumption of GBFS. Below is an extensive, although by no means exhaustive, list of tools and services. 
 
+<hr>
+
 ## Data
 
 ### Third Party GBFS URL Directories
@@ -14,6 +16,8 @@ There are a multitude of tools and services available to help with the creation,
 - [CityBikes](http://api.citybik.es/v2/): REST API for aggregated bikeshare data from around the world. Powered by [pyBikes](https://github.com/eskerda/pybikes).
 - [fluctuo Data Flow](https://fluctuo.com/data-flow/): Realtime vehicles location API. Exhaustive and reliable standardized data on free-floating mobility services available in real-time.
 
+<hr>
+
 ## Software for Creating APIs
 
 - [mapintelligenceagency/gbfsQL](https://github.com/mapintelligenceagency/gbfsQL): Wraps any number of GBFS feeds into an easily consumable GraphQL API. Merges relevant feeds and supports real-time updates for clients via Websockets/GraphQL Subscriptions.
@@ -23,6 +27,8 @@ There are a multitude of tools and services available to help with the creation,
 - [OpenTripPlanner](http://www.opentripplanner.org/): An open source platform for multi-modal and multi-agency journey planning, as well as returning information about a multi-modal graph (using data sources such as GTFS and [OpenStreetMap](https://www.openstreetmap.org/)).
 
 - [pyBikes](https://github.com/eskerda/pybikes): Software powering [CityBikes](http://api.citybik.es/v2/) for worldwide bikeshare system info.
+
+<hr>
 
 ## Apps
 
@@ -58,6 +64,8 @@ There are a multitude of tools and services available to help with the creation,
 - [Transit](https://transitapp.com/)
 - [VeloDispo](https://www.velodispo.eu/)
 
+<hr>
+
 ## Visualizations
 
 - [GBFS/Open Data Viewer](https://share.municipal.systems/oJl_L-B8f): Visualize micromobility and other open data.
@@ -75,6 +83,8 @@ There are a multitude of tools and services available to help with the creation,
 ### GBFS Validators
 
 - [GBFS Validator](https://github.com/petoc/gbfs): Go implementation of client, server and validator for GBFS
+
+<hr>
 
 ## Other Multimodal Data Formats
 

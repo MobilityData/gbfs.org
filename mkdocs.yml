@@ -1,5 +1,5 @@
 site_name: General Bikeshare Feed Specification
-site_url: https://gbfs.org
+site_url: https://gbfs.mobilitydata.org
 repo_url: https://github.com/nabsa/gbfs
 
 theme:
@@ -17,9 +17,7 @@ theme:
     text: SF Pro
     code: SF Mono
   features:
-    #  - navigation.sections
      - navigation.tabs
-    #  - navigation.tabs.sticky
      - navigation.indexes
      - navigation.top
      - toc.integrate
@@ -52,9 +50,13 @@ markdown_extensions:
 
 plugins:
   - search
-  # - redirects:
-  #     redirect_maps:
-  #       '': ''
+  - redirects:
+      redirect_maps:
+        'home.md': 'index.md'
+        'major-change-proposals.md': 'specification/change-proposals.md'
+        'tools-services.md': 'toolbox/index.md'
+        'faq.md': 'learn/faq.md'
+        'about.md': 'participate.md'
   - mkdocs-simple-hooks:
       hooks:
         on_config: "hooks.on_config:deploy_hooks"
@@ -76,7 +78,5 @@ nav:
     - learn/white-papers/index.md
     - Data Policy: learn/white-papers/data-policy.md
     - Data Policy Europe: learn/white-papers/data-policy-europe.md
-  # - Articles: learn/articles.md
-  # - White Papers: learn/white-papers.md
   - FAQ: learn/faq.md
 - Participate: participate.md
