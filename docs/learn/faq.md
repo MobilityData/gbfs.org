@@ -13,7 +13,7 @@ An open data standard is a documented set of requirements that describe how peop
 
 <br>**What open data standards is GBFS built on?**
 
-Click on any of the below standards to learn more:
+Follow any of links the below to learn more about the open data standards used by GBFS:
 
 - [JSON](https://www.w3schools.com/whatis/whatis_json.asp)
 - [GeoJSON](https://datatracker.ietf.org/doc/html/rfc7946)
@@ -21,6 +21,10 @@ Click on any of the below standards to learn more:
 - [IETF BCP 47](https://www.rfc-editor.org/info/bcp47)
 - [WGS84](https://www.nga.mil/)
 - [IANA Time Zones](https://www.iana.org/time-zones)
+- [OSM Opening Hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)
+- [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+- [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
+- [ITU E.164](https://www.itu.int/rec/T-REC-E.164-201011-I/en)
 
 <br>**What is JSON?**
 
