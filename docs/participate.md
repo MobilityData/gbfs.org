@@ -1,41 +1,48 @@
 # Participate
 
-The GBFS Documentation Platform is maintained by [MobilityData](https://mobilitydata.org/), a Canadian non-profit that aims to broaden adoption and increase the functionality of the GTFS & GBFS data formats.
-
-## News
-
 ## Contributing to GBFS
-Anyone can contribute to GBFS. The full governance rules can be found on the GBFS repository on Github [here](https://github.com/NABSA/gbfs#governance--overview-of-the-change-process). The highlights of the governance process are: 
-- Anyone can propose a change by opening a [Pull Request](https://github.com/NABSA/gbfs/pulls) on Github, or anyone can raise a question or issue by opening a [Github Issue](https://github.com/NABSA/gbfs/issues).
-- Once a general consensus has been reached, the change goes to a vote. 
-- A successful vote requires at least 3 unanimous votes, in addition to the person who authored the change, including one from a data consumer and one from a data producer. 
-- Once passed, the vote enters the Release Candidate stage. 
-- Once both a producer and consumer have implemented the change, the change becomes official. 
 
-## Become a MobilityData Member
+GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. Anyone can propose a change to the specification by opening a pull request on the GBFS GitHub repository.
 
-MobilityData began in 2015 as a Rocky Mountain Institute project with the mission to improve travelers' information. It extended its mission and reach by becoming a Canadian non-profit in 2019 and a French one in 2021. The MobilityData team includes a number of transportation thinkers and technical experts. With over 20 employees worldwide, MobilityData brings together and supports international mobility stakeholders such as transport agencies, software vendors, mobility apps, and cities to standardize and expand data formats such as GTFS and GBFS for public transport and shared mobility. MobilityData acts as an industry facilitator, creating opportunities for strengthened interoperability while assisting the industry’s rapid transformation through training and tools. 
+All change proposals are subject to the GBFS governance process.
+- The proposal must remain open for a period of time to allow the committee to give feedback and iterate on the proposed change.
+- Once a consensus is reached, the change goes to a vote.
+- At least 3 votes in favor, and none opposed, are required for the change to be adopted. One vote must be from a data producer and one from a data consumer. The party proposing the change is not eligible to vote.
+- When a vote passes, the change becomes part of a Release Candidate.
+- Once both a data producer and a date consumer have implemented the change, the Release Candidate becomes an official version release.
 
-Learn more at [mobilitydata.org](https://mobilitydata.org/).
+The full text of the [project governance and change process](https://github.com/NABSA/gbfs#governance--overview-of-the-change-process) can be found on the project GitHub repository.
 
-<!-- <a href="https://mobilitydata.org/" target="_blank" rel="noopener" alt="MobilityData">
-    <img src="../assets/md-black.svg#only-light" width=150rem style="float: left">
-    <img src="../assets/md-white.svg#only-dark" width=150rem style="float: left">
-</a><br><br> -->
+##Comments and Questions
+Comments or questions can be addressed to the community by [opening an issue](https://github.com/NABSA/gbfs/issues) on the project GitHub repository. Proposals for changes or additions to the specification can be made through GitHub [pull requests](https://github.com/NABSA/gbfs/pulls).
 
-## Editing this site
+Questions can also be addressed to the community via the [public GBFS Slack channel](https://bit.ly/mobilitydata-slack) or to the shared mobility staff at MobilityData: <sharedmobility@mobilitydata.org>.
 
-The GBFS Documentation Platform is based on open source content pulled from various repositories. To propose edits to content, open an issue or pull request in the respective source-of-truth repository found in the [README](https://github.com/MobilityData/gbfs.mobilitydata.org/blob/master/README.md).
 
-To propose a feature, content addition, or UI/UX improvement, open an [issue](https://github.com/MobilityData/gbfs.mobilitydata.org/issues/new) in the GBFS Documentation Platform repository. Alternatively, you can leave feedback on the site through [this form](https://mobilitydata.typeform.com/to/BCiwESfg).
+## Contributing to this site
 
-## License
+To propose changes or additions to this site, [open an issue](https://github.com/MobilityData/gbfs.mobilitydata.org/issues/new) on the MobilityData GBFS Documentation repository.
+Alternatively, you can provide feedback on this site by using the [feedback form](https://mobilitydata.typeform.com/to/BCiwESfg).
 
-Except as otherwise noted, the content of this site is licensed under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+
 
 ## Contact
 
-- Join MobilityData's public [slack channel](https://bit.ly/mobilitydata-slack)
-- Documentation needs: [documentation@mobilitydata.org](mailto:documentation@mobilitydata.org)
 - Specification and technical questions: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org)
-- Partnership opportunities at MobilityData: [partnerships@mobilitydata.org](mailto:partnerships@mobilitydata.org)
+- Documentation needs: [documentation@mobilitydata.org](mailto:documentation@mobilitydata.org)
+- Join MobilityData's public [slack channel](https://bit.ly/mobilitydata-slack)
+
+
+
+
+## About MobilityData
+This site is maintained by [MobilityData](https://mobilitydata.org/), a Canadian non-profit that aims to broaden adoption and increase the functionality of the GTFS & GBFS data formats.
+
+MobilityData accelerates the development and adoption of mobility specifications by providing technical know-how and tools. We also create new specifications, host training, and develop working groups in response to the mobility industry’s needs. 
+
+Learn more at [mobilitydata.org](https://mobilitydata.org).
+
+
+### License
+
+Except as otherwise noted, the content of this site is licensed under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/).
