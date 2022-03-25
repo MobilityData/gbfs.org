@@ -61,7 +61,7 @@ h1, h2, h3 {
 /* inline code style */
 code:not(.highlight code) {
   color: var(--md-typesetcolor);
-  background-color: #efefef;
+  background-color: #f5f5f5;
   border-radius: 5px;
 }
 
@@ -217,7 +217,7 @@ c {
       width: 200px;
   }
   .md-sidebar--primary .md-sidebar__scrollwrap {
-    background-color: #efefef;
+    background-color: #f5f5f5;
     flex: 0 0 12em;
     order: -1;
     width: 200px;
