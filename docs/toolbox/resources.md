@@ -70,6 +70,7 @@ There are a multitude of tools and services available to help with the creation,
 
 - [GBFS/Open Data Viewer](https://share.municipal.systems/oJl_L-B8f): Visualize micromobility and other open data.
 - [GBFS-Viewer](https://github.com/idoco/gbfs-viewer): [View micromobility data](https://idoco.github.io/gbfs-viewer/#) in your browser.
+- [GBFS validation and visualization](https://transport.data.gouv.fr/validation?type=gbfs&locale=en) The French NAP has developed a web interface to visualise GBFS feeds.
 
 
 ### GBFS Libraries
