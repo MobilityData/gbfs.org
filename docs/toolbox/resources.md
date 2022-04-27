@@ -35,7 +35,7 @@ There are a multitude of tools and services available to help with the creation,
 ### Web Apps
 
 - [Bikeshare Map](https://bikesharemap.com/): Global real-time maps of bikeshare systems around the world.
-- [Meddin Bike-sharing World Map](https://bikesharingworldmap.com/) A map of the world's bike share services.
+- [Meddin Bike-sharing World Map](https://bikesharingworldmap.com/): A map of the world's bike share services.
 - [CityMapper Webapp](https://citymapper.com/nyc): Webapp with trip planner and route status for over 30 cities.
 - [OpenTripPlanner Client GWT](https://github.com/mecatran/OpenTripPlanner-client-gwt):  A Google Web Toolkit-based web interface for OpenTripPlanner.
 - [OpenTripPlanner.json](https://github.com/conveyal/otp.js): A Javascript-based client for OpenTripPlanner.
@@ -70,7 +70,7 @@ There are a multitude of tools and services available to help with the creation,
 
 - [GBFS/Open Data Viewer](https://share.municipal.systems/oJl_L-B8f): Visualize micromobility and other open data.
 - [GBFS-Viewer](https://github.com/idoco/gbfs-viewer): [View micromobility data](https://idoco.github.io/gbfs-viewer/#) in your browser.
-- [GBFS validation and visualization](https://transport.data.gouv.fr/validation?type=gbfs&locale=en) The French NAP has developed a web interface to visualise GBFS feeds.
+- [GBFS Validation and Visualization](https://transport.data.gouv.fr/validation?type=gbfs&locale=en): The French NAP has developed a web interface to visualise GBFS feeds.
 
 <hr>
 
@@ -118,7 +118,7 @@ There are a multitude of tools and services available to help with the creation,
 
 - [SAE Shared Mobility](https://www.sae.org/shared-mobility/): Standardized terms and taxonomy for shared mobility services.
 
-- [TOMP- API](https://github.com/TOMP-WG/TOMP-API) Transport Operator Mobility-as-a-service Provider (TOMP) API development Github.
+- [TOMP- API](https://github.com/TOMP-WG/TOMP-API): Transport Operator Mobility-as-a-service Provider (TOMP) API development Github.
 
 - [Transactional Data Specifications for Transportation Planning and Traffic Operations](https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4120): Technical specifications for transactional data for entities involved in the provision of demand-responsive transportation.
 
