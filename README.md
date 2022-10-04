@@ -6,7 +6,7 @@ This site was built using [MkDocs](https://www.mkdocs.org/), a static site gener
 
 ## Editing site
 
-To edit the General Bikeshare Feed Specification reference, go to the [nabsa/gbfs](https://github.com/NABSA/gbfs/) repository.
+To edit the General Bikeshare Feed Specification reference, go to the [MobilityData/gbfs](https://github.com/MobilityData/gbfs/) repository.
 
 To propose a feature, content addition, or UI/UX improvement, open an [issue](https://github.com/MobilityData/gbfs.mobilitydata.org/issues/new) or [pull request](https://github.com/MobilityData/gbfs.mobilitydata.org/pulls) on this repository. 
 
