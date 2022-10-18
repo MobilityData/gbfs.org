@@ -60,7 +60,6 @@ plugins:
   - mkdocs-simple-hooks:
       hooks:
         on_config: "hooks.on_config:deploy_hooks"
-  - search
   - table-reader
 
 nav:
