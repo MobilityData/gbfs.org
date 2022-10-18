@@ -12,13 +12,13 @@ All change proposals are subject to the GBFS governance process.
 - When a vote passes, the change becomes part of a Release Candidate.
 - Once both a data producer and a date consumer have implemented the change, the Release Candidate becomes an official version release.
 
-The full text of the [project governance and change process](https://github.com/NABSA/gbfs#governance--overview-of-the-change-process) can be found on the project GitHub repository.
+The full text of the [project governance and change process](https://github.com/MobilityData/gbfs#governance--overview-of-the-change-process) can be found on the project GitHub repository.
 
 <hr>
 
 ## Comments and Questions
 
-Comments or questions can be addressed to the community by [opening an issue](https://github.com/NABSA/gbfs/issues) on the project GitHub repository. Proposals for changes or additions to the specification can be made through GitHub [pull requests](https://github.com/NABSA/gbfs/pulls).
+Comments or questions can be addressed to the community by [opening an issue](https://github.com/MobilityData/gbfs/issues) on the project GitHub repository. Proposals for changes or additions to the specification can be made through GitHub [pull requests](https://github.com/MobilityData/gbfs/pulls).
 
 Questions can also be addressed to the community via the [public GBFS Slack channel](https://bit.ly/mobilitydata-slack) or to the shared mobility staff at MobilityData: <sharedmobility@mobilitydata.org>.
 
@@ -26,11 +26,11 @@ Questions can also be addressed to the community via the [public GBFS Slack chan
 
 ## Contributing to this site
 
-To propose changes or additions to this site, [open an issue](https://github.com/MobilityData/gbfs.mobilitydata.org/issues/new) on the MobilityData GBFS Documentation repository.
+To propose changes or additions to this site, [open an issue](https://github.com/MobilityData/gbfs.mobilitydata.org/issues/new) on the gbfs.mobilitydata.org repository.
 
 Alternatively, you can provide feedback on this site by using the form below.
 
-<div data-tf-widget="BCiwESfg" data-tf-iframe-props="title=GBFS Documentation Platform Feedback" data-tf-medium="snippet" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_3GvnCweXmwXzD1t68sDr01-yWbBx7pko0dz05AzbAw64mA/viewform?embedded=true" width="640" height="565" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 <hr>
 
