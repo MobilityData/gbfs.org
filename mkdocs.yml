@@ -60,7 +60,6 @@ plugins:
   - mkdocs-simple-hooks:
       hooks:
         on_config: "hooks.on_config:deploy_hooks"
-  - table-reader
 
 nav:
 - Home: index.md
@@ -73,7 +72,6 @@ nav:
   - toolbox/index.md
   - Community Tools and Resources: toolbox/resources.md
   - Glossary: toolbox/glossary.md
-  - Systems catalog: toolbox/systems.md
 - Learn:
   - learn/index.md
   - White Papers: 
