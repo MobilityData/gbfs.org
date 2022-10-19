@@ -14,11 +14,19 @@ Alternatively, you can provide feedback using this [form](https://mobilitydata.t
 
 ## Building the site locally
 
-1. Clone this repository: `git clone https://github.com/MobilityData/gbfs.mobilitydata.org`
-1. Ensure you have an up-to-date version of pip: `pip install pip`
-1. Have [`requirements.txt`](requirements.txt) installed: `pip install ~/mobilitydata/gbfs.mobilitydata.org/requirements.txt`
-1. In the terminal, navigate to the repository directory (`~/mobilitydata/gbfs.mobilitydata.org`) and run this command to update the content for the specification references and best practices: `bash scripts/fetchdata.sh`
+1. In Terminal, change the directory to one where you wish to build the site.
+1. Clone this repository:
+   - `git clone https://github.com/MobilityData/gbfs.mobilitydata.org`
+1. Ensure you have an up-to-date version of pip: 
+   - `pip install pip`
+   - N.B.: on macOS, use `pip3 install pip` with Python 3.
+1. Change the directory to the cloned repository, and have [`requirements.txt`](requirements.txt) installed:
+   - `pip install -r requirements.txt`
+   - N.B.: on macOS, use `pip3 install -r requirements.txt` with Python 3.
+1. Assuming you are still in the cloned repository, run this command to update the content for the specification references and best practices:
+   - `bash scripts/fetchdata.sh`
 1. To run the site locally: `mkdocs serve`
+1. To build the site locally only: `mkdocs build --clean`
 1. To deploy the site to GitHub Pages: `mkdocs gh-deploy`
 
 ## License
