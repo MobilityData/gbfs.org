@@ -30,7 +30,7 @@ To propose changes or additions to this site, [open an issue](https://github.com
 
 Alternatively, you can provide feedback on this site by using the form below.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_3GvnCweXmwXzD1t68sDr01-yWbBx7pko0dz05AzbAw64mA/viewform?embedded=true" width="100" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_3GvnCweXmwXzD1t68sDr01-yWbBx7pko0dz05AzbAw64mA/viewform?embedded=true" width="640" height="565" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 <hr>
 
