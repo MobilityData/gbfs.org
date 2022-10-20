@@ -19,5 +19,6 @@ jobs:
         host: ${{ secrets.ACTION_MAIN_WEBSERVER_SSH_HOST }}
         username: ${{ secrets.ACTION_MAIN_WEBSERVER_SSH_USER }}
         key: ${{ secrets.ACTION_MAIN_WEBSERVER_SSH_KEY }}
+        port: ${{ secrets.ACTION_MAIN_WEBSERVER_SSH_PORT }}
         script: |
                     sh /root/gbfswebsite_updater.sh
