@@ -1,4 +1,4 @@
-# General Bikeshare Feed Specification (GBFS)
+[# General Bikeshare Feed Specification (GBFS)
 
 This document explains the types of files and data that comprise the General Bikeshare Feed Specification (GBFS) and defines the fields used in those files.
 
@@ -1455,4 +1455,4 @@ _Apple Pay, PayPass, and other third-party product and service names are tradema
 
 ## License
 
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/).
+Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/).](https://raw.githubusercontent.com/MobilityData/gbfs/master/gbfs.md)
