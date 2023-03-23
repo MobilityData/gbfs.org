@@ -19,6 +19,7 @@
 <ul>
 <li><p><strong>English</strong></p>
 <ul>
+<li><strong><a href="https://share.mobilitydata.org/2023-the-year-of-v3">2023, the year of v3</a></strong> - New year, new major version!</li>
 <li><strong><a href="https://mobilitydata.org/gbfs-v2-3-rc-is-here-to-fix-some-of-your-problems/">GBFS v2.3-RC is here to fix (some) of your problems</a></strong> - But even though we love v2.2, GBFS was ready for a few improvements. Let us introduce you to v2.3-RC!</li>
 <li><strong><a href="https://mobilitydata.org/cities-gbfs-v2-2-is-here-for-you/">Cities, GBFS v2.2 is here for you</a></strong> - What you’re missing out on if you’re still stuck with v1.0 data.</li>
 <li><strong><a href="https://mobilitydata.org/the-price-is-right-%f0%9f%92%b8/">The price is right!</a></strong> - Previously in GBFS, pricing wasn’t described in much detail. To put it simply, operators could only share a sentence that included the pricing information.</li>
