@@ -1,13 +1,13 @@
 # Specification
 
 <div class="landing-page">
-    <a class="button" href="reference">Current Version (v2.3) Reference </a><a class="button" href="change-proposals">Change Proposals</a><a class="button" href="process">Governance Process</a>
+    <a class="button" href="reference">Current Version (v3.0-RC) Reference </a><a class="button" href="change-proposals">Change Proposals</a><a class="button" href="process">Governance Process</a>
 </div>
 
 <hr>
 
 ## Current Version
-The current official version of GBFS is [v2.3](reference).  
+The current version of GBFS is [v3.0-RC](reference).  
 
 As described in the [GBFS governance](process),
 when changes are made to the specification, the changes are placed into Release Candidate (RC) status. The changes remain in RC status pending implementation.
