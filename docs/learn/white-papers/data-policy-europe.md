@@ -4,7 +4,7 @@
 ## Overview
 Securing access to mobility data is an important part of a shared mobility program. Public access to mobility data builds trust in mobility programs and increases shared mobility adoption. Writing effective policy can ensure that mobility data is both accurate and accessible.
 
-This report is intended primarily for individuals responsible for shared mobility procurement and policies at cities or other local authorities. The report provides a foundational understanding of how GBFS supports seamless, sustainable mobility options and how to leverage open data’s potential when writing policy that can influence shared mobility adoption and practice. This report is applicable primarily to cities in Europe. For American stakeholders , see our report on [data policy ofr American cities](href="data-policy.md").
+This report is intended primarily for individuals responsible for shared mobility procurement and policies at cities or other local authorities. The report provides a foundational understanding of how GBFS supports seamless, sustainable mobility options and how to leverage open data’s potential when writing policy that can influence shared mobility adoption and practice. This report is applicable primarily to cities in Europe. For American stakeholders , see our report on [data policy for American cities](href="data-policy.md").
 
 
 ### GBFS makes it easy for travelers to find and use shared mobility.
@@ -199,7 +199,7 @@ GBFS is the only open data standard, used internationally, to be recognized by C
 ## Useful links
 
 * [GBFS Repo on GitHub](https://github.com/NABSA/gbfs)
-* [GBFS Public Slack Channel](https://bit.ly/mobilitydata-slack)
+* [GBFS Public Slack Channel](https://share.mobilitydata.org/slack)
 * [NeTEx](https://data4pt.org/wiki/NeTEX)
 * [SIRI](https://data4pt.org/wiki/SIRI)
 

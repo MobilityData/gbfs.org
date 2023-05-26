@@ -182,7 +182,7 @@ GBFS has been developed and tested under a consensus model to ensure that data d
 
 ## **Useful links**
 * [GBFS Repo on GitHub](https://github.com/NABSA/gbfs)
-* [GBFS Public Slack Channel](https://mobilitydata-io.herokuapp.com/)
+* [GBFS Public Slack Channel](https://share.mobilitydata.org/slack)
 
 MobilityData Shared Mobility team email: <sharedmobility@mobilitydata.org>
 
