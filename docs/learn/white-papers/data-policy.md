@@ -1,6 +1,7 @@
 # GBFS and Shared Mobility Data Policy
 
 **Helping cities support seamless and sustainable mobility options through GBFS.**
+This guide is also available in [Portuguese](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada/), [Spanish](https://mobilitydata.org/gbfs-y-politica-de-datos-de-movilidad-compartida/), and [French](https://mobilitydata.org/gbfs-et-les-donnees-de-mobilite-partagee-des-politiques-publiques-au-service-des-villes/).
 
 ## Overview
 Securing access to mobility data is an important part of a shared mobility program. Public access to mobility data builds trust in mobility programs and increases shared mobility adoption. Writing effective policy can ensure that mobility data is both accurate and accessible.
