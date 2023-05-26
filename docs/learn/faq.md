@@ -195,6 +195,6 @@ MobilityData is a non-profit organization that improves and extends data formats
 There are a number of ways you can get involved with our organization and the Shared Mobility community! 
 
 - Learn more about us: [www.mobilitydata.org](https://www.mobilitydata.org)
-- Join our slack: [bit.ly/mobilitydata-slack](https://bit.ly/mobilitydata-slack)
+- Join our slack: [https://share.mobilitydata.org/slack](https://share.mobilitydata.org/slack)
 - Join us on Github: [github.com/NABSA/gbfs](https://github.com/NABSA/gbfs)
 - Become a member: [bit.ly/Membership-form-2021](https://bit.ly/Membership-form-2021)
