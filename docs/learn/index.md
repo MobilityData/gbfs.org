@@ -27,12 +27,14 @@
 </li>
 <li><p><strong>Español</strong></p>
 <ul>
+<li><strong><a href="https://mobilitydata.org/2023-el-ano-de-la-v3-0/">2023, el año de la v3.0</a></strong> - ¡Nuevo año, nuevo gran lanzamiento! 
 <li><strong><a href="https://mobilitydata.org/gbfs-v2-3-rc-esta-aqui-para-solucionar-algunos-de-sus-problemas/">GBFS v2.3-RC está aquí para solucionar (algunos) de sus problemas</a></strong> - Nos encanta ver los feeds de GBFS v2.2 aparecer en todo el mundo, impulsando tantas nuevas integraciones de planificación de viajes y facilitando a los viajeros a encontrar su bicicleta, scooter, ciclomotor o automóvil compartido más cercano.</li>
 <li><strong><a href="https://mobilitydata.org/ciudades-la-v2-2-del-gbfs-esta-aqui-para-ustedes/">Ciudades, la v2.2 del GBFS está aquí para ustedes</a></strong> - Vea lo que se está perdiendo si está atorado con los datos de la v1.0.</li>
 </ul>
 </li>
 <li><p><strong>Français</strong></p>
 <ul>
+<li><strong><a href="https://mobilitydata.org/2023-lannee-de-la-v3/">2023, l'année de la v3.0</a></strong> - Nouvelle année, nouvelle version majeure!</li>
 <li><strong><a href="https://mobilitydata.org/gbfs-v2-3-rc-est-ici-pour-resoudre-certains-de-vos-problemes/">GBFS v2.3-RC est ici pour résoudre (certains de) vos problèmes</a></strong> - Mais même si nous adorons v2.2, GBFS était prêt pour quelques améliorations. Laissez-nous vous présenter à v2.3-RC !</li>
 <li><strong><a href="https://mobilitydata.org/municipalites-le-gbfs-v2-2-est-arrive-pour-vous-servir/">Municipalités, le GBFS v2.2 est là pour vous aider</a></strong> - Tout ce qu’il vous manque si vous êtes encore coincé avec des données en v1.0.</li>
 </ul>
