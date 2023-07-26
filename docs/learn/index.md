@@ -4,6 +4,11 @@
     <a class="button" href="white-papers">White Papers</a><a class="button" href="faq">FAQ</a>
 </div> -->
 
+<div class="toolbox"><p><strong>Implementation Guide for Producers</strong></p>
+<ul>
+<li><a href="guide"><strong>See the guide</strong></a></li>
+</ul></div>
+
 <div class="toolbox"><p><strong>White Papers</strong></p>
 <ul>
 <li><a href="white-papers/data-policy"><strong>GBFS and Shared Mobility Data Policy</strong></a></li>
