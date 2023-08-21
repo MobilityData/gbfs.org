@@ -88,7 +88,7 @@ The [systems.csv](https://github.com/NABSA/gbfs/blob/master/systems.csv) catalog
 
 <br>**Who maintains systems.csv?**
 
-The [systems.csv](https://github.com/NABSA/gbfs/blob/master/systems.csv) catalog is currently maintained by MobilityData and the GBFS community. If you have or are aware of a system that does not appear on the list please add it by opening a pull request or notify MoblityData at: [sharedmobility@mobilitydata.org](href="mailto:sharedmoblity@mobilitydata.org").
+The [systems.csv](https://github.com/NABSA/gbfs/blob/master/systems.csv) catalog is currently maintained by MobilityData and the GBFS community. If you have or are aware of a system that does not appear on the list please add it by opening a pull request or notify MobilityData at: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org).
 
 <br>**Are all of the systems in systems.csv compliant with the specification?**
 
