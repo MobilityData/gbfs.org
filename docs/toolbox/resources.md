@@ -20,6 +20,8 @@ There are a multitude of tools and services available to help with the creation,
 
 ## Software for Creating APIs
 
+- [lamassu](https://github.com/entur/lamassu): GBFS aggregation service, which aggregates, optionally enhances, and republishes any number of GBFS feeds. Also, provides a GraphQL API and performs on-the-fly validation. 
+
 - [mapintelligenceagency/gbfsQL](https://github.com/mapintelligenceagency/gbfsQL): Wraps any number of GBFS feeds into an easily consumable GraphQL API. Merges relevant feeds and supports real-time updates for clients via Websockets/GraphQL Subscriptions.
 
 - [OneBusAway](https://onebusaway.org/): A Java app that consumes GTFS and GTFS-Realtime (along with [other formats](https://github.com/OneBusAway/onebusaway-application-modules/wiki/Real-Time-Data-Configuration-Guide)) and turns them into an easy to use [REST API](http://developer.onebusaway.org/modules/onebusaway-application-modules/current/api/where/index.html).
