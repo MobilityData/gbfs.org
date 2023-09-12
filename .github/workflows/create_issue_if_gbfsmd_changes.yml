@@ -7,7 +7,7 @@ env:
   REMOTE_REPO_OWNER: "MobilityData"
   REMOTE_REPO_NAME: "gbfs"
   REMOTE_REPO_FILE_TO_CHECK: "gbfs.md"
-  ISSUE_LABELS_TO_APPLY: "bug" # comma-delimited list
+  ISSUE_LABELS_TO_APPLY: "gbfs-md" # comma-delimited list
 
 on:
   schedule:
