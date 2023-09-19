@@ -184,15 +184,15 @@ Once your mobility system data is modeled into the GBFS structure, you will need
 
 #### Host your GBFS feeds on a web server or a web storage bucket
 
-As a cost-effective solution, GBFS feeds may be hosted on a web server, such as NGINX. Schedule your script to refresh the real-time feeds at most every 30 seconds ([station_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_statusjson) and [vehicle_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_statusjson)). Anything above this refresh rate may impact the user experience. 
+As a cost-effective solution, GBFS feeds may be hosted on a web server, such as NGINX. Schedule your script to refresh the real-time feeds at least every 30 seconds ([station_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_statusjson) and [vehicle_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_statusjson)). Anything above this refresh rate may impact the user experience. 
 
-Alternatively, as a simpler but more costly solution, GBFS feeds may be hosted on a web storage bucket such as Google Cloud Platform, Amazon S3 or Azure Blob. Manage costs by choosing a web storage bucket with the right pricing model for you and attaching a load balancer to the bucket such as Google Cloud CDN. Make sure the cache duration is less than the refresh rate to always serve the latest version of your feeds.
+As a simpler but more costly solution, GBFS feeds may be hosted on a web storage bucket such as Google Cloud Platform, Amazon S3 or Azure Blob. Manage costs by choosing a web storage bucket with the right pricing model for you and attaching a load balancer to the bucket such as Google Cloud CDN. Make sure the cache duration is less than the refresh rate to always serve the latest version of your feeds.
 
 #### Build an API to expose your GBFS feeds
 
-If you want to handle authentication or manage requests more granularly, you may expose your feeds through API endpoints instead of a web storage bucket.
+Alternatively, you may expose your feeds through API endpoints instead of a web storage bucket.
 
-However, requiring authentication of GBFS data greatly diminishes its value to the operators. Indeed, by opening your data, you allow developers and researchers to use it to improve shared mobility offerings and increase the discoverability of your services. 
+However, requiring authentication of GBFS data is not compliant with the specification and greatly diminishes its value to the operators. Indeed, by opening your data, you allow developers and researchers to use it to improve shared mobility offerings and increase the discoverability of your services. 
 
 Operators who receive many requests that overload their system often implement a caching strategy, such as Amazon CloudFront or Varnish Cache.
 
@@ -204,7 +204,7 @@ We recommend specifying liberal terms of use (see list of [common licenses](http
 
 Add the [gbfs.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#gbfsjson) file URL or API endpoint in the MobilityData [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv) catalog. It allows developers to build software on top of it, provides a source for research projects, and demonstrates the reach of the specification worldwide. To add a system, please fork the [repository](https://github.com/MobilityData/gbfs) and submit a pull request. Please keep this list alphabetized by country and system name. Alternatively, fill out [this contribution form](https://forms.gle/WSXFuXx9k4PSTfbC9) for a Github-less contribution.
 
-All systems must have an entry in [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv) to be compliant with GBFS. This catalog and the GBFS feeds it contains are public data that cannot be owned or sold by anyone, including MobilityData. The purpose of this catalog is to allow consumers of GBFS data to find multiple feeds in one place. You may also publish an announcement that makes your feeds available for use through whichever channel you prefer (ex: blog post, press release, newsletter, etc).
+All systems must have an entry in [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv) to be compliant with GBFS. This catalog is public data that cannot be owned or sold by anyone, including MobilityData. The purpose of this catalog is to allow consumers of GBFS data to find multiple feeds in one place. You may also publish an announcement that makes your feeds available for use through whichever channel you prefer (ex: blog post, press release, newsletter, etc).
 
 #### Strive for 99.9% uptime
 
