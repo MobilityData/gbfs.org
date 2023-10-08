@@ -180,7 +180,7 @@ Using a validator ensures that your data conforms to the requirements set out by
 
 <br>**Does MobilityData have a GBFS validator?**
 
-Yes. The [Canonical GBFS Validator](https://gbfs-validator.netlify.app/) is a tool to check the conformity of a GBFS feed against the official specification including past releases and release candidates. 
+Yes. The [Canonical GBFS Validator](https://gbfs-validator.mobilitydata.org/) is a tool to check the conformity of a GBFS feed against the official specification including past releases and release candidates. 
 
 <hr>
 
