@@ -20,13 +20,13 @@ The full text of the [project governance process](https://github.com/MobilityDat
 
 Comments or questions can be addressed to the community by [opening an issue](https://github.com/MobilityData/gbfs/issues) on the project GitHub repository. Proposals for changes or additions to the specification can be made through GitHub [pull requests](https://github.com/MobilityData/gbfs/pulls).
 
-Questions can also be addressed to the community via the [public GBFS Slack channel](https://share.mobilitydata.org/slack) or to the shared mobility staff at MobilityData: <sharedmobility@mobilitydata.org>.
+Questions can also be addressed to the community via the [public GBFS Slack channel](https://share.mobilitydata.org/slack) or to the shared mobility staff at MobilityData: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org).
 
 <hr>
 
 ## Contributing to this site
 
-To propose changes or additions to this site, [open an issue](https://github.com/MobilityData/gbfs.mobilitydata.org/issues/new) on the [gbfs.mobilitydata.org repository](https://github.com/MobilityData/gbfs.mobilitydata.org).
+To propose changes or additions to this site, [open an issue](https://github.com/MobilityData/gbfs.mobilitydata.org/issues/new) on the [gbfs.org repository](https://github.com/MobilityData/gbfs.mobilitydata.org).
 
 Alternatively, you can provide feedback on this site by using the form below.
 
