@@ -26,7 +26,7 @@ Questions can also be addressed to the community via the [public GBFS Slack chan
 
 ## Contributing to this site
 
-To propose changes or additions to this site, [open an issue](https://github.com/MobilityData/gbfs.mobilitydata.org/issues/new) on the [gbfs.org repository](https://github.com/MobilityData/gbfs.mobilitydata.org).
+To propose changes or additions to this site, [open an issue](https://github.com/MobilityData/gbfs.org/issues/new) on the [gbfs.org repository](https://github.com/MobilityData/gbfs.org).
 
 Alternatively, you can provide feedback on this site by using the form below.
 
