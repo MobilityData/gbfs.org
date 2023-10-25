@@ -45,7 +45,7 @@ extra:
   consent:
     title: Cookie Consent
     description: >-
-      We use cookies to track visits, stored anonymously. With your consent, you're helping us to make our documentation better. See our <a href="https://mobilitydata.org/privacy-policy/">Privacy Policy</a>.
+      We use cookies to track visits, stored anonymously. With your consent, you’re helping us improve this documentation. See our <a href="https://mobilitydata.org/privacy-policy/">Privacy Policy</a>.
     actions:
         - accept
         - reject
