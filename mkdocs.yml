@@ -1,6 +1,16 @@
 site_name: General Bikeshare Feed Specification
-site_url: https://gbfs.mobilitydata.org
-repo_url: https://github.com/nabsa/gbfs
+site_url: https://gbfs.org
+repo_url: https://github.com/MobilityData/gbfs
+
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: warn
+    absolute_links: ignore
+    unrecognized_links: ignore
 
 theme:
   logo_light_mode: assets/venn.svg
@@ -17,10 +27,14 @@ theme:
     text: SF Pro
     code: SF Mono
   features:
-     - navigation.tabs
-     - navigation.indexes
-     - navigation.top
-     - toc.integrate
+      - navigation.tabs
+      - navigation.indexes
+      - navigation.top
+      # - navigation.instant
+      # - navigation.instant.progress
+      - toc.integrate
+      - content.tabs.link
+      - search.suggest
   custom_dir: theme_overrides
 extra_css:
   - assets/stylesheets/extra.css
@@ -28,6 +42,14 @@ extra:
   analytics:
     provider: google
     property: G-N7RXJMH84M
+  consent:
+    title: Cookie Consent
+    description: >-
+      We use cookies to track visits, stored anonymously. With your consent, you're helping us to make our documentation better. See our <a href="https://mobilitydata.org/privacy-policy/">Privacy Policy</a>.
+    actions:
+        - accept
+        - reject
+        - manage
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/MobilityData
@@ -49,7 +71,8 @@ markdown_extensions:
   - pymdownx.superfences
 
 plugins:
-  - search
+  - search:
+      lang: en
   - redirects:
       redirect_maps:
         'home.md': 'index.md'
@@ -57,6 +80,15 @@ plugins:
         'tools-services.md': 'toolbox/index.md'
         'faq.md': 'learn/faq.md'
         'about.md': 'participate.md'
+  - i18n:
+      docs_structure: folder
+      reconfigure_search: false
+      reconfigure_material: true
+      languages:
+        - locale: en
+          name: English
+          build: true
+          default: true
 
 nav:
 - Home: index.md
