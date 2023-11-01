@@ -1,7 +1,7 @@
 # GBFS: A Common Language for Shared Mobility
 
 <div class="landing-page">
-    <a class="button" href="specification">Specification</a><a class="button" href="data-quality.md">Data Quality</a><a class="button" href="toolbox">Toolbox</a><a class="button" href="learn">Learn</a><a class="button" href="participate.md">Participate</a></div>
+    <a class="button" href="specification">Specification</a><a class="button" href="data-quality">Data Quality</a><a class="button" href="toolbox">Toolbox</a><a class="button" href="learn">Learn</a><a class="button" href="participate">Participate</a></div>
 
 <!-- <img align="right"  src="assets/gbfs-phone-home.png"> -->
 
