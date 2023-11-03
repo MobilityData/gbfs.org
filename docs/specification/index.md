@@ -1,13 +1,20 @@
 # Specification
 
 <div class="landing-page">
-    <a class="button" href="reference">Current Version (v3.0-RC) Reference </a><a class="button" href="change-proposals">Change Proposals</a><a class="button" href="process">Governance Process</a>
+    <a class="button" href="reference">Latest Reference (v3.0-RC2-Draft)</a><a class="button" href="change-proposals">Change Proposals</a><a class="button" href="process">Governance Process</a>
 </div>
 
 <hr>
 
-## Current Version
-The current version of GBFS is [v3.0-RC](reference).  
+## Versions of this documentation
+
+- [Latest](reference) - Version 3.0-RC2-Draft (Future Version)
+- [v3.0-RC](https://github.com/MobilityData/gbfs/blob/v3.0-RC/gbfs.md) - Version 3.0-RC
+- [v2.3](https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md) - Version 2.3
+- [v2.2](https://github.com/MobilityData/gbfs/blob/v2.2/gbfs.md) - Version 2.2
+- [v2.1](https://github.com/MobilityData/gbfs/blob/v2.1/gbfs.md) - Version 2.1
+- [v2.0](https://github.com/MobilityData/gbfs/blob/v2.0/gbfs.md) - Version 2.0
+- [v1.1](https://github.com/MobilityData/gbfs/blob/v1.1/gbfs.md) - Version 1.1
 
 As described in the [GBFS governance](process),
 when changes are made to the specification, the changes are placed into Release Candidate (RC) status. The changes remain in RC status pending implementation.
@@ -16,7 +23,7 @@ when changes are made to the specification, the changes are placed into Release 
 * **The implementors MUST be stakeholders other than The Advocate (who opened the PR).**
 * **Once implemented successfully, the change is merged into an official current release.**
 
-**[See the Current Version of GBFS](reference)**
+**[See the Latest Reference of GBFS](reference)**
 
 <hr>
 
