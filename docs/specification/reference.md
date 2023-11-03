@@ -4,7 +4,7 @@ This document explains the types of files and data that comprise the General Bik
 
 ## Reference version
 
-This documentation refers to **v3.0-RC**.
+This documentation refers to **v3.0-RC2-Draft (Future Version)**.
 
 **For the current version see [**version 2.3**](https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md).** For past and upcoming versions see the [README](https://github.com/MobilityData/gbfs/blob/master/README.md#current-version-recommended).
 
@@ -88,11 +88,13 @@ To be compliant with GBFS, all systems MUST have an entry in the [systems.csv](h
 Automated tools for application performance monitoring SHOULD be used to ensure feed availability.
 Producers MUST provide a technical contact who can respond to feed outages in the `feed_contact_email` field in the `system_information.json` file.
 
-### Seasonal Shutdowns, Disruptions of Service
+### Seasonal Shutdowns, Disruptions of Service, Termination of Service
 
 Feeds SHOULD continue to be published during seasonal or temporary shutdowns.  Feed URLs SHOULD NOT return a 404.  An empty vehicles array SHOULD be returned by `vehicle_status.json`. Stations in `station_status.json` SHOULD be set to `is_renting:false`, `is_returning:false` and `is_installed:false` where applicable. Seasonal shutdown dates SHOULD be reflected using `opening_hours` in `system_information.json`.
 
 Announcements for disruptions of service, including disabled stations or temporary closures of stations or systems SHOULD be made in `system_alerts.json`.
+
+Permanent shutdowns resulting in the termination of service SHOULD be communicated to data consumers via `system_information.json#termination_date`.
 
 ###  Hours and Dates of Operation
 Beginning with v3.0-RC, hours and dates of operation are described using the Open Street Map [opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours) format. The OSM opening_hours syntax is quite complex, therefore it is RECOMMENDED that publishers validate their opening_hours data to ensure its accuracy.
@@ -202,7 +204,8 @@ Example: The `rental_methods` field contains values `creditcard`, `paypass`, etc
 * ID - Should be represented as a string that identifies that particular entity. An ID:
     * MUST be unique within like fields (for example, `station_id` MUST be unique among stations)
     * Does not have to be globally unique, unless otherwise specified
-    * MUST NOT contain spaces
+    * MUST be in the ASCII printable character range, space excluded (0x21 to 0x7E) https://en.wikipedia.org/wiki/ASCII#Printable_characters *(as of v3.0-RC2)*
+    * SHOULD be restricted to `A-Z`, `a-z`, `0-9` and `.@:/_-` *(as of v3.0-RC2)*
     * MUST be persistent for a given entity (station, plan, etc.). An exception is `vehicle_id`, which MUST NOT be persistent for privacy reasons (see `vehicle_status.json`). *(as of v2.0)*
 * Language - An IETF BCP 47 language code. For an introduction to IETF BCP 47, refer to https://www.rfc-editor.org/rfc/bcp/bcp47.txt and https://www.w3.org/International/articles/language-tags/. Examples: `en` for English, `en-US` for American English, or `de` for German.
 * Latitude - WGS84 latitude in decimal degrees. The value MUST be greater than or equal to -90.0 and less than or equal to 90.0. Example: `41.890169` for the Colosseum in Rome.
@@ -222,7 +225,7 @@ Example: The `rental_methods` field contains values `creditcard`, `paypass`, etc
 * Phone Number *as of v3.0-RC* - Phone number in [E.164](https://www.itu.int/rec/T-REC-E.164-201011-I/en) format. The phone number MUST start with a "+". The characters following the "+" MUST be integers and MUST NOT contain any hyphens, spaces or parentheses.
 * String - Can only contain text. Strings MUST NOT contain any formatting codes (including HTML) other than newlines.
 * Time - Service time in the HH:MM:SS format for the time zone indicated in `system_information.json` (00:00:00 - 47:59:59). Time can stretch up to one additional day in the future to accommodate situations where, for example, a system was open from 11:30pm - 11pm the next day (23:30:00-47:00:00).
-* Timestamp - Timestamp fields MUST be represented as integers in POSIX time (representing the number of seconds since January 1st 1970 00:00:00 UTC).
+* Timestamp - Timestamp fields MUST be represented as strings in [RFC3339 format](https://www.rfc-editor.org/rfc/rfc3339), for example `2023-07-17T13:34:13+02:00`. *(as of v3.0-RC2)*
 * Timezone - TZ timezone from the https://www.iana.org/time-zones. Timezone names never contain the space character but MAY contain an underscore. Refer to https://en.wikipedia.org/wiki/List_of_tz_zones for a list of valid values.
 Example: `Asia/Tokyo`, `America/Los_Angeles` or `Africa/Cairo`.
 * URI - A fully qualified URI that includes the scheme (for example, `com.example.android://`). Any special characters in the URI MUST be correctly escaped. See the following https://www.w3.org/Addressing/URL/4_URI_Recommentations.html for a description of how to create fully qualified URI values. Note that URIs MAY be URLs.
@@ -255,7 +258,7 @@ Field Name | REQUIRED | Type | Defines
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 3600,
   "version": "3.0-RC",
   "data": {
@@ -281,7 +284,7 @@ Field Name | REQUIRED | Type | Defines
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 0,
   "version": "3.0-RC",
   "data": {
@@ -317,7 +320,7 @@ Field Name | REQUIRED | Type | Defines
 **Example:**
 ```json
 {
-  "last_updated":1667004473,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl":0,
   "version":"3.0-RC",
   "data":{
@@ -368,7 +371,7 @@ Field Name | REQUIRED | Type | Defines
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 0,
   "version": "3.0-RC",
   "data": {
@@ -401,6 +404,7 @@ Field Name | REQUIRED | Type | Defines
 `url` | OPTIONAL | URL | The URL of the vehicle share system.
 `purchase_url` | OPTIONAL | URL | URL where a customer can purchase a membership.
 `start_date` | OPTIONAL | Date | Date that the system began operations.
+`termination_date` <br/>*(added in v3.0-RC2)* | OPTIONAL | Date | Date after which this data source will no longer be available to consuming applications.<br><br>This OPTIONAL field SHOULD be used to notify 3rd party data consumers when a service is planning a permanent (non-seasonal) shutdown. Publishers SHOULD include this date in their feeds as soon as they know of an impending shutdown. Publishers SHOULD continue to publish feeds for 30 days following a permanent shutdown after which they SHOULD return a helpful http status code and text, for example `410 service no longer available ...` for all feed endpoint URLs.
 `phone_number` <br/>*(as of v3.0-RC)* | OPTIONAL | Phone Number | This OPTIONAL field SHOULD contain a single voice telephone number for the specified system’s customer service department. MUST be in [E.164](https://www.itu.int/rec/T-REC-E.164-201011-I/en) format as defined in [Field Types](#field-types). 
 `email` | OPTIONAL | Email | This OPTIONAL field SHOULD contain a single contact email address actively monitored by the operator’s customer service department. This email address SHOULD be a direct contact point where riders can reach a customer service representative.
 `feed_contact_email` | Yes <br/>*(as of v3.0-RC)* | Email | This field MUST contain a single contact email for feed consumers to report issues with the feed. This email address SHOULD point to a stable email address, that does not correspond to an individual but rather the team or company that manages GBFS feeds.
@@ -432,7 +436,7 @@ Field Name | REQUIRED | Type | Defines
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 1800,
   "version": "3.0-RC",
   "data": {
@@ -544,7 +548,7 @@ Field Name | REQUIRED | Type | Defines
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 0,
   "version": "3.0-RC",
   "data": {
@@ -710,12 +714,12 @@ Field Name | REQUIRED | Type | Defines
 \-&nbsp;`parking_hoop`<br/>*(added in v2.3)* | OPTIONAL | Boolean | Are parking hoops present at this station?<br /><br />`true` - Parking hoops are present at this station.<br />`false` - Parking hoops are not present at this station.<br /><br />Parking hoops are lockable devices that are used to secure a parking space to prevent parking of unauthorized vehicles.
 \-&nbsp;`contact_phone`<br/>*(added in v2.3)* | OPTIONAL | Phone number | Contact phone of the station.
 \-&nbsp;`capacity` | OPTIONAL | Non-negative integer | Number of total docking points installed at this station, both available and unavailable, regardless of what vehicle types are allowed at each dock. <br/><br/>If this is a virtual station defined using the `is_virtual_station` field, this number represents the total number of vehicles of all types that can be parked at the virtual station.<br/><br/>If the virtual station is defined by `station_area`, this is the number that can park within the station area. If `lat`/`lon` are defined, this is the number that can park at those coordinates.
-\-&nbsp;`vehicle_type_area_capacity` <br/>*(as of v3.0)* | OPTIONAL | Array| This field's value is an array of objects containing the keys `vehicle_type_id` and `count` defined below.  These objects are used to model the parking capacity of virtual stations (defined using the `is_virtual_station` field) for each vehicle type defined in `vehicle_types.json`.
-&emsp;&emsp;\-&nbsp;`vehicle_type_id`| Yes | ID | REQUIRED if `vehicle_type_area_capacity` is defined. A `vehicle_type_id`, as defined in `vehicle_types.json`, that may park at the virtual station.
-&emsp;&emsp;\-&nbsp;`count`| Yes | Non-negative integer | REQUIRED if `vehicle_type_area_capacity` is defined. A number representing the total number of vehicles of the corresponding `vehicle_type_id` type that can park within the virtual station.<br /><br />If the virtual station is defined by `station_area`, this is the number that can park within the station area. If `lat`/`lon` is defined, this is the number that can park at those coordinates.
-\-&nbsp;`vehicle_type_dock_capacity` <br/>*(as of v3.0)* | OPTIONAL | Array | This field's value is an array of objects containing the keys `vehicle_type_id` and `count` defined below. These objects are used to model the total docking capacity of a station, both available and unavailable, for each type of vehicle defined in `vehicle_types.json`.
-&emsp;&emsp;\-&nbsp;`vehicle_type_id`| Yes | ID | REQUIRED if `vehicle_type_dock_capacity` is defined. A `vehicle_type_id`, as defined in `vehicle_types.json`, that may dock at the station.
-&emsp;&emsp;\-&nbsp;`count`| Yes | Non-negative integer | REQUIRED if `vehicle_type_dock_capacity` is defined. The total number of docks at the station, both available and unavailable, that may accept the corresponding vehicle type as defined by its `vehicle_type_id`.
+\-&nbsp;`vehicle_types_capacity` <br/>*(as of v3.0-RC2)* | OPTIONAL | Array | This field's value is an array of objects containing the keys `vehicle_type_ids` and `count` defined below.  These objects are used to model the parking capacity of virtual stations (defined using the `is_virtual_station` field) for each vehicle type that can be returned to this station. The total number of vehicles from each of these objects SHOULD add up to match the value specified in the `capacity` field.
+&emsp;&emsp;\-&nbsp;`vehicle_type_ids` <br/>*(as of v3.0-RC2)* | Conditionally REQUIRED | Array | REQUIRED if `vehicle_types_capacity` is defined. The `vehicle_type_ids`, as defined in `vehicle_types.json`, that may park at the virtual station.
+&emsp;&emsp;\-&nbsp;`count`| Conditionally REQUIRED | Non-negative integer | REQUIRED if `vehicle_types_capacity` is defined. A number representing the total number of vehicles of the specified `vehicle_type_ids` that can park within the virtual station.<br /><br />If the virtual station is defined by `station_area`, this is the number that can park within the station area. If `lat`/`lon` is defined, this is the number that can park at those coordinates.
+\-&nbsp;`vehicle_docks_capacity` <br/>*(as of v3.0-RC2)* | OPTIONAL | Array | This field's value is an array of objects containing the keys `vehicle_type_ids` and `count` defined below. These objects are used to model the total docking capacity of a station, both available and unavailable, for each type of vehicle that may dock at this station. The total number of docks from each of these objects SHOULD add up to match the value specified in the `capacity` field.
+&emsp;&emsp;\-&nbsp;`vehicle_type_ids` <br/>*(as of v3.0-RC2)* | Conditionally REQUIRED | Array | REQUIRED if `vehicle_docks_capacity` is defined. An array of strings where each string represents a `vehicle_type_id` that is able to use a particular type of dock at the station.
+&emsp;&emsp;\-&nbsp;`count`| Conditionally REQUIRED | Non-negative integer | REQUIRED if `vehicle_docks_capacity` is defined. A number representing the total number of docks at the station, both available and unavailable, that may accept the vehicle types specified by `vehicle_type_ids`.
 \-&nbsp;`is_valet_station` <br/>*(added in v2.1)* | OPTIONAL | Boolean | Are valet services provided at this station? <br /><br /> `true` - Valet services are provided at this station. <br /> `false` - Valet services are not provided at this station. <br /><br /> If this field is empty, it is assumed that valet services are not provided at this station. <br><br>This field’s boolean SHOULD be set to `true` during the hours which valet service is provided at the station. Valet service is defined as providing unlimited capacity at a station.
 \-&nbsp;`is_charging_station` <br/>*(added in v2.3)* | OPTIONAL | Boolean | Does the station support charging of electric vehicles? <br /><br /> `true` - Electric vehicle charging is available at this station. <br /> `false` -  Electric vehicle charging is not available at this station.
 \-&nbsp;`rental_uris` | OPTIONAL | Object | Contains rental URIs for Android, iOS, and web in the `android`, `ios`, and `web` fields. See [examples](#deep-links-examples) of how to use these fields and [supported analytics](#analytics).
@@ -727,7 +731,7 @@ Field Name | REQUIRED | Type | Defines
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 0,
   "version": "3.0-RC",
   "data": {
@@ -747,14 +751,10 @@ Field Name | REQUIRED | Type | Defines
         "parking_hoop": false,
         "contact_phone": "+33109874321",
         "is_charging_station": true,
-        "vehicle_type_dock_capacity": [
+        "vehicle_docks_capacity": [
           {
-            "vehicle_type_id": "abc123",
+            "vehicle_type_ids": ["abc123"],
             "count": 7
-          },
-          {
-            "vehicle_type_id": "def456",
-            "count": 0
           }
         ]
       }
@@ -767,7 +767,7 @@ Field Name | REQUIRED | Type | Defines
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 0,
   "version": "3.0-RC",
   "data": {
@@ -815,15 +815,16 @@ Field Name | REQUIRED | Type | Defines
           ]
         },
         "capacity": 16,
-        "vehicle_type_area_capacity": [
+        "vehicle_types_capacity": [
           {
-            "vehicle_type_id": "abc123",
-            "count": 7
+            "vehicle_type_ids": ["abc123", "def456"],
+            "count": 15
           },
           {
-            "vehicle_type_id": "def456",
-            "count": 8
+            "vehicle_type_ids": ["def456"],
+            "count": 1
           }
+
         ]
       }
     ]
@@ -858,7 +859,7 @@ Field Name | REQUIRED | Type | Defines
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 0,
   "version": "3.0-RC",
   "data": {
@@ -868,7 +869,7 @@ Field Name | REQUIRED | Type | Defines
         "is_installed": true,
         "is_renting": true,
         "is_returning": true,
-        "last_reported": 1609866125,
+        "last_reported": "2023-07-17T13:34:13+02:00",
         "num_docks_available": 3,
         "num_docks_disabled" : 1,
         "vehicle_docks_available": [
@@ -899,7 +900,7 @@ Field Name | REQUIRED | Type | Defines
         "is_installed": true,
         "is_renting": true,
         "is_returning": true,
-        "last_reported": 1609866106,
+        "last_reported": "2023-07-17T13:34:13+02:00",
         "num_docks_available": 8,
         "num_docks_disabled" : 1,
         "vehicle_docks_available": [
@@ -961,14 +962,14 @@ Field Name | REQUIRED | Type | Defines
 
 ```json
 {
-  "last_updated":1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl":0,
   "version":"3.0-RC",
   "data":{
     "vehicles":[
       {
         "vehicle_id":"973a5c94-c288-4a2b-afa6-de8aeb6ae2e5",
-        "last_reported":1609866109,
+        "last_reported": "2023-07-17T13:34:13+02:00",
         "lat":12.345678,
         "lon":56.789012,
         "is_reserved":false,
@@ -981,7 +982,7 @@ Field Name | REQUIRED | Type | Defines
       },
       {
         "vehicle_id":"987fd100-b822-4347-86a4-b3eef8ca8b53",
-        "last_reported":1609866204,
+        "last_reported": "2023-07-17T13:34:13+02:00",
         "is_reserved":false,
         "is_disabled":false,
         "vehicle_type_id":"def456",
@@ -999,14 +1000,14 @@ Field Name | REQUIRED | Type | Defines
 ```json
 
  {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl":0,
   "version":"3.0-RC",
   "data":{
     "vehicles":[
       {
         "vehicle_id":"45bd3fb7-a2d5-4def-9de1-c645844ba962",
-        "last_reported":1609866109,
+        "last_reported": "2023-07-17T13:34:13+02:00",
         "lat":12.345678,
         "lon":56.789012,
         "is_reserved":false,
@@ -1022,7 +1023,7 @@ Field Name | REQUIRED | Type | Defines
       },
       {
         "vehicle_id":"d4521def-7922-4e46-8e1d-8ac397239bd0",
-        "last_reported":1609866204,
+        "last_reported": "2023-07-17T13:34:13+02:00",
         "is_reserved":false,
         "is_disabled":false,
         "vehicle_type_id":"def456",
@@ -1062,7 +1063,7 @@ Field Name | REQUIRED | Type | Defines
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 86400,
   "version": "3.0-RC",
   "data": {
@@ -1127,12 +1128,12 @@ Field Name | REQUIRED | Type | Defines
 \-&nbsp;`per_km_pricing` <br/>*(added in v2.2)* | OPTIONAL | Array | Array of segments when the price is a function of distance traveled, displayed in kilometers.<br /><br />Total cost is the addition of `price` and all segments in `per_km_pricing` and `per_min_pricing`. If this array is not provided, there are no variable costs based on distance.
 &emsp;&emsp;\-&nbsp;`start` <br/>*(added in v2.2)* | Conditionally REQUIRED | Non-Negative Integer | REQUIRED if `per_km_pricing` is defined. The kilometer at which this segment rate starts being charged *(inclusive)*.
 &emsp;&emsp;\-&nbsp;`rate` <br/>*(added in v2.2)* | Conditionally REQUIRED | Float | REQUIRED if `per_km_pricing` is defined. Rate that is charged for each kilometer `interval` after the `start`. Can be a negative number, which indicates that the traveler will receive a discount.
-&emsp;&emsp;\-&nbsp;`interval` <br/>*(added in v2.2)* | Conditionally REQUIRED | Non-Negative Integer | REQUIRED if `per_km_pricing` is defined. Interval in kilometers at which the `rate` of this segment is either reapplied indefinitely, or if defined, up until (but not including) `end` kilometer.<br /><br />An interval of 0 indicates the rate is only charged once.
+&emsp;&emsp;\-&nbsp;`interval` <br/>*(added in v2.2)* | Conditionally REQUIRED | Non-Negative Float <br/>*(as of v3.0-RC2)* | REQUIRED if `per_km_pricing` is defined. Interval in kilometers at which the `rate` of this segment is either reapplied indefinitely, or if defined, up until (but not including) `end` kilometer.<br /><br />An interval of 0 indicates the rate is only charged once.
 &emsp;&emsp;\-&nbsp; `end` <br/>*(added in v2.2)* | OPTIONAL | Non-Negative Integer | The kilometer at which the rate will no longer apply *(exclusive)* for example, if `end` is `20` the rate no longer applies at 20.00 km.<br /><br /> If this field is empty, the price issued for this segment is charged until the trip ends, in addition to the cost of any subsequent segments.
 \-&nbsp;`per_min_pricing` <br/>*(added in v2.2)* | OPTIONAL | Array | Array of segments when the price is a function of time traveled, displayed in minutes.<br /><br />Total cost is the addition of `price` and all segments in `per_km_pricing` and `per_min_pricing`. If this array is not provided, there are no variable costs based on time.
 &emsp;&emsp;\-&nbsp;`start` <br/>*(added in v2.2)* | Conditionally REQUIRED | Non-Negative Integer | REQUIRED if `per_min_pricing` is defined. The minute at which this segment rate starts being charged *(inclusive)*.
 &emsp;&emsp;\-&nbsp;`rate` <br/>*(added in v2.2)* | Conditionally REQUIRED | Float | REQUIRED if `per_min_pricing` is defined.  Rate that is charged for each minute `interval` after the `start`. Can be a negative number, which indicates that the traveler will receive a discount.
-&emsp;&emsp;\-&nbsp;`interval` <br/>*(added in v2.2)* | Conditionally REQUIRED | Non-Negative Integer | REQUIRED if `per_min_pricing` is defined. Interval in minutes at which the `rate` of this segment is either reapplied indefinitely, or up until (but not including) the `end` minute, if `end` is defined.<br /><br />An interval of 0 indicates the rate is only charged once.
+&emsp;&emsp;\-&nbsp;`interval` <br/>*(added in v2.2)* | Conditionally REQUIRED | Non-Negative Float <br/>*(as of v3.0-RC2)* | REQUIRED if `per_min_pricing` is defined. Interval in minutes at which the `rate` of this segment is either reapplied indefinitely, or up until (but not including) the `end` minute, if `end` is defined.<br /><br />An interval of 0 indicates the rate is only charged once.
 &emsp;&emsp;\-&nbsp; `end` <br/>*(added in v2.2)* | OPTIONAL | Non-Negative Integer | The minute at which the rate will no longer apply  *(exclusive)* for example, if `end` is `20` the rate no longer applies after 19:59.<br /><br />If this field is empty, the price issued for this segment is charged until the trip ends, in addition to the cost of any subsequent segments.
 \-&nbsp;`surge_pricing` <br/>*(added in v2.2)* | OPTIONAL | Boolean | Is there currently an increase in price in response to increased demand in this pricing plan? If this field is empty, it means there is no surge pricing in effect.<br /><br />`true` - Surge pricing is in effect.<br />  `false` - Surge pricing is not in effect.
 
@@ -1142,7 +1143,7 @@ The user does not pay more than the base price for the first 10 km. After 10 km 
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 0,
   "version": "3.0-RC",
   "data": {
@@ -1195,7 +1196,7 @@ This example demonstrates a pricing scheme that has a rate both by minute and by
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 0,
   "version": "3.0-RC",
   "data": {
@@ -1261,7 +1262,7 @@ Field Name | REQUIRED | Type | Defines
 
 ```json
 {
-  "last_updated": 1604519393,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 60,
   "version": "3.0-RC",
   "data": {
@@ -1276,8 +1277,8 @@ Field Name | REQUIRED | Type | Defines
         ],
         "times": [
           {
-            "start": 1604448000,
-            "end": 1604674800
+            "start": "2023-07-17T13:34:13+02:00",
+            "end": "2023-07-18T13:34:13+02:00"
           }
         ],
         "url": [
@@ -1298,7 +1299,7 @@ Field Name | REQUIRED | Type | Defines
             "language": "en"
           }
         ],
-        "last_updated": 1604198100
+        "last_updated": "2023-07-17T13:34:13+02:00",
       }
     ]
   }
@@ -1337,7 +1338,7 @@ A `Rule` object defines the set of restrictions in place for a particular zone. 
 
 Field Name | REQUIRED | Type | Defines
 ---|---|---|---
-`vehicle_type_id` | OPTIONAL | Array | Array of IDs of vehicle types for which any restrictions SHOULD be applied (see vehicle type definitions in `vehicle_types.json`). If vehicle type IDs are not specified, then restrictions apply to all vehicle types.
+`vehicle_type_ids` <br/>*(as of v3.0-RC2)* | OPTIONAL | Array | Array of IDs of vehicle types for which any restrictions SHOULD be applied (see vehicle type definitions in `vehicle_types.json`). If vehicle type IDs are not specified, then restrictions apply to all vehicle types.
 `ride_start_allowed` | REQUIRED | Boolean | Is the ride allowed to start in this zone? <br /><br /> `true` - Ride can start in this zone. <br /> `false` - Ride cannot start in this zone.
 `ride_end_allowed` | REQUIRED | Boolean | Is the ride allowed to end in this zone? <br /><br /> `true` - Ride can end in this zone. <br /> `false` - Ride cannot end in this zone.
 `ride_through_allowed` | REQUIRED | Boolean | Is the ride allowed to travel through this zone? <br /><br /> `true` - Ride can travel through this zone. <br /> `false` - Ride cannot travel through this zone.
@@ -1346,7 +1347,7 @@ Field Name | REQUIRED | Type | Defines
 
 #### Geofencing Rule Precedence
 
-Geofencing [Rule](#geofencing-rule-object) objects are specified within arrays for the `rules` and `global_rules` fields of `geofencing_zones.json` to allow for different restrictions for different vehicle types.  When multiple rules in the same array apply to a particular vehicle type, per the semantics of the `vehicle_type_id` field, then the earlier rule (in order of the JSON file) takes precedence for that vehicle type.
+Geofencing [Rule](#geofencing-rule-object) objects are specified within arrays for the `rules` and `global_rules` fields of `geofencing_zones.json` to allow for different restrictions for different vehicle types.  When multiple rules in the same array apply to a particular vehicle type, per the semantics of the `vehicle_type_ids` field, then the earlier rule (in order of the JSON file) takes precedence for that vehicle type.
 
 When multiple overlapping polygons define rules that apply to a particular vehicle type, then the rules from the earlier polygon (in order of the JSON file) takes precedence for that vehicle type in the overlapping area.  Polygons with inactive time ranges should be excluded from consideration when considering precedence.
 
@@ -1358,7 +1359,7 @@ See examples below.
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 60,
   "version": "3.0-RC",
   "data": {
@@ -1427,11 +1428,11 @@ See examples below.
                 "language": "en"
               }
             ],
-            "start": 1593878400,
-            "end": 1593907260,
+            "start": "2023-07-17T13:34:13+02:00",
+            "end": "2024-07-18T13:34:13+02:00",
             "rules": [
               {
-                "vehicle_type_id": [
+                "vehicle_type_ids": [
                   "moped1",
                   "car1"
                 ],
@@ -1474,7 +1475,7 @@ In the examples below, only a minimal set of fields are specified for clarity.
     "properties": {
       "rules": [
         {
-          "vehicle_type_id": ["bike"],
+          "vehicle_type_ids": ["bike"],
           "ride_through_allowed": true
         }
       ]
@@ -1485,7 +1486,7 @@ In the examples below, only a minimal set of fields are specified for clarity.
     "properties": {
       "rules": [
         {
-          "vehicle_type_id": ["bike"],
+          "vehicle_type_ids": ["bike"],
           "ride_through_allowed": false,
           "maximum_speed_kph": 20
         }
@@ -1495,7 +1496,7 @@ In the examples below, only a minimal set of fields are specified for clarity.
 ],
 "global_rules": [
   {
-    "vehicle_type_id": ["bike"],
+    "vehicle_type_ids": ["bike"],
     "ride_through_allowed": false,
     "maximum_speed_kph": 10
   }
@@ -1522,7 +1523,7 @@ g  | bike | false | 10
     "properties": {
       "rules": [
         {
-          "vehicle_type_id": ["bike"],
+          "vehicle_type_ids": ["bike"],
           "ride_through_allowed": true
         }
       ]
@@ -1533,7 +1534,7 @@ g  | bike | false | 10
     "properties": {
       "rules": [
         {
-          "vehicle_type_id": ["scooter"],
+          "vehicle_type_ids": ["scooter"],
           "ride_through_allowed": false
         }
       ]
@@ -1542,11 +1543,11 @@ g  | bike | false | 10
 ],
 "global_rules": [
   {
-    "vehicle_type_id": ["bike"],
+    "vehicle_type_ids": ["bike"],
     "ride_through_allowed": false
   },
   {
-    "vehicle_type_id": ["scooter"],
+    "vehicle_type_ids": ["scooter"],
     "ride_through_allowed": true
   }
 ]
@@ -1575,7 +1576,7 @@ g  | scooter | true
     "properties": {
       "rules": [
         {
-          "vehicle_type_id": ["bike", "scooter"],
+          "vehicle_type_ids": ["bike", "scooter"],
           "ride_through_allowed": true
         }
       ]
@@ -1586,7 +1587,7 @@ g  | scooter | true
     "properties": {
       "rules": [
         {
-          "vehicle_type_id": ["scooter"],
+          "vehicle_type_ids": ["scooter"],
           "ride_through_allowed": false
         }
       ]
@@ -1644,7 +1645,7 @@ Other supported parameters include:
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 60,
   "version": "3.0-RC",
   "data": {
@@ -1668,7 +1669,7 @@ Other supported parameters include:
 
 ```json
 {
-  "last_updated": 1640887163,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 60,
   "version": "3.0-RC",
   "data": {
@@ -1696,7 +1697,7 @@ Note that the Android URI and iOS Universal Link URLs do not necessarily use the
 
 ```json
 {
-  "last_updated": 1572447999,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 60,
   "version": "3.0-RC",
   "data": {
@@ -1722,7 +1723,7 @@ Note that the Android URI and iOS Universal Link URLs do not necessarily use the
 
 ```json
 {
-  "last_updated": 1609866247,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 60,
   "version": "3.0-RC",
   "data": {
@@ -1748,7 +1749,7 @@ Note that the Android URI and iOS Universal Link URLs do not necessarily use the
 
 ```json
 {
-  "last_updated": 1609866247,
+  "last_updated": "2023-07-17T13:34:13+02:00",
   "ttl": 60,
   "version": "3.0-RC",
   "data": {
