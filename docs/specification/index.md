@@ -23,7 +23,14 @@ when changes are made to the specification, the changes are placed into Release 
 * **The implementors MUST be stakeholders other than The Advocate (who opened the PR).**
 * **Once implemented successfully, the change is merged into an official current release.**
 
-**[See the Latest Reference of GBFS](reference)**
+To support this process and ensure it is as timely as possible, MobilityData tracks implementation through one-on-one discussions and other stakeholder events and by examining GBFS datasets. To improve this tracking process, GBFS data producers and consumers are encouraged to add their organization here if they have implemented or are planning on implementing any of these release candidate changes. After votes are called, MobilityData will update this list to reflect organizations that included an implementation note in their vote.
+### Implementation Status
+The following items have passed through the voting process and will be included in the next version.
+<iframe class="airtable-embed" src="https://airtable.com/embed/appQvTu1nOy6fJwUP/shrNl0TSZGrqD3REa?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="633" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shraqzpVkb2PlkMnq" target="_blank">Request a change</a>
+<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrkMt5JTIiuPFlhY" target="_blank">Add your organization (producers)</a>
+<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrNEkNZ2JBWYdMmw" target="_blank">Add your organization (consumers)</a>
 
 <hr>
 
