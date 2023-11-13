@@ -34,6 +34,17 @@ The following items have passed through the voting process and will be included 
 
 <hr>
 
+## Extensions Outside of the Specification
+
+To accommodate the needs of feed producers and consumers prior to the adoption of a change, additional fields can be added to feeds even if these fields are not part of the official specification. Custom extensions that may provide value to the GBFS community and align with the [GBFS Guiding Principles](https://github.com/MobilityData/gbfs/blob/master/README.md#guiding-principles) should be proposed for inclusion in the specification through the change process.
+
+Field names of extensions should be prefixed with an underscore (_) character. It is strongly recommended that these additional fields be documented here in this format:
+<iframe class="airtable-embed" src="https://airtable.com/embed/appLjB8xGZMERTzIr/shrPitUb0EBDGrwjN?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="333" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+<a class="button no-icon" href="https://airtable.com/appLjB8xGZMERTzIr/shrsxVUGzo3NhXsn6" target="_blank">Add your custom extension</a>
+
+<hr>
+
 ## Change Proposals
 
 GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. An overview of current work can be found on the [Project Roadmap](https://github.com/NABSA/gbfs/wiki/Project-Roadmap). Comments or questions can be addressed to the community by [opening an issue](https://github.com/NABSA/gbfs/issues) on the GBFS GitHub repo. Proposals for changes or additions to the specification can be made through [pull requests](https://github.com/NABSA/gbfs/pulls).
