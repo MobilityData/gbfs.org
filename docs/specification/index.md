@@ -1,14 +1,14 @@
 # Specification
 
 <div class="landing-page">
-    <a class="button" href="reference">Latest Reference (v3.0-RC2)</a><a class="button" href="change-proposals">Change Proposals</a><a class="button" href="process">Governance Process</a>
+    <a class="button" href="reference">Latest Reference (v3.0-RC2-Draft)</a><a class="button" href="change-proposals">Change Proposals</a><a class="button" href="process">Governance Process</a>
 </div>
 
 <hr>
 
 ## Versions of this documentation
 
-- [Latest](reference) - Version 3.0-RC2
+- [Latest](reference) - Version 3.0-RC2-Draft (Future Version)
 - [v3.0-RC](https://github.com/MobilityData/gbfs/blob/v3.0-RC/gbfs.md) - Version 3.0-RC
 - [v2.3](https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md) - Version 2.3
 - [v2.2](https://github.com/MobilityData/gbfs/blob/v2.2/gbfs.md) - Version 2.2
