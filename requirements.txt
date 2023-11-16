@@ -4,3 +4,4 @@ mkdocs-material==9.4.4
 mkdocs-static-i18n==1.1.0
 mkdocs-simple-hooks>=0.1.5
 mkdocs-redirects==1.2.1
+mkdocs-embed-external-markdown==3.0.1
