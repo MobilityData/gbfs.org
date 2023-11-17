@@ -3,8 +3,6 @@
 <div class="landing-page">
     <a class="button" href="specification">Specification</a><a class="button" href="data-quality">Data Quality</a><a class="button" href="toolbox">Toolbox</a><a class="button" href="learn">Learn</a><a class="button" href="participate">Participate</a><a class="button" href="roadmap">Roadmap</a></div>
 
-<!-- <img align="right"  src="assets/gbfs-phone-home.png"> -->
-
 GBFS provides a common language for shared mobility operators to share information about services available to travelers. GBFS includes information about vehicles (bicycles, scooters, moped, and cars), stations, pricing and more:
 
 - Vehicle, station, and dock locations and availability
