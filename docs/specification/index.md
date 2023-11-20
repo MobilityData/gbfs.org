@@ -1,7 +1,7 @@
 # Specification
 
 <div class="landing-page">
-    <a class="button" href="reference">Latest Reference (v3.0-RC2)</a><a class="button" href="change-proposals">Change Proposals</a><a class="button" href="process">Governance Process</a>
+    <a class="button" href="reference">Latest Reference (v3.0-RC2)</a><a class="button" href="https://github.com/MobilityData/gbfs/issues">Change Proposals</a><a class="button" href="process">Governance Process</a>
 </div>
 
 <hr>
@@ -47,9 +47,9 @@ Field names of extensions should be prefixed with an underscore (_) character. I
 
 ## Change Proposals
 
-GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. An overview of current work can be found on the [Project Roadmap](../participate/#get-involved). Comments or questions can be addressed to the community by [opening an issue](https://github.com/NABSA/gbfs/issues) on the GBFS GitHub repo. Proposals for changes or additions to the specification can be made through [pull requests](https://github.com/NABSA/gbfs/pulls).
+GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. An overview of current work can be found on the [Project Roadmap](../participate/#get-involved). Comments or questions can be addressed to the community by [opening an issue](https://github.com/MobilityData/gbfs/issues) on the GBFS GitHub repo. Proposals for changes or additions to the specification can be made through [pull requests](https://github.com/MobilityData/gbfs/pulls).
 
-**[See Change Proposals](change-proposals)**
+**[See Change Proposals](https://github.com/MobilityData/gbfs/issues)**
 
 <hr>
 

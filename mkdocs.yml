@@ -96,7 +96,6 @@ nav:
 - Specification:
   - specification/index.md
   - Current Version: specification/reference.md
-  - Change Proposals: specification/change-proposals.md
   - Governance Process: specification/process.md
 - Data Quality: data-quality.md
 - Toolbox:
