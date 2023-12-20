@@ -43,7 +43,7 @@ Your tender should require a publicly accessible GBFS API and should set expecta
 
 >**_Data sharing requirements:_**
 >
->* _A publicly accessible API that conforms to the General Bikeshare Feed Specification (GBFS) current version available at[ https://github.com/NABSA/gbfs/](https://github.com/NABSA/gbfs/blob/master/gbfs.md)._
+>* _A publicly accessible API that conforms to the General Bikeshare Feed Specification (GBFS) current version available at [https://github.com/MobilityData/gbfs](https://github.com/MobilityData/gbfs/blob/master/gbfs.md)._
 >* _The GBFS API must be available to the public on the open internet without requiring authentication._
 
 ### Determine what data to require in a comprehensive policy.
@@ -153,7 +153,7 @@ At minimum, a shared mobility data policy should:
 
 **Sample policy language**
 
->_[COMPANY] shall provide a publicly accessible API that conforms to the General Bikeshare Feed Specification (GBFS) current version available at[ https://github.com/NABSA/gbfs/](https://github.com/NABSA/gbfs/blob/master/gbfs.md) . [COMPANY] must make the API available to the public on the open internet without requiring authentication._
+>_[COMPANY] shall provide a publicly accessible API that conforms to the General Bikeshare Feed Specification (GBFS) current version available at [https://github.com/MobilityData/gbfs](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) . [COMPANY] must make the API available to the public on the open internet without requiring authentication._
 >
 >_[COMPANY] shall inform [PERMITTING AGENCY] of the URL for the gbfs.json endpoint prior to deploying vehicles. [COMPANY] must notify [PERMITTING AGENCY] at least 30 days prior to changing the URL of the gbfs.json endpoint._
 >
@@ -176,7 +176,7 @@ At minimum, a shared mobility data policy should:
 For an example of how a regulator may tailor this language to their particular needs, see [SFMTA’s scooter permit language](https://www.sfmta.com/sites/default/files/reports-and-documents/2021/08/2021_scooter_permit_terms_and_conditions_and_appendices_final_for_permit-lime.pdf) (beginning on page 41).
 
 ## Additional considerations
-The value of open mobility data can only be fully realized when that data is easily accessible to the public and traveler privacy is protected; GBFS is designed to support both. Cities and agencies should publish the locations of gbfs.json files on their websites or open data portals and on the [openly available dataset catalog](https://github.com/NABSA/gbfs/blob/master/systems.csv) connected to GBFS.
+The value of open mobility data can only be fully realized when that data is easily accessible to the public and traveler privacy is protected; GBFS is designed to support both. Cities and agencies should publish the locations of gbfs.json files on their websites or open data portals and on the [openly available dataset catalog](https://github.com/MobilityData/gbfs/blob/master/systems.csv) connected to GBFS.
 
 Requesting open data from shared mobility operators will become even more crucial in the upcoming years as the European Commission enforces the obligation for each Member State to set a National Access Point (NAP) acting as a portal to all open data in regards to mobility services and all consumer-facing information. NAPs are designed to support a thriving European ecosystem built on interoperability between mobility modes and regions, reinforcing the ability of any consumer to travel seamlessly within the European Union. GBFS is a common and accepted format that allows countries to comply with the European regulations on several levels:
 
@@ -199,7 +199,7 @@ GBFS is the only open data standard, used internationally, to be recognized by C
 
 ## Useful links
 
-* [GBFS Repo on GitHub](https://github.com/NABSA/gbfs)
+* [GBFS Repo on GitHub](https://github.com/MobilityData/gbfs)
 * [GBFS Public Slack Channel](https://share.mobilitydata.org/slack)
 * [NeTEx](https://data4pt.org/wiki/NeTEX)
 * [SIRI](https://data4pt.org/wiki/SIRI)
