@@ -80,15 +80,15 @@ GBFS does not contain operational data. GBFS only contains real-time data that i
 
 **Where can I find GBFS data?**
 
-A catalog of public GBFS data sources, know as [systems.csv](https://github.com/NABSA/gbfs/blob/master/systems.csv), is maintained on the GBFS GitHub repository. 
+A catalog of public GBFS data sources, know as [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv), is maintained on the GBFS GitHub repository. 
 
 <br>**Why is systems.csv important?**
 
-The [systems.csv](https://github.com/NABSA/gbfs/blob/master/systems.csv) catalog is the primary index of GBFS data sources, it allows developers to build software on top of it, provides a source for research projects, and demonstrates the reach of the specification worldwide. 
+The [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv) catalog is the primary index of GBFS data sources, it allows developers to build software on top of it, provides a source for research projects, and demonstrates the reach of the specification worldwide. 
 
 <br>**Who maintains systems.csv?**
 
-The [systems.csv](https://github.com/NABSA/gbfs/blob/master/systems.csv) catalog is currently maintained by MobilityData and the GBFS community. If you have or are aware of a system that does not appear on the list please add it by opening a pull request or notify MobilityData at: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org).
+The [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv) catalog is currently maintained by MobilityData and the GBFS community. If you have or are aware of a system that does not appear on the list please add it by opening a pull request or notify MobilityData at: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org).
 
 <br>**Are all of the systems in systems.csv compliant with the specification?**
 
@@ -116,11 +116,11 @@ While GBFS, or the General Bikeshare Feed Specification, has its roots in bikesh
 
 **How is the specification updated?**
 
-GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. Proposals for changes or additions to the specification are made through Pull Requests. Once the community has had adequate time to comment and iterate on a proposal, the proposal is put to a vote. If the proposal passes, it becomes part of a release candidate. When the release candidate has been successfully implemented in a public data set, it becomes an official release. The complete governance and change process can be found [here](https://github.com/NABSA/gbfs#governance--overview-of-the-change-process).
+GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. Proposals for changes or additions to the specification are made through Pull Requests. Once the community has had adequate time to comment and iterate on a proposal, the proposal is put to a vote. If the proposal passes, it becomes part of a release candidate. When the release candidate has been successfully implemented in a public data set, it becomes an official release. The complete governance and change process can be found [here](https://github.com/MobilityData/gbfs/blob/master/governance.md).
 
 <br>**How can I propose a change to the specification?**
 
-If you are interested in proposing a modification, you can do so at the GBFS GitHub repo. If you do not have the solution to the problem and would like to start a discussion, we recommend you [open an issue](https://github.com/NABSA/gbfs/issues). If you have  a solution and would like to propose a change, please [open a Pull Request](https://github.com/NABSA/gbfs/pulls). 
+If you are interested in proposing a modification, you can do so at the GBFS GitHub repo. If you do not have the solution to the problem and would like to start a discussion, we recommend you [open an issue](https://github.com/MobilityData/gbfs/issues). If you have  a solution and would like to propose a change, please [open a Pull Request](https://github.com/MobilityData/gbfs/pulls). 
 
 <hr>
 
@@ -196,5 +196,5 @@ There are a number of ways you can get involved with our organization and the Sh
 
 - Learn more about us: [www.mobilitydata.org](https://www.mobilitydata.org)
 - Join our slack: [https://share.mobilitydata.org/slack](https://share.mobilitydata.org/slack)
-- Join us on Github: [github.com/NABSA/gbfs](https://github.com/NABSA/gbfs)
+- Join us on Github: [github.com/MobilityData/gbfs](https://github.com/MobilityData/gbfs)
 - Become a member: [bit.ly/Membership-form-2021](https://bit.ly/Membership-form-2021)
