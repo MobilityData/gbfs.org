@@ -43,7 +43,7 @@ Your tender should require a publicly accessible GBFS API and should set expecta
 
 >**_Data sharing requirements:_**
 >
->* _A publicly accessible API that conforms to the General Bikeshare Feed Specification (GBFS) current version available at[ https://github.com/MobilityData/gbfs/](https://github.com/MobilityData/gbfs/blob/master/gbfs.md)._
+>* _A publicly accessible API that conforms to the General Bikeshare Feed Specification (GBFS) current version available at [https://github.com/MobilityData/gbfs](https://github.com/MobilityData/gbfs/blob/master/gbfs.md)._
 >* _The GBFS API must be available to the public on the open internet without requiring authentication._
 
 ### Determine what data to require in a comprehensive policy.
@@ -153,7 +153,7 @@ At minimum, a shared mobility data policy should:
 
 **Sample policy language**
 
->_[COMPANY] shall provide a publicly accessible API that conforms to the General Bikeshare Feed Specification (GBFS) current version available at[ https://github.com/MobilityData/gbfs/](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) . [COMPANY] must make the API available to the public on the open internet without requiring authentication._
+>_[COMPANY] shall provide a publicly accessible API that conforms to the General Bikeshare Feed Specification (GBFS) current version available at [https://github.com/MobilityData/gbfs](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) . [COMPANY] must make the API available to the public on the open internet without requiring authentication._
 >
 >_[COMPANY] shall inform [PERMITTING AGENCY] of the URL for the gbfs.json endpoint prior to deploying vehicles. [COMPANY] must notify [PERMITTING AGENCY] at least 30 days prior to changing the URL of the gbfs.json endpoint._
 >
