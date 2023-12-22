@@ -9,6 +9,7 @@ There are a multitude of tools and services available to help with the creation,
 ### Third Party GBFS URL Directories
 
 - [Bike Share Research](https://bikeshare-research.org/): BSR aims to facilitate the curation of bikeshare service data through collaborative and open data platforms while making it API accessible.
+- [Lamassu](https://github.com/entur/lamassu): Mobility aggregation service. Maintained by Entur.
 
 
 ### Proprietary (non-standard) Vendor APIs
@@ -78,19 +79,25 @@ There are a multitude of tools and services available to help with the creation,
 
 ## Libraries
 
+### Language bindings for GBFS
+
+- [Java](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-java-model): GBFS types in Java. Maintained by Entur.
+- [Rust](https://crates.io/crates/gbfs_types): GBFS types in Rust. Maintained by Fluctuo.
+- [R](https://github.com/simonpcouch/gbfs): GBFS types in R. 
+
+### Tools
+
 - [BikeshareClient](https://github.com/andmos/BikeshareClient): dotnet client for GBFS written in C#. Enables dotnet developers to create apps and services using data from GBFS Bikeshare systems.
-
-<hr>
-
-## Analysis Tools
-
-- [gbfs R package](https://github.com/ds-civic-data/gbfs): Functions to interface with GBFS feeds in R, allowing users to save and accumulate tidy .rds datasets for specified cities/bikeshare programs.
+- [Java Version Mapper](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-mapper-java): Java implementation of mapping between different versions of GBFS (bidirectional). Maintained by Entur.
+- [Java Feed Loader](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-loader-java): Java implementation to manage loading of GBFS feeds and updating them based on their ttl and last_updated fields. Maintained by Entur.
 
 <hr>
 
 ## Validators
 
-- [GBFS Validator](https://github.com/petoc/gbfs): Go implementation of client, server and validator for GBFS
+- [Go Validator](https://github.com/petoc/gbfs): Go implementation of client, server and validator for GBFS
+- [Java Validator](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-validator-java): Java implementation of validator for GBFS. Maintained by Entur.
+- [npm](https://www.npmjs.com/package/@entur/gbfs-validator): Javascript package of the [gbfs-validator](https://github.com/MobilityData/gbfs-validator). Maintained by Entur.
 
 <hr>
 
