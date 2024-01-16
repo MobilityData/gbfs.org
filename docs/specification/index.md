@@ -24,6 +24,11 @@ when changes are made to the specification, the changes are placed into Release 
 * **Once implemented successfully, the change is merged into an official current release.**
 
 To support this process and ensure it is as timely as possible, MobilityData tracks implementation through one-on-one discussions and other stakeholder events and by examining GBFS datasets. To improve this tracking process, GBFS data producers and consumers are encouraged to add their organization here if they have implemented or are planning on implementing any of these release candidate changes. After votes are called, MobilityData will update this list to reflect organizations that included an implementation note in their vote.
+### First Adopters
+🎉 Shoutout to the first adopters! These organizations invest a large amount of time and energy to implement the changes contained in the Release Candidate and make sure that GBFS continues to evolve.
+
+- Producers: [Check](https://ridecheck.app/en), [Flamingo](https://flamingoscooters.com/), [TIER](https://www.tier.app/).
+- Consumers: [ENTUR](https://entur.no/), [Transit](https://transitapp.com/?lang=fr), [transport.data.gouv.fr](https://transport.data.gouv.fr/), [Where To?](https://www.whereto.app/).
 ### Implementation Status
 The following items have passed through the voting process and will be included in the next version.
 <iframe class="airtable-embed" src="https://airtable.com/embed/appQvTu1nOy6fJwUP/shrNl0TSZGrqD3REa?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="633" style="background: transparent; border: 1px solid #ccc;"></iframe>
