@@ -12,7 +12,7 @@ All change proposals are subject to the GBFS governance process.
 - When a vote passes, the change becomes part of a Release Candidate.
 - Once both a data producer and a date consumer have implemented the change, the Release Candidate becomes an official version release.
 
-The full text of the [project governance process](https://github.com/MobilityData/gbfs/blob/master/governance.md) can be found on the project GitHub repository.
+**[See the Governance Process](../specification/process)**
 
 <hr>
 
