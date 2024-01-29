@@ -76,7 +76,7 @@ plugins:
   - redirects:
       redirect_maps:
         'home.md': 'index.md'
-        'major-change-proposals.md': 'specification/change-proposals.md'
+        'major-change-proposals.md': 'https://github.com/MobilityData/gbfs/issues'
         'tools-services.md': 'toolbox/index.md'
         'faq.md': 'learn/faq.md'
         'about.md': 'participate.md'
