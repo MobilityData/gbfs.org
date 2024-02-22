@@ -36,6 +36,8 @@ theme:
       - content.tabs.link
       - search.suggest
   custom_dir: theme_overrides
+  icon:
+    alternate: octicons/globe-24
 extra_css:
   - assets/stylesheets/extra.css
 extra:
@@ -82,7 +84,7 @@ plugins:
         'about.md': 'participate.md'
   - external-markdown
   - i18n:
-      docs_structure: folder
+      docs_structure: suffix
       reconfigure_search: false
       reconfigure_material: true
       languages:
@@ -90,6 +92,21 @@ plugins:
           name: English
           build: true
           default: true
+        - locale: fr
+          name: Français
+          build: true
+          nav_translations:
+            Home: Accueil
+            Specification: Spécification
+            Current Version: Version actuelle
+            Governance Process: Processus de gouvernance
+            Data Quality: Qualité des données
+            Toolbox: Outils
+            Community Tools and Resources: Outils et ressources
+            Glossary: Glossaire
+            Learn: Apprendre
+            White Papers: Livres blancs
+            Participate: Participer
 
 nav:
 - Home: index.md
