@@ -16,8 +16,7 @@
 - [v2.0](https://github.com/MobilityData/gbfs/blob/v2.0/gbfs.md) - Version 2.0
 - [v1.1](https://github.com/MobilityData/gbfs/blob/v1.1/gbfs.md) - Version 1.1
 
-As described in the [GBFS governance](process),
-when changes are made to the specification, the changes are placed into Release Candidate (RC) status. The changes remain in RC status pending implementation.
+As described in the [GBFS governance](process), when changes are made to the specification, the changes are placed into Release Candidate (RC) status. The changes remain in RC status pending implementation.
 
 * **Implementation requirements are that at least 1 producer and 1 consumer implement the changes.**
 * **The implementors MUST be stakeholders other than The Advocate (who opened the PR).**

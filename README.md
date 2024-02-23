@@ -12,6 +12,10 @@ To propose a feature, content addition, or UI/UX improvement, open an [issue](ht
 
 Alternatively, you can provide feedback using this [form](https://mobilitydata.typeform.com/to/BCiwESfg).
 
+### Contributing translations
+
+GBFS.org uses [Simpleen](https://simpleen.io/), an automated machine learning translation tool, to ensure translations are kept up to date with repository changes.
+
 ## Building the site locally
 
 1. In Terminal, change the directory to one where you wish to build the site.

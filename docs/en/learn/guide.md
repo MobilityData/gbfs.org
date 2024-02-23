@@ -173,7 +173,7 @@ The best way to ensure that the feeds you produce are valid, is to generate a da
 
 <img src="../../img/data_model.png" width="600px" alt="Data model">
 
-_A data model generated from the [GBSF JSON schema](https://github.com/MobilityData/gbfs-json-schema) is the safest and most efficient way to transform your data into the GBFS structure._
+_A data model generated from the [GBFS JSON schema](https://github.com/MobilityData/gbfs-json-schema) is the safest and most efficient way to transform your data into the GBFS structure._
 
 You can use the [Entur](https://developer.entur.org/) open source [GBFS Java model](https://github.com/entur/gbfs-java-model), generated from the official [GBFS JSON schema](https://github.com/MobilityData/gbfs-json-schema). Or you can find generator tools for many programming languages at [json-schema.org](https://json-schema.org/implementations.html#generators-from-schemas).
 
