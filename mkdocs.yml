@@ -84,7 +84,7 @@ plugins:
         'about.md': 'participate.md'
   - external-markdown
   - i18n:
-      docs_structure: suffix
+      docs_structure: folder
       reconfigure_search: false
       reconfigure_material: true
       languages:
