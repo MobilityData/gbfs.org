@@ -13,6 +13,8 @@ validation:
     unrecognized_links: ignore
 
 theme:
+  language: en
+  locale: en
   logo_light_mode: assets/venn.svg
   logo_dark_mode: assets/venn.svg
   palette:
@@ -110,22 +112,22 @@ plugins:
             Participate: Participer
 
 nav:
-- Home: index.md
-- Specification:
-  - specification/index.md
-  - Current Version: specification/reference.md
-  - Governance Process: specification/process.md
-- Data Quality: data-quality.md
-- Toolbox:
-  - toolbox/index.md
-  - Community Tools and Resources: toolbox/resources.md
-  - Glossary: toolbox/glossary.md
-- Learn:
-  - learn/index.md
-  - Guide: learn/guide.md
-  - White Papers: 
-    - learn/white-papers/index.md
-    - Data Policy: learn/white-papers/data-policy.md
-    - Data Policy Europe: learn/white-papers/data-policy-europe.md
-  - FAQ: learn/faq.md
-- Participate: participate.md
+  - Home: index.md
+  - Specification:
+    - specification/index.md
+    - Current Version: specification/reference.md
+    - Governance Process: specification/process.md
+  - Data Quality: data-quality.md
+  - Toolbox:
+    - toolbox/index.md
+    - Community Tools and Resources: toolbox/resources.md
+    - Glossary: toolbox/glossary.md
+  - Learn:
+    - learn/index.md
+    - Guide: learn/guide.md
+    - White Papers: 
+      - learn/white-papers/index.md
+      - Data Policy: learn/white-papers/data-policy.md
+      - Data Policy Europe: learn/white-papers/data-policy-europe.md
+    - FAQ: learn/faq.md
+  - Participate: participate.md
