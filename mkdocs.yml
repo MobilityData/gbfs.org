@@ -14,7 +14,7 @@ validation:
 
 theme:
   logo_light_mode: assets/venn.svg
-  logo_dark_mode: assets/library-white.svg
+  logo_dark_mode: assets/venn.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -77,11 +77,11 @@ plugins:
       lang: en
   - redirects:
       redirect_maps:
-        'home.md': 'index.md'
+        'home.md': 'en/index.md'
         'major-change-proposals.md': 'https://github.com/MobilityData/gbfs/issues'
-        'tools-services.md': 'toolbox/index.md'
-        'faq.md': 'learn/faq.md'
-        'about.md': 'participate.md'
+        'tools-services.md': 'en/toolbox/index.md'
+        'faq.md': 'en/learn/faq.md'
+        'about.md': 'en/participate.md'
   - external-markdown
   - i18n:
       docs_structure: folder
@@ -105,6 +105,7 @@ plugins:
             Community Tools and Resources: Outils et ressources
             Glossary: Glossaire
             Learn: Apprendre
+            Guide: Guide
             White Papers: Livres blancs
             Participate: Participer
 
@@ -121,6 +122,7 @@ nav:
   - Glossary: toolbox/glossary.md
 - Learn:
   - learn/index.md
+  - Guide: learn/guide.md
   - White Papers: 
     - learn/white-papers/index.md
     - Data Policy: learn/white-papers/data-policy.md
