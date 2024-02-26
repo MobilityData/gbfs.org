@@ -10,7 +10,7 @@ To edit the General Bikeshare Feed Specification reference, go to the [MobilityD
 
 To propose a feature, content addition, or UI/UX improvement, open an [issue](https://github.com/MobilityData/gbfs.org/issues/new) or [pull request](https://github.com/MobilityData/gbfs.org/pulls) on this repository. 
 
-Alternatively, you can provide feedback using this [form](https://mobilitydata.typeform.com/to/BCiwESfg).
+Alternatively, you can provide feedback using this [form](https://form.typeform.com/to/BCiwESfg).
 
 ### Contributing translations
 
