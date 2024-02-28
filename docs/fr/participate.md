@@ -20,11 +20,7 @@ Toutes les propositions de modification sont soumises au processus de gouvernanc
 
 Cette feuille de route a été élaborée sur la base des commentaires que nous avons reçus de la communauté GBFS et de l'industrie de la mobilité partagée. Si vous pensez qu'il y a des fonctionnalités ou des changements qui devraient faire partie de cette feuille de route, nous aimerions les connaître. Si vous souhaitez contribuer au projet, veuillez utiliser le bouton " **Submit idea"** ou nous contacter à l'adresse <sharedmobility@mobilitydata.org> pour coordonner votre contribution.
 
-<iframe src="https://portal.productboard.com/vejjy7p1a6gzdqbs2ev2ztn6?hide_logo=1" frameborder="0" height=500px width=100%></iframe>
-<hr>
-<iframe src="https://portal.productboard.com/xcpvceqebovhprgzprgr2ryb?hide_logo=1" frameborder="0" height=500px width=100%></iframe>
-
-<hr/>
+<iframe src="https://portal.productboard.com/26qpteg4wct9px3jts94uqv8?hide_logo=1" frameborder="0" height=700px width=100%></iframe>
 
 ## Commentaires et questions
 
