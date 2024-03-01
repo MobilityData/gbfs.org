@@ -28,8 +28,8 @@ Pour soutenir ce processus et s'assurer qu'il est aussi rapide que possible, Mob
 
 🎉 Bravo aux premiers adoptant·es ! Ces organisations investissent beaucoup de temps et d'énergie pour mettre en œuvre les changements contenus dans la version candidate et s'assurer que le GBFS continue d'évoluer.
 
-- Producteurs : [Check](https://ridecheck.app/en), [Flamingo](https://flamingoscooters.com/), [TIER](https://www.tier.app/).
-- Applications réutilisatrices : [ENTUR](https://entur.no/), [Transit](https://transitapp.com/?lang=fr), [transport.data.gouv.fr](https://transport.data.gouv.fr/), [Where To ?](https://www.whereto.app/)
+- Producteurs : [Check](https://ridecheck.app/en), [ENTUR](https://entur.no/), [Flamingo](https://flamingoscooters.com/), [TIER](https://www.tier.app/).
+- Applications réutilisatrices : [Dashboard Deelmobiliteit](https://dashboarddeelmobiliteit.nl/), [ENTUR](https://entur.no/), [Transit](https://transitapp.com/?lang=fr), [transport.data.gouv.fr](https://transport.data.gouv.fr/), [Where To?](https://www.whereto.app/).
 
 ### Statut de l'implémentation
 
