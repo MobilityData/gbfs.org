@@ -71,7 +71,7 @@ Next, you will need to model the data into the GBFS structure.
 
 <img src="../../img/gbfs_structure.png" width="600px" alt="GBFS structure">
 
-_A GBFS dataset can be composed of 13 JSON files, some always required, some required under certain conditions and others optional. The [manifest.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson) file lists the auto-discovery URLs for each GBFS dataset produced by a publisher._
+_A GBFS v3 dataset is composed of 12 JSON files, some always required, some required under certain conditions and others optional. The [manifest.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson) file lists the auto-discovery URLs for each GBFS dataset produced by a publisher._
 
 This structure was designed to separate real-time information (eg: [station_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_statusjson) and [vehicle_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_statusjson)) from static information (eg: [system_information.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_informationjson), [station_information.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_informationjson) and [vehicle_types.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_typesjson)). This makes it possible to have a longer cache duration for information that changes less often.
 
