@@ -70,7 +70,7 @@ Ensuite, vous devrez modéliser les données dans la structure GBFS.
 
 <img src="../../../img/gbfs_structure.png" width="600px" alt="GBFS structure"/>
 
-_Un jeu de données GBFS peut être composé de 13 fichiers JSON, certains toujours obligatoires, d'autres obligatoires sous certaines conditions et d'autres optionnels. Le fichier [manifest.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson) énumère les URL pour chaque jeu de données GBFS produit par un éditeur._
+_Un jeu de données GBFS v3 est composé de 12 fichiers JSON, certains toujours obligatoires, d'autres obligatoires sous certaines conditions et d'autres optionnels. Le fichier [manifest.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson) énumère les URL pour chaque jeu de données GBFS produit par un éditeur._
 
 Cette structure a été conçue pour séparer les informations en temps réel (ex : [station_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_statusjson) et [vehicle_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_statusjson)) des informations statiques (ex : [system_information.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_informationjson), [station_information.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_informationjson) et [vehicle_types.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_typesjson)). Cela permet d'avoir une durée de cache plus longue pour les informations qui changent moins souvent.
 
