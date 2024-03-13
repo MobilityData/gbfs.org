@@ -79,11 +79,11 @@ plugins:
       lang: en
   - redirects:
       redirect_maps:
-        'home.md': 'en/index.md'
+        'home.md': 'index.md'
         'major-change-proposals.md': 'https://github.com/MobilityData/gbfs/issues'
-        'tools-services.md': 'en/toolbox/index.md'
-        'faq.md': 'en/learn/faq.md'
-        'about.md': 'en/participate.md'
+        'tools-services.md': 'toolbox/index.md'
+        'faq.md': 'learn/faq.md'
+        'about.md': 'participate.md'
   - external-markdown
   - i18n:
       docs_structure: folder
