@@ -86,7 +86,7 @@ Exemple de fichier [station_status.json](https://github.com/MobilityData/gbfs/bl
 {
   "last_updated": "2023-07-30T13:45:29+02:00",
   "ttl": 0,
-  "version": "3.0-RC",
+  "version": "3.0",
   "data": {
     "stations": [
       {
@@ -130,7 +130,7 @@ Exemple de fichier [vehicle_status.json](https://github.com/MobilityData/gbfs/bl
 {
   "last_updated": "2023-07-30T13:45:29+02:00",
   "ttl": 0,
-  "version": "3.0-RC",
+  "version": "3.0",
   "data": {
     "vehicles": [
       {
@@ -164,7 +164,7 @@ Pour protéger la vie privée des utilisateur·rices, les véhicules en location
 
 #### Utiliser la version actuelle de GBFS
 
-Utilisez la [version actuelle](https://github.com/MobilityData/gbfs/blob/master/README.md#current-version-recommended) de la spécification pour bénéficier de la plus grande couverture des types de véhicules et de leurs caractéristiques. Ce guide utilise la version 3.0-RC de la spécification GBFS. Les versions [Release Candidate](https://github.com/MobilityData/gbfs/wiki/Release-Candidate-Feature-Implementation) (-RC) sont des versions qui recevront le statut de version actuelle lorsqu'elles auront été entièrement implémentées dans des flux publics.
+Utilisez la [version actuelle](https://github.com/MobilityData/gbfs/blob/master/README.md#current-version-recommended) de la spécification pour bénéficier de la plus grande couverture des types de véhicules et de leurs caractéristiques. Ce guide utilise la version 3.0 de la spécification GBFS. Les versions [Release Candidate](https://github.com/MobilityData/gbfs/blob/master/README.md#release-candidates) (-RC) sont des versions qui recevront le statut de version actuelle lorsqu'elles auront été entièrement implémentées dans des flux publics.
 
 #### Générer un modèle de données à partir du schéma JSON
 
