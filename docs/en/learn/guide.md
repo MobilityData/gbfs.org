@@ -8,12 +8,12 @@ This guide is intended for technical teams of shared mobility services. In this 
 
 The General Bikeshare Feed Specification (GBFS) was created in 2014 by [Mitch Vars](https://github.com/mplsmitch), which was then adopted by [NABSA](https://nabsa.net/), to standardize the way shared bike systems communicate with trip planning applications. 
 
-Powered by MobilityData since 2019 and officially transferred to MobilityData in 2022, GBFS has evolved to allow [over 900](https://github.com/MobilityData/gbfs/blob/master/systems.csv) docked and dockless systems worldwide such as scooters, mopeds and shared cars to appear in trip planning applications.
+Powered by MobilityData since 2019 and officially transferred to MobilityData in 2022, GBFS has evolved to allow [over 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) docked and dockless systems worldwide such as scooters, mopeds and shared cars to appear in trip planning applications.
 
 <img src="../../img/gbfs_producer_consumer_logos.png" width="1000px" alt="GBFS producer consumer logos">
 
 
-_GBFS is a standardized data format used by [over 900](https://github.com/MobilityData/gbfs/blob/master/systems.csv) shared mobility services worldwide to appear in trip planners and other consuming applications._
+_GBFS is a standardized data format used by [over 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) shared mobility services worldwide to appear in trip planners and other consuming applications._
 
 ## Overview of a GBFS feed
 
@@ -87,7 +87,7 @@ Example of [station_status.json](https://github.com/MobilityData/gbfs/blob/maste
 {
   "last_updated": "2023-07-30T13:45:29+02:00",
   "ttl": 0,
-  "version": "3.0-RC",
+  "version": "3.0",
   "data": {
     "stations": [
       {
@@ -131,7 +131,7 @@ Example of [vehicle_status.json](https://github.com/MobilityData/gbfs/blob/maste
 {
   "last_updated": "2023-07-30T13:45:29+02:00",
   "ttl": 0,
-  "version": "3.0-RC",
+  "version": "3.0",
   "data": {
     "vehicles": [
       {
@@ -165,7 +165,7 @@ To protect user privacy, vehicles in active rental should not be included in thi
 
 #### Use the Current Version of GBFS
 
-Use the [Current Version](https://github.com/MobilityData/gbfs/blob/master/README.md#current-version-recommended) of the specification to benefit from the most coverage of vehicle types and features. This guide uses version 3.0-RC of the GBFS specification. [Release Candidates](https://github.com/MobilityData/gbfs/wiki/Release-Candidate-Feature-Implementation) (-RC) are versions that will receive Current Version status when they have been fully implemented in public feeds.
+Use the [Current Version](https://github.com/MobilityData/gbfs/blob/master/README.md#current-version-recommended) of the specification to benefit from the most coverage of vehicle types and features. This guide uses version 3.0 of the GBFS specification. [Release Candidates](https://github.com/MobilityData/gbfs/blob/master/README.md#release-candidates) (-RC) are versions that will receive Current Version status when they have been fully implemented in public feeds.
 
 #### Generate a data model from the JSON schema
 

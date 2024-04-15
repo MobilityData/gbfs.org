@@ -8,11 +8,11 @@ Ce guide est destiné aux équipes techniques des services de mobilité partagé
 
 Le General Bikeshare Feed Specification (GBFS) a été créé en 2014 par [Mitch Vars](https://github.com/mplsmitch), puis adopté par [NABSA](https://nabsa.net/), afin de standardiser la façon dont les systèmes de vélos en libre-service communiquent avec les applications de planification d'itinéraires.
 
-Maintenu par MobilityData depuis 2019 et officiellement transféré à MobilityData en 2022, GBFS a évolué pour permettre à [plus de 900](https://github.com/MobilityData/gbfs/blob/master/systems.csv) systèmes avec stations et free-floating dans le monde entier, tels que les trotinettes, les scooters et les voitures partagées, d'apparaître dans les applications de planification d'itinéraires.
+Maintenu par MobilityData depuis 2019 et officiellement transféré à MobilityData en 2022, GBFS a évolué pour permettre à [plus de 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) systèmes avec stations et free-floating dans le monde entier, tels que les trotinettes, les scooters et les voitures partagées, d'apparaître dans les applications de planification d'itinéraires.
 
 <img src="../../../img/gbfs_producer_consumer_logos.png" width="1000px" alt="GBFS producer consumer logos"/>
 
-_GBFS est un format de données standardisé utilisé par [plus de 900](https://github.com/MobilityData/gbfs/blob/master/systems.csv) services de mobilité partagée dans le monde pour apparaître dans les planificateurs d'itinéraires et autres applications réutilisatrices des données._
+_GBFS est un format de données standardisé utilisé par [plus de 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) services de mobilité partagée dans le monde pour apparaître dans les planificateurs d'itinéraires et autres applications réutilisatrices des données._
 
 ## Aperçu d'un flux GBFS
 
@@ -86,7 +86,7 @@ Exemple de fichier [station_status.json](https://github.com/MobilityData/gbfs/bl
 {
   "last_updated": "2023-07-30T13:45:29+02:00",
   "ttl": 0,
-  "version": "3.0-RC",
+  "version": "3.0",
   "data": {
     "stations": [
       {
@@ -130,7 +130,7 @@ Exemple de fichier [vehicle_status.json](https://github.com/MobilityData/gbfs/bl
 {
   "last_updated": "2023-07-30T13:45:29+02:00",
   "ttl": 0,
-  "version": "3.0-RC",
+  "version": "3.0",
   "data": {
     "vehicles": [
       {
@@ -164,7 +164,7 @@ Pour protéger la vie privée des utilisateur·rices, les véhicules en location
 
 #### Utiliser la version actuelle de GBFS
 
-Utilisez la [version actuelle](https://github.com/MobilityData/gbfs/blob/master/README.md#current-version-recommended) de la spécification pour bénéficier de la plus grande couverture des types de véhicules et de leurs caractéristiques. Ce guide utilise la version 3.0-RC de la spécification GBFS. Les versions [Release Candidate](https://github.com/MobilityData/gbfs/wiki/Release-Candidate-Feature-Implementation) (-RC) sont des versions qui recevront le statut de version actuelle lorsqu'elles auront été entièrement implémentées dans des flux publics.
+Utilisez la [version actuelle](https://github.com/MobilityData/gbfs/blob/master/README.md#current-version-recommended) de la spécification pour bénéficier de la plus grande couverture des types de véhicules et de leurs caractéristiques. Ce guide utilise la version 3.0 de la spécification GBFS. Les versions [Release Candidate](https://github.com/MobilityData/gbfs/blob/master/README.md#release-candidates) (-RC) sont des versions qui recevront le statut de version actuelle lorsqu'elles auront été entièrement implémentées dans des flux publics.
 
 #### Générer un modèle de données à partir du schéma JSON
 
