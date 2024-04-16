@@ -14,6 +14,7 @@ Since it was first established in 2015, GBFS has become the de facto standard fo
 **Policymakers should require public GBFS APIs when permitting or licensing shared mobility operations.** 
 
 GBFS provides a common language for shared mobility operators to share information about options available to travelers. GBFS includes information about vehicles (bicycles, scooters, moped, and cars), stations, and more:
+
 * Vehicle, station, and dock locations and availability
 * Vehicle characteristics – type of power, distance that can be traveled on remaining charge
 * Geofenced areas for rules related to speed, parking, and prohibited zones
@@ -69,6 +70,12 @@ GBFS is designed to accommodate the needs of a wide variety of mobility platform
    </td>
   </tr>
   <tr>
+   <td><strong>manifest.json</strong>
+   </td>
+   <td><strong>Optional</strong> – This file is an index of gbfs.json URLs for each GBFS data set produced by a publisher. 
+   </td>
+  </tr>
+  <tr>
    <td><strong>gbfs_versions.json</strong>
    </td>
    <td><strong>Optional</strong> – This file lists all files published by the operator according to their versions. Maintaining feeds in past versions as new versions of GBFS become available may prevent breaking of downstream applications.
@@ -83,7 +90,7 @@ GBFS is designed to accommodate the needs of a wide variety of mobility platform
   <tr>
    <td><strong>vehicle_types.json</strong>
    </td>
-   <td><strong>Conditionally Required</strong> – This file is required of systems that include information about vehicle types in the free_bike_status file or its equivalent. This file should be published by systems offering multiple vehicle types for rental, for example pedal bikes and ebikes. If this file is not published, all vehicles in the feed are assumed to be non-motorized bicycles.  
+   <td><strong>Conditionally Required</strong> – This file is required of systems that include information about vehicle types in the vehicle_status file or its equivalent. This file should be published by systems offering multiple vehicle types for rental, for example pedal bikes and ebikes. If this file is not published, all vehicles in the feed are assumed to be non-motorized bicycles.  
    </td>
   </tr>
   <tr>
@@ -99,24 +106,11 @@ GBFS is designed to accommodate the needs of a wide variety of mobility platform
    </td>
   </tr>
   <tr>
-   <td><strong>free_bike_status.json</strong>
+   <td><strong>vehicle_status.json</strong>
    </td>
    <td><strong>Conditionally Required</strong> – This file (or its equivalent) is required for free floating (dockless) or hybrid (docked/dockless) vehicles. It is optional for station based (docked) vehicles. This is a real-time file that shows the current location, availability status, and other attributes of individual vehicles in a fleet. May optionally be used in station based (docked) systems to publish information on vehicle types, charge or fuel levels, and other vehicle attributes. This data may be used to determine the number of vehicles deployed, their availability for rental, and their distribution within the service area. 
    </td>
   </tr>
-  <tr>
-   <td><strong>system_hours.json</strong>
-   </td>
-   <td><strong>Optional</strong> – This file is used to indicate hours and days of operation when vehicles are available for rent. It should be required if the service is not available for 24 hours a day, 7 days a week. If this file is not published, it indicates that vehicles are available for rental 24/7. (This file may be deprecated in the future, in which case system hours should be published using the method described in the appropriate version.)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>system_calendar.json</strong>
-   </td>
-   <td><strong>Optional</strong> – This optional file should be required of systems that operate seasonally or that do not offer continuous year-round service. (This file may be deprecated in the future in which case  system hours should be published using the method described in the appropriate version.)
-   </td>
-  </tr>
-  <tr>
    <td><strong>system_regions.json</strong>
    </td>
    <td><strong>Optional</strong> – This file is used to define regions within a system. It may be used to support reporting in systems that encompass multiple jurisdictions.
@@ -154,7 +148,9 @@ At minimum, a shared mobility data policy should:
 
 **Sample policy language**
 
->_[COMPANY] shall provide a publicly accessible API that conforms to the General Bikeshare Feed Specification (GBFS) current version available at [https://github.com/MobilityData/gbfs](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) . [COMPANY] must make the API available to the public on the open internet without requiring authentication._
+>_[COMPANY] shall provide a publicly accessible API that conforms to the General Bikeshare Feed Specification (GBFS) current version available at [https://github.com/MobilityData/gbfs](https://github.com/MobilityData/gbfs/blob/master/gbfs.md)._
+>
+>_[COMPANY] must make the API available to the public on the open internet without requiring authentication._
 >
 >_[COMPANY] shall inform [PERMITTING AGENCY] of the URL for the gbfs.json endpoint prior to deploying vehicles. [COMPANY] must notify [PERMITTING AGENCY] at least 30 days prior to changing the URL of the gbfs.json endpoint._
 >
@@ -163,9 +159,10 @@ At minimum, a shared mobility data policy should:
 >_Upon release of a new version of GBFS, [COMPANY] must update API to the new version within [XX<sup>1</sup>] days unless prior arrangement has been made with [PERMITTING AGENCY]._
 >
 >_GBFS API must contain the following endpoints and all fields required under the GBFS specification:_
+>
 >* _gbfs.json_
 >* _system_information.json_
->* _[ list of additional endpoints e.g. station_information.json, station_status.json, free_bike status.json or its equivalent, etc.]_
+>* _[ list of additional endpoints e.g. station_information.json, station_status.json, vehicle_status.json or its equivalent, etc.]_
 >
 >_In addition to the fields required under the specification the following files must also contain these optional fields:_
 >
@@ -189,13 +186,7 @@ MobilityData Shared Mobility team email: <sharedmobility@mobilitydata.org>
 
 ## **Acknowledgement**
 
-**Shared Mobility Team at MobilityData**
-
-[Heidi Guenin](https://www.linkedin.com/in/heidiguenin/) - Director, Product, Shared Mobility
-
-[Mitch Vars](https://www.linkedin.com/in/mitchvars/) - Senior, Shared Mobility Specialist
-
-[Josée Sabourin](https://www.linkedin.com/in/josee-sabourin/) - Shared Mobility Specialist
+[Heidi Guenin](https://www.linkedin.com/in/heidiguenin/), [Mitch Vars](https://www.linkedin.com/in/mitchvars/) and [Josée Sabourin](https://www.linkedin.com/in/josee-sabourin/).
 
 **Reviewers**
 
