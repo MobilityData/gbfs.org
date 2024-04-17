@@ -1,15 +1,21 @@
-# GBFS and Shared Mobility Data Policy for European Cities
+# GBFS and Shared Mobility Data Policy
 
-This guide is also available in [Portuguese](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada-2/), [Spanish](https://mobilitydata.org/gbfs-y-politica-de-datos-de-movilidad-compartida-2/), and [French](https://mobilitydata.org/gbfs-et-les-donnees-de-mobilite-partagee-des-politiques-publiques-au-service-des-villes-europeennes/). 
+## Helping cities support seamless and sustainable mobility options through GBFS.
+
+This guide is also available in [Portuguese](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada-2/), [Spanish](https://mobilitydata.org/gbfs-y-politica-de-datos-de-movilidad-compartida-2/), and [French](https://mobilitydata.org/gbfs-et-les-donnees-de-mobilite-partagee-des-politiques-publiques-au-service-des-villes-europeennes/).
 
 ## Overview
 Securing access to mobility data is an important part of a shared mobility program. Public access to mobility data builds trust in mobility programs and increases shared mobility adoption. Writing effective policy can ensure that mobility data is both accurate and accessible.
 
-This report is intended primarily for individuals responsible for shared mobility procurement and policies at cities or other local authorities. The report provides a foundational understanding of how GBFS supports seamless, sustainable mobility options and how to leverage open data’s potential when writing policy that can influence shared mobility adoption and practice. This report is applicable primarily to cities in Europe. For American stakeholders , see our report on [data policy for American cities](../data-policy).
+This report is intended primarily for individuals responsible for shared mobility procurement and policies at cities or other local authorities. The report provides a foundational understanding of how GBFS supports seamless, sustainable mobility options and how to leverage open data’s potential when writing policy that can influence shared mobility adoption and practice.
 
+<img src="../../../img/donkey_republic.jpeg" width="700px" alt="Donkey Republic"/>
 
+_Photo by [Martti Tulenheimo](https://flic.kr/p/2aLY7Vc)._
+
+## How GBFS can support the effort for cities to offer sustainable transportation
 ### GBFS makes it easy for travelers to find and use shared mobility.
-Since it was first established in 2015, GBFS has become the de facto standard for shared mobility data. The specification is now in use in hundreds of cities in over 40 countries worldwide.
+Since it was first established in 2015, GBFS has become the de facto standard for shared mobility data. The specification is now in use in hundreds of cities across at least 45 countries worldwide.
 
 **Policymakers should require public GBFS APIs when permitting or licensing shared mobility operations.** 
 
@@ -34,10 +40,14 @@ Policies requiring standardized open data can prevent the creation of walled gar
 
 For operators, standardization means an end to a patch-work of regulation that requires different data in different formats for each city in which they operate. Standardization provides assurance to operators that data requests can be clearly defined and are fully implementable. GBFS also carries the potential to bring more users to an operator’s platform by integrating with 3rd party apps. As a consensus-based, open source standard, operators have an equal voice along with cities in the ongoing development of the GBFS specification. Comprehensive documentation and resources are available to cities and operators alike to aid in implementation.
 
+<img src="../../../img/velib.jpeg" width="700px" alt="Velib"/>
+
+_Photo by [jean-louis Zimmermann](https://flic.kr/p/8SYDoq)._
+
 ## Recommendations
 
 ### Include GBFS as part of a tender.
-Your tender should require a publicly accessible GBFS API and should set expectations for the data needed to meet your policy goals.
+Your tender should require a publicly accessible GBFS API as a requirement and should set expectations for the data needed to meet your policy goals.
 
 **Sample language for tenders**
 
@@ -53,6 +63,9 @@ When developing data policies, it is a good idea to gather input from subject ma
 
 GBFS is designed to accommodate the needs of a wide variety of mobility platforms and use cases, from traditional docked bikeshare to free floating bikes, scooters, and other vehicles. The specification consists of thirteen files or endpoints that contain different types of mobility data. Some of these files and their associated fields are required in order to be compliant with the specification, while others are optional. Which of these files are required by the specification depends on the specific type of mobility system being represented. Optional files and fields provide additional data for specific purposes and use cases. Municipalities may need to require some of these optional files or fields in their regulations to provide additional information in support of travelers, municipal goals, or other needs.
 
+<img src="../../../img/spin.jpeg" width="700px" alt="Velib"/>
+
+_Photo by [Spin](https://www.spin.app/)._
 
 ### Overview of GBFS Files
 
@@ -175,6 +188,9 @@ For an example of how a regulator may tailor this language to their particular n
 ## Additional considerations
 The value of open mobility data can only be fully realized when that data is easily accessible to the public and traveler privacy is protected; GBFS is designed to support both. Cities and agencies should publish the locations of gbfs.json files on their websites or open data portals and on the [openly available dataset catalog](https://github.com/MobilityData/gbfs/blob/master/systems.csv) connected to GBFS.
 
+Extreme care should be taken when requiring data from operators that is outside the scope of the specification. Data regarding vehicles that are part of an active rental should never appear in GBFS feeds. The over-collection of data — collecting data without a defined purpose — is strongly discouraged. Combining shared mobility data with other publicly available datasets could have serious privacy implications. 
+
+### For European countries
 Requesting open data from shared mobility operators will become even more crucial in the upcoming years as the European Commission enforces the obligation for each Member State to set a National Access Point (NAP) acting as a portal to all open data in regards to mobility services and all consumer-facing information. NAPs are designed to support a thriving European ecosystem built on interoperability between mobility modes and regions, reinforcing the ability of any consumer to travel seamlessly within the European Union. GBFS is a common and accepted format that allows countries to comply with the European regulations on several levels:
 
 * It complies with the will of creating a common open market, which will prevent monopolistic positions;
@@ -185,9 +201,7 @@ Requesting open data from shared mobility operators will become even more crucia
 
 In opening the data, some NAPs such as the one managed by [Entur](https://entur.no/) in Norway or France’s [data.gouv.fr](https://www.data.gouv.fr/fr/), have set up a team to support mobility operators to open their data. Their guidance on how to leverage GBFS can be sought after, if needed.
 
-GBFS has been developed and tested under a consensus model to ensure that data defined in the specification will not negatively impact user privacy. Extreme care should be taken when requiring data from operators that is outside the scope of the GBFS has been developed and tested under a consensus model to ensure that data defined in the specification will not negatively impact user privacy. Current versions of GBFS are compliant with GDPR, in that they do not contain any personal or personally identifiable data.  The key point to remember is that with GBFS there is no trivial way to reconstruct a single user’s journey or habits thanks to the mandatory rotation of vehicle identification numbers.
-
-Extreme care should be taken when requiring data from operators that is outside the scope of the specification. Data regarding vehicles that are part of an active rental should never appear in GBFS feeds. The over-collection of data — collecting data without a defined purpose — is strongly discouraged. Combining shared mobility data with other publicly available datasets could have serious privacy implications. One will also want to be careful with compliance to the GDPR spirit which states that data collection must be adequate and proportionate to operations needs and cannot contain any identifying information without clear consent from individuals.
+GBFS has been developed and tested under a consensus model to ensure that data defined in the specification will not negatively impact user privacy. Extreme care should be taken when requiring data from operators that is outside the scope of the GBFS has been developed and tested under a consensus model to ensure that data defined in the specification will not negatively impact user privacy. Current versions of GBFS are compliant with GDPR, in that they do not contain any personal or personally identifiable data.  The key point to remember is that with GBFS there is no trivial way to reconstruct a single user’s journey or habits thanks to the mandatory rotation of vehicle identification numbers. One will also want to be careful with compliance to the GDPR spirit which states that data collection must be adequate and proportionate to operations needs and cannot contain any identifying information without clear consent from individuals.
 
 To support better interoperability within the European common market, the European standardization body CEN has developed Transmodel (the European Norm “Public Transport Reference Data Model” (EN 12896)) – a data standard that facilitates interoperability between the information processing systems of transport operators and agencies by using matching definitions, structures, and semantics for the data elements used by their various systems. Based on Transmodel, further standards have been defined: NeTEx (CEN/TS 16614-1/2/3/5) for the exchange of public transport schedule information, and SIRI (EN 15531-1/2/3/4/5) for real-time information. Both are currently being adapted for “new modes,” including shared mobility solutions.
 
@@ -209,7 +223,13 @@ MobilityData Shared Mobility team email: <sharedmobility@mobilitydata.org>
 
 **Reviewers**
 
+Diego Canales - Global Partnerships Manager, [Populus AI](https://www.populus.ai/)
+
 Josh Johnson - Public Policy Manager, [Spin](https://www.spin.app/)
+
+Andrew Salzberg - Head of Policy, [Transit](https://transitapp.com/)
+
+Michael Schwartz - Head of Customers and Policy, [Ride Report](https://www.ridereport.com/)
 
 Oliver O’Brien - Senior Research Associate, [University College London](https://www.ucl.ac.uk/)
 
