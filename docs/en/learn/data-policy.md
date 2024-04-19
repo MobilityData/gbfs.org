@@ -2,7 +2,7 @@
 
 ## Helping cities support seamless and sustainable mobility options through GBFS.
 
-This guide is also available in [Portuguese](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada-2/), [Spanish](https://mobilitydata.org/gbfs-y-politica-de-datos-de-movilidad-compartida-2/), and [French](https://mobilitydata.org/gbfs-et-les-donnees-de-mobilite-partagee-des-politiques-publiques-au-service-des-villes-europeennes/).
+This guide is also available in [Portuguese](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada-2/), [Spanish](https://mobilitydata.org/gbfs-y-politica-de-datos-de-movilidad-compartida-2/), and [French](/fr/learn/data-policy).
 
 ## Overview
 Securing access to mobility data is an important part of a shared mobility program. Public access to mobility data builds trust in mobility programs and increases shared mobility adoption. Writing effective policy can ensure that mobility data is both accurate and accessible.
@@ -63,7 +63,7 @@ When developing data policies, it is a good idea to gather input from subject ma
 
 GBFS is designed to accommodate the needs of a wide variety of mobility platforms and use cases, from traditional docked bikeshare to free floating bikes, scooters, and other vehicles. The specification consists of thirteen files or endpoints that contain different types of mobility data. Some of these files and their associated fields are required in order to be compliant with the specification, while others are optional. Which of these files are required by the specification depends on the specific type of mobility system being represented. Optional files and fields provide additional data for specific purposes and use cases. Municipalities may need to require some of these optional files or fields in their regulations to provide additional information in support of travelers, municipal goals, or other needs.
 
-<img src="../../../img/spin.jpeg" width="700px" alt="Velib"/>
+<img src="../../../img/spin.jpeg" width="700px" alt="Spin"/>
 
 _Photo by [Spin](https://www.spin.app/)._
 
@@ -115,7 +115,7 @@ _Photo by [Spin](https://www.spin.app/)._
   <tr>
    <td><strong>station_status.json</strong>
    </td>
-   <td><strong>Conditionally Required</strong> – This file is required of systems utilizing docks and optionally may be used in dockless systems to monitor virtual stations.  Any station defined in this file must have a corresponding entry in the station_information.json file.This is a real-time file that shows the current status of a station or virtual station, its vehicles, and its docks. It includes aggregated numbers of available vehicles and docks which may optionally be aggregated by vehicle type. This data may be used to determine equitable distribution of services. The optional field num_bikes_disabled or its equivalent may be useful in determining the total number of deployed vehicles or the percentage of the vehicle fleet that is able to be rented. 
+   <td><strong>Conditionally Required</strong> – This file is required of systems utilizing docks and optionally may be used in dockless systems to monitor virtual stations.  Any station defined in this file must have a corresponding entry in the station_information.json file.This is a real-time file that shows the current status of a station or virtual station, its vehicles, and its docks. It includes aggregated numbers of available vehicles and docks which may optionally be aggregated by vehicle type. This data may be used to determine equitable distribution of services. The optional field "num_vehicles_disabled" or its equivalent may be useful in determining the total number of deployed vehicles or the percentage of the vehicle fleet that is able to be rented. 
    </td>
   </tr>
   <tr>
