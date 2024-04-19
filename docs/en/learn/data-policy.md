@@ -61,7 +61,7 @@ As the shared mobility industry evolves,  GBFS evolves to include new features, 
 
 When developing data policies, it is a good idea to gather input from subject matter experts who will be involved in the program implementation. These may include staff from your technology, licensing, or regulation departments or third parties involved in data analysis.
 
-GBFS is designed to accommodate the needs of a wide variety of mobility platforms and use cases, from traditional docked bikeshare to free floating bikes, scooters, and other vehicles. The specification consists of thirteen files or endpoints that contain different types of mobility data. Some of these files and their associated fields are required in order to be compliant with the specification, while others are optional. Which of these files are required by the specification depends on the specific type of mobility system being represented. Optional files and fields provide additional data for specific purposes and use cases. Municipalities may need to require some of these optional files or fields in their regulations to provide additional information in support of travelers, municipal goals, or other needs.
+GBFS is designed to accommodate the needs of a wide variety of mobility platforms and use cases, from traditional docked bikeshare to free floating bikes, scooters, and other vehicles. The specification consists of 12 files or endpoints that contain different types of mobility data. Some of these files and their associated fields are required in order to be compliant with the specification, while others are optional. Which of these files are required by the specification depends on the specific type of mobility system being represented. Optional files and fields provide additional data for specific purposes and use cases. Municipalities may need to require some of these optional files or fields in their regulations to provide additional information in support of travelers, municipal goals, or other needs.
 
 <img src="../../../img/spin.jpeg" width="700px" alt="Spin"/>
 
@@ -97,25 +97,25 @@ _Photo by [Spin](https://www.spin.app/)._
   <tr>
    <td><strong>system_information.json</strong>
    </td>
-   <td><strong>Required</strong> – This file contains basic information about the shared mobility system, however most of the fields are optional. Best practices are to publish the optional fields phone_number, email  and feed_contact_email. Additional optional fields may be useful depending on your use case.
+   <td><strong>Required</strong> – This file contains basic information about the shared mobility system, however most of the fields are optional. Best practices are to publish the optional fields "phone_number" and "email". Additional optional fields may be useful depending on your use case.
    </td>
   </tr>
   <tr>
    <td><strong>vehicle_types.json</strong>
    </td>
-   <td><strong>Conditionally Required</strong> – This file is required of systems that include information about vehicle types in the vehicle_status file or its equivalent. This file should be published by systems offering multiple vehicle types for rental, for example pedal bikes and ebikes. If this file is not published, all vehicles in the feed are assumed to be non-motorized bicycles.  
+   <td><strong>Conditionally Required</strong> – This file is required of systems that include information about vehicle types in the "vehicle_status.json" file or its equivalent. This file should be published by systems offering multiple vehicle types for rental, for example pedal bikes and ebikes. If this file is not published, all vehicles in the feed are assumed to be non-motorized bicycles.  
    </td>
   </tr>
   <tr>
    <td><strong>station_information.json</strong>
    </td>
-   <td><strong>Conditionally Required</strong> – This file is required of systems utilizing docks. Any station defined in this file must have a corresponding entry in the station_status.json file. It contains a list of all stations, their docking or parking capacities, and locations. It supports the configuration of virtual stations that may be used to designate approved parking areas such as racks or geofenced areas for free floating vehicles. This information may be used to support parking restrictions for dockless vehicles through the use of designated parking areas.
+   <td><strong>Conditionally Required</strong> – This file is required of systems utilizing docks. Any station defined in this file must have a corresponding entry in the "station_status.json" file. It contains a list of all stations, their docking or parking capacities, and locations. It supports the configuration of virtual stations that may be used to designate approved parking areas such as racks or geofenced areas for free floating vehicles. This information may be used to support parking restrictions for dockless vehicles through the use of designated parking areas.
    </td>
   </tr>
   <tr>
    <td><strong>station_status.json</strong>
    </td>
-   <td><strong>Conditionally Required</strong> – This file is required of systems utilizing docks and optionally may be used in dockless systems to monitor virtual stations.  Any station defined in this file must have a corresponding entry in the station_information.json file.This is a real-time file that shows the current status of a station or virtual station, its vehicles, and its docks. It includes aggregated numbers of available vehicles and docks which may optionally be aggregated by vehicle type. This data may be used to determine equitable distribution of services. The optional field "num_vehicles_disabled" or its equivalent may be useful in determining the total number of deployed vehicles or the percentage of the vehicle fleet that is able to be rented. 
+   <td><strong>Conditionally Required</strong> – This file is required of systems utilizing docks and optionally may be used in dockless systems to monitor virtual stations.  Any station defined in this file must have a corresponding entry in the "station_information.json" file.This is a real-time file that shows the current status of a station or virtual station, its vehicles, and its docks. It includes aggregated numbers of available vehicles and docks which may optionally be aggregated by vehicle type. This data may be used to determine equitable distribution of services. The optional field "num_vehicles_disabled" or its equivalent may be useful in determining the total number of deployed vehicles or the percentage of the vehicle fleet that is able to be rented. 
    </td>
   </tr>
   <tr>
@@ -178,8 +178,8 @@ At minimum, a shared mobility data policy should:
 >
 >_In addition to the fields required under the specification the following files must also contain these optional fields:_
 >
->* _file_name.json: field_name, field name_
->* _file_name.json: field_name, field name_
+>* _file.json: field name_
+>* _file.json: field name_
 
 *(1.) 90 days recommended*
 
