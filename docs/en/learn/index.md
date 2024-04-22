@@ -1,9 +1,5 @@
 # Learn
 
-<!-- <div class="landing-page">
-    <a class="button" href="white-papers">White Papers</a><a class="button" href="faq">FAQ</a>
-</div> -->
-
 <div class="toolbox"><p><strong>Implementation Guide for Producers</strong></p>
 <ul>
 <li><a href="guide"><strong>See the guide</strong></a></li>
@@ -11,8 +7,7 @@
 
 <div class="toolbox"><p><strong>White Papers</strong></p>
 <ul>
-<li><a href="white-papers/data-policy"><strong>GBFS and Shared Mobility Data Policy</strong></a></li>
-<li><a href="white-papers/data-policy-europe"><strong>GBFS and Shared Mobility Data Policy for European Cities</strong></a></li>
+<li><a href="data-policy"><strong>GBFS and Shared Mobility Data Policy</strong></a></li>
 </ul></div>
 
 <div class="toolbox"><p><strong>Frequently Asked Questions</strong></p>

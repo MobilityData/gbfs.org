@@ -1,9 +1,5 @@
 # Apprendre
 
-<!-- <div class="landing-page">
-    <a class="button" href="white-papers">White Papers</a><a class="button" href="faq">FAQ</a>
-</div> -->
-
 <div class="toolbox"><p><strong>Guide d'implémentation pour les producteurs</strong></p>
 <ul>
 <li><a href="guide"><strong>Voir le guide</strong></a></li>
@@ -11,8 +7,7 @@
 
 <div class="toolbox"><p><strong>Livres blancs</strong></p>
 <ul>
-<li><a href="white-papers/data-policy"><strong>GBFS et politique de données sur la mobilité partagée</strong></a></li>
-<li><a href="white-papers/data-policy-europe"><strong>Politique de données GBFS et de mobilité partagée pour les villes européennes</strong></a></li>
+<li><a href="data-policy"><strong>GBFS et politique de données sur la mobilité partagée</strong></a></li>
 </ul></div>
 
 <div class="toolbox"><p><strong>Foire aux questions</strong></p>

@@ -50,7 +50,7 @@ Consumers of GBFS data rely on the information provided to display a variety of 
 
 Regulators play a vital role in overseeing data quality in the shared mobility industry. To maintain high standards, consider the following:
 
-1. Establish Data Quality Standards: Require high quality GBFS data, in the form of the most current official version and enforce quality thresholds for GBFS data producers. This can help ensure uniform data quality across the industry. To learn more about how to require GBFS data, read our [GBFS Policy Guides for the Americas](../learn/white-papers/data-policy/) and for [Europe](../learn/white-papers/data-policy-europe/).
+1. Establish Data Quality Standards: Require high quality GBFS data, in the form of the most current official version and enforce quality thresholds for GBFS data producers. This can help ensure uniform data quality across the industry. To learn more about how to require GBFS data, read our [GBFS Policy Guide](../learn/data-policy/).
 2. Audit and Compliance: Regularly audit data producers for compliance with the GBFS specification, you can do so using the [Canonical GBFS Validator](https://gbfs-validator.mobilitydata.org/). Encourage transparency and accountability.
 3. User Education: Educate fellow regulators about what to expect from GBFS data and how to identify quality issues. This can empower regulators to make informed decisions.
 4. Participate: Participate in discussions around the advancement of the GBFS specification on MobilityData’s [GBFS Slack channel](https://share.mobilitydata.org/slack) or on the [Github repository](https://github.com/MobilityData/gbfs) to stay up-to-date on all the new changes to the specification in order to be prepared to accept the latest version of GBFS.
