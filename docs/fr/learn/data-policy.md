@@ -91,7 +91,7 @@ _Photo prise par [Spin](https://www.spin.app/)._
   <tr>
    <td><strong>manifest.json</strong>
    </td>
-   <td><strong>Optionnel</strong> - Ce fichier est un index des URLs gbfs.json pour chaque jeu de données GBFS produit par un éditeur. 
+   <td><strong>Requis sous condition</strong> - Ce fichier est un index des URLs gbfs.json pour chaque jeu de données GBFS produit par un éditeur. 
    </td>
   </tr>
   <tr>

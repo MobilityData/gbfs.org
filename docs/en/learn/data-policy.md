@@ -85,7 +85,7 @@ _Photo by [Spin](https://www.spin.app/)._
   <tr>
    <td><strong>manifest.json</strong>
    </td>
-   <td><strong>Optional</strong> – This file is an index of gbfs.json URLs for each GBFS data set produced by a publisher. 
+   <td><strong>Conditionally Required</strong> – This file is an index of gbfs.json URLs for each GBFS data set produced by a publisher. 
    </td>
   </tr>
   <tr>
