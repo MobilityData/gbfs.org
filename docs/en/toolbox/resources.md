@@ -81,7 +81,8 @@ There are a multitude of tools and services available to help with the creation,
 
 ### Language bindings for GBFS
 
-- [Java](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-java-model): GBFS types in Java. Maintained by Entur.
+- [Java](https://central.sonatype.com/artifact/org.mobilitydata/gbfs-java-model): GBFS types in Java. Developed by Entur, hosted by MobilityData.
+- [TypeScript](https://www.npmjs.com/package/gbfs-typescript-types): GBFS types in TypeScript. Hosted by MobilityData.
 - [Rust](https://crates.io/crates/gbfs_types): GBFS types in Rust. Maintained by Fluctuo.
 - [R](https://github.com/simonpcouch/gbfs): GBFS types in R. 
 
