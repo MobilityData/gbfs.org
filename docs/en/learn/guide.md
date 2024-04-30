@@ -175,7 +175,7 @@ The best way to ensure that the feeds you produce are valid, is to generate a da
 
 _A data model generated from the [GBFS JSON schema](https://github.com/MobilityData/gbfs-json-schema) is the safest and most efficient way to transform your data into the GBFS structure._
 
-You can use the [Entur](https://developer.entur.org/) open source [GBFS Java model](https://github.com/entur/gbfs-java-model), generated from the official [GBFS JSON schema](https://github.com/MobilityData/gbfs-json-schema). Or you can find generator tools for many programming languages at [json-schema.org](https://json-schema.org/implementations.html#generators-from-schemas).
+To help with the migration to v3.0, we have worked with [Entur](https://developer.entur.org/) to publish GBFS types in TypeScript ([NPM package](https://www.npmjs.com/package/gbfs-typescript-types)) and Java ([Maven Central package](https://central.sonatype.com/artifact/org.mobilitydata/gbfs-java-model)). They are automatically generated from the official [GBFS JSON Schemas](https://github.com/MobilityData/gbfs-json-schema). So when the specification changes, your data model evolves with it. You can find generator tools for many programming languages at [json-schema.org](https://json-schema.org/implementations.html#generators-from-schemas).
 
 Creating a data model manually from the [GBFS reference](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) is possible but not recommended as it is error prone and more difficult to update when the GBFS specification changes.
 

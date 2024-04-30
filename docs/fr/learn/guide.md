@@ -174,7 +174,7 @@ La meilleure façon de s'assurer que les flux que vous produisez sont valides es
 
 _Un modèle de données généré à partir du [schéma JSON GBFS](https://github.com/MobilityData/gbfs-json-schema) est le moyen le plus sûr et le plus efficace de transformer vos données dans la structure GBFS._
 
-Vous pouvez utiliser le [modèle Java GBFS](https://github.com/entur/gbfs-java-model) open source d'[Entur](https://developer.entur.org/), généré à partir du [schéma JSON GBFS](https://github.com/MobilityData/gbfs-json-schema) officiel. Vous pouvez également trouver des outils de génération pour de nombreux langages de programmation sur le site [json-schema.org](https://json-schema.org/implementations.html#generators-from-schemas).
+Pour faciliter la migration vers la v3.0, nous avons travaillé avec [Entur](https://developer.entur.org/) pour publier des types GBFS en TypeScript ([package NPM](https://www.npmjs.com/package/gbfs-typescript-types)) et en Java ([package Maven Central](https://central.sonatype.com/artifact/org.mobilitydata/gbfs-java-model)). Ils sont automatiquement générés à partir des [schémas JSON GBFS] officiels (https://github.com/MobilityData/gbfs-json-schema). Ainsi, lorsque le standard change, votre modèle de données évolue en même temps. Vous pouvez trouver des outils générateurs pour de nombreux langages de programmation sur [json-schema.org](https://json-schema.org/implementations.html#generators-from-schemas).
 
 La création manuelle d'un modèle de données à partir de la [référence GBFS](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) est possible mais n'est pas recommandée car elle est sujette aux erreurs et plus difficile à mettre à jour lorsque la spécification GBFS change.
 
