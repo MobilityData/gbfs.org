@@ -1,15 +1,14 @@
 # Spécification
 
 <div class="landing-page">
-   <a class="button" href="reference">Version actuelle (v3.0-RC2)</a><a class="button" href="https://github.com/MobilityData/gbfs/issues">Propositions de modification</a><a class="button" href="process">Processus de gouvernance</a>
+   <a class="button" href="reference">Version actuelle (v3.0)</a><a class="button" href="https://github.com/MobilityData/gbfs/issues">Propositions de modification</a><a class="button" href="process">Processus de gouvernance</a>
 </div>
 
 <hr/>
 
 ## Versions de cette documentation
 
-- [Version actuelle](reference) - Version 3.0-RC2
-- [v3.0-RC](https://github.com/MobilityData/gbfs/blob/v3.0-RC/gbfs.md) - Version 3.0-RC
+- [Version actuelle](reference) - Version 3.0
 - [v2.3](https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md) - Version 2.3
 - [v2.2](https://github.com/MobilityData/gbfs/blob/v2.2/gbfs.md) - Version 2.2
 - [v2.1](https://github.com/MobilityData/gbfs/blob/v2.1/gbfs.md) - Version 2.1
