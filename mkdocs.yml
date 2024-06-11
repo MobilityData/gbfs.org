@@ -109,6 +109,21 @@ plugins:
             Learn: Apprendre
             Guide: Guide
             Participate: Participer
+        - locale: es
+          name: Español
+          build: true
+          nav_translations:
+            Home: Hogar
+            Specification: Especificación
+            Current Version: Versión actual
+            Governance Process: Proceso de Gobernanza
+            Data Quality: Calidad de datos
+            Toolbox: Herramientas
+            Community Tools and Resources: Herramientas y recursos comunitarios
+            Glossary: Glosario
+            Learn: Aprender
+            Guide: Guía
+            Participate: Participar
 
 nav:
   - Home: index.md
