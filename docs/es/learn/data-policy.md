@@ -2,7 +2,7 @@
 
 ## Ayudando a las ciudades a respaldar opciones de movilidad fluidas y sostenibles a través de GBFS.
 
-Esta guía también está disponible en [inglés](/learn/data-policy), [portugués](https://mobilitydata.org/gbfs-e-politica-de-dados-de- mobilidade-compartilhada-2/) y [francés](/fr/learn/data-policy).
+Esta guía también está disponible en [inglés](/learn/data-policy), [portugués](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada-2/) y [francés](/fr/learn/data-policy).
 
 ## Descripción general
 Asegurar el acceso a los datos de movilidad es una parte importante de un programa de movilidad compartida. El acceso público a los datos de movilidad genera confianza en los programas de movilidad y aumenta la adopción de la movilidad compartida. Redactar una política eficaz puede garantizar que los datos sobre movilidad sean precisos y accesibles.
