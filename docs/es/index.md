@@ -3,14 +3,14 @@
 <div class="landing-page"> 
 <a class="button" href="specification">Especificación</a> <a class="button" href="toolbox">Caja de herramientas</a> <a class="button" href="data-quality">de calidad de datos</a> <a class="button" href="learn">Aprender</a> <a class="button" href="participate">Participar</a></div> 
 
-GBFS proporciona un language común para que los operadores de movilidad compartida compartan información sobre los servicios disponibles para los viajeros. GBFS incluye información sobre vehículos (bicicletas, scooters, ciclomotores y automóviles), estaciones, precios y más:
+GBFS proporciona un lenguaje común para que los operadores de movilidad compartida compartan información sobre los servicios disponibles para los viajeros. GBFS incluye información sobre vehículos (bicicletas, scooters, ciclomotores y automóviles), estaciones, precios y más:
 
-- Ubicaciones y disponibilidad de vehículos, estaciones y muelles
+- Ubicaciones y disponibilidad de vehículos, estaciones y muelles de anclaje
 - Características del vehículo: factor de forma, tipo de potencia, distancia que se puede viajar
 - Precios del servicio y términos de alquiler
-- Áreas geocercadas para reglas relacionadas con la speed, estacionamiento y zonas prohibidas
+- Áreas geocercadas para reglas relacionadas con la velocidad, estacionamiento y zonas prohibidas
 
-Los datos GBFS se utilizan en las aplicaciones de planificación de trip y Movilidad como servicio (MaaS) para proporcionar la información que los viajeros necesitan para descubrir y utilizar la movilidad compartida. Las API públicas de GBFS permiten la integración de servicios de movilidad compartida con el transporte público, lo que permite a los usuarios realizar conexiones de primera y última milla.
+Los datos GBFS se utilizan en las aplicaciones de planificación de viaje y Movilidad como servicio (MaaS) para proporcionar la información que los viajeros necesitan para descubrir y utilizar la movilidad compartida. Las API públicas de GBFS permiten la integración de servicios de movilidad compartida con el transporte público, lo que permite a los usuarios realizar conexiones de primera y última milla.
 
 Además, GBFS proporciona a los municipios y agencias una forma estandarizada de ingerir, analizar y comparar datos generados por sistemas de movilidad.
 

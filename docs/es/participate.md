@@ -2,22 +2,22 @@
 
 ## Contribuyendo a GBFS
 
-GBFS es un proyecto de código abierto desarrollado bajo un modelo de gobernanza basado en consenso. Los contribuyentes provienen de toda la industria de la movilidad compartida, el sector público, la tecnología cívica y otros lugares. Cualquiera puede proponer un cambio en la especificación abriendo una solicitud de extracción en el repositorio GitHub de GBFS.
+GBFS es un proyecto de código abierto desarrollado bajo un modelo de gobernanza basado en consenso. Los contribuyentes provienen de toda la industria de la movilidad compartida, el sector público, la tecnología cívica y otros lugares. Cualquiera puede proponer un cambio en la especificación abriendo una Pull Request en el repositorio GitHub de GBFS.
 
 Todas las propuestas de cambio están sujetas al proceso de gobernanza de GBFS.
 
-- La propuesta debe permanecer abierta durante un período de time para permitir que el comité brinde comentarios y iterar sobre el cambio propuesto.
+- La propuesta debe permanecer abierta durante un período de tiempo para permitir que el comité brinde comentarios y iterar sobre el cambio propuesto.
 - Una vez que se alcanza un consenso, el cambio se somete a votación.
-- Se obligatorio al menos 3 votos a favor y ninguno en contra para que se adopte el cambio. Un voto debe ser de un productor de datos y otro de un consumidor de datos. La parte que propone el cambio no es elegible para votar.
+- Se requieren al menos 3 votos a favor y ninguno en contra para que se adopte el cambio. Un voto debe ser de un productor de datos y otro de un consumidor de datos. La parte que propone el cambio no es elegible para votar.
 - Cuando se aprueba una votación, el cambio pasa a formar parte de un Release Candidate.
-- Una vez que tanto el productor de datos como el consumidor de date han implementado el cambio, el Release Candidate se convierte en una versión oficial. lanzamiento.
+- Una vez que tanto el productor de datos como el consumidor de datos han implementado el cambio, el Release Candidate se convierte en una versión oficial. lanzamiento.
 
 **[Ver el proceso de gobernanza](../especificación/proceso)**
 
 <hr> 
 
 ## Participe
-Esta hoja de ruta se desarrolló en base a los comentarios que recibimos de la comunidad GBFS y la industria de la movilidad compartida. Si hay características o cambios que cree que debería ser parte de esta hoja de ruta, nos gustaría conocerlos. GBFS es un proyecto abierto y valoramos sus aportes.
+Esta hoja de ruta se desarrolló en base a los comentarios que recibimos de la comunidad GBFS y la industria de la movilidad compartida. Si hay características o cambios que cree que deberían ser parte de esta hoja de ruta, nos gustaría conocerlos. GBFS es un proyecto abierto y valoramos sus aportes.
 Si desea contribuir al proyecto, utilice el botón **Enviar idea** o póngase en contacto con nosotros en [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org) para coordinar la contribución.
 
  <iframe src="https://portal.productboard.com/26qpteg4wct9px3jts94uqv8?hide_logo=1" frameborder="0" height=700px width=100%></iframe> 

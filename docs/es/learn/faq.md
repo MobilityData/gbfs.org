@@ -88,7 +88,7 @@ El catálogo [systems.csv](https://github.com/MobilityData/gbfs/blob/master/syst
 
 <br> **¿Quién mantiene los sistemas.csv?**
 
-El catálogo [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv) lo mantienen actualmente MobilityData y la comunidad GBFS. Si tiene o conoce un sistema que no aparece en la lista, agréguelo abriendo una solicitud de extracción o notifique a MobilityData en: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org).
+El catálogo [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv) lo mantienen actualmente MobilityData y la comunidad GBFS. Si tiene o conoce un sistema que no aparece en la lista, agréguelo abriendo una Pull Request o notifique a MobilityData en: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org).
 
 <br> **¿Todos los sistemas en sistemas.csv cumplen con la especificación?**
 
@@ -120,7 +120,7 @@ GBFS es un proyecto de código abierto desarrollado bajo un modelo de gobernanza
 
 <br> **¿Cómo puedo proponer un cambio en la especificación?**
 
-Si está interesado en proponer una modificación, puede hacerlo en el repositorio de GitHub de GBFS. Si no tiene la solución al problema y desea iniciar una discusión, le recomendamos [abrir un problema](https://github.com/MobilityData/gbfs/issues). Si tiene una solución y desea proponer un cambio, [abra una solicitud de extracción](https://github.com/MobilityData/gbfs/pulls).
+Si está interesado en proponer una modificación, puede hacerlo en el repositorio de GitHub de GBFS. Si no tiene la solución al problema y desea iniciar una discusión, le recomendamos [abrir un problema](https://github.com/MobilityData/gbfs/issues). Si tiene una solución y desea proponer un cambio, [abra una Pull Request](https://github.com/MobilityData/gbfs/pulls).
 
 <hr>
 
@@ -138,9 +138,9 @@ Un repositorio, a menudo llamado “repo”, es un lugar donde se almacenan todo
 
 Un problema en GitHub es un lugar de discusión. Cualquiera puede abrir un problema para iniciar una conversación sobre la especificación, ya sea una dirección que le gustaría que tomara la especificación o un problema que esté experimentando al usar la especificación.
 
-<br> **¿Qué es una solicitud de extracción de GitHub?**
+<br> **¿Qué es una Pull Request de GitHub?**
 
-Una solicitud de extracción es una solicitud para cambiar la especificación. Cualquiera puede abrir una solicitud de extracción y dar cabida a comentarios y discusiones. Luego, las solicitudes de extracción se votan para ver si debería fusionarse o no en la especificación.
+Una Pull Request es una solicitud para cambiar la especificación. Cualquiera puede abrir una Pull Request y dar cabida a comentarios y discusiones. Luego, las solicitudes de extracción se votan para ver si debería fusionarse o no en la especificación.
 
 <hr>
 
@@ -166,7 +166,7 @@ Si observa que un feed de datos no cumple con las mejores prácticas, puede inte
 
 <br> **¿Cómo puedo proponer una modificación/adición a las Mejores Prácticas?**
 
-Si desea proponer una modificación a las Mejores Prácticas, hágalo abriendo un Problema o una Solicitud de extracción a través de GitHub.
+Si desea proponer una modificación a las Mejores Prácticas, hágalo abriendo un Problema o una Pull Request a través de GitHub.
 
 <br> **¿Qué significa rotar `bike_id` y por qué es importante?**
 
