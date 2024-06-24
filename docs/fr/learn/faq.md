@@ -19,7 +19,7 @@ Suivez l'un des liens ci-dessous pour en savoir plus sur les normes de données 
 - [JSON](https://www.w3schools.com/whatis/whatis_json.asp)
 - [GeoJSON](https://datatracker.ietf.org/doc/html/rfc7946)
 - [POSIX](https://standards.ieee.org/project/1003\_1.html)
-- [INFO/bcp47">IETF BCP 47](<https://www.rfc-editor.org/\<glossary variable=>)
+- [IETF BCP 47](https://www.rfc-editor.org/info/bcp47)
 - [WGS84](https://www.nga.mil/)
 - [Fuseaux horaires IANA](https://www.iana.org/time-zones)
 - [Heures d'ouverture de l'OSM](https://wiki.openstreetmap.org/wiki/Key:opening_hours)
@@ -151,7 +151,7 @@ Une demande d'extraction est une demande de modification de la spécification. N
 
 **Que sont les bonnes pratiques GBFS ?**
 
-Les meilleures pratiques GBFS sont des recommandations que nous fournissons et qui ne sont pas obligatoires en vertu de la spécification, mais qui rendent vos données étonnantes ! Elles sont identifiées dans la documentation à l'aide des mots-clés "SHOULD", "SHOULD NOT", "RECOMMENDED" et "NOT RECOMMENDED" et doivent être interprétées comme décrit dans [RFC2119](https://datatracker.ietf.org/doc/html/rfc2119), [INFO/bcp14">BCP 14](<https://www.rfc-editor.org/\<glossary variable=>) et [RFC8174](https://datatracker.ietf.org/doc/html/rfc8174) quand, et seulement quand, elles apparaissent en majuscules, comme indiqué ici.
+Les meilleures pratiques GBFS sont des recommandations que nous fournissons et qui ne sont pas obligatoires en vertu de la spécification, mais qui rendent vos données étonnantes ! Elles sont identifiées dans la documentation à l'aide des mots-clés "SHOULD", "SHOULD NOT", "RECOMMENDED" et "NOT RECOMMENDED" et doivent être interprétées comme décrit dans [RFC2119](https://datatracker.ietf.org/doc/html/rfc2119), [BCP 14](https://www.rfc-editor.org/info/bcp14) et [RFC8174](https://datatracker.ietf.org/doc/html/rfc8174) quand, et seulement quand, elles apparaissent en majuscules, comme indiqué ici.
 
 <br/>**Pourquoi les GBFS Best Practices sont-elles importantes ?**<br/>
 
