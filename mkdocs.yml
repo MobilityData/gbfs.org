@@ -84,6 +84,7 @@ plugins:
         'tools-services.md': 'toolbox/index.md'
         'faq.md': 'learn/faq.md'
         'about.md': 'participate.md'
+        'reference.md': 'specification/reference.md'
   - external-markdown
   - i18n:
       docs_structure: folder
