@@ -197,4 +197,4 @@ Hay varias maneras en que puede involucrarse con nuestra organización y el Comp
 - Obtenga más información sobre nosotros: [www.mobilitydata.org](https://www.mobilitydata.org)
 - Únase a nuestro slack: [share.mobilitydata.org/slack](https://share.mobilitydata.org/slack)
 - Únase a nosotros en Github: [github.com/MobilityData/gbfs](https://github.com/MobilityData/gbfs)
-- Conviértase en miembro: [bit.ly/Membership-form-2021](https://bit.ly/Membership-form-2021)
+- Conviértase en miembro: [share.mobilitydata.org/membership-form](https://share.mobilitydata.org/membership-form)
