@@ -4,6 +4,23 @@ There are a multitude of tools and services available to help with the creation,
 
 <hr>
 
+## Libraries
+
+### Language bindings for GBFS
+
+- [Java](https://central.sonatype.com/artifact/org.mobilitydata/gbfs-java-model): GBFS types in Java. Developed by Entur, hosted by MobilityData.
+- [TypeScript](https://www.npmjs.com/package/gbfs-typescript-types): GBFS types in TypeScript. Hosted by MobilityData.
+- [Rust](https://crates.io/crates/gbfs_types): GBFS types in Rust. Maintained by Fluctuo.
+- [R](https://github.com/simonpcouch/gbfs): GBFS types in R. 
+
+### Tools
+
+- [BikeshareClient](https://github.com/andmos/BikeshareClient): dotnet client for GBFS written in C#. Enables dotnet developers to create apps and services using data from GBFS Bikeshare systems.
+- [Java Version Mapper](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-mapper-java): Java implementation of mapping between different versions of GBFS (bidirectional). Maintained by Entur.
+- [Java Feed Loader](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-loader-java): Java implementation to manage loading of GBFS feeds and updating them based on their ttl and last_updated fields. Maintained by Entur.
+
+<hr>
+
 ## Data
 
 ### Third Party GBFS URL Directories
@@ -74,23 +91,6 @@ There are a multitude of tools and services available to help with the creation,
 - [GBFS/Open Data Viewer](https://share.municipal.systems/oJl_L-B8f): Visualize micromobility and other open data.
 - [GBFS-Viewer](https://github.com/idoco/gbfs-viewer): [View micromobility data](https://idoco.github.io/gbfs-viewer/#) in your browser.
 - [GBFS Validation and Visualization](https://transport.data.gouv.fr/validation?type=gbfs&locale=en): The French NAP has developed a web interface to visualise GBFS feeds.
-
-<hr>
-
-## Libraries
-
-### Language bindings for GBFS
-
-- [Java](https://central.sonatype.com/artifact/org.mobilitydata/gbfs-java-model): GBFS types in Java. Developed by Entur, hosted by MobilityData.
-- [TypeScript](https://www.npmjs.com/package/gbfs-typescript-types): GBFS types in TypeScript. Hosted by MobilityData.
-- [Rust](https://crates.io/crates/gbfs_types): GBFS types in Rust. Maintained by Fluctuo.
-- [R](https://github.com/simonpcouch/gbfs): GBFS types in R. 
-
-### Tools
-
-- [BikeshareClient](https://github.com/andmos/BikeshareClient): dotnet client for GBFS written in C#. Enables dotnet developers to create apps and services using data from GBFS Bikeshare systems.
-- [Java Version Mapper](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-mapper-java): Java implementation of mapping between different versions of GBFS (bidirectional). Maintained by Entur.
-- [Java Feed Loader](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-loader-java): Java implementation to manage loading of GBFS feeds and updating them based on their ttl and last_updated fields. Maintained by Entur.
 
 <hr>
 
