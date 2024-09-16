@@ -4,6 +4,31 @@ Il existe une multitude d'outils et de services disponibles pour aider à la cr�
 
 <hr/>
 
+## Bibliothèques
+
+### Liaisons linguistiques pour GBFS
+
+- [Java](https://central.sonatype.com/artifact/org.mobilitydata/gbfs-java-model): Modèle de données GBFS en Java. Développé par Entur, hébergé par MobilityData.
+- [TypeScript](https://www.npmjs.com/package/gbfs-typescript-types): Types GBFS en TypeScript. Hébergé par MobilityData.
+- [Rust](https://crates.io/crates/gbfs_types): Modèle de données GBFS en Rust. Maintenu par Fluctuo.
+- [R](https://github.com/simonpcouch/gbfs): Modèle de données GBFS en R.
+
+### Les outils
+
+- [BikeshareClient](https://github.com/andmos/BikeshareClient): client dotnet pour GBFS écrit en C#. Permet aux développeur·euses dotnet de créer des applications et des services utilisant les données des systèmes GBFS.
+- [Java Version Mapper](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-mapper-java): Implémentation Java du mapping entre les différentes versions de GBFS (bidirectionnel). Maintenu par Entur.
+- [Java Feed Loader](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-loader-java): Implémentation Java pour gérer le chargement des flux GBFS et leur mise à jour en fonction des champs ttl et last_updated. Maintenu par Entur.
+
+<hr/>
+
+## Validateurs
+
+- [Go Validator](https://github.com/petoc/gbfs): Implémentation Go du client, du serveur et du validateur pour GBFS.
+- [Validateur Java](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-validator-java): Implémentation Java du validateur pour GBFS. Maintenu par Entur.
+- [npm](https://www.npmjs.com/package/@entur/gbfs-validator): Paquet Javascript du validateur [gbfs](https://github.com/MobilityData/gbfs-validator). Maintenu par Entur.
+
+<hr/>
+
 ## Données
 
 ### Répertoires d'URL GBFS
@@ -73,31 +98,6 @@ Il existe une multitude d'outils et de services disponibles pour aider à la cr�
 - [GBFS/Open Data Viewer](https://share.municipal.systems/oJl_L-B8f): Visualiser la micromobilité et d'autres données ouvertes.
 - [GBFS-Viewer](https://github.com/idoco/gbfs-viewer): [Visualisez les données de micromobilité](https://idoco.github.io/gbfs-viewer/#) dans votre navigateur.
 - [Validation et visualisation du GBFS](https://transport.data.gouv.fr/validation?type=gbfs\&locale=en): Le PAN français a développé une interface web pour visualiser les flux GBFS.
-
-<hr/>
-
-## Bibliothèques
-
-### Liaisons linguistiques pour GBFS
-
-- [Java](https://central.sonatype.com/artifact/org.mobilitydata/gbfs-java-model): Modèle de données GBFS en Java. Développé par Entur, hébergé par MobilityData.
-- [TypeScript](https://www.npmjs.com/package/gbfs-typescript-types): Types GBFS en TypeScript. Hébergé par MobilityData.
-- [Rust](https://crates.io/crates/gbfs_types): Modèle de données GBFS en Rust. Maintenu par Fluctuo.
-- [R](https://github.com/simonpcouch/gbfs): Modèle de données GBFS en R.
-
-### Les outils
-
-- [BikeshareClient](https://github.com/andmos/BikeshareClient): client dotnet pour GBFS écrit en C#. Permet aux développeur·euses dotnet de créer des applications et des services utilisant les données des systèmes GBFS.
-- [Java Version Mapper](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-mapper-java): Implémentation Java du mapping entre les différentes versions de GBFS (bidirectionnel). Maintenu par Entur.
-- [Java Feed Loader](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-loader-java): Implémentation Java pour gérer le chargement des flux GBFS et leur mise à jour en fonction des champs ttl et last_updated. Maintenu par Entur.
-
-<hr/>
-
-## Validateurs
-
-- [Go Validator](https://github.com/petoc/gbfs): Implémentation Go du client, du serveur et du validateur pour GBFS.
-- [Validateur Java](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-validator-java): Implémentation Java du validateur pour GBFS. Maintenu par Entur.
-- [npm](https://www.npmjs.com/package/@entur/gbfs-validator): Paquet Javascript du validateur [gbfs](https://github.com/MobilityData/gbfs-validator). Maintenu par Entur.
 
 <hr/>
 
