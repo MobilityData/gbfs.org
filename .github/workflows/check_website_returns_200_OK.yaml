@@ -1,6 +1,7 @@
 name: Check Website returns 200 OK
 
 on:
+  workflow_dispatch:
   workflow_run:
     workflows:
       - Update website on server
