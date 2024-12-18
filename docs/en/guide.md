@@ -175,7 +175,7 @@ The best way to ensure that the feeds you produce are valid, is to generate a da
 
 _A data model generated from the [GBFS JSON schema](https://github.com/MobilityData/gbfs-json-schema) is the safest and most efficient way to transform your data into the GBFS structure._
 
-You can find data models for the main programming languages (Java, TypeScript, Rust, etc) in the [Community Tools and Resources](../toolbox/resources.md#libraries). They are automatically generated from the official [GBFS JSON Schemas](https://github.com/MobilityData/gbfs-json-schema). So when the specification changes, your data model evolves with it. For other programming languages, you can find generator tools at [json-schema.org](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=#schema-to-code).
+You can find data models for the main programming languages (Java, TypeScript, Rust, etc) in the [Tools](../tools.md#libraries). They are automatically generated from the official [GBFS JSON Schemas](https://github.com/MobilityData/gbfs-json-schema). So when the specification changes, your data model evolves with it. For other programming languages, you can find generator tools at [json-schema.org](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=#schema-to-code).
 
 Creating a data model manually from the [GBFS reference](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) is possible but not recommended as it is error prone and more difficult to update when the GBFS specification changes.
 

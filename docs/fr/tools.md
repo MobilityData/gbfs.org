@@ -2,6 +2,11 @@
 
 Il existe une multitude d'outils et de services disponibles pour aider à la création, à la mise en œuvre et à la consommation de GBFS. Vous trouverez ci-dessous une liste exhaustive d'outils et de services.
 
+## Liens rapides
+- [Validateur GBFS](https://gbfs-validator.mobilitydata.org/): Le Canonical GBFS Validator est un outil permettant de vérifier la conformité d'un flux GBFS par rapport à la spécification officielle, y compris les versions antérieures et les versions candidates.
+- [Schémas JSON](https://github.com/MobilityData/gbfs-json-schema): Un ensemble de schémas JSON est disponible pour chaque version de la spécification ainsi que pour la version candidate actuelle. Le validateur canonique GBFS est basé sur ces schémas.
+- [Catalogue d'ensembles de données](https://github.com/MobilityData/gbfs/blob/master/systems.csv): Plus de 800 systèmes de mobilité partagée publient aujourd'hui des données GBFS dans le monde entier. Un catalogue de ces flux GBFS est maintenu par la communauté GBFS sur le repo GBFS. Cette liste est incomplète. Si vous avez ou connaissez un flux qui n'apparaît pas dans la liste, veuillez l'ajouter.
+
 <hr/>
 
 ## Bibliothèques

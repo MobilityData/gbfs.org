@@ -81,7 +81,7 @@ plugins:
       redirect_maps:
         'home.md': 'index.md'
         'major-change-proposals.md': 'https://github.com/MobilityData/gbfs/issues'
-        'tools-services.md': 'toolbox/index.md'
+        'tools-services.md': 'tools.md'
         'faq.md': 'specification/faq.md'
         'about.md': 'participate.md'
   - external-markdown
@@ -106,9 +106,7 @@ plugins:
             Data Quality: Qualité des données
             Data Policy: Politique en matière de données
             FAQ: FAQ
-            Toolbox: Outils
-            Community Tools and Resources: Outils et ressources
-            Glossary: Glossaire
+            Tools: Outils
             Participate: Participer
         - locale: es
           name: Español
@@ -122,9 +120,7 @@ plugins:
             Data Quality: Calidad de los datos
             Data Policy: Política de datos
             FAQ: FAQ
-            Toolbox: Herramientas
-            Community Tools and Resources: Herramientas y recursos comunitarios
-            Glossary: Glosario
+            Tools: Herramientas
             Participate: Participar
 
 nav:
@@ -137,8 +133,5 @@ nav:
     - Data Quality: specification/data-quality.md
     - Data Policy: specification/data-policy.md
     - FAQ: specification/faq.md
-  - Toolbox:
-    - toolbox/index.md
-    - Community Tools and Resources: toolbox/resources.md
-    - Glossary: toolbox/glossary.md
+  - Tools: tools.md
   - Participate: participate.md
