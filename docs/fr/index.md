@@ -1,7 +1,7 @@
 # GBFS : un langage commun pour la mobilité partagée
 
 <div class="landing-page">
-   <a class="button" href="specification">Spécification</a><a class="button" href="data-quality">Qualité des données</a><a class="button" href="toolbox">Outils</a><a class="button" href="learn">Apprendre</a><a class="button" href="participate">Participer</a></div>
+   <a class="button" href="specification">Documentation</a><a class="button" href="toolbox">Outils</a><a class="button" href="participate">Participer</a></div>
 
 GBFS fournit un langage commun aux opérateurs de mobilité partagée pour partager des informations sur les services offerts aux voyageur·euses. GBFS comprend des informations sur les véhicules (vélos, scooters, cyclomoteurs et voitures), les stations, les tarifs et plus encore :
 

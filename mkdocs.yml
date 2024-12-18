@@ -82,7 +82,7 @@ plugins:
         'home.md': 'index.md'
         'major-change-proposals.md': 'https://github.com/MobilityData/gbfs/issues'
         'tools-services.md': 'toolbox/index.md'
-        'faq.md': 'learn/faq.md'
+        'faq.md': 'specification/faq.md'
         'about.md': 'participate.md'
   - external-markdown
   - i18n:
@@ -100,14 +100,15 @@ plugins:
           nav_translations:
             Home: Accueil
             Get started: Premiers pas
-            Specification: Spécification
+            Documentation: Documentation
             Current Version: Version actuelle
             Governance Process: Processus de gouvernance
             Data Quality: Qualité des données
+            Data Policy: Politique en matière de données
+            FAQ: FAQ
             Toolbox: Outils
             Community Tools and Resources: Outils et ressources
             Glossary: Glossaire
-            Learn: Apprendre
             Participate: Participer
         - locale: es
           name: Español
@@ -115,30 +116,29 @@ plugins:
           nav_translations:
             Home: Hogar
             Get started: Primeros pasos
-            Specification: Especificación
+            Documentation: Documentación
             Current Version: Versión actual
             Governance Process: Proceso de Gobernanza
-            Data Quality: Calidad de datos
+            Data Quality: Calidad de los datos
+            Data Policy: Política de datos
+            FAQ: FAQ
             Toolbox: Herramientas
             Community Tools and Resources: Herramientas y recursos comunitarios
             Glossary: Glosario
-            Learn: Aprender
             Participate: Participar
 
 nav:
   - Home: index.md
   - Get started: guide.md
-  - Specification:
+  - Documentation:
     - specification/index.md
     - Current Version: specification/reference.md
     - Governance Process: specification/process.md
-  - Data Quality: data-quality.md
+    - Data Quality: specification/data-quality.md
+    - Data Policy: specification/data-policy.md
+    - FAQ: specification/faq.md
   - Toolbox:
     - toolbox/index.md
     - Community Tools and Resources: toolbox/resources.md
     - Glossary: toolbox/glossary.md
-  - Learn:
-    - learn/index.md
-    - Data Policy: learn/data-policy.md
-    - FAQ: learn/faq.md
   - Participate: participate.md
