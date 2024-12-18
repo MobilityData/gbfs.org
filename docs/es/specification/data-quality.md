@@ -60,10 +60,4 @@ Garantizar una alta calidad de datos en GBFS es una responsabilidad compartida y
 
 ## ¿Cómo puedo marcar un error en un conjunto de datos?
 
-Para marcar un problema en un conjunto de datos, utilice `feed_contact_email` que se encuentra en system_information. json o en la siguiente tabla. Al marcar un problema, asegúrese de incluir el campo y los archivos que crean el problema, y ​​cómo se presenta este problema en su aplicación.
-
-### Rastreador de correo electrónico de contacto de feed mantenido por MobilityData:
-El rastreador de correo electrónico de contacto de feed es una herramienta mantenida por MobilityData para monitorear el estado de las direcciones de correo electrónico de contacto de feeds que se encuentran en el punto final system_information.json en feeds GBFS. El objetivo es garantizar que los consumidores y los reguladores puedan señalar problemas de calidad de los datos a la dirección de correo electrónico correcta. MobilityData confirmará la actividad de estas direcciones de correo electrónico trimestralmente. 
-
- <iframe class="airtable-embed" src="https://airtable.com/embed/appHUE6vwjsrChp7i/shrpbG9d4vJZnsvXC?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe> 
- <a class="button" href="https://airtable.com/appHUE6vwjsrChp7i/shrk257EznkmC0elp">Agregar un correo electrónico de contacto al feed</a>
+Para marcar un problema en un conjunto de datos, utilice `feed_contact_email` que se encuentra en system_information.json. Al marcar un problema, asegúrese de incluir el campo y los archivos que crean el problema, y ​​cómo se presenta este problema en su aplicación.

@@ -60,10 +60,4 @@ Ensuring high data quality in GBFS is a shared responsibility, and by following 
 
 ## How can I flag an error in a dataset?
 
-To flag an issue in a dataset, use the `feed_contact_email` found in the system_information.json file or in the table below. When flagging an issue, make sure to include the field and files that are creating the issue, and how this issue is presented in your application.
-
-### Feed contact email tracker maintained by MobilityData:
-The Feed contact email tracker is a tool maintained by MobilityData to monitor the status of feed contact email addresses found in the system_information.json endpoint in GBFS feeds. The aim is to ensure that consumers and regulators can flag data quality issues to the correct email address. MobilityData will confirm activity of these email addresses on a quarterly basis. 
-
-<iframe class="airtable-embed" src="https://airtable.com/embed/appHUE6vwjsrChp7i/shrpbG9d4vJZnsvXC?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-<a class="button" href="https://airtable.com/appHUE6vwjsrChp7i/shrk257EznkmC0elp">Add a feed contact email</a>
+To flag an issue in a dataset, use the `feed_contact_email` found in the system_information.json file. When flagging an issue, make sure to include the field and files that are creating the issue, and how this issue is presented in your application.

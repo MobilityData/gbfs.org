@@ -56,11 +56,4 @@ Garantir la qualité des données du GBFS est une responsabilité partagée. En 
 
 ## Comment puis-je signaler une erreur dans un ensemble de données ?
 
-Pour signaler un problème dans un jeu de données, utilisez le `feed_contact_email` qui se trouve dans le fichier system_information.json ou dans le tableau ci-dessous. Lorsque vous signalez un problème, assurez-vous d'inclure le champ et les fichiers qui créent le problème, ainsi que la manière dont ce problème est présenté dans votre application.
-
-### Le suivi des courriels des contacts de Feed est maintenu par MobilityData :
-
-Le Feed contact email tracker est un outil maintenu par MobilityData pour surveiller le statut des adresses email de contact des flux trouvées dans le fichier system_information.json dans les flux GBFS. L'objectif est de veiller à ce que les applications réutilisatrices et les régulateur·rices puissent signaler les problèmes de qualité des données à la bonne adresse électronique. MobilityData confirmera l'activité de ces adresses électroniques tous les trimestres.
-
-<iframe class="airtable-embed" src="https://airtable.com/embed/appHUE6vwjsrChp7i/shrpbG9d4vJZnsvXC?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-<a class="button" href="https://airtable.com/appHUE6vwjsrChp7i/shrk257EznkmC0elp">Ajouter email de contact de flux</a>
+Pour signaler un problème dans un jeu de données, utilisez le `feed_contact_email` qui se trouve dans le fichier system_information.json. Lorsque vous signalez un problème, assurez-vous d'inclure le champ et les fichiers qui créent le problème, ainsi que la manière dont ce problème est présenté dans votre application.
