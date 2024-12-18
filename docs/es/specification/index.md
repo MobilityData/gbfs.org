@@ -22,7 +22,7 @@ Como se describe en el [gobernanza GBFS](proceso), cuando se realizan cambios en
 
 ## Propuestas de cambio
 
-GBFS es un proyecto de código abierto desarrollado bajo un modelo de gobernanza basado en consenso. Los contribuyentes provienen de toda la industria de la movilidad compartida, el sector público, la tecnología cívica y otros lugares. Puede encontrar una descripción general del trabajo actual en la [Hoja de ruta del proyecto](../participate/#get-involved). Se pueden enviar comentarios o preguntas a la comunidad [abriendo un problema](https://github.com/MobilityData/gbfs/issues) en el repositorio GBFS GitHub. Las propuestas de cambios o adiciones a la especificación se pueden realizar a través de [solicitudes de extracción](https://github.com/MobilityData/gbfs/pulls).
+GBFS es un proyecto de código abierto desarrollado bajo un modelo de gobernanza basado en consenso. Los contribuyentes provienen de toda la industria de la movilidad compartida, el sector público, la tecnología cívica y otros lugares. Puede encontrar una descripción general del trabajo actual en la [Hoja de ruta del proyecto](../community/#get-involved). Se pueden enviar comentarios o preguntas a la comunidad [abriendo un problema](https://github.com/MobilityData/gbfs/issues) en el repositorio GBFS GitHub. Las propuestas de cambios o adiciones a la especificación se pueden realizar a través de [solicitudes de extracción](https://github.com/MobilityData/gbfs/pulls).
 
 **[Ver propuestas de cambio](https://github.com/MobilityData/gbfs/issues)**
 

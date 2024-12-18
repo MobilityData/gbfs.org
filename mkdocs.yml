@@ -83,7 +83,7 @@ plugins:
         'major-change-proposals.md': 'https://github.com/MobilityData/gbfs/issues'
         'tools-services.md': 'tools.md'
         'faq.md': 'specification/faq.md'
-        'about.md': 'participate.md'
+        'about.md': 'community.md'
   - external-markdown
   - i18n:
       docs_structure: folder
@@ -107,7 +107,7 @@ plugins:
             Data Policy: Politique en matière de données
             FAQ: FAQ
             Tools: Outils
-            Participate: Participer
+            Community: Communauté
         - locale: es
           name: Español
           build: true
@@ -121,7 +121,7 @@ plugins:
             Data Policy: Política de datos
             FAQ: FAQ
             Tools: Herramientas
-            Participate: Participar
+            Community: Comunidad
 
 nav:
   - Home: index.md
@@ -134,4 +134,4 @@ nav:
     - Data Policy: specification/data-policy.md
     - FAQ: specification/faq.md
   - Tools: tools.md
-  - Participate: participate.md
+  - Community: community.md

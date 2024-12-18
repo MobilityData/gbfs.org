@@ -22,7 +22,7 @@ As described in the [GBFS governance](process), when changes are made to the spe
 
 ## Change Proposals
 
-GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. An overview of current work can be found on the [Project Roadmap](../participate/#get-involved). Comments or questions can be addressed to the community by [opening an issue](https://github.com/MobilityData/gbfs/issues) on the GBFS GitHub repo. Proposals for changes or additions to the specification can be made through [pull requests](https://github.com/MobilityData/gbfs/pulls).
+GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. An overview of current work can be found on the [Project Roadmap](../community/#get-involved). Comments or questions can be addressed to the community by [opening an issue](https://github.com/MobilityData/gbfs/issues) on the GBFS GitHub repo. Proposals for changes or additions to the specification can be made through [pull requests](https://github.com/MobilityData/gbfs/pulls).
 
 **[See Change Proposals](https://github.com/MobilityData/gbfs/issues)**
 
