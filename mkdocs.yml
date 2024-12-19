@@ -81,9 +81,9 @@ plugins:
       redirect_maps:
         'home.md': 'index.md'
         'major-change-proposals.md': 'https://github.com/MobilityData/gbfs/issues'
-        'tools-services.md': 'toolbox/index.md'
-        'faq.md': 'learn/faq.md'
-        'about.md': 'participate.md'
+        'tools-services.md': 'tools.md'
+        'faq.md': 'specification/faq.md'
+        'about.md': 'community.md'
   - external-markdown
   - i18n:
       docs_structure: folder
@@ -99,46 +99,39 @@ plugins:
           build: true
           nav_translations:
             Home: Accueil
-            Specification: Spécification
+            Get started: Premiers pas
+            Documentation: Documentation
             Current Version: Version actuelle
             Governance Process: Processus de gouvernance
             Data Quality: Qualité des données
-            Toolbox: Outils
-            Community Tools and Resources: Outils et ressources
-            Glossary: Glossaire
-            Learn: Apprendre
-            Guide: Guide
-            Participate: Participer
+            Data Policy: Politique en matière de données
+            FAQ: FAQ
+            Tools: Outils
+            Community: Communauté
         - locale: es
           name: Español
           build: true
           nav_translations:
             Home: Hogar
-            Specification: Especificación
+            Get started: Primeros pasos
+            Documentation: Documentación
             Current Version: Versión actual
             Governance Process: Proceso de Gobernanza
-            Data Quality: Calidad de datos
-            Toolbox: Herramientas
-            Community Tools and Resources: Herramientas y recursos comunitarios
-            Glossary: Glosario
-            Learn: Aprender
-            Guide: Guía
-            Participate: Participar
+            Data Quality: Calidad de los datos
+            Data Policy: Política de datos
+            FAQ: FAQ
+            Tools: Herramientas
+            Community: Comunidad
 
 nav:
   - Home: index.md
-  - Specification:
+  - Get started: guide.md
+  - Documentation:
     - specification/index.md
     - Current Version: specification/reference.md
     - Governance Process: specification/process.md
-  - Data Quality: data-quality.md
-  - Toolbox:
-    - toolbox/index.md
-    - Community Tools and Resources: toolbox/resources.md
-    - Glossary: toolbox/glossary.md
-  - Learn:
-    - learn/index.md
-    - Guide: learn/guide.md
-    - Data Policy: learn/data-policy.md
-    - FAQ: learn/faq.md
-  - Participate: participate.md
+    - Data Quality: specification/data-quality.md
+    - Data Policy: specification/data-policy.md
+    - FAQ: specification/faq.md
+  - Tools: tools.md
+  - Community: community.md
