@@ -37,6 +37,10 @@ GBFS.org uses [Simpleen](https://simpleen.io/), an automated machine learning tr
    - `bash scripts/fetchdata.sh`
 1. To run the site locally (command defined in `MakeFile`):
    - `make serve`
+   - Then each language will have it's own address:
+     - English: `http://127.0.0.1:8000/`
+     - French: `http://127.0.0.1:8001/`
+     - Spanish: `http://127.0.0.1:8002/`
 1. To build the site locally only (command defined in `MakeFile`):
    - `make build`
 1. Deactivate the Python virtual environment when done:
