@@ -2,6 +2,6 @@
 
 version=v2.2
 
-curl https://raw.githubusercontent.com/MobilityData/gbfs/$version/gbfs.md -o docs/reference.md
+curl https://raw.githubusercontent.com/MobilityData/gbfs/$version/gbfs.md -o docs/en/reference.md
 
 # echo -e "\n\ntest" >> ../docs/*.md
