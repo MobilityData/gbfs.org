@@ -112,7 +112,7 @@ plugins:
           build: false
           nav_translations:
             Home: Inicio
-            Get started: Comenzar
+            Get started: Primeros pasos
             Documentation: Documentación
             Current Version: Versión actual
             Governance Process: Proceso de gobernanza
