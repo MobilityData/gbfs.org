@@ -1,13 +1,13 @@
 site_name: General Transit Feed Specification
 site_description: The GBFS blog
 site_url: https://staging.gbfs.org
-docs_dir: ../../docs/en       # Where to find the English markdown files
-site_dir: ../../generated/en  # Where to put the English HTML files
+docs_dir: ../../docs/fr       # Where to find the French markdown files
+site_dir: ../../generated/fr  # Where to put the French HTML files
 repo_url: https://github.com/MobilityData/gbfs
 repo_name: GBFS Repository
 
 theme:
-  locale: en
+  locale: fr
   custom_dir: ../../overrides/
   logo: assets/images/org-black.svg
   logo_light_mode: assets/images/org-white.svg
@@ -96,7 +96,7 @@ plugins:
         target: _blank
   - search:
       lang: 
-        - en
+        - fr
   - i18n:
       docs_structure: folder
       reconfigure_search: false
@@ -110,7 +110,7 @@ plugins:
 
         - locale: es
           name: Español
-          build: false
+          build: true
           nav_translations:
             Home: Inicio
             Get started: Comenzar
@@ -125,7 +125,7 @@ plugins:
             
         - locale: fr
           name: Français
-          build: false
+          build: true
           nav_translations:
             Home: Accueil
             Get started: Premiers pas
