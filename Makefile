@@ -7,7 +7,10 @@ clean:
 	rm -rf generated/
 
 serve: clean
-	mkdocs serve -f config/en/mkdocs.yml
+	mkdocs serve -f config/en/mkdocs.yml --dev-addr 127.0.0.1:8000 &
+	mkdocs serve -f config/fr/mkdocs.yml --dev-addr 127.0.0.1:8001 &
+	mkdocs serve -f config/es/mkdocs.yml --dev-addr 127.0.0.1:8002 &
+	wait
 
 build:
 	mkdocs build -f config/en/mkdocs.yml --clean
