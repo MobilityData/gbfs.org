@@ -96,56 +96,16 @@ plugins:
   - search:
       lang: 
         - fr
-  - i18n:
-      docs_structure: folder
-      reconfigure_search: false
-      reconfigure_material: true
-      fallback_to_default: true
-      languages:
-        - locale: en
-          name: English
-          build: true
-          default: true
-
-        - locale: es
-          name: Español
-          build: true
-          nav_translations:
-            Home: Inicio
-            Get started: Primeros pasos
-            Documentation: Documentación
-            Current Version: Versión actual
-            Governance Process: Proceso de gobernanza
-            Data Quality: Calidad de los datos
-            Data Policy: Política de datos
-            FAQ: Preguntas frecuentes
-            Tools: Herramientas
-            Community: Comunidad
-            
-        - locale: fr
-          name: Français
-          build: true
-          nav_translations:
-            Home: Accueil
-            Get started: Premiers pas
-            Documentation: Documentation
-            Current Version: Version actuelle
-            Governance Process: Processus de gouvernance
-            Data Quality: Qualité des données
-            Data Policy: Politique des données
-            FAQ: FAQ
-            Tools: Outils
-            Community: Communauté
 
 nav:
-  - Home: index.md
-  - Get started: guide.md
+  - Accueil: index.md
+  - Premiers pas: guide.md
   - Documentation:
     - specification/index.md
-    - Current Version: specification/reference.md
-    - Governance Process: specification/process.md
-    - Data Quality: specification/data-quality.md
-    - Data Policy: specification/data-policy.md
+    - Version actuelle: specification/reference.md
+    - Processus de gouvernance: specification/process.md
+    - Qualité des données: specification/data-quality.md
+    - Politique des données: specification/data-policy.md
     - FAQ: specification/faq.md
-  - Tools: tools.md
-  - Community: community.md
+  - Outils: tools.md
+  - Communauté: community.md
