@@ -1,5 +1,4 @@
-site_name: General Transit Feed Specification
-site_description: The GBFS blog
+site_name: General Bikeshare Feed Specification
 site_url: https://staging.gbfs.org
 docs_dir: ../../docs/es       # Where to find the Spanish markdown files
 site_dir: ../../generated/es  # Where to put the Spanish HTML files
