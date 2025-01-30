@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   workflow_run:
     workflows:
-      - Update website on server
+      - Update STAGING website on server
     types:
       - completed
 
