@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   workflow_run:
     workflows:
-      - Update website on server
+      - Update STAGING website on server
     types:
       - completed
 
@@ -17,7 +17,7 @@ jobs:
 
       - name: Check HTTP Status Code
         run: |
-          STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://staging.gbfs.org)
+          STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://staging.gbfs.org/ )
           if [ "$STATUS_CODE" -ne 200 ]; then
             echo "Error: Website returned status code $STATUS_CODE"
             exit 1
