@@ -49,9 +49,9 @@ extra:
     provider: google
     property: G-N7RXJMH84M
   consent:
-    title: Cookie Consent
+    title: Consentement du suivi
     description: >-
-      We use cookies to track visits, stored anonymously. With your consent, you're helping us to make our documentation better. See our <a href="https://mobilitydata.org/privacy-policy/">Privacy Policy</a>.
+      Nous utilisons des cookies pour suivre les visites, stockés de manière anonyme. Avec votre consentement, vous nous aidez à améliorer notre documentation. Consultez notre <a href="https://mobilitydata.org/privacy-policy/">Politique de confidentialité</a>.
     actions:
         - accept
         - reject
