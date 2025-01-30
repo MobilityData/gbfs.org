@@ -5,6 +5,16 @@ site_dir: ../../generated/en  # Where to put the English HTML files
 repo_url: https://github.com/MobilityData/gbfs
 repo_name: GBFS Repository
 
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: warn
+    absolute_links: ignore
+    unrecognized_links: ignore
+
 theme:
   locale: en
   custom_dir: ../../overrides/
@@ -39,13 +49,13 @@ extra:
     provider: google
     property: G-N7RXJMH84M
   consent:
-  title: Cookie Consent
-  description: >-
-    We use cookies to track visits, stored anonymously. With your consent, you're helping us to make our documentation better. See our <a href="https://mobilitydata.org/privacy-policy/">Privacy Policy</a>.
-  actions:
-      - accept
-      - reject
-      - manage
+    title: Cookie Consent
+    description: >-
+      We use cookies to track visits, stored anonymously. With your consent, you're helping us to make our documentation better. See our <a href="https://mobilitydata.org/privacy-policy/">Privacy Policy</a>.
+    actions:
+        - accept
+        - reject
+        - manage
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/MobilityData
