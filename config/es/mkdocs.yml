@@ -49,9 +49,9 @@ extra:
     provider: google
     property: G-N7RXJMH84M
   consent:
-    title: Cookie Consent
+    title: Consentimiento de seguimiento
     description: >-
-      We use cookies to track visits, stored anonymously. With your consent, you're helping us to make our documentation better. See our <a href="https://mobilitydata.org/privacy-policy/">Privacy Policy</a>.
+      Utilizamos cookies para realizar un seguimiento de las visitas, que se almacenan de forma anónima. Con su consentimiento, nos ayuda a mejorar nuestra documentación. Consulte nuestra <a href="https://mobilitydata.org/privacy-policy/">Política de privacidad</a>.
     actions:
         - accept
         - reject
@@ -65,7 +65,7 @@ extra:
       link: https://share.mobilitydata.org/slack
   alternate:
     - name: English
-      link: /en/
+      link: /
       lang: en
     - name: Français
       link: /fr/

@@ -65,7 +65,7 @@ extra:
       link: https://share.mobilitydata.org/slack
   alternate:
     - name: English
-      link: /en/
+      link: /
       lang: en
     - name: Français
       link: /fr/
