@@ -13,7 +13,7 @@
 }
 
 /* default theme overrides */
-[data-md-color-scheme="gtfs"] {
+[data-md-color-scheme="gbfs"] {
   /* Default colors */
   --md-default-bg-color: #ffffff;
   --md-default-fg-color: #1d1c1c;
@@ -52,11 +52,11 @@
   --md-typeset-a-color: var(--md-secondary-fg-color);
 }
 
-/* [data-md-color-scheme="gtfs"] tr:hover {
+/* [data-md-color-scheme="gbfs"] tr:hover {
     background-color: #f5f5f5 !important;
 } */
 
-[data-md-color-scheme="gtfs"] .only-dark {
+[data-md-color-scheme="gbfs"] .only-dark {
   display: none;
 }
 
@@ -568,7 +568,7 @@ table.example {
   margin-right: auto;
 }
 
-#gtfs-schedule-validator {
+#gbfs-schedule-validator {
   margin-bottom: 0;
 }
 
