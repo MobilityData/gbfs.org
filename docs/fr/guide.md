@@ -10,7 +10,7 @@ Le General Bikeshare Feed Specification (GBFS) a été créé en 2014 par [Mitch
 
 Maintenu par MobilityData depuis 2019 et officiellement transféré à MobilityData en 2022, GBFS a évolué pour permettre à [plus de 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) systèmes avec stations et free-floating dans le monde entier, tels que les trotinettes, les scooters et les voitures partagées, d'apparaître dans les applications de planification d'itinéraires.
 
-<img src="../assets/gbfs_producer_consumer_logos.png" width="1000px" alt="GBFS producer consumer logos"/>
+<img src="assets/gbfs_producer_consumer_logos.png" width="1000px" alt="GBFS producer consumer logos"/>
 
 _GBFS est un format de données standardisé utilisé par [plus de 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) services de mobilité partagée dans le monde pour apparaître dans les planificateurs d'itinéraires et autres applications réutilisatrices des données._
 
@@ -20,7 +20,7 @@ GBFS est un standard de données en temps réel, en requêtes _pull_, qui décri
 
 Un flux GBFS est composé d'une série de fichiers JSON. Chaque fichier modélise un aspect particulier d'un système de mobilité : statut des véhicules et/ou des stations, règles géographiques, tarification, etc. Les détails de chaque fichier sont définis dans la [référence GBFS](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) avec des exemples.
 
-<img src="../assets/gbfs_overview.png" width="800px" alt="GBFS overview"/>
+<img src="assets/gbfs_overview.png" width="800px" alt="GBFS overview"/>
 
 _L'application réutilisatrice demande l'état actuel du système de mobilité à l'opérateur, qui lui répond avec les flux GBFS au format JSON._
 
@@ -42,7 +42,7 @@ _Photo de[ Lucian Alexe](https://unsplash.com/@lucian_alexe?utm_source=unsplash\
 
 Ce guide décompose le script de publication d'un flux en 4 étapes : Extraire, Transformer, Charger et Valider.
 
-<img src="../assets/etl.png" width="1000px" alt="ETL"/>
+<img src="assets/etl.png" width="1000px" alt="ETL"/>
 
 _Ces quatre étapes permettent à tout opérateur de mobilité partagée de publier un flux GBFS valide._
 
@@ -68,7 +68,7 @@ Ensuite, vous devrez modéliser les données dans la structure GBFS.
 
 #### La structure GBFS
 
-<img src="../assets/gbfs_structure.png" width="600px" alt="GBFS structure"/>
+<img src="assets/gbfs_structure.png" width="600px" alt="GBFS structure"/>
 
 _Un jeu de données GBFS v3 est composé de 12 fichiers JSON, certains toujours obligatoires, d'autres obligatoires sous certaines conditions et d'autres optionnels. Le fichier [manifest.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson) énumère les URL pour chaque jeu de données GBFS produit par un éditeur._
 
@@ -170,7 +170,7 @@ Utilisez la [version actuelle](https://github.com/MobilityData/gbfs/blob/master/
 
 La meilleure façon de s'assurer que les flux que vous produisez sont valides est de générer un modèle de données à partir du [schéma JSON GBFS](https://github.com/MobilityData/gbfs-json-schema). Plusieurs opérateurs ont constaté d'importants gains d'efficacité en utilisant un modèle de données généré à partir du schéma JSON, en particulier lors de la mise à jour vers une nouvelle version de GBFS.
 
-<img src="../assets/data_model.png" width="600px" alt="Data model"/>
+<img src="assets/data_model.png" width="600px" alt="Data model"/>
 
 _Un modèle de données généré à partir du [schéma JSON GBFS](https://github.com/MobilityData/gbfs-json-schema) est le moyen le plus sûr et le plus efficace de transformer vos données dans la structure GBFS._
 
@@ -224,7 +224,7 @@ Incluez la validation dans votre pipeline de données pour vous assurer que vos 
 
 Vous pouvez également utiliser le [validateur GBFS](https://gbfs-validator.mobilitydata.org/?utm_campaign=producer-guide) open source en ligne pour identifier les erreurs ou les avertissements dans les données ou la structure de vos flux. Merci à [Fluctuo](https://fluctuo.com/) d'avoir construit ce validateur et de l'avoir ouvert à la communauté ([Github](https://github.com/MobilityData/gbfs-validator)).
 
-<img src="../assets/validator_report.png" width="1000px" alt="Validator report"/>
+<img src="assets/validator_report.png" width="1000px" alt="Validator report"/>
 
 _[Validateur GBFS](https://gbfs-validator.mobilitydata.org/?utm_campaign=producer-guide) en ligne open source construit par la communauté et basé sur le [schéma JSON GBFS](https://github.com/MobilityData/gbfs-json-schema) officiel._
 
@@ -232,7 +232,7 @@ _[Validateur GBFS](https://gbfs-validator.mobilitydata.org/?utm_campaign=produce
 
 Utilisez le [visualisateur GBFS](https://gbfs-validator.mobilitydata.org/visualization?utm_campaign=producer-guide) inclus dans le validateur en ligne, pour voir l'emplacement des stations (le cas échéant) et des véhicules, ainsi que les zones de geofencing sur une carte.
 
-<img src="../assets/validator_visualizer.jpg" width="1000px" alt="Validator visualizer"/>
+<img src="assets/validator_visualizer.jpg" width="1000px" alt="Validator visualizer"/>
 
 _[Visualiseur GBFS](https://gbfs-validator.mobilitydata.org/visualization?utm_campaign=producer-guide) open source développé par la communauté._
 
@@ -248,7 +248,7 @@ Pour apparaître dans Google Maps sur mobile, suivez les instructions d'[implém
 
 Enfin, utilisez une solution de mesure de traffic telle que Google Analytics for Firebase pour voir l'impact de la publication de GBFS sur l'acquisition d'utilisateur·rices et le chiffre d'affaires.
 
-<img src="../assets/trip_planning_application.jpeg" width="400px" alt="Trip planning application"/>
+<img src="assets/trip_planning_application.jpeg" width="400px" alt="Trip planning application"/>
 
 _Photo par [CardMapr.nl](https://unsplash.com/@cardmapr?utm_source=unsplash\&utm_medium=referral\&utm_content=creditCopyText) sur [Unsplash](https://unsplash.com/photos/hQYzs-mEj5c?utm_source=unsplash\&utm_medium=referral\&utm_content=creditCopyText)_
 
