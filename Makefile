@@ -17,4 +17,3 @@ build: clean
 	mkdocs build -f config/en/mkdocs.yml --clean
 	mkdocs build -f config/fr/mkdocs.yml --clean
 	mkdocs build -f config/es/mkdocs.yml --clean
-	cp docs/index.html generated/index.html
