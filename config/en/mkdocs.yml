@@ -16,7 +16,6 @@ validation:
     unrecognized_links: ignore
 
 theme:
-  locale: en
   custom_dir: ../../overrides/
   logo: assets/images/org-black.svg
   logo_light_mode: assets/images/org-white.svg
