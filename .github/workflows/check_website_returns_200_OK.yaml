@@ -1,4 +1,4 @@
-name: Check Website returns 200 OK
+name: Check Website returns 200, 301 or 302
 
 on:
   workflow_dispatch:
