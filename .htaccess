@@ -3,11 +3,7 @@ Redirect /es/reference/ /es/specification/reference/
 Redirect /fr/reference/ /fr/specification/reference/
 Redirect /learn/guide /guide
 Redirect /fr/learn/guide /fr/guide
-<<<<<<< HEAD
-Redirect /es/learn/guide /es/guide
-=======
 Redirect /es/learn/guide /es/guide
 Redirect /learn/data-policy/ /specification/data-policy/
 Redirect /es/learn/data-policy/ /es/specification/data-policy/
 Redirect /fr/learn/data-policy/ /fr/specification/data-policy/
->>>>>>> parent of ed5521d (Merge all commits into one (#105))
