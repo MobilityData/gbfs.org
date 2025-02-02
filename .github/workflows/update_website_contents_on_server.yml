@@ -1,4 +1,4 @@
-name: Update STAGING website on server
+name: Update website on server
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -14,6 +14,7 @@ on:
       - 'README.md'
       - '.github/workflows/**'
 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
     name: Build
@@ -40,4 +41,4 @@ jobs:
         key: ${{ env.ACTION_GXFS_WEBSERVER_SSH_PRIVATE_KEY }}
         port: ${{ env.ACTION_GXFS_WEBSERVER_SSH_PORT }}
         script: |
-                    ./staging_gbfs_org_website_updater.sh
+                    ./gbfs_org_website_updater.sh
