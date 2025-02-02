@@ -14,7 +14,14 @@ Alternatively, you can provide feedback using this [form](https://form.typeform.
 
 ### Contributing translations
 
-GBFS.org uses [Simpleen](https://simpleen.io/), an automated machine learning translation tool, to ensure translations are kept up to date with repository changes.
+##### ENGLISH
+GBFS.org employs a custom AI translation tool to automatically maintain consistency across all language versions when updates occur. While external contributions are welcome, please note that they may be subject to automated updates. In cases of discrepancy between language versions, the English version shall be considered authoritative.
+
+##### FRANÇAIS
+GBFS.org utilise un outil de traduction basé sur l'IA personnalisé pour maintenir automatiquement la cohérence entre toutes les versions linguistiques lors des mises à jour. Bien que les contributions externes soient les bienvenues, veuillez noter qu'elles peuvent être soumises à des mises à jour automatisées. En cas de divergence entre les versions linguistiques, la version anglaise sera considérée comme faisant autorité.
+
+##### ESPAÑOL
+GBFS.org utiliza una herramienta de traducción personalizada basada en IA para mantener automáticamente la consistencia entre todas las versiones de idiomas cuando se realizan actualizaciones. Si bien las contribuciones externas son bienvenidas, tenga en cuenta que pueden estar sujetas a actualizaciones automatizadas. En caso de discrepancia entre las versiones de idiomas, la versión en inglés se considerará como autoritativa.
 
 ## Building the site locally
 
