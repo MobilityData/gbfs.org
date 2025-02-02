@@ -1,0 +1,120 @@
+site_name: General Bikeshare Feed Specification
+site_url: https://staging.gbfs.org
+docs_dir: ../../docs/fr       # Where to find the French markdown files
+site_dir: ../../generated/fr  # Where to put the French HTML files
+repo_url: https://github.com/MobilityData/gbfs
+repo_name: GBFS Repository
+
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: warn
+    absolute_links: ignore
+    unrecognized_links: ignore
+
+theme:
+  custom_dir: ../../overrides/
+  logo: assets/images/org-black.svg
+  logo_light_mode: assets/images/org-white.svg
+  favicon: assets/images/favicon.ico
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: gbfs
+      primary: custom
+      accent: custom
+  name: material
+  font:
+    text: Mulish
+    code: SF Mono
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - content.tabs.link
+    - search.suggest
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - assets/stylesheets/extra.css
+  - assets/stylesheets/footer.css
+
+extra:
+  analytics:
+    provider: google
+    property: G-N7RXJMH84M
+  consent:
+    title: Consentement du suivi
+    description: >-
+      Nous utilisons des cookies pour suivre les visites, stockés de manière anonyme. Avec votre consentement, vous nous aidez à améliorer notre documentation. Consultez notre <a href="https://mobilitydata.org/privacy-policy/">Politique de confidentialité</a>.
+    actions:
+        - accept
+        - reject
+        - manage
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MobilityData
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/mobilitydata
+    - icon: fontawesome/brands/slack
+      link: https://share.mobilitydata.org/slack
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Français
+      link: /fr/
+      lang: fr
+    - name: Español
+      link: /es/
+      lang: es
+
+markdown_extensions:
+  - attr_list
+  - footnotes
+  - md_in_html
+  - admonition
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true 
+
+plugins:
+  - external-markdown
+  - privacy:
+      assets: false
+      links_attr_map:
+        target: _blank
+  - search:
+      lang: 
+        - fr
+
+nav:
+  - Accueil: index.md
+  - Premiers pas: guide.md
+  - Documentation:
+    - specification/index.md
+    - Version actuelle: specification/reference.md
+    - Processus de gouvernance: specification/process.md
+    - Qualité des données: specification/data-quality.md
+    - Politique des données: specification/data-policy.md
+    - FAQ: specification/faq.md
+  - Outils: tools.md
+  - Communauté: community.md

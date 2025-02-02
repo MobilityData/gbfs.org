@@ -1,7 +1,0 @@
-{
-    "name": "gbfs.org",
-    "devDependencies": {
-        "glob": "^8.0.3",
-        "simpleen": "^0.6.3"
-    }
-}

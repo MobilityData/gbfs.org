@@ -10,7 +10,7 @@ The General Bikeshare Feed Specification (GBFS) was created in 2014 by [Mitch Va
 
 Powered by MobilityData since 2019 and officially transferred to MobilityData in 2022, GBFS has evolved to allow [over 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) docked and dockless systems worldwide such as scooters, mopeds and shared cars to appear in trip planning applications.
 
-<img src="../../img/gbfs_producer_consumer_logos.png" width="1000px" alt="GBFS producer consumer logos">
+<img src="../assets/gbfs_producer_consumer_logos.png" width="1000px" alt="GBFS producer consumer logos">
 
 
 _GBFS is a standardized data format used by [over 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) shared mobility services worldwide to appear in trip planners and other consuming applications._
@@ -21,7 +21,7 @@ GBFS is a real-time, pull-based, data specification that describes the current s
 
 A GBFS feed is composed of a series of JSON files. Each file models a particular aspect of a mobility system: vehicles and/or stations status, geographical rules, pricing, etc. The details of each file are defined in the [GBFS reference](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) with examples.
 
-<img src="../../img/gbfs_overview.png" width="800px" alt="GBFS overview">
+<img src="../assets/gbfs_overview.png" width="800px" alt="GBFS overview">
 
 _The consuming application requests the current status of the mobility system from the operator, who responds with the GBFS feeds in JSON format._
 
@@ -36,7 +36,7 @@ A list of shared mobility services who provide public feeds is available on the 
 If you have or are aware of a system that does not appear on the list please add it by opening a pull request or notify MobilityData at: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org).
 
 
-![Shared vehicles](../img/shared_vehicles.jpeg)
+![Shared vehicles](../assets/shared_vehicles.jpeg)
 
 _Photo by[ Lucian Alexe](https://unsplash.com/@lucian_alexe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/photos/3ZzOF5qqiEA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText). Brussels, Belgium._
 
@@ -44,7 +44,7 @@ _Photo by[ Lucian Alexe](https://unsplash.com/@lucian_alexe?utm_source=unsplash&
 
 This guide breaks down the feed publishing script into 4 steps: Extract, Transform, Load and Validate.
 
-<img src="../../img/etl.png" width="1000px" alt="ETL">
+<img src="../assets/etl.png" width="1000px" alt="ETL">
 
 _These 4 steps allow any shared mobility operator to publish a valid GBFS feed._
 
@@ -69,7 +69,7 @@ Next, you will need to model the data into the GBFS structure.
 
 #### The GBFS structure
 
-<img src="../../img/gbfs_structure.png" width="600px" alt="GBFS structure">
+<img src="../assets/gbfs_structure.png" width="600px" alt="GBFS structure">
 
 _A GBFS v3 dataset is composed of 12 JSON files, some always required, some required under certain conditions and others optional. The [manifest.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson) file lists the auto-discovery URLs for each GBFS dataset produced by a publisher._
 
@@ -77,7 +77,7 @@ This structure was designed to separate real-time information (eg: [station_stat
 
 #### Example of station_status.json file
 
-![Bike share station](../img/bike_share_station.jpeg)
+![Bike share station](../assets/bike_share_station.jpeg)
 
 _Photo by[ Dylan Patterson](https://unsplash.com/@sonya7r3a?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/photos/OGaaDTtttvI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
@@ -121,7 +121,7 @@ Example of [station_status.json](https://github.com/MobilityData/gbfs/blob/maste
 
 #### Example of vehicle_status.json file
 
-![Shared scooter](../img/shared_scooter.jpeg)
+![Shared scooter](../assets/shared_scooter.jpeg)
 
 _Photo by[ Elizabeth Woolner](https://unsplash.com/@elizabeth_woolner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/photos/mHrwltZJbKk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
@@ -171,11 +171,11 @@ Use the [Current Version](https://github.com/MobilityData/gbfs/blob/master/READM
 
 The best way to ensure that the feeds you produce are valid, is to generate a data model from the [GBFS JSON schema](https://github.com/MobilityData/gbfs-json-schema). Several operators have noticed great gains in efficiency by using a data model generated from the JSON schema, especially when updating to a new version of GBFS.
 
-<img src="../../img/data_model.png" width="600px" alt="Data model">
+<img src="../assets/data_model.png" width="600px" alt="Data model">
 
 _A data model generated from the [GBFS JSON schema](https://github.com/MobilityData/gbfs-json-schema) is the safest and most efficient way to transform your data into the GBFS structure._
 
-You can find data models for the main programming languages (Java, TypeScript, Rust, etc) in the [Tools](../tools.md#libraries). They are automatically generated from the official [GBFS JSON Schemas](https://github.com/MobilityData/gbfs-json-schema). So when the specification changes, your data model evolves with it. For other programming languages, you can find generator tools at [json-schema.org](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=#schema-to-code).
+You can find data models for the main programming languages (Java, TypeScript, Rust, etc) in the [Tools](tools.md#libraries). They are automatically generated from the official [GBFS JSON Schemas](https://github.com/MobilityData/gbfs-json-schema). So when the specification changes, your data model evolves with it. For other programming languages, you can find generator tools at [json-schema.org](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=#schema-to-code).
 
 Creating a data model manually from the [GBFS reference](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) is possible but not recommended as it is error prone and more difficult to update when the GBFS specification changes.
 
@@ -223,7 +223,7 @@ Include validation in your data pipeline to ensure that your GBFS feeds are alwa
 
 You may also use the open source online [GBFS validator](https://gbfs-validator.mobilitydata.org/?utm_campaign=producer-guide) to identify errors or warnings in the data or structure of your feeds. Thanks to [Fluctuo](https://fluctuo.com/) for building this validator and opening it up to the community ([Github](https://github.com/MobilityData/gbfs-validator)).
 
-<img src="../../img/validator_report.png" width="1000px" alt="Validator report">
+<img src="../assets/validator_report.png" width="1000px" alt="Validator report">
 
 _Community-built open source online [GBFS validator](https://gbfs-validator.mobilitydata.org/?utm_campaign=producer-guide) based on the official [GBFS JSON schema](https://github.com/MobilityData/gbfs-json-schema)._
 
@@ -231,7 +231,7 @@ _Community-built open source online [GBFS validator](https://gbfs-validator.mobi
 
 Use the [GBFS visualizer](https://gbfs-validator.mobilitydata.org/visualization?utm_campaign=producer-guide) included in the online validator, to see the location of stations (if applicable) and vehicles, as well as the geofencing zones on a map.
 
-<img src="../../img/validator_visualizer.jpg" width="1000px" alt="Validator visualizer">
+<img src="../assets/validator_visualizer.jpg" width="1000px" alt="Validator visualizer">
 
 _Community-built open source [GBFS visualizer](https://gbfs-validator.mobilitydata.org/visualization?utm_campaign=producer-guide)._
 
@@ -247,7 +247,7 @@ To appear in Google Maps on mobile, follow the [new provider implementation](htt
 
 Finally, use an app measurement solution like Google Analytics for Firebase to see the impact of publishing up-to-date GBFS on your user acquisition and revenue.
 
-<img src="../../img/trip_planning_application.jpeg" width="400px" alt="Trip planning application">
+<img src="../assets/trip_planning_application.jpeg" width="400px" alt="Trip planning application">
 
 _Photo by[ CardMapr.nl](https://unsplash.com/@cardmapr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/photos/hQYzs-mEj5c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
