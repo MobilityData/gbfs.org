@@ -10,7 +10,7 @@ La Especificación general de alimentación de bicicletas compartidas (GBFS) se 
 
 Desarrollado por MobilityData desde 2019 y transferido oficialmente a MobilityData en 2022, GBFS ha evolucionado para permitir [más de 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) sistemas acoplados y sin acoplamiento en todo el mundo, como scooters, ciclomotores y coches compartidos aparecerán en las aplicaciones de planificación de trip .
 
-<img src="../../../img/gbfs_producer_consumer_logos.png" width="1000px" alt="Logotipos de consumidores de productores de GBFS">
+<img src="../assets/gbfs_producer_consumer_logos.png" width="1000px" alt="Logotipos de consumidores de productores de GBFS">
 
 
 _GBFS es un formato de datos estandarizado utilizado por [más de 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) servicios de movilidad compartidos en todo el mundo para aparecer en planificadores de trip y otras aplicaciones de consumo._
@@ -21,7 +21,7 @@ GBFS es una especificación de datos basada en extracción en tiempo real que de
 
 Un feed GBFS se compone de una serie de archivos JSON. Cada archivo modela un aspecto particular de un sistema de movilidad: estado de vehículos y/o estaciones, reglas geográficas, precios, etc. Los detalles de cada archivo se definen en la [referencia GBFS](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) con ejemplos.
 
-<img src="../../../img/gbfs_overview.png" width="800px" alt="Descripción general de GBFS">
+<img src="../assets/gbfs_overview.png" width="800px" alt="Descripción general de GBFS">
 
 _La aplicación consumidora solicita el estado actual del sistema de movilidad al operador, quien responde con los feeds GBFS en formato JSON._
 
@@ -35,7 +35,7 @@ Una lista de archivos compartidos Los servicios de movilidad que brindan transmi
 
 Si tiene o conoce un sistema que no aparece en la lista, agréguelo abriendo un extracto. solicite o notifique a MobilityData en: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org).
 
-![Vehículos compartidos](../img/shared_vehicles.jpeg)
+![Vehículos compartidos](../assets/shared_vehicles.jpeg)
 
 _Foto de [Lucian Alexe](https://unsplash.com/@lucian_alexe?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) en [Unsplash](https://unsplash.com/photos/3ZzOF5qqiEA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText). Bruselas, Bélgica._
 
@@ -43,7 +43,7 @@ _Foto de [Lucian Alexe](https://unsplash.com/@lucian_alexe?utm_source=unsplash&a
 
 Esta guía divide el script de publicación del feed en 4 pasos: extraer, transformar, cargar y validar.
 
-<img src="../../../img/etl.png" width="1000px" alt="ETL">
+<img src="../assets/etl.png" width="1000px" alt="ETL">
 
 _Estos 4 pasos permiten a cualquier operador de movilidad compartida publicar un feed GBFS válido._
 
@@ -68,7 +68,7 @@ A continuación, deberá modelar los datos en la estructura GBFS.
 
 #### La estructura GBFS
 
-<img src="../../../img/gbfs_structure.png" width="600px" alt="estructura GBFS">
+<img src="../assets/gbfs_structure.png" width="600px" alt="estructura GBFS">
 
 _Un conjunto de datos GBFS v3 se compone de 12 archivos JSON, algunos siempre obligatorio, otros obligatorio bajo ciertas condiciones y otros opcional. El archivo [manifest.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson) enumera las URL de descubrimiento automático para cada conjunto de datos GBFS producido por un editor._
 
@@ -76,7 +76,7 @@ Esta estructura fue diseñada para información separada en tiempo real (por eje
 
 #### Ejemplo de archivo station_status.json
 
-![Estación de bicicletas compartidas](../img/bike_share_station.jpeg)
+![Estación de bicicletas compartidas](../assets/bike_share_station.jpeg)
 
 _Foto de [Dylan Patterson](https://unsplash.com/@sonya7r3a?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) en [Unsplash](https://unsplash.com/photos/OGaaDTtttvI?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)_
 
@@ -120,7 +120,7 @@ Ejemplo de [station_status.json](https://github.com/MobilityData/gbfs/blob/maste
 
 #### Ejemplo de archivo vehicle_status.json
 
-![Scooter compartido](../img/shared_scooter.jpeg)
+![Scooter compartido](../assets/shared_scooter.jpeg)
 
 _Foto de[Elizabeth Woolner](https://unsplash.com/@elizabeth_woolner?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) en [Unsplash](https://unsplash.com/photos/mHrwltZJbKk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)_
 
@@ -170,11 +170,11 @@ Utilice la [versión actual](https://github.com/MobilityData/gbfs/blob/master/RE
 
 La mejor manera de garantizar que los feeds que produce sean válidos es generar un modelo de datos a partir del [esquema JSON GBFS](https://github.com/MobilityData/ esquema-gbfs-json). Varios operadores han notado grandes ganancias en eficiencia al utilizar un modelo de datos generado a partir del esquema JSON, especialmente al actualizar a una nueva versión de GBFS.
 
-<img src="../../../img/data_model.png" width="600px" alt="Modelo de datos">
+<img src="../assets/data_model.png" width="600px" alt="Modelo de datos">
 
 _Un modelo de datos generado a partir del [esquema GBFS JSON](https://github.com/MobilityData/gbfs-json-schema) es la forma más segura y eficiente de transformar sus datos en la estructura GBFS._
 
-Puede encontrar modelos de datos para los principales lenguajes de programación (Java, TypeScript, Rust, etc.) en las [Herramientas](../tools.md#bibliotecas). Se generan automáticamente a partir de los [esquemas GBFS JSON](https://github.com/MobilityData/gbfs-json-schema) oficiales. Entonces, cuando la especificación cambia, su modelo de datos evoluciona con ella. Para otros lenguajes de programación, puede encontrar generadores en [json-schema.org](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=#schema-to-code).
+Puede encontrar modelos de datos para los principales lenguajes de programación (Java, TypeScript, Rust, etc.) en las [Herramientas](tools.md#bibliotecas). Se generan automáticamente a partir de los [esquemas GBFS JSON](https://github.com/MobilityData/gbfs-json-schema) oficiales. Entonces, cuando la especificación cambia, su modelo de datos evoluciona con ella. Para otros lenguajes de programación, puede encontrar generadores en [json-schema.org](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=#schema-to-code).
 
 Crear un modelo de datos manualmente desde la [referencia de GBFS](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) es posible, pero no recomendado, ya que es propenso a errores y más difícil de actualizar cuando cambia la especificación GBFS.
 
@@ -222,7 +222,7 @@ Incluya validación en sus datos canalización para garantizar que sus feeds GBF
 
 También puede utilizar el [validador GBFS] en línea de código abierto (https://gbfs-validator.mobilitydata.org/?utm_campaign=producer-guide) para identificar errores o advertencias en los datos o la estructura de sus feeds. Gracias a [Fluctuo](https://fluctuo.com/) por crear este validador y abrirlo a la comunidad ([Github](https://github.com/MobilityData/gbfs-validator)).
 
-<img src="../../../img/validator_report.png" width="1000px" alt="Informe del validador">
+<img src="../assets/validator_report.png" width="1000px" alt="Informe del validador">
 
 _Código abierto en línea creado por la comunidad [validador GBFS](https://gbfs-validator.mobilitydata.org/?utm_campaign=producer-guide) basado en el [esquema JSON GBFS](https://github.com/MobilityData/ gbfs-json-schema)._
 
@@ -230,13 +230,13 @@ _Código abierto en línea creado por la comunidad [validador GBFS](https://gbfs
 
 Utilice el [visualizador GBFS](https://gbfs-validator.mobilitydata.org/visualization?utm_campaign=producer-guide) incluido en el validador en línea, para ver la ubicación de estaciones (si corresponde) y vehículos, así como las zonas de geocercado en un mapa.
 
-<img src="../../../img/validator_visualizer.jpg" width="1000px" alt="Visualizador del validador">
+<img src="../assets/validator_visualizer.jpg" width="1000px" alt="Visualizador del validador">
 
 _Código abierto creado por la comunidad [visualizador GBFS](https://gbfs-validator.mobilitydata.org/visualization?utm_campaign=producer-guide)._
 
 ## Aparecer en aplicaciones de planificación de trip que sus feeds son válidos y están disponibles públicamente, puede notifique a las aplicaciones de planificación de trip que pueden usar sus feeds GBFS para mostrar su servicio de movilidad a los usuarios.
 
-Para aparecer en las aplicaciones de planificación de trip , asegúrese de publicar la información de su feed en MobilityData [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv) catálogo (consulte la sección [Agregar sus feeds al catálogo](#adding-your-feeds-to-the-catalog)). Las aplicaciones de planificación de viajes comprueban periódicamente los feeds presentes en este catálogo para añadirlos a sus opciones de ruta. También puede comunicarse con el equipo de datos de las aplicaciones para notificarles que su feed está disponible en el catálogo, que incluye, entre otros: [Citymapper](https://citymapper.com/contact/company), [Moovit](https://moovitapp.com/), [Tránsito](mailto:data@transitapp.com) y [¿Adónde?](https://www.whereto.app/).
+Para aparecer en las aplicaciones de planificación de trip , asegúrese de publicar la información de su feed en MobilityData [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv) catálogo (consulte la sección [Agregar sus feeds al catálogo](#agregar-sus-feeds-al-catalogo). Las aplicaciones de planificación de viajes comprueban periódicamente los feeds presentes en este catálogo para añadirlos a sus opciones de ruta. También puede comunicarse con el equipo de datos de las aplicaciones para notificarles que su feed está disponible en el catálogo, que incluye, entre otros: [Citymapper](https://citymapper.com/contact/company), [Moovit](https://moovitapp.com/), [Tránsito](mailto:data@transitapp.com) y [¿Adónde?](https://www.whereto.app/).
 
 Para aparecer en Google Maps en dispositivos móviles, siga las [implementación del nuevo proveedor](https://developers.google.com/micromobility/guides/new-provider-implementation) instrucciones. Tenga en cuenta que Google Maps tiene [directrices para la entrega de feeds](https://developers.google.com/micromobility/guides/guidelines-for-feed-delivery) específicas, como la frecuencia de actualización y la latencia, y requisitos específicos para las [definiciones de GBFS](https://developers.google.com/micromobility/reference/gbfs-definitions) con algunos campos obligatorio adicionales que son opcional en la [referencia de GBFS](https://github.com/MobilityData/gbfs/blob/master/gbfs.md).
 
@@ -244,7 +244,7 @@ Para aparecer en Google Maps en dispositivos móviles, siga las [implementación
 
 Finalmente, use una solución de medición de aplicaciones como Google Analytics para Firebase para ver el impacto de publicar GBFS actualizados en la adquisición de usuarios y los ingresos.
 
-<img src="../../../img/trip_planning_application.jpeg" width="400px" alt="Aplicación de planificación de viajes">
+<img src="../assets/trip_planning_application.jpeg" width="400px" alt="Aplicación de planificación de viajes">
 
 _Foto de [CardMapr.nl](https://unsplash.com/@cardmapr?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) en [Unsplash](https://unsplash.com/photos/hQYzs-mEj5c?utm_source=unsplash&amp;utm_medium=referido&amp;utm_content=creditCopyText)_
 
