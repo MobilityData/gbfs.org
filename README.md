@@ -24,14 +24,27 @@ GBFS.org uses [Simpleen](https://simpleen.io/), an automated machine learning tr
    - macOS: `pip3 install pip` or `pip3 install --upgrade pip`
 1. Clone this repository:
    - `git clone https://github.com/MobilityData/gbfs.org`
-1. Change the directory to the cloned repository, and have [`requirements.txt`](requirements.txt) installed:
+1. Change the directory to the cloned repository, and create & enable a Python virtual environment:
+   - `python3 -m venv venv`
+   - `source venv/bin/activate`
+1. Have [`requirements.txt`](requirements.txt) installed:
    - Linux: `pip install --force-reinstall -r requirements.txt`
    - macOS: `pip3 install --force-reinstall -r requirements.txt`
+1. Have [Material for MkDocs Insiders](https://squidfunk.github.io/mkdocs-material/insiders/`) installed. Substitute `${GH_TOKEN}` with MobilityData's access token:
+   - Linux: `pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git`
+   - macOS: `pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git`
 1. Assuming you are still in the cloned repository, run this command to update the content for the specification references and best practices:
    - `bash scripts/fetchdata.sh`
-1. To run the site locally: `mkdocs serve`
-1. To build the site locally only: `mkdocs build --clean`
-1. To deploy the site to GitHub Pages: `mkdocs gh-deploy`
+1. To run the site locally (command defined in `MakeFile`):
+   - `make serve`
+   - Then each language will have it's own address:
+     - English: `http://127.0.0.1:8000/`
+     - French: `http://127.0.0.1:8001/`
+     - Spanish: `http://127.0.0.1:8002/`
+1. To build the site locally only (command defined in `MakeFile`):
+   - `make build`
+1. Deactivate the Python virtual environment when done:
+   - `deactivate`
 
 ## License
 

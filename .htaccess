@@ -1,3 +1,6 @@
+# Redirect root to /en/index.html
+#RedirectMatch ^/$ /en/index.html
+
 Redirect /reference/index.html /specification/reference/index.html
 Redirect /es/reference/ /es/specification/reference/
 Redirect /fr/reference/ /fr/specification/reference/

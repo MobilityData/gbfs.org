@@ -1,10 +1,10 @@
-name: Check Website returns 200 OK
+name: Check Website returns 200, 301 or 302
 
 on:
   workflow_dispatch:
   workflow_run:
     workflows:
-      - Update website on server
+      - Update STAGING website on server
     types:
       - completed
 
@@ -17,9 +17,9 @@ jobs:
 
       - name: Check HTTP Status Code
         run: |
-          STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://gbfs.org)
-          if [ "$STATUS_CODE" -ne 200 ]; then
-            echo "Error: Website returned status code $STATUS_CODE"
-            exit 1
+          STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://staging.gbfs.org/)
+          if [[ "$STATUS_CODE" != 200 && "$STATUS_CODE" != 301 && "$STATUS_CODE" != 302 ]]; then
+              echo "Error: Website returned status code $STATUS_CODE"
+              exit 1
           fi
-          echo "Website is up and returned 200"
+          echo "Website is up and returned $STATUS_CODE"
