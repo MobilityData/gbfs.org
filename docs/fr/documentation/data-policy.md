@@ -2,7 +2,7 @@
 
 ## Comment GBFS soutient les villes dans leurs politiques en faveur d’une mobilité durable et fluide.
 
-Ce guide est également disponible en [portugais](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada-2/), en [espagnol](/es/specification/data-policy) et en [anglais](/specification/data-policy).
+Ce guide est également disponible en [portugais](https://mobilitydata.org/gbfs-e-politica-de-dados-de-mobilidade-compartilhada-2/), en [espagnol](/es/documentation/data-policy) et en [anglais](/documentation/data-policy).
 
 ## Vue d'ensemble
 

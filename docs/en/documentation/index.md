@@ -1,7 +1,7 @@
 # Specification
 
-<div class="landing-page">
-    <a class="button" href="reference">Latest Reference (v3.0)</a><a class="button" href="https://github.com/MobilityData/gbfs/issues">Change Proposals</a><a class="button" href="process">Governance Process</a>
+<div class="button-holder">
+    <a class="md-button md-button--primary" href="reference">Latest Reference (v3.0)</a><a class="md-button md-button--primary" href="https://github.com/MobilityData/gbfs/issues">Change Proposals</a><a class="md-button md-button--primary" href="process">Governance Process</a>
 </div>
 
 ## Versions of this documentation

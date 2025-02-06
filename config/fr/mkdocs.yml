@@ -16,9 +16,10 @@ validation:
     unrecognized_links: ignore
 
 theme:
+  language: fr
   custom_dir: ../../overrides/
-  logo: assets/images/org-black.svg
-  logo_light_mode: assets/images/org-white.svg
+  logo: assets/images/logo.png
+  logo_light_mode: assets/images/logo.png
   favicon: assets/images/favicon.ico
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -108,13 +109,13 @@ plugins:
 
 nav:
   - Accueil: index.md
-  - Premiers pas: guide.md
+  - Premiers pas: get-started.md
   - Documentation:
-    - specification/index.md
-    - Version actuelle: specification/reference.md
-    - Processus de gouvernance: specification/process.md
-    - Qualité des données: specification/data-quality.md
-    - Politique des données: specification/data-policy.md
-    - FAQ: specification/faq.md
+    - documentation/index.md
+    - Version actuelle: documentation/reference.md
+    - Processus de gouvernance: documentation/process.md
+    - Qualité des données: documentation/data-quality.md
+    - Politique des données: documentation/data-policy.md
+    - FAQ: documentation/faq.md
   - Outils: tools.md
   - Communauté: community.md

@@ -36,7 +36,7 @@ A list of shared mobility services who provide public feeds is available on the 
 If you have or are aware of a system that does not appear on the list please add it by opening a pull request or notify MobilityData at: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org).
 
 
-![Shared vehicles](../assets/shared_vehicles.jpeg)
+![Shared vehicles](assets/shared_vehicles.jpeg)
 
 _Photo by[ Lucian Alexe](https://unsplash.com/@lucian_alexe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/photos/3ZzOF5qqiEA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText). Brussels, Belgium._
 
@@ -77,7 +77,7 @@ This structure was designed to separate real-time information (eg: [station_stat
 
 #### Example of station_status.json file
 
-![Bike share station](../assets/bike_share_station.jpeg)
+![Bike share station](assets/bike_share_station.jpeg)
 
 _Photo by[ Dylan Patterson](https://unsplash.com/@sonya7r3a?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/photos/OGaaDTtttvI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
@@ -121,7 +121,7 @@ Example of [station_status.json](https://github.com/MobilityData/gbfs/blob/maste
 
 #### Example of vehicle_status.json file
 
-![Shared scooter](../assets/shared_scooter.jpeg)
+![Shared scooter](assets/shared_scooter.jpeg)
 
 _Photo by[ Elizabeth Woolner](https://unsplash.com/@elizabeth_woolner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/photos/mHrwltZJbKk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 

@@ -1,12 +1,19 @@
-# Redirect root to /en/index.html
-#RedirectMatch ^/$ /en/index.html
+Redirect /reference/ /documentation/reference/
+Redirect /es/reference/ /es/documentation/reference/
+Redirect /fr/reference/ /fr/documentation/reference/
 
-Redirect /reference/index.html /specification/reference/index.html
-Redirect /es/reference/ /es/specification/reference/
-Redirect /fr/reference/ /fr/specification/reference/
-Redirect /learn/guide /guide
-Redirect /fr/learn/guide /fr/guide
-Redirect /es/learn/guide /es/guide
-Redirect /learn/data-policy/ /specification/data-policy/
-Redirect /es/learn/data-policy/ /es/specification/data-policy/
-Redirect /fr/learn/data-policy/ /fr/specification/data-policy/
+Redirect /specification/ /documentation/
+Redirect /fr/specification/ /fr/documentation/
+Redirect /es/specification/ /es/documentation/
+
+Redirect /learn/guide /get-started/
+Redirect /fr/learn/guide /fr/get-started/
+Redirect /es/learn/guide /es/get-started/
+
+Redirect /guide/ /get-started/
+Redirect /fr/guide/ /fr/get-started/
+Redirect /es/guide/ /es/get-started/
+
+Redirect /learn/data-policy/ /documentation/data-policy/
+Redirect /es/learn/data-policy/ /es/documentation/data-policy/
+Redirect /fr/learn/data-policy/ /fr/documentation/data-policy/

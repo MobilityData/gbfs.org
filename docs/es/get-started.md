@@ -35,7 +35,7 @@ Una lista de archivos compartidos Los servicios de movilidad que brindan transmi
 
 Si tiene o conoce un sistema que no aparece en la lista, agréguelo abriendo un extracto. solicite o notifique a MobilityData en: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org).
 
-![Vehículos compartidos](../assets/shared_vehicles.jpeg)
+![Vehículos compartidos](assets/shared_vehicles.jpeg)
 
 _Foto de [Lucian Alexe](https://unsplash.com/@lucian_alexe?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) en [Unsplash](https://unsplash.com/photos/3ZzOF5qqiEA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText). Bruselas, Bélgica._
 
@@ -76,7 +76,7 @@ Esta estructura fue diseñada para información separada en tiempo real (por eje
 
 #### Ejemplo de archivo station_status.json
 
-![Estación de bicicletas compartidas](../assets/bike_share_station.jpeg)
+![Estación de bicicletas compartidas](assets/bike_share_station.jpeg)
 
 _Foto de [Dylan Patterson](https://unsplash.com/@sonya7r3a?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) en [Unsplash](https://unsplash.com/photos/OGaaDTtttvI?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)_
 
@@ -120,7 +120,7 @@ Ejemplo de [station_status.json](https://github.com/MobilityData/gbfs/blob/maste
 
 #### Ejemplo de archivo vehicle_status.json
 
-![Scooter compartido](../assets/shared_scooter.jpeg)
+![Scooter compartido](assets/shared_scooter.jpeg)
 
 _Foto de[Elizabeth Woolner](https://unsplash.com/@elizabeth_woolner?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) en [Unsplash](https://unsplash.com/photos/mHrwltZJbKk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)_
 

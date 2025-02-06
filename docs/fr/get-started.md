@@ -34,7 +34,7 @@ Une liste des services de mobilité partagée qui fournissent des flux publics e
 
 Si vous connaissez un système qui n'apparaît pas dans la liste, veuillez l'ajouter en envoyant une [demande d'ajout](#ajouter-vos-flux-au-catalogue) ou en informant MobilityData à l'adresse suivante : [sharedmobility@mobilitydata.org.](mailto:sharedmobility@mobilitydata.org)
 
-![Véhicules partagés](../assets/shared_vehicles.jpeg)
+![Véhicules partagés](assets/shared_vehicles.jpeg)
 
 _Photo de[ Lucian Alexe](https://unsplash.com/@lucian_alexe?utm_source=unsplash\&utm_medium=referral\&utm_content=creditCopyText) sur [Unsplash](https://unsplash.com/photos/3ZzOF5qqiEA?utm_source=unsplash\&utm_medium=referral\&utm_content=creditCopyText). Bruxelles, Belgique._
 
@@ -76,7 +76,7 @@ Cette structure a été conçue pour séparer les informations en temps réel (e
 
 #### Exemple de fichier station_status.json
 
-![Station de vélos en libre-service](../assets/bike_share_station.jpeg)
+![Station de vélos en libre-service](assets/bike_share_station.jpeg)
 
 _Photo par[ Dylan Patterson](https://unsplash.com/@sonya7r3a?utm_source=unsplash\&utm_medium=referral\&utm_content=creditCopyText) sur [Unsplash](https://unsplash.com/photos/OGaaDTtttvI?utm_source=unsplash\&utm_medium=referral\&utm_content=creditCopyText)_
 
@@ -120,7 +120,7 @@ Exemple de fichier [station_status.json](https://github.com/MobilityData/gbfs/bl
 
 #### Exemple de fichier vehicle_status.json
 
-![Scooter partagé](../assets/shared_scooter.jpeg)
+![Scooter partagé](assets/shared_scooter.jpeg)
 
 _Photo d'[Elizabeth Woolner](https://unsplash.com/@elizabeth_woolner?utm_source=unsplash\&utm_medium=referral\&utm_content=creditCopyText) sur [Unsplash](https://unsplash.com/photos/mHrwltZJbKk?utm_source=unsplash\&utm_medium=referral\&utm_content=creditCopyText)_
 

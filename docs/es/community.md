@@ -26,9 +26,12 @@ Para respaldar este proceso y garantizar que sea lo más oportuno posible, Mobil
 Los siguientes elementos han pasado por el proceso de votación y se incluirán en el próxima versión.
  <iframe class="airtable-embed" src="https://airtable.com/embed/appQvTu1nOy6fJwUP/shrNl0TSZGrqD3REa?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="633" style="background: transparent; border: 1px solid #ccc;"></iframe> 
 
- <a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shraqzpVkb2PlkMnq" target="_blank">Solicitar un cambio</a> 
- <a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrkMt5JTIiuPFlhY" target="_blank">Agregue su organización (productores)</a> 
- <a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrNEkNZ2JBWYdMmw" target="_blank">Agregue su organización (consumidores)</a> 
+<div class="button-holder">
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shraqzpVkb2PlkMnq" target="_blank">Solicitar un cambio</a> 
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrkMt5JTIiuPFlhY" target="_blank">Agregue su organización (productores)</a> 
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrNEkNZ2JBWYdMmw" target="_blank">Agregue su organización (consumidores)</a> 
+</div>
+
 
 ## Participe
 Esta hoja de ruta se desarrolló en base a los comentarios que recibimos de la comunidad GBFS y la industria de la movilidad compartida. Si hay características o cambios que cree que deberían ser parte de esta hoja de ruta, nos gustaría conocerlos. GBFS es un proyecto abierto y valoramos sus aportes.

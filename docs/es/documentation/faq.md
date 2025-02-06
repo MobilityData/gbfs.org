@@ -116,7 +116,7 @@ Si bien GBFS, o la Especificación General de Alimentación de Bicicletas Compar
 
 **¿Cómo se actualiza la especificación?**
 
-GBFS es un proyecto de código abierto desarrollado bajo un modelo de gobernanza basado en consenso. Los contribuyentes provienen de toda la industria de la movilidad compartida, el sector público, la tecnología cívica y otros lugares. Las propuestas de cambios o adiciones a la especificación se realizan a través de Pull Requests. Una vez que la comunidad ha tenido time suficiente para comentar e iterar sobre una propuesta, la propuesta se somete a votación. Si la propuesta se aprueba, pasa a formar parte de un candidato de liberación. Cuando la versión candidata se ha implementado con éxito en un conjunto de datos públicos, se convierte en una versión oficial. El proceso completo de gobernanza y cambio se puede encontrar [aquí](../specification/process.md).
+GBFS es un proyecto de código abierto desarrollado bajo un modelo de gobernanza basado en consenso. Los contribuyentes provienen de toda la industria de la movilidad compartida, el sector público, la tecnología cívica y otros lugares. Las propuestas de cambios o adiciones a la especificación se realizan a través de Pull Requests. Una vez que la comunidad ha tenido time suficiente para comentar e iterar sobre una propuesta, la propuesta se somete a votación. Si la propuesta se aprueba, pasa a formar parte de un candidato de liberación. Cuando la versión candidata se ha implementado con éxito en un conjunto de datos públicos, se convierte en una versión oficial. El proceso completo de gobernanza y cambio se puede encontrar [aquí](../documentation/process.md).
 
 <br> **¿Cómo puedo proponer un cambio en la especificación?**
 

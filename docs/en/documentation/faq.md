@@ -116,7 +116,7 @@ While GBFS, or the General Bikeshare Feed Specification, has its roots in bikesh
 
 **How is the specification updated?**
 
-GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. Proposals for changes or additions to the specification are made through Pull Requests. Once the community has had adequate time to comment and iterate on a proposal, the proposal is put to a vote. If the proposal passes, it becomes part of a release candidate. When the release candidate has been successfully implemented in a public data set, it becomes an official release. The complete governance and change process can be found [here](../specification/process.md).
+GBFS is an open source project developed under a consensus-based governance model. Contributors come from across the shared mobility industry, public sector, civic technology and elsewhere. Proposals for changes or additions to the specification are made through Pull Requests. Once the community has had adequate time to comment and iterate on a proposal, the proposal is put to a vote. If the proposal passes, it becomes part of a release candidate. When the release candidate has been successfully implemented in a public data set, it becomes an official release. The complete governance and change process can be found [here](../documentation/process.md).
 
 <br>**How can I propose a change to the specification?**
 
