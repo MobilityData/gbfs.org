@@ -40,8 +40,6 @@ GBFS.org utiliza una herramienta de traducción personalizada basada en IA para 
 1. Have [Material for MkDocs Insiders](https://squidfunk.github.io/mkdocs-material/insiders/`) installed. Substitute `${GH_TOKEN}` with MobilityData's access token:
    - Linux: `pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git`
    - macOS: `pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git`
-1. Assuming you are still in the cloned repository, run this command to update the content for the specification references and best practices:
-   - `bash scripts/fetchdata.sh`
 1. To run the site locally (command defined in `MakeFile`):
    - `make serve`
    - Then each language will have it's own address:
