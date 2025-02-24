@@ -12,7 +12,7 @@ Todas las propuestas de cambio están sujetas al proceso de gobernanza de GBFS.
 - Cuando se aprueba una votación, el cambio pasa a formar parte de un Release Candidate.
 - Una vez que tanto el productor de datos como el consumidor de datos han implementado el cambio, el Release Candidate se convierte en una versión oficial. lanzamiento.
 
-**[Ver el proceso de gobernanza](../especificación/proceso)**
+**[Ver el proceso de gobernanza](../documentation/process)**
 
 Para respaldar este proceso y garantizar que sea lo más oportuno posible, MobilityData rastrea la implementación a través de discusiones individuales y otros eventos de partes interesadas y examinando conjuntos de datos GBFS. Para mejorar este proceso de seguimiento, se anima a los productores y consumidores de datos de GBFS a agregar su organización aquí si han implementado o planean implementar cualquiera de estos cambios candidatos a versiones. Después de convocar las votaciones, MobilityData actualizará esta lista para reflejar las organizaciones que incluyeron una nota de implementación en su votación.
 

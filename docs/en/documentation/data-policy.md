@@ -9,7 +9,7 @@ Securing access to mobility data is an important part of a shared mobility progr
 
 This report is intended primarily for individuals responsible for shared mobility procurement and policies at cities or other local authorities. The report provides a foundational understanding of how GBFS supports seamless, sustainable mobility options and how to leverage open data’s potential when writing policy that can influence shared mobility adoption and practice.
 
-<img src="../../../img/donkey_republic.jpeg" width="700px" alt="Donkey Republic"/>
+<img src="../../assets/donkey_republic.jpeg" width="700px" alt="Donkey Republic"/>
 
 _Photo by [Martti Tulenheimo](https://flic.kr/p/2aLY7Vc)._
 
@@ -40,7 +40,7 @@ Policies requiring standardized open data can prevent the creation of walled gar
 
 For operators, standardization means an end to a patch-work of regulation that requires different data in different formats for each city in which they operate. Standardization provides assurance to operators that data requests can be clearly defined and are fully implementable. GBFS also carries the potential to bring more users to an operator’s platform by integrating with 3rd party apps. As a consensus-based, open source standard, operators have an equal voice along with cities in the ongoing development of the GBFS specification. Comprehensive documentation and resources are available to cities and operators alike to aid in implementation.
 
-<img src="../../../img/velib.jpeg" width="700px" alt="Velib"/>
+<img src="../../assets/velib.jpeg" width="700px" alt="Velib"/>
 
 _Photo by [jean-louis Zimmermann](https://flic.kr/p/8SYDoq)._
 
@@ -63,7 +63,7 @@ When developing data policies, it is a good idea to gather input from subject ma
 
 GBFS is designed to accommodate the needs of a wide variety of mobility platforms and use cases, from traditional docked bikeshare to free floating bikes, scooters, and other vehicles. The specification consists of 12 files or endpoints that contain different types of mobility data. Some of these files and their associated fields are required in order to be compliant with the specification, while others are optional. Which of these files are required by the specification depends on the specific type of mobility system being represented. Optional files and fields provide additional data for specific purposes and use cases. Municipalities may need to require some of these optional files or fields in their regulations to provide additional information in support of travelers, municipal goals, or other needs.
 
-<img src="../../../img/spin.jpeg" width="700px" alt="Spin"/>
+<img src="../../assets/spin.jpeg" width="700px" alt="Spin"/>
 
 _Photo by [Spin](https://www.spin.app/)._
 

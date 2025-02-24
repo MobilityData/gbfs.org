@@ -6,14 +6,14 @@ Esta guía está destinada a equipos técnicos de servicios de movilidad compart
 
 ## Propósito de GBFS
 
-La Especificación general de alimentación de bicicletas compartidas (GBFS) se creó en 2014 por [Mitch Vars](https://github.com/mplsmitch), que luego fue adoptado por [NABSA](https://nabsa.net/), para estandarizar la forma en que los sistemas de bicicletas compartidas se comunican con las aplicaciones de planificación de trip .
+La Especificación general de alimentación de bicicletas compartidas (GBFS) se creó en 2014 por [Mitch Vars](https://github.com/mplsmitch), que luego fue adoptado por [NABSA](https://nabsa.net/), para estandarizar la forma en que los sistemas de bicicletas compartidas se comunican con las aplicaciones de planificación de trip.
 
-Desarrollado por MobilityData desde 2019 y transferido oficialmente a MobilityData en 2022, GBFS ha evolucionado para permitir [más de 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) sistemas acoplados y sin acoplamiento en todo el mundo, como scooters, ciclomotores y coches compartidos aparecerán en las aplicaciones de planificación de trip .
+Desarrollado por MobilityData desde 2019 y transferido oficialmente a MobilityData en 2022, GBFS ha evolucionado para permitir [más de 1000](https://github.com/MobilityData/gbfs/blob/master/systems.csv) sistemas acoplados y sin acoplamiento en todo el mundo, como scooters, ciclomotores y coches compartidos aparecerán en las aplicaciones de planificación de trip.
 
 <img src="../assets/gbfs_producer_consumer_logos.png" width="1000px" alt="Logotipos de consumidores de productores de GBFS">
 
 
-_GBFS es un formato de datos estandarizado utilizado por [más de 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) servicios de movilidad compartidos en todo el mundo para aparecer en planificadores de trip y otras aplicaciones de consumo._
+_GBFS es un formato de datos estandarizado utilizado por [más de 1000](https://github.com/MobilityData/gbfs/blob/master/systems.csv) servicios de movilidad compartidos en todo el mundo para aparecer en planificadores de trip y otras aplicaciones de consumo._
 
 ## Descripción general de un feed GBFS
 
@@ -207,7 +207,7 @@ Todos los sistemas debe tener una entrada en [systems.csv](https://github.com/Mo
 
 #### Esfuércese por lograr un tiempo de actividad del 99,9 %
 
-Tener un tiempo de actividad alto es la mejor manera de Garantizar una buena experiencia de usuario en las aplicaciones de planificación de trip . Utilice un software de monitoreo de tiempo de actividad para garantizar que sus feeds GBFS estén disponibles tanto como sea posible.
+Tener un tiempo de actividad alto es la mejor manera de Garantizar una buena experiencia de usuario en las aplicaciones de planificación de trip. Utilice un software de monitoreo de tiempo de actividad para garantizar que sus feeds GBFS estén disponibles tanto como sea posible.
 
 Aquí hay un ejemplo en el que [Transit](https://transitapp.com/) analizó el tiempo de actividad de 40 feeds en 8 operadores diferentes y compartió los resultados. en esta [publicación de blog](https://blog.transitapp.com/the-devil-in-the-data-details/) (los resultados son de Puede de 2022 y podrían estar desactualizados).
 

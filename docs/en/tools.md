@@ -5,7 +5,7 @@ There are a multitude of tools and services available to help with the creation,
 ## Quick Links
 - [GBFS Validator](https://gbfs-validator.mobilitydata.org/): The Canonical GBFS Validator is a tool to check the conformity of a GBFS feed against the official specification including past releases and release candidates.
 - [JSON Schemas](https://github.com/MobilityData/gbfs-json-schema): A set of JSON schemas is available for each version of the specification as well as the current release candidate. The Canonical GBFS Validator is based on these schemas.
-- [Dataset Catalog](https://github.com/MobilityData/gbfs/blob/master/systems.csv): There are now over 800 shared mobility systems publishing GBFS worldwide. A catalog of these GBFS feeds is maintained by the GBFS community on the GBFS repo. This is an incomplete list. If you have or are aware of a feed that does not appear on the list please add it.
+- [Dataset Catalog](https://github.com/MobilityData/gbfs/blob/master/systems.csv): There are now over 1000 shared mobility systems publishing GBFS worldwide. A catalog of these GBFS feeds is maintained by the GBFS community on the GBFS repo. This is an incomplete list. If you have or are aware of a feed that does not appear on the list please add it.
 
 <hr>
 

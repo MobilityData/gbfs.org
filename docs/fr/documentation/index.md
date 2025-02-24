@@ -1,7 +1,7 @@
 # Spécification
 
 <div class="button-holder">
-   <a class="md-button md-button--primary" href="reference">Version actuelle (v3.0)</a><a class="md-button md-button--primary" href="https://github.com/MobilityData/gbfs/issues">Propositions de modification</a><a class="butmd-button md-button--primaryton" href="process">Processus de gouvernance</a>
+   <a class="md-button md-button--primary" href="reference">Version actuelle (v3.0)</a><a class="md-button md-button--primary" href="https://github.com/MobilityData/gbfs/issues">Propositions de modification</a><a class="md-button md-button--primary" href="process">Processus de gouvernance</a>
 </div>
 
 ## Versions de cette documentation

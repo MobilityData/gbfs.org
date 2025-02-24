@@ -8,12 +8,12 @@ This guide is intended for technical teams of shared mobility services. In this 
 
 The General Bikeshare Feed Specification (GBFS) was created in 2014 by [Mitch Vars](https://github.com/mplsmitch), which was then adopted by [NABSA](https://nabsa.net/), to standardize the way shared bike systems communicate with trip planning applications. 
 
-Powered by MobilityData since 2019 and officially transferred to MobilityData in 2022, GBFS has evolved to allow [over 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) docked and dockless systems worldwide such as scooters, mopeds and shared cars to appear in trip planning applications.
+Powered by MobilityData since 2019 and officially transferred to MobilityData in 2022, GBFS has evolved to allow [over 1000](https://github.com/MobilityData/gbfs/blob/master/systems.csv) docked and dockless systems worldwide such as scooters, mopeds and shared cars to appear in trip planning applications.
 
 <img src="../assets/gbfs_producer_consumer_logos.png" width="1000px" alt="GBFS producer consumer logos">
 
 
-_GBFS is a standardized data format used by [over 800](https://github.com/MobilityData/gbfs/blob/master/systems.csv) shared mobility services worldwide to appear in trip planners and other consuming applications._
+_GBFS is a standardized data format used by [over 1000](https://github.com/MobilityData/gbfs/blob/master/systems.csv) shared mobility services worldwide to appear in trip planners and other consuming applications._
 
 ## Overview of a GBFS feed
 

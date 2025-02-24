@@ -10,7 +10,7 @@ Une politique publique de mobilité partagée ne se conçoit qu’avec l’assur
 
 Ce document est à destination des personnes chargées de la gestion des offres de mobilité partagée au sein des villes et autorités locales, qu’elles rédigent les appels d’offres ou en régulent les opérations. Ce document permet, d’une part, de comprendre comment GBFS soutient le développement de solutions de mobilité durables et fluides, et, d’autre part, comment bénéficier de l’effet de levier induit par les données ouvertes grâce à des réglementations publiques écrites de manière concise et en faveur d’une plus vaste adoption de la mobilité partagée.
 
-<img src="../../../img/donkey_republic.jpeg" width="700px" alt="Donkey Republic"/>
+<img src="../../assets/donkey_republic.jpeg" width="700px" alt="Donkey Republic"/>
 
 _Photo prise par [Martti Tulenheimo](https://flic.kr/p/2aLY7Vc)._
 
@@ -44,7 +44,7 @@ Des politiques publiques s’appuyant sur la standardisation des données ouvert
 
 Pour les opérateurs, la standardisation signifie la fin d’un patchwork de réglementations leur imposant de fournir des données différentes dans des formats divers et cela dans chaque ville dans laquelle ils opèrent. Dès lors, la standardisation assure à l’ensemble des opérateurs un alignement des contraintes auxquelles ils doivent se plier avec des demandes en données claires, précises et reproductibles. GBFS leur apporte aussi la possibilité d’étendre leur visibilité avec une intégration facilitée dans des applications tierces. Développé sur la base d’un consensus, le format ouvert de données qu’est GBFS tient compte des avis des opérateurs comme des villes dans ses évolutions. Sa documentation complète et les outils sont mis à disposition des villes comme des opérateurs pour en faciliter l’usage et l’adoption.
 
-<img src="../../../img/velib.jpeg" width="700px" alt="Velib"/>
+<img src="../../assets/velib.jpeg" width="700px" alt="Velib"/>
 
 _Photo prise par [Jean-Louis Zimmermann](https://flic.kr/p/8SYDoq)._
 
@@ -69,7 +69,7 @@ Lorsque des politiques publiques de données sont développées, il est conseill
 
 GBFS a été conçu pour répondre aux besoins d’une grande variété de plateformes de mobilité et de cas d’usage, allant du vélo en libre-service en station historique, aux solutions de mobilité en libre-service que ce soit des vélos, des trottinettes ou tout autre véhicule. La spécification se compose de 12 fichiers (ou terminaux) qui contiennent chacun des données de mobilité différentes. Certains de ces fichiers et leurs champs associés sont obligatoires pour être en conformité avec la spécification alors que d’autres sont optionnels. La liste des éléments requis dépend de l’offre de mobilité retenue. Quant aux éléments optionnels, ils répondent à des besoins et cas d’usage spécifiques. Les villes ont toute liberté d’inclure ces derniers dans leurs réglementations afin de fournir des informations supplémentaires à leurs utilisateur·rices et/ou en soutien à leurs politiques publiques et besoins.
 
-<img src="../../../img/spin.jpeg" width="700px" alt="Spin"/>
+<img src="../../assets/spin.jpeg" width="700px" alt="Spin"/>
 
 _Photo prise par [Spin](https://www.spin.app/)._
 

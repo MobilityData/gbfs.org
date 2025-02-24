@@ -30,7 +30,7 @@ GBFS es un proyecto de código abierto desarrollado bajo un modelo de gobernanza
 
 GBFS es un proyecto de código abierto desarrollado bajo un modelo de gobernanza basado en consenso. Los contribuyentes provienen de toda la industria de la movilidad compartida, el sector público, la tecnología cívica y otros lugares. Cualquiera puede proponer un cambio en la especificación abriendo una Pull Request en el repositorio GitHub de GBFS.
 
-**[Ver el proceso de gobernanza](proceso)**
+**[Ver el proceso de gobernanza](process)**
 
 ## Calidad de los datos
 

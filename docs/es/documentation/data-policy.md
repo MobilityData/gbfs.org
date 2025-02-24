@@ -9,7 +9,7 @@ La seguridad del acceso a los datos de movilidad es una parte importante de un p
 
 Este informe está dirigido principalmente a las personas responsables de las políticas y adquisiciones de movilidad compartida en ciudades u otras autoridades. El informe proporciona una comprensión fundamental de cómo GBFS admite opciones de movilidad integradas y sostenibles y cómo aprovechar el potencial de los datos de código abierto al redactar políticas que pueden influir en la adopción y práctica de la movilidad compartida.
 
-<img src="../../../img/donkey_republic.jpeg" width="700px" alt="República del burro"/>
+<img src="../../assets/donkey_republic.jpeg" width="700px" alt="República del burro"/>
 
 _Foto: [Martti Tulenheimo](https://flic.kr/p/2aLY7Vc)._
 
@@ -42,7 +42,7 @@ Las políticas que requieren de datos abiertos y seguir estándares pueden evita
 
 Para los operadores, la estandarización significa el fin de un parche de regulación que requiere diferentes datos en diferentes formatos para cada ciudad en la que operan. La estandarización proporciona a los operadores la garantía de que las solicitudes de datos se pueden definir claramente y se pueden implementar por completo. GBFS también tiene el potencial de atraer más usuarios a la plataforma de un operador al integrarse con aplicaciones de terceros. Como estándar de código abierto basado en consenso, los operadores tienen la misma voz junto con las ciudades en el desarrollo continuo de la especificación del GBFS. Las ciudades y los operadores tienen acceso a la documentación y a los recursos completos para ayudar en la implementación.
 
-<img src="../../../img/velib.jpeg" width="700px" alt="Vélib"/>
+<img src="../../assets/velib.jpeg" width="700px" alt="Vélib"/>
 
 _Foto: [Jean-Louis Zimmermann](https://flic.kr/p/8SYDoq)._
 
@@ -65,7 +65,7 @@ Al desarrollar políticas de datos, es buena idea obtener retroalimentación de 
 
 El GBFS está diseñado para adaptarse a las necesidades de una amplia variedad de plataformas de movilidad y casos de uso, desde bicicletas compartidas tradicionales hasta bicicletas sin anclajes, patinetes y otros vehículos. La especificación consta de 12 archivos o puntos finales que contienen diferentes tipos de datos de movilidad. Algunos de estos archivos son necesarios para cumplir con la especificación, mientras que otros son opcionales. ¿Cuáles de estos archivos son requeridos por la especificación? depende del tipo específico de sistema de movilidad. Los archivos y campos opcionales proporcionan datos adicionales para propósitos y casos de uso específicos. Es posible que los municipios necesiten exigir algunos de estos archivos o campos opcionales en sus reglamentos para proporcionar información adicional en apoyo de los viajeros, los objetivos municipales u otras necesidades.
 
-<img src="../../../img/spin.jpeg" width="700px" alt="Girar"/>
+<img src="../../assets/spin.jpeg" width="700px" alt="Girar"/>
 
 _Foto: [Spin](https://www.spin.app/)._
 

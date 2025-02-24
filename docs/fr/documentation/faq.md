@@ -2,7 +2,7 @@
 
 ## Qu'est-ce que le GBFS ?
 
-La spécification générale des flux de données de mobilité, ou GBFS, est une norme de données ouverte pour les informations de mobilité partagées, développée par un processus consensuel sur GitHub. La GBFS permet l'échange d'informations d'une manière qui garantit que toutes les parties sont d'accord sur ce que les informations représentent. On peut l'assimiler à un dictionnaire, où chaque terme a une définition et un ensemble de règles sur la façon dont il peut être utilisé. GBFS est un standard de données en temps réel. Elle décrit l'état actuel d'un système de mobilité à un moment donné. GBFS ne supporte pas et n'est pas destiné aux données historiques telles que les enregistrements de voyage ou de MAINTENANCE.
+La spécification générale des flux de données de mobilité, ou GBFS, est un standard de données ouvert pour les informations de mobilité partagées, développé par un processus consensuel sur GitHub. La GBFS permet l'échange d'informations d'une manière qui garantit que toutes les parties sont d'accord sur ce que les informations représentent. On peut l'assimiler à un dictionnaire, où chaque terme a une définition et un ensemble de règles sur la façon dont il peut être utilisé. GBFS est un standard de données en temps réel. Elle décrit l'état actuel d'un système de mobilité à un moment donné. GBFS ne supporte pas et n'est pas destiné aux données historiques telles que les enregistrements de voyage ou de MAINTENANCE.
 
 <hr/>
 
@@ -33,7 +33,7 @@ JSON signifie Javascript Object Notation. Il s'agit d'un format de texte léger 
 
 <br/>**Qu'est-ce que GeoJSON ?**<br/>
 
-GeoJSON est une norme de données ouverte permettant de décrire des entités géographiques (lignes et polygones) et leurs attributs au format JSON. Pour plus d'informations sur GeoJSON, voir [https://geojson.org/.](https://geojson.org/)
+GeoJSON est un standard de données ouvert permettant de décrire des entités géographiques (lignes et polygones) et leurs attributs au format JSON. Pour plus d'informations sur GeoJSON, voir [https://geojson.org/.](https://geojson.org/)
 
 <hr/>
 
