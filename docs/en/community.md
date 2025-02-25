@@ -12,7 +12,7 @@ All change proposals are subject to the GBFS governance process.
 - When a vote passes, the change becomes part of a Release Candidate.
 - Once both a data producer and a date consumer have implemented the change, the Release Candidate becomes an official version release.
 
-**[See the Governance Process](../specification/process)**
+**[See the Governance Process](../documentation/process)**
 
 To support this process and ensure it is as timely as possible, MobilityData tracks implementation through one-on-one discussions and other stakeholder events and by examining GBFS datasets. To improve this tracking process, GBFS data producers and consumers are encouraged to add their organization here if they have implemented or are planning on implementing any of these release candidate changes. After votes are called, MobilityData will update this list to reflect organizations that included an implementation note in their vote.
 
@@ -26,9 +26,12 @@ To support this process and ensure it is as timely as possible, MobilityData tra
 The following items have passed through the voting process and will be included in the next version.
 <iframe class="airtable-embed" src="https://airtable.com/embed/appQvTu1nOy6fJwUP/shrNl0TSZGrqD3REa?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="633" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
-<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shraqzpVkb2PlkMnq" target="_blank">Request a change</a>
-<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrkMt5JTIiuPFlhY" target="_blank">Add your organization (producers)</a>
-<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrNEkNZ2JBWYdMmw" target="_blank">Add your organization (consumers)</a>
+<div class="button-holder">
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shraqzpVkb2PlkMnq" target="_blank">Request a change</a>
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrkMt5JTIiuPFlhY" target="_blank">Add your organization (producers)</a>
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrNEkNZ2JBWYdMmw" target="_blank">Add your organization (consumers)</a>
+</div>
+
 
 ## Get Involved
 This roadmap has been developed based on feedback we have received from the GBFS community and shared mobility industry. If there are features or changes that you think should be part of this roadmap we'd like to hear about them. GBFS is an open project and we value your input.
