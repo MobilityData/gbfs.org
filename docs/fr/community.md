@@ -12,7 +12,7 @@ Toutes les propositions de modification sont soumises au processus de gouvernanc
 - Lorsqu'un vote est adopté, la modification fait partie d'une version candidate.
 - Lorsqu'un producteur de données et une application réutilisatrice de données ont tous deux mis en œuvre la modification, la version candidate devient une version officielle.
 
-**[Voir le processus de gouvernance](../specification/process)**
+**[Voir le processus de gouvernance](../documentation/process)**
 
 Pour soutenir ce processus et s'assurer qu'il est aussi rapide que possible, MobilityData suit la mise en œuvre par le biais de discussions individuelles et d'autres événements avec les parties prenantes, ainsi qu'en examinant les ensembles de données GBFS. Pour améliorer ce processus de suivi, les producteurs et les applications réutilisatrices de données GBFS sont encouragés à ajouter leur organisation ici s'ils ont mis en œuvre ou prévoient de mettre en œuvre l'un de ces changements de la version candidate. Après les votes, MobilityData mettra à jour cette liste pour refléter les organisations qui ont inclus une note de mise en œuvre dans leur vote.
 
@@ -29,9 +29,12 @@ Les éléments suivants ont été soumis au processus de vote et seront inclus d
 
 <iframe class="airtable-embed" src="https://airtable.com/embed/appQvTu1nOy6fJwUP/shrNl0TSZGrqD3REa?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="633" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
-<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shraqzpVkb2PlkMnq" target="_blank">Demander un changement</a>
-<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrkMt5JTIiuPFlhY" target="_blank">Ajouter un organisme (producteurs)</a>
-<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrNEkNZ2JBWYdMmw" target="_blank">Ajouter un organisme (application réutilisatrice)</a>
+<div class="button-holder">
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shraqzpVkb2PlkMnq" target="_blank">Demander un changement</a>
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrkMt5JTIiuPFlhY" target="_blank">Ajouter un organisme (producteurs)</a>
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrNEkNZ2JBWYdMmw" target="_blank">Ajouter un organisme (application réutilisatrice)</a>
+</div>
+
 
 ## S'impliquer
 

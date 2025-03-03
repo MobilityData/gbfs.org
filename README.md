@@ -14,7 +14,14 @@ Alternatively, you can provide feedback using this [form](https://form.typeform.
 
 ### Contributing translations
 
-GBFS.org uses [Simpleen](https://simpleen.io/), an automated machine learning translation tool, to ensure translations are kept up to date with repository changes.
+##### ENGLISH
+GBFS.org employs a custom AI translation tool to automatically maintain consistency across all language versions when updates occur. While external contributions are welcome, please note that they may be subject to automated updates. In cases of discrepancy between language versions, the English version shall be considered authoritative.
+
+##### FRANÇAIS
+GBFS.org utilise un outil de traduction basé sur l'IA personnalisé pour maintenir automatiquement la cohérence entre toutes les versions linguistiques lors des mises à jour. Bien que les contributions externes soient les bienvenues, veuillez noter qu'elles peuvent être soumises à des mises à jour automatisées. En cas de divergence entre les versions linguistiques, la version anglaise sera considérée comme faisant autorité.
+
+##### ESPAÑOL
+GBFS.org utiliza una herramienta de traducción personalizada basada en IA para mantener automáticamente la consistencia entre todas las versiones de idiomas cuando se realizan actualizaciones. Si bien las contribuciones externas son bienvenidas, tenga en cuenta que pueden estar sujetas a actualizaciones automatizadas. En caso de discrepancia entre las versiones de idiomas, la versión en inglés se considerará como autoritativa.
 
 ## Building the site locally
 
@@ -24,14 +31,25 @@ GBFS.org uses [Simpleen](https://simpleen.io/), an automated machine learning tr
    - macOS: `pip3 install pip` or `pip3 install --upgrade pip`
 1. Clone this repository:
    - `git clone https://github.com/MobilityData/gbfs.org`
-1. Change the directory to the cloned repository, and have [`requirements.txt`](requirements.txt) installed:
+1. Change the directory to the cloned repository, and create & enable a Python virtual environment:
+   - `python3 -m venv venv`
+   - `source venv/bin/activate`
+1. Have [`requirements.txt`](requirements.txt) installed:
    - Linux: `pip install --force-reinstall -r requirements.txt`
    - macOS: `pip3 install --force-reinstall -r requirements.txt`
-1. Assuming you are still in the cloned repository, run this command to update the content for the specification references and best practices:
-   - `bash scripts/fetchdata.sh`
-1. To run the site locally: `mkdocs serve`
-1. To build the site locally only: `mkdocs build --clean`
-1. To deploy the site to GitHub Pages: `mkdocs gh-deploy`
+1. Have [Material for MkDocs Insiders](https://squidfunk.github.io/mkdocs-material/insiders/`) installed. Substitute `${GH_TOKEN}` with MobilityData's access token:
+   - Linux: `pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git`
+   - macOS: `pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git`
+1. To run the site locally (command defined in `MakeFile`):
+   - `make serve`
+   - Then each language will have it's own address:
+     - English: `http://127.0.0.1:8000/`
+     - French: `http://127.0.0.1:8001/`
+     - Spanish: `http://127.0.0.1:8002/`
+1. To build the site locally only (command defined in `MakeFile`):
+   - `make build`
+1. Deactivate the Python virtual environment when done:
+   - `deactivate`
 
 ## License
 
