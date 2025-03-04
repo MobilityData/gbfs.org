@@ -103,7 +103,6 @@ There are a multitude of tools and services available to help with the creation,
 
 - [Go Validator](https://github.com/petoc/gbfs): Go implementation of client, server and validator for GBFS
 - [Java Validator](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-validator-java): Java implementation of validator for GBFS. Maintained by Entur.
-- [npm](https://www.npmjs.com/package/@entur/gbfs-validator): Javascript package of the [gbfs-validator](https://github.com/MobilityData/gbfs-validator). Maintained by Entur.
 
 <hr>
 

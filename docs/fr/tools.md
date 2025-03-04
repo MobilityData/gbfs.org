@@ -30,7 +30,6 @@ Il existe une multitude d'outils et de services disponibles pour aider à la cr�
 
 - [Go Validator](https://github.com/petoc/gbfs): Implémentation Go du client, du serveur et du validateur pour GBFS.
 - [Validateur Java](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-validator-java): Implémentation Java du validateur pour GBFS. Maintenu par Entur.
-- [npm](https://www.npmjs.com/package/@entur/gbfs-validator): Paquet Javascript du validateur [gbfs](https://github.com/MobilityData/gbfs-validator). Maintenu par Entur.
 
 <hr/>
 
