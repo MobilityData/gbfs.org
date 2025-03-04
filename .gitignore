@@ -2,3 +2,4 @@
 site/
 generated/
 node_modules
+venv/
