@@ -28,6 +28,7 @@ Il existe une multitude d'outils et de services disponibles pour aider à la cr�
 
 ## Validateurs
 
+- [Validateur GBFS](https://gbfs-validator.mobilitydata.org/): Le Canonical GBFS Validator est un outil permettant de vérifier la conformité d'un flux GBFS par rapport à la spécification officielle, y compris les versions antérieures et les versions candidates.
 - [Go Validator](https://github.com/petoc/gbfs): Implémentation Go du client, du serveur et du validateur pour GBFS.
 - [Validateur Java](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-validator-java): Implémentation Java du validateur pour GBFS. Maintenu par Entur.
 

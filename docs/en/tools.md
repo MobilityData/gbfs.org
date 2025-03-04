@@ -101,6 +101,7 @@ There are a multitude of tools and services available to help with the creation,
 
 ## Validators
 
+- [GBFS Validator](https://gbfs-validator.mobilitydata.org/): The Canonical GBFS Validator is a tool to check the conformity of a GBFS feed against the official specification including past releases and release candidates.
 - [Go Validator](https://github.com/petoc/gbfs): Go implementation of client, server and validator for GBFS
 - [Java Validator](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-validator-java): Java implementation of validator for GBFS. Maintained by Entur.
 
