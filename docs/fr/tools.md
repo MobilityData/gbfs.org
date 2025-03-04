@@ -26,14 +26,6 @@ Il existe une multitude d'outils et de services disponibles pour aider à la cr�
 
 <hr/>
 
-## Validateurs
-
-- [Validateur GBFS](https://gbfs-validator.mobilitydata.org/): Le Canonical GBFS Validator est un outil permettant de vérifier la conformité d'un flux GBFS par rapport à la spécification officielle, y compris les versions antérieures et les versions candidates.
-- [Go Validator](https://github.com/petoc/gbfs): Implémentation Go du client, du serveur et du validateur pour GBFS.
-- [Validateur Java](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-validator-java): Implémentation Java du validateur pour GBFS. Maintenu par Entur.
-
-<hr/>
-
 ## Données
 
 ### Répertoires d'URL GBFS
@@ -103,6 +95,14 @@ Il existe une multitude d'outils et de services disponibles pour aider à la cr�
 - [GBFS/Open Data Viewer](https://share.municipal.systems/oJl_L-B8f): Visualiser la micromobilité et d'autres données ouvertes.
 - [GBFS-Viewer](https://github.com/idoco/gbfs-viewer): [Visualisez les données de micromobilité](https://idoco.github.io/gbfs-viewer/#) dans votre navigateur.
 - [Validation et visualisation du GBFS](https://transport.data.gouv.fr/validation?type=gbfs\&locale=en): Le PAN français a développé une interface web pour visualiser les flux GBFS.
+
+<hr/>
+
+## Validateurs
+
+- [Validateur GBFS](https://gbfs-validator.mobilitydata.org/): Le Canonical GBFS Validator est un outil permettant de vérifier la conformité d'un flux GBFS par rapport à la spécification officielle, y compris les versions antérieures et les versions candidates.
+- [Go Validator](https://github.com/petoc/gbfs): Implémentation Go du client, du serveur et du validateur pour GBFS.
+- [Validateur Java](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-validator-java): Implémentation Java du validateur pour GBFS. Maintenu par Entur.
 
 <hr/>
 
