@@ -44,6 +44,9 @@ extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/footer.css
 
+extra_javascript:
+  - assets/javascript/languageSwitchUrls.js
+
 extra:
   analytics:
     provider: google
