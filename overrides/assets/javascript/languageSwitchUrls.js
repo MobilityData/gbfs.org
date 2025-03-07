@@ -1,4 +1,3 @@
-console.log("BING JS LOADED lang");
 document.addEventListener("DOMContentLoaded", function () {
     const currentPath = window.location.pathname;
     const switcherLinks = document.querySelectorAll(".md-header__option .md-select__item a");
