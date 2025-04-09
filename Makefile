@@ -16,3 +16,13 @@ build: clean
 	mkdocs build -f config/en/mkdocs.yml --clean
 	mkdocs build -f config/fr/mkdocs.yml --clean
 	mkdocs build -f config/es/mkdocs.yml --clean
+
+kill: ## Kill all mkdocs serve processes
+	@echo "Killing all mkdocs serve processes..."
+	@PIDS=$$(pgrep -f "mkdocs serve") && \
+	if [ -z "$$PIDS" ]; then \
+		echo "No mkdocs processes found."; \
+	else \
+		echo "Killing PIDs: $$PIDS"; \
+		kill $$PIDS; \
+	fi
