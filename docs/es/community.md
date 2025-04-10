@@ -33,11 +33,15 @@ Los siguientes elementos han pasado por el proceso de votación y se incluirán 
 </div>
 
 
-## Participe
-Esta hoja de ruta se desarrolló en base a los comentarios que recibimos de la comunidad GBFS y la industria de la movilidad compartida. Si hay características o cambios que cree que deberían ser parte de esta hoja de ruta, nos gustaría conocerlos. GBFS es un proyecto abierto y valoramos sus aportes.
-Si desea contribuir al proyecto, utilice el botón **Enviar idea** o póngase en contacto con nosotros en [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org) para coordinar la contribución.
+## En discusión
+Los siguientes temas están en discusión. Si hay características o cambios que cree que deberían ser parte de esta hoja de ruta, nos gustaría conocerlos. GBFS es un proyecto abierto y valoramos sus aportes.
+Si desea contribuir al proyecto, abra un issue en [GitHub](https://github.com/MobilityData/gbfs/issues) o póngase en contacto con nosotros en [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org) para coordinar la contribución.
 
- <iframe src="https://portal.productboard.com/26qpteg4wct9px3jts94uqv8?hide_logo=1" frameborder="0" height=700px width=100%></iframe> 
+<iframe class="airtable-embed" src="https://airtable.com/embed/appQvTu1nOy6fJwUP/shrGT3fXS21vl1xMK?viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+<div class="button-holder">
+    <a class="md-button md-button--primary no-icon" href="https://github.com/MobilityData/gbfs/issues" target="_blank">Abrir un issue en GitHub</a>
+</div>
 
 ## Comentarios y preguntas
 
