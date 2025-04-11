@@ -33,11 +33,15 @@ The following items have passed through the voting process and will be included 
 </div>
 
 
-## Get Involved
-This roadmap has been developed based on feedback we have received from the GBFS community and shared mobility industry. If there are features or changes that you think should be part of this roadmap we'd like to hear about them. GBFS is an open project and we value your input.
-If you would like to contribute to the project please use the **Submit idea** button or get in touch with us at [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org) to coordinate contribution.
+## In Discussion
+The following items are in discussion. If there are features or changes that you think should be part of the specification we'd like to hear about them. GBFS is an open project and we value your input.
+If you would like to contribute to the project please open an issue on [GitHub](https://github.com/MobilityData/gbfs/issues) or get in touch with us at [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org) to coordinate contribution.
 
-<iframe src="https://portal.productboard.com/26qpteg4wct9px3jts94uqv8?hide_logo=1" frameborder="0" height=700px width=100%></iframe>
+<iframe class="airtable-embed" src="https://airtable.com/embed/appQvTu1nOy6fJwUP/shrGT3fXS21vl1xMK?viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+<div class="button-holder">
+    <a class="md-button md-button--primary no-icon" href="https://github.com/MobilityData/gbfs/issues" target="_blank">Open an issue on GitHub</a>
+</div>
 
 ## Comments and Questions
 
