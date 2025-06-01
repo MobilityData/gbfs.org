@@ -16,3 +16,6 @@ build: clean
 	mkdocs build -f config/en/mkdocs.yml --clean
 	mkdocs build -f config/fr/mkdocs.yml --clean
 	mkdocs build -f config/es/mkdocs.yml --clean
+
+killserve:
+	pkill -f "mkdocs serve"
