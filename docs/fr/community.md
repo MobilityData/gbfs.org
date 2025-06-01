@@ -16,9 +16,9 @@ Toutes les propositions de modification sont soumises au processus de gouvernanc
 
 Pour soutenir ce processus et s'assurer qu'il est aussi rapide que possible, MobilityData suit la mise en œuvre par le biais de discussions individuelles et d'autres événements avec les parties prenantes, ainsi qu'en examinant les ensembles de données GBFS. Pour améliorer ce processus de suivi, les producteurs et les applications réutilisatrices de données GBFS sont encouragés à ajouter leur organisation ici s'ils ont mis en œuvre ou prévoient de mettre en œuvre l'un de ces changements de la version candidate. Après les votes, MobilityData mettra à jour cette liste pour refléter les organisations qui ont inclus une note de mise en œuvre dans leur vote.
 
-## Premiers adoptant·es
+## Premiers adoptants
 
-🎉 Bravo aux premiers adoptant·es ! Ces organisations investissent beaucoup de temps et d'énergie pour mettre en œuvre les changements contenus dans la version candidate et s'assurer que le GBFS continue d'évoluer.
+🎉 Bravo aux premiers adoptants ! Ces organisations investissent beaucoup de temps et d'énergie pour mettre en œuvre les changements contenus dans la version candidate et s'assurer que le GBFS continue d'évoluer.
 
 - Producteurs : [Check](https://ridecheck.app/en), [ENTUR](https://entur.no/), [Flamingo](https://flamingoscooters.com/), [TIER](https://www.tier.app/).
 - Applications réutilisatrices : [Dashboard Deelmobiliteit](https://dashboarddeelmobiliteit.nl/), [ENTUR](https://entur.no/), [Transit](https://transitapp.com/?lang=fr), [transport.data.gouv.fr](https://transport.data.gouv.fr/), [Where To?](https://www.whereto.app/).
@@ -36,11 +36,15 @@ Les éléments suivants ont été soumis au processus de vote et seront inclus d
 </div>
 
 
-## S'impliquer
+## En discussion
 
-Cette feuille de route a été élaborée sur la base des commentaires que nous avons reçus de la communauté GBFS et de l'industrie de la mobilité partagée. Si vous pensez qu'il y a des fonctionnalités ou des changements qui devraient faire partie de cette feuille de route, nous aimerions les connaître. Si vous souhaitez contribuer au projet, veuillez utiliser le bouton " **Submit idea"** ou nous contacter à l'adresse <sharedmobility@mobilitydata.org> pour coordonner votre contribution.
+Les éléments suivants sont en discussion. Si vous pensez qu'il y a des fonctionnalités ou des changements qui devraient faire partie de la spécification, nous aimerions les connaître. Si vous souhaitez contribuer au projet, veuillez ouvrir une issue sur [GitHub](https://github.com/MobilityData/gbfs/issues) ou nous contacter à l'adresse <sharedmobility@mobilitydata.org> pour coordonner votre contribution.
 
-<iframe src="https://portal.productboard.com/26qpteg4wct9px3jts94uqv8?hide_logo=1" frameborder="0" height=700px width=100%></iframe>
+<iframe class="airtable-embed" src="https://airtable.com/embed/appQvTu1nOy6fJwUP/shrGT3fXS21vl1xMK?viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+<div class="button-holder">
+    <a class="md-button md-button--primary no-icon" href="https://github.com/MobilityData/gbfs/issues" target="_blank">Ouvrir une issue sur GitHub</a>
+</div>
 
 ## Commentaires et questions
 
