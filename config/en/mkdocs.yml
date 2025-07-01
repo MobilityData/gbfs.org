@@ -1,5 +1,5 @@
 site_name: General Bikeshare Feed Specification
-site_url: https://staging.gbfs.org
+site_url: https://gbfs.org
 docs_dir: ../../docs/en       # Where to find the English markdown files
 site_dir: ../../generated/    # Where to put the English HTML files
 repo_url: https://github.com/MobilityData/gbfs
