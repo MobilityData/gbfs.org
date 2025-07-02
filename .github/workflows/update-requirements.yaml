@@ -65,8 +65,7 @@ jobs:
           token: ${{ env.GITHUB_TOKEN }}
           sign-commits: true
           assignees: "fredericsimard"
-          branch: ${{ env.branchname }}
+          branch: ${{ steps.create_branch_name.outputs.BRANCH }}
           commit-message: 'This PR updates the `requirements.txt` file with the latest versions of dependencies.'
           title: 'Monthly `requirements.txt` update'
-          body: |
-            This PR updates the `requirements.txt` file with the latest versions of dependencies.
+          body: 'This PR updates the `requirements.txt` file with the latest versions of dependencies.'
