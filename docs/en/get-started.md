@@ -21,9 +21,31 @@ GBFS is a real-time, pull-based, data specification that describes the current s
 
 A GBFS feed is composed of a series of JSON files. Each file models a particular aspect of a mobility system: vehicles and/or stations status, geographical rules, pricing, etc. The details of each file are defined in the [GBFS reference](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) with examples.
 
-<img src="../assets/gbfs_overview.png" width="800px" alt="GBFS overview">
+<div style="zoom: 1.5; text-align: center; font-weight:bold;">
+```mermaid
+graph LR
+  classDef white fill:#ffffff,stroke:#000000,stroke-width:1px;
+  classDef gbfs fill:#43E0FF,stroke:#000000,stroke-width:0px;
+  classDef gbfs35 fill:#CAF4FF,stroke:#000000,stroke-width:0px;
 
-_The consuming application requests the current status of the mobility system from the operator, who responds with the GBFS feeds in JSON format._
+  A(🚲 🛴 🛵 🚘
+  Operator) ---- B("GBFS
+  (JSON)");
+  B ---> C(📱
+  Trip Planner);
+  C -->|&nbsp;Request&nbsp;| A;
+
+  class A,C gbfs35
+  class B gbfs
+
+  linkStyle 0 stroke:#43E0FF,stroke-width:2px
+  linkStyle 1 stroke:#43E0FF,stroke-width:2px
+  linkStyle 2 stroke:#CAF4FF,stroke-width:2px
+```
+</div>
+<div style="text-align: center; font-style: italic; text-wrap: balance;">
+The consuming application requests the current status of the mobility system from the operator, who responds with the GBFS feeds in JSON format.
+</div>
 
 ## Making a GBFS feed publicly available
 
@@ -44,9 +66,32 @@ _Photo by[ Lucian Alexe](https://unsplash.com/@lucian_alexe?utm_source=unsplash&
 
 This guide breaks down the feed publishing script into 4 steps: Extract, Transform, Load and Validate.
 
-<img src="../assets/etl.png" width="1000px" alt="ETL">
+<div style="zoom: 2.0; text-align: center; font-weight:bold;">
+``` mermaid
+graph LR
+  classDef white fill:#CAF4FF,stroke:#000000,stroke-width:0px;
 
-_These 4 steps allow any shared mobility operator to publish a valid GBFS feed._
+  A(🗂️
+  Extract) --> B(🔀
+  Transform) --> C(📥
+  Load) --> D(✅
+  Validate);
+
+  click A "#1-extract-data-from-your-mobility-system" "A"
+  click B "#2-transform-your-data-into-gbfs-structure" "B"
+  click C "#3-load-or-expose-your-gbfs-feeds" "C"
+  click D "#4-validate-your-gbfs-feeds" "D"
+
+  class A,B,C,D white
+
+  linkStyle 0 stroke:#CAF4FF,stroke-width:3px
+  linkStyle 1 stroke:#CAF4FF,stroke-width:3px
+  linkStyle 2 stroke:#CAF4FF,stroke-width:3px
+```
+</div>
+<div style="text-align: center; font-style: italic; text-wrap: balance;">
+These 4 steps allow any shared mobility operator to publish a valid GBFS feed.
+</div>
 
 ### 1. Extract data from your mobility system
 
@@ -68,11 +113,84 @@ If you are planning to build an in-house fleet management software, it may be a 
 Next, you will need to model the data into the GBFS structure.
 
 #### The GBFS structure
+<div style="zoom: 1.0; text-align: center; font-weight:bold;">
+```mermaid
+flowchart TD
+  classDef cond fill:#DDDDDD,stroke:#43E0FF,stroke-width:0px,font-family:monospace,font-size:24px;
+  classDef realtime fill:#CAF4FF,stroke:#000000,stroke-width:0px,font-family:monospace,font-size:24px;
+  classDef required fill:#43E0FF,stroke:#000000,stroke-width:0px,font-family:monospace,font-size:24px;
+  classDef optional fill:#fff,stroke:#000,stroke-width:1px,font-family:monospace,font-size:20px,stroke-dasharray:5,5;
 
-<img src="../assets/gbfs_structure.png" width="600px" alt="GBFS structure">
+  A("manifest.json") --> B("gbfs.json")
+  B --> C("system_information.json")
+  B --> D("🔟 🚲
+  station_status.json")
+  B --> E("🚴 / 🚲
+  vehicle_status.json")
+  B --> F("📍
+  station_information.json")
+  B --> G("🚲 🛴 🛵 🚘
+  vehicle_types.json")
+  B -..- N(" ")
+  N -.-> H("gbfs_versions.json")
+  N -.-> I("system_regions.json")
+  N -.-> J("system_pricing_plans.json")
+  N -.-> K("system_alerts.json")
+  N -.-> L("geofencing_zones.json")
 
-_A GBFS v3 dataset is composed of 12 JSON files, some always required, some required under certain conditions and others optional. The [manifest.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson) file lists the auto-discovery URLs for each GBFS dataset produced by a publisher._
+  click A "../../documentation/reference/#manifestjson" "A"
+  click B "../../documentation/reference/#gbfsjson" "B"
+  click C "../../documentation/reference/#system_informationjson" "C"
+  click D "../../documentation/reference/#station_statusjson" "D"
+  click E "../../documentation/reference/#vehicle_statusjson" "E"
+  click F "../../documentation/reference/#station_informationjson" "F"
+  click G "../../documentation/reference/#vehicle_typesjson" "G"
+  click H "../../documentation/reference/#gbfs_versionsjson" "H"
+  click I "../../documentation/reference/#system_regionsjson" "I"
+  click J "../../documentation/reference/#system_pricing_plansjson" "J"
+  click K "../../documentation/reference/#system_alertsjson" "K"
+  click L "../../documentation/reference/#geofencing_zonesjson" "L"
 
+  class A,F,G cond
+  class B,C required
+  class D,E,V,X,Z realtime
+  class H,I,J,K,L,N optional
+
+  linkStyle 0 stroke:#000000,stroke-width:1px
+  linkStyle 1 stroke:#000000,stroke-width:1px
+  linkStyle 2 stroke:#000000,stroke-width:1px
+  linkStyle 3 stroke:#000000,stroke-width:1px
+  linkStyle 4 stroke:#000000,stroke-width:1px
+  linkStyle 5 stroke:#000000,stroke-width:1px
+```
+</div>
+---
+<div style="zoom: 0.8; text-align: center; font-weight:bold;">
+```mermaid
+flowchart LR
+  classDef legend fill:#ffffff,stroke:#43E0FF,stroke-width:0px,font-size:18px;
+  classDef cond fill:#DDDDDD,stroke:#43E0FF,stroke-width:0px,font-family:monospace,font-size:14px;
+  classDef realtime fill:#CAF4FF,stroke:#000000,stroke-width:0px,font-family:monospace,font-size:14px;
+  classDef required fill:#43E0FF,stroke:#000000,stroke-width:0px,font-family:monospace,font-size:14px;
+  classDef optional fill:#fff,stroke:#000,font-family:monospace,font-size:14px,stroke-width:1px,stroke-dasharray: 5, 5;
+
+  A(LEGEND:) ~~~  T
+  T(["REQUIRED"]) ~~~  U
+  U(["Conditionally REQUIRED — ⚡️ Real Time"]) ~~~ V
+  V(["Conditionally REQUIRED — Static"]) ~~~ X
+  X(["Optional"])
+
+  class A legend
+  class V cond
+  class T required
+  class U realtime
+  class X optional
+```
+</div>
+
+<div style="text-align: center; font-style: italic; text-wrap: balance;">
+A GBFS v3 dataset is composed of 12 JSON files, some always required, some required under certain conditions and others optional. The <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson" target="_blank">manifest.json</a> file lists the auto-discovery URLs for each GBFS dataset produced by a publisher.
+</div>
 This structure was designed to separate real-time information (eg: [station_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_statusjson) and [vehicle_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_statusjson)) from static information (eg: [system_information.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_informationjson), [station_information.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_informationjson) and [vehicle_types.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_typesjson)). This makes it possible to have a longer cache duration for information that changes less often.
 
 #### Example of station_status.json file
@@ -171,9 +289,38 @@ Use the [Current Version](https://github.com/MobilityData/gbfs/blob/master/READM
 
 The best way to ensure that the feeds you produce are valid, is to generate a data model from the [GBFS JSON schema](https://github.com/MobilityData/gbfs-json-schema). Several operators have noticed great gains in efficiency by using a data model generated from the JSON schema, especially when updating to a new version of GBFS.
 
-<img src="../assets/data_model.png" width="600px" alt="Data model">
+<div style="zoom: 1.5; text-align: center; font-weight:bold;">
+``` mermaid
+graph LR
+  classDef generator fill:#CAF4FF,stroke:#000000,stroke-width:0px;
+  classDef datamodel fill:#DDDDDD,stroke:#000000,stroke-width:0px;
+  classDef gbfsschema fill:#43E0FF,stroke:#000000,stroke-width:0px;
+  classDef joint fill:#CCCCCC,stroke:#000000,stroke-width:0px;
+  
+  A("📝
+  Generator");
+  D("Data model
+  {...}");
+  B("GBFS
+  JSON
+  Schema");
+  A --- C;
+  B --- C;
+  C((" ")) --> D;
 
-_A data model generated from the [GBFS JSON schema](https://github.com/MobilityData/gbfs-json-schema) is the safest and most efficient way to transform your data into the GBFS structure._
+  class A generator
+  class B gbfsschema
+  class C joint
+  class D datamodel
+
+  linkStyle 0 stroke:#CAF4FF,stroke-width:2px
+  linkStyle 1 stroke:#43E0FF,stroke-width:2px
+  linkStyle 2 stroke:#CCCCCC,stroke-width:2px
+```
+</div>
+<div style="text-align: center; font-style: italic; text-wrap: balance;">
+A data model generated from the <a href="https://github.com/MobilityData/gbfs-json-schema" target="_blank">GBFS JSON schema</a> is the safest and most efficient way to transform your data into the GBFS structure.
+</div>
 
 You can find data models for the main programming languages (Java, TypeScript, Rust, etc) in the [Tools](tools.md#libraries). They are automatically generated from the official [GBFS JSON Schemas](https://github.com/MobilityData/gbfs-json-schema). So when the specification changes, your data model evolves with it. For other programming languages, you can find generator tools at [json-schema.org](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=#schema-to-code).
 
