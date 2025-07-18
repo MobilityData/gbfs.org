@@ -125,7 +125,7 @@ flowchart LR
 ```
 </div>
 
-_A GBFS v3 dataset is composed of 12 JSON files, some always required, some required under certain conditions and others optional. The <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson" target="_blank">manifest.json</a> file lists the auto-discovery URLs for each GBFS dataset produced by a publisher._
+_A GBFS v3 dataset is composed of 12 JSON files, some always required, some required under certain conditions and others optional. The [manifest.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson) file lists the auto-discovery URLs for each GBFS dataset produced by a publisher._
 
 This structure was designed to separate real-time information (eg: [station_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_statusjson) and [vehicle_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_statusjson)) from static information (eg: [system_information.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_informationjson), [station_information.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_informationjson) and [vehicle_types.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_typesjson)). This makes it possible to have a longer cache duration for information that changes less often.
 
@@ -245,7 +245,7 @@ graph LR
 ```
 </div>
 
-_A data model generated from the <a href="https://github.com/MobilityData/gbfs-json-schema" target="_blank">GBFS JSON schema</a> is the safest and most efficient way to transform your data into the GBFS structure._
+_A data model generated from the [GBFS JSON schema](https://github.com/MobilityData/gbfs-json-schema) is the safest and most efficient way to transform your data into the GBFS structure._
 
 You can find data models for the main programming languages (Java, TypeScript, Rust, etc) in the [Tools](tools.md#libraries). They are automatically generated from the official [GBFS JSON Schemas](https://github.com/MobilityData/gbfs-json-schema). So when the specification changes, your data model evolves with it. For other programming languages, you can find generator tools at [json-schema.org](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=#schema-to-code).
 
