@@ -105,11 +105,11 @@ flowchart LR
   B --> C(<b><a href="../../documentation/reference/#system_informationjson">system_information.json</a></b>
   REQUIRED)
   B --> D(<b><a href="../../documentation/reference/#station_statusjson">station_status.json</a></b>
-  cond. REQUIRED
-  ⚡️ real-time)
+  ⚡️ real-time
+  cond. REQUIRED)
   B --> E(<b><a href="../../documentation/reference/#vehicle_statusjson">vehicle_status.json</a></b>
-  cond. REQUIRED
-  ⚡️ real-time)
+  ⚡️ real-time
+  cond. REQUIRED)
   B --> F(<b><a href="../../documentation/reference/#station_informationjson">station_information.json</a></b>
   cond. REQUIRED)
   B --> G(<b><a href="../../documentation/reference/#vehicle_typesjson">vehicle_types.json</a></b>
@@ -230,16 +230,14 @@ The best way to ensure that the feeds you produce are valid, is to generate a da
 graph LR
   classDef blue fill:#CAF4FF,stroke-width:0px;
   
-  A("📝
-  Generator");
-  D("Data model
-  {...}");
-  B("GBFS
-  JSON
-  Schema");
+  A(Generator);
+  D(<a href="../tools/#language-bindings-for-gbfs">Data model</a>);
+  B(<a href="https://github.com/MobilityData/gbfs-json-schema">GBFS 
+  JSON 
+  schema</a>);
   A --- C;
   B --- C;
-  C((" ")) --> D;
+  C((\+)) --> D;
 
   class A,B,C,D blue
 ```
