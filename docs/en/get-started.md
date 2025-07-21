@@ -96,7 +96,7 @@ Next, you will need to model the data into the GBFS structure.
 #### The GBFS structure
 <div>
 ```mermaid
-flowchart LR
+flowchart TB
   classDef blue fill:#CAF4FF,stroke-width:0px,text-align:left;
 
   A(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson">manifest.json</a></b>
