@@ -26,7 +26,7 @@ Un feed GBFS se compone de una serie de archivos JSON. Cada archivo modela un as
 graph LR
   classDef blue fill:#CAF4FF,stroke-width:0px;
 
-  A(📱 Planificadores de trip) -->|&nbsp;Request&nbsp;| B(🚲 🛴 🛵 🚘 Operador);
+  A(📱 Planificador de trip) -->|&nbsp;Request&nbsp;| B(🚲 🛴 🛵 🚘 Operador);
   B -->|"&nbsp;📄 GBFS (JSON)&nbsp;"| A;
 
   class A,B blue

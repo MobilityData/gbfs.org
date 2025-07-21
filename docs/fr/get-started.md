@@ -25,7 +25,7 @@ Un flux GBFS est composé d'une série de fichiers JSON. Chaque fichier modélis
 graph LR
   classDef blue fill:#CAF4FF,stroke-width:0px;
 
-  A(📱 Planificateurs d'itinéraires) -->|&nbsp;Requête&nbsp;| B(🚲 🛴 🛵 🚘 Opérateur);
+  A(📱 Planificateur d'itinéraires) -->|&nbsp;Requête&nbsp;| B(🚲 🛴 🛵 🚘 Opérateur);
   B -->|"&nbsp;📄 GBFS (JSON)&nbsp;"| A;
 
   class A,B blue
