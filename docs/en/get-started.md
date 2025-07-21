@@ -99,27 +99,27 @@ Next, you will need to model the data into the GBFS structure.
 flowchart LR
   classDef blue fill:#CAF4FF,stroke-width:0px,text-align:left;
 
-  A(<b><a href="../../documentation/reference/#manifestjson">manifest.json</a></b>
-  cond. REQUIRED) --> B(<b><a href="../../documentation/reference/#gbfsjson">gbfs.json</a></b>
+  A(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson">manifest.json</a></b>
+  cond. REQUIRED) --> B(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#gbfsjson">gbfs.json</a></b>
   REQUIRED)
-  B --> C(<b><a href="../../documentation/reference/#system_informationjson">system_information.json</a></b>
+  B --> C(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_informationjson">system_information.json</a></b>
   REQUIRED)
-  B --> D(<b><a href="../../documentation/reference/#station_statusjson">station_status.json</a></b>
+  B --> D(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_statusjson">station_status.json</a></b>
   ⚡️ real-time
   cond. REQUIRED)
-  B --> E(<b><a href="../../documentation/reference/#vehicle_statusjson">vehicle_status.json</a></b>
+  B --> E(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_statusjson">vehicle_status.json</a></b>
   ⚡️ real-time
   cond. REQUIRED)
-  B --> F(<b><a href="../../documentation/reference/#station_informationjson">station_information.json</a></b>
+  B --> F(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_informationjson">station_information.json</a></b>
   cond. REQUIRED)
-  B --> G(<b><a href="../../documentation/reference/#vehicle_typesjson">vehicle_types.json</a></b>
+  B --> G(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_typesjson">vehicle_types.json</a></b>
   cond. REQUIRED)
   B --> H(OPTIONAL:
-  <a href="../../documentation/reference/#gbfs_versionsjson">gbfs_versions.json</a>
-  <a href="../../documentation/reference/#system_regionsjson">system_regions.json</a>
-  <a href="../../documentation/reference/#system_pricing_plansjson">system_pricing_plans.json</a>
-  <a href="../../documentation/reference/#system_alertsjson">system_alerts.json</a>
-  <a href="../../documentation/reference/#geofencing_zonesjson">geofencing_zones.json</a>)
+  <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#gbfs_versionsjson">gbfs_versions.json</a>
+  <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_regionsjson">system_regions.json</a>
+  <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_pricing_plansjson">system_pricing_plans.json</a>
+  <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_alertsjson">system_alerts.json</a>
+  <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#geofencing_zonesjson">geofencing_zones.json</a>)
 
   class A,B,C,D,E,F,G,H blue
 ```
