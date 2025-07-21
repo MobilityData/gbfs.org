@@ -21,7 +21,17 @@ GBFS es una especificación de datos basada en extracción en tiempo real que de
 
 Un feed GBFS se compone de una serie de archivos JSON. Cada archivo modela un aspecto particular de un sistema de movilidad: estado de vehículos y/o estaciones, reglas geográficas, precios, etc. Los detalles de cada archivo se definen en la [referencia GBFS](https://github.com/MobilityData/gbfs/blob/master/gbfs.md) con ejemplos.
 
-<img src="../assets/gbfs_overview.png" width="800px" alt="Descripción general de GBFS">
+<div style="zoom: 1.5; font-weight:bold;">
+```mermaid
+graph LR
+  classDef blue fill:#CAF4FF,stroke-width:0px;
+
+  A(📱 Planificadores de trip) -->|&nbsp;Request&nbsp;| B(🚲 🛴 🛵 🚘 Operador);
+  B -->|"&nbsp;📄 GBFS (JSON)&nbsp;"| A;
+
+  class A,B blue
+```
+</div>
 
 _La aplicación consumidora solicita el estado actual del sistema de movilidad al operador, quien responde con los feeds GBFS en formato JSON._
 
@@ -43,7 +53,25 @@ _Foto de [Lucian Alexe](https://unsplash.com/@lucian_alexe?utm_source=unsplash&a
 
 Esta guía divide el script de publicación del feed en 4 pasos: extraer, transformar, cargar y validar.
 
-<img src="../assets/etl.png" width="1000px" alt="ETL">
+<div style="zoom: 1.5; font-weight:bold;">
+``` mermaid
+graph LR
+  classDef blue fill:#CAF4FF,stroke-width:0px;
+
+  A(🗂️
+  Extracción) --> B(🔀
+  Transformación) --> C(📥
+  Carga) --> D(✅
+  Validación);
+
+  click A "#1-extraiga-datos-de-su-sistema-de-movilidad" "A"
+  click B "#2-transforme-sus-datos-en-una-estructura-gbfs" "B"
+  click C "#3-cargar-o-exponga-sus-feeds-gbfs" "C"
+  click D "#4-valide-sus-feeds-gbfs" "D"
+
+  class A,B,C,D blue
+```
+</div>
 
 _Estos 4 pasos permiten a cualquier operador de movilidad compartida publicar un feed GBFS válido._
 
@@ -68,7 +96,36 @@ A continuación, deberá modelar los datos en la estructura GBFS.
 
 #### La estructura GBFS
 
-<img src="../assets/gbfs_structure.png" width="600px" alt="estructura GBFS">
+<div>
+```mermaid
+flowchart LR
+  classDef blue fill:#CAF4FF,stroke-width:0px,text-align:left;
+
+  A(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson">manifest.json</a></b>
+  OBLIGATORIO bajo cond.) --> B(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#gbfsjson">gbfs.json</a></b>
+  OBLIGATORIO)
+  B --> C(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_informationjson">system_information.json</a></b>
+  OBLIGATORIO)
+  B --> D(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_statusjson">station_status.json</a></b>
+  ⚡️ tiempo real
+  OBLIGATORIO bajo cond.)
+  B --> E(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_statusjson">vehicle_status.json</a></b>
+  ⚡️ tiempo real
+  OBLIGATORIO bajo cond.)
+  B --> F(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#station_informationjson">station_information.json</a></b>
+  OBLIGATORIO bajo cond.)
+  B --> G(<b><a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#vehicle_typesjson">vehicle_types.json</a></b>
+  OBLIGATORIO bajo cond.)
+  B --> H(OPCIONALES:
+  <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#gbfs_versionsjson">gbfs_versions.json</a>
+  <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_regionsjson">system_regions.json</a>
+  <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_pricing_plansjson">system_pricing_plans.json</a>
+  <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#system_alertsjson">system_alerts.json</a>
+  <a href="https://github.com/MobilityData/gbfs/blob/master/gbfs.md#geofencing_zonesjson">geofencing_zones.json</a>)
+
+  class A,B,C,D,E,F,G,H blue
+```
+</div>
 
 _Un conjunto de datos GBFS v3 se compone de 12 archivos JSON, algunos siempre obligatorio, otros obligatorio bajo ciertas condiciones y otros opcional. El archivo [manifest.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#manifestjson) enumera las URL de descubrimiento automático para cada conjunto de datos GBFS producido por un editor._
 
@@ -170,7 +227,23 @@ Utilice la [versión actual](https://github.com/MobilityData/gbfs/blob/master/RE
 
 La mejor manera de garantizar que los feeds que produce sean válidos es generar un modelo de datos a partir del [esquema JSON GBFS](https://github.com/MobilityData/ esquema-gbfs-json). Varios operadores han notado grandes ganancias en eficiencia al utilizar un modelo de datos generado a partir del esquema JSON, especialmente al actualizar a una nueva versión de GBFS.
 
-<img src="../assets/data_model.png" width="600px" alt="Modelo de datos">
+<div style="zoom: 1.5; font-weight:bold;">
+``` mermaid
+graph LR
+  classDef blue fill:#CAF4FF,stroke-width:0px;
+  
+  A(Generador);
+  D(<a href="../tools/#enlaces-de-lenguaje-para-gbfs">Data model</a>);
+  B(<a href="https://github.com/MobilityData/gbfs-json-schema">Esquema 
+  GBFS 
+  JSON</a>);
+  A --- C;
+  B --- C;
+  C((\+)) --> D;
+
+  class A,B,C,D blue
+```
+</div>
 
 _Un modelo de datos generado a partir del [esquema GBFS JSON](https://github.com/MobilityData/gbfs-json-schema) es la forma más segura y eficiente de transformar sus datos en la estructura GBFS._
 
