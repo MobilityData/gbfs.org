@@ -17,6 +17,7 @@ Il existe une multitude d'outils et de services disponibles pour aider à la cr�
 - [TypeScript](https://www.npmjs.com/package/gbfs-typescript-types): Types GBFS en TypeScript. Hébergé par MobilityData.
 - [Rust](https://crates.io/crates/gbfs_types): Modèle de données GBFS en Rust. Maintenu par Fluctuo.
 - [R](https://github.com/simonpcouch/gbfs): Modèle de données GBFS en R.
+- [Golang](https://pkg.go.dev/github.com/MobilityData/gbfs-json-schema/models/golang): Modèle de données GBFS en Golang. 
 
 ### Les outils
 
