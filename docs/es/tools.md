@@ -17,6 +17,7 @@ Hay una multitud de herramientas y servicios disponibles para ayudar con la crea
 - [TypeScript](https://www.npmjs.com/package/gbfs-typescript-types): tipos GBFS en TypeScript. Organizado por MobilityData.
 - [Rust](https://crates.io/crates/gbfs_types): tipos de GBFS en Rust. Mantenido por Fluctuo.
 - [R](https://github.com/simonpcouch/gbfs): Tipos de GBFS en R. 
+- [Golang](https://pkg.go.dev/github.com/MobilityData/gbfs-json-schema/models/golang): Tipos de GBFS en Golang. 
 
 ### Herramientas
 
