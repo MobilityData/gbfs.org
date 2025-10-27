@@ -1,163 +1,110 @@
-# Herramientas y recursos de la comunidad#Última actualización: octubre de 2025. 
+# Herramientas y recursos comunitarios
 
-Existe una gran variedad de herramientas y servicios disponibles para facilitar la creación, implementación y uso de GBFS. A continuación, se muestra una lista extensa, aunque no exhaustiva, de herramientas y servicios. ¿Tiene alguna herramienta o recurso que le gustaría que se añadiera a esta página? Háganos saber: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org)
+Última actualización: octubre de 2025.  
+
+Existen numerosas herramientas y servicios disponibles para ayudar en la creación, implementación y consumo de GBFS. A continuación se muestra una lista extensa —aunque no exhaustiva— de herramientas y servicios. ¿Tienes una herramienta o recurso que te gustaría ver añadido a esta página? Escríbenos a [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org)
 
 ## Enlaces rápidos
 
-*   [Validador GBFS](https://gbfs-validator.mobilitydata.org/): El Validador GBFS Canónico es una herramienta para verificar la conformidad de una fuente GBFS con la especificación oficial, incluyendo versiones anteriores y candidatos a versiones.
-    
-*   [Esquemas JSON](https://github.com/MobilityData/gbfs-json-schema): Un conjunto de esquemas JSON está disponible para cada versión de la especificación, así como para el candidato a versión actual. El Validador GBFS Canónico se basa en estos esquemas.
-    
-*   [Catálogo de Conjuntos de Datos (systems.csv)](https:): Actualmente existen más de 1250 sistemas de movilidad compartida que publican GBFS en todo el mundo. La comunidad de GBFS mantiene un catálogo de estas fuentes GBFS en el repositorio de GBFS. Esta lista es incompleta. Si tiene o conoce alguna fuente que no aparezca en la lista, agréguela.
-    
+- [GBFS Validator](https://gbfs-validator.mobilitydata.org/): El validador canónico de GBFS es una herramienta para verificar la conformidad de un feed GBFS con la especificación oficial, incluidas versiones anteriores y candidatas a lanzamiento.
+- [JSON Schemas](https://github.com/MobilityData/gbfs-json-schema): Conjunto de esquemas JSON disponible para cada versión de la especificación, así como la versión candidata actual. El validador canónico de GBFS se basa en estos esquemas.
+- [Dataset Catalog (systems.csv)](https://github.com/MobilityData/gbfs/blob/master/systems.csv): Existen más de 1250 sistemas de movilidad compartida que publican GBFS en todo el mundo. Un catálogo de estos feeds GBFS es mantenido por la comunidad en el repositorio de GBFS. Esta lista es incompleta. Si conoces un feed que no aparece, por favor agrégalo.
 
 ## Bibliotecas
 
- Enlaces de Lenguaje para GBFS
+### Enlaces de lenguaje para GBFS
 
-*   [Java](https:): Tipos GBFS en Java. Desarrollado por Entur, alojado por MobilityData.
-    
-*   [TypeScript](https:): Tipos GBFS en TypeScript. Alojado por MobilityData.
-    
-*   [Rust]( https://crates.io/crates/gbfs_types): Tipos GBFS en Rust. Mantenido por Fluctuo.
-    
-*   [R](https://github.com/simonpcouch/gbfs): Tipos de GBFS en R.
-    
-*   [Golang](https://pkg.go.dev/github.com/MobilityData/gbfs-json-schema/models/golang): Tipos de GBFS en Golang.
+- [Java](https://central.sonatype.com/artifact/org.mobilitydata/gbfs-java-model): Tipos GBFS en Java. Desarrollado por Entur, alojado por MobilityData.
+- [TypeScript](https://www.npmjs.com/package/gbfs-typescript-types): Tipos GBFS en TypeScript. Alojado por MobilityData.
+- [Rust](https://crates.io/crates/gbfs_types): Tipos GBFS en Rust. Mantenido por Fluctuo.
+- [R](https://github.com/simonpcouch/gbfs): Tipos GBFS en R.
+- [Golang](https://pkg.go.dev/github.com/MobilityData/gbfs-json-schema/models/golang): Tipos GBFS en Golang.
 
- Herramientas
+### Herramientas
 
-*   [BikeshareClient](https://github.com/andmos/BikeshareClient): cliente dotnet para GBFS escrito en C#. Permite a los desarrolladores de dotnet crear aplicaciones y servicios utilizando datos de los sistemas GBFS Bikeshare.
-    
-*   [GBFS a OSM](https://github.com/Res260/gbfs2osm): Script de Python para convertir datos GBFS al formato OpenStreetMap (OSM).
-    
-*   [Mapeador de versiones de Java](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-mapper-java): Implementación en Java del mapeo entre diferentes versiones de GBFS (bidireccional). Mantenido por Entur.
-    
-*   [Cargador de feeds de Java](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-loader-java): Implementación en Java para gestionar la carga de feeds de GBFS y actualizarlos en función de sus campos ttl y last\_updated. Mantenido por Entur.
-    
+- [BikeshareClient](https://github.com/andmos/BikeshareClient): Cliente dotnet para GBFS escrito en C#. Permite a los desarrolladores dotnet crear aplicaciones y servicios utilizando datos de sistemas GBFS de bicicletas compartidas.
+- [GBFS to OSM](https://github.com/Res260/gbfs2osm): Script en Python para convertir datos GBFS al formato de OpenStreetMap (OSM).
+- [Java Version Mapper](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-mapper-java): Implementación Java para mapear entre diferentes versiones de GBFS (bidireccional). Mantenido por Entur.
+- [Java Feed Loader](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-loader-java): Implementación Java para gestionar la carga de feeds GBFS y actualizarlos según sus campos `ttl` y `last_updated`. Mantenido por Entur.
 
 ## Integración
 
-*   [Google Micromobility](https://developers.google.com/micromobility/guides): Guía para integrar sus datos GBFS en Google Maps para dispositivos móviles.
-    
+- [Google Micromobility](https://developers.google.com/micromobility/guides): Guía para integrar tus datos GBFS en Google Maps para dispositivos móviles.
 
 ## Datos
 
- Directorios de URL GBFS de terceros
+### Directorios de URL GBFS de terceros
 
-*   [Bike Share Research](https://bikeshare-research.org/): BSR tiene como objetivo facilitar la curación de datos de servicios de bicicletas compartidas a través de plataformas de datos abiertos y colaborativos, al tiempo que los hace accesibles mediante API.
-    
-*   [Lamassu](https://github.com/entur/lamassu): Servicio de agregación de movilidad. Mantenido por Entur.
-    
+- [Bike Share Research](https://bikeshare-research.org/): BSR busca facilitar la curación de datos de servicios de bicicletas compartidas mediante plataformas colaborativas y abiertas, haciendo que sean accesibles mediante API.
+- [Lamassu](https://github.com/entur/lamassu): Servicio de agregación de movilidad. Mantenido por Entur.
 
- APIs de proveedores propietarias (no estándar)
+### API propietarias (no estándar) de proveedores
 
-*   [CityBikes](http:): API REST para datos agregados de bicicletas compartidas de todo el mundo. Desarrollado por [pyBikes](https:).
-    
+- [CityBikes](http://api.citybik.es/v2/): API REST para datos agregados de bicicletas compartidas en todo el mundo. Desarrollado con [pyBikes](https://github.com/eskerda/pybikes).
 
-## Software para crear API
+## Software para crear APIs
 
-*   [lamassu](https://github.com/entur/lamassu): Servicio de agregación de GBFS que agrega, mejora opcionalmente y republica cualquier número de feeds de GBFS. Además, proporciona una API GraphQL y realiza una validación sobre la marcha.
-    
-*   [mapintelligenceagency/gbfsQL](https://github.com/mapintelligenceagency/gbfsQL): Envuelve cualquier número de feeds GBFS en una API GraphQL fácilmente consumible. Fusiona feeds relevantes y admite actualizaciones en tiempo real para clientes a través de suscripciones Websockets/GraphQL.
-    
-*   [MOTIS- Sistema modular abierto de información de transporte](https:): Una plataforma de software de código abierto diseñada para facilitar la planificación y el enrutamiento eficientes en sistemas de transporte multimodal.
-    
-*   [OneBusAway](https:( https://onebusaway.org/): Una aplicación Java que consume GTFS y GTFS-Realtime (junto con [otros formatos](https:)) y los convierte en una [API REST](http:) fácil de usar.
-    
-*   [OpenTripPlanner](http:): Una plataforma de código abierto para la planificación de viajes multimodales y multiagencia, así como para devolver información sobre un gráfico multimodal (utilizando fuentes de datos como GTFS y [OpenStreetMap](https:( https://www.openstreetmap.org/)).
-    
-*   [pyBikes](https://github.com/eskerda/pybikes): Software que impulsa [CityBikes](https://www.citybik.es/) para obtener información sobre sistemas de bicicletas compartidas en todo el mundo.
+- [lamassu](https://github.com/entur/lamassu): Servicio de agregación GBFS que recopila, mejora y vuelve a publicar cualquier número de feeds GBFS. Además, proporciona una API GraphQL y validación en tiempo real.
+- [mapintelligenceagency/gbfsQL](https://github.com/mapintelligenceagency/gbfsQL): Envuelve múltiples feeds GBFS en una API GraphQL fácil de consumir. Fusiona feeds relevantes y admite actualizaciones en tiempo real mediante WebSockets/GraphQL Subscriptions.
+- [MOTIS - Modular Open Transportation Information System](https://github.com/motis-project/motis): Plataforma de software de código abierto diseñada para facilitar la planificación y enrutamiento eficiente en sistemas de transporte multimodal.
+- [OneBusAway](https://onebusaway.org/): Aplicación Java que consume GTFS y GTFS-Realtime (junto con [otros formatos](https://github.com/OneBusAway/onebusaway-application-modules/wiki/Real-Time-Data-Configuration-Guide)) y los convierte en una [API REST](http://developer.onebusaway.org/modules/onebusaway-application-modules/current/api/where/index.html) fácil de usar.
+- [OpenTripPlanner](http://www.opentripplanner.org/): Plataforma de código abierto para planificación de viajes multimodales y multiagencia, que devuelve información sobre una red multimodal (usando datos como GTFS y [OpenStreetMap](https://www.openstreetmap.org/)).
+- [pyBikes](https://github.com/eskerda/pybikes): Software que impulsa [CityBikes](https://www.citybik.es/) para información de sistemas de bicicletas compartidas a nivel mundial.
 
 ## Aplicaciones
 
- Aplicaciones web
+### Aplicaciones web
 
-*   [Mapa de bicicletas compartidas](https:): Mapas globales en tiempo real de sistemas de bicicletas compartidas en todo el mundo.
-    
-*   [Meddin Mapa mundial de bicicletas compartidas](https://bikesharingworldmap.com/): Un mapa de los servicios de bicicletas compartidas del mundo.
-    
-*   [CityMapper Webapp](https://citymapper.com/nyc): Aplicación web con planificador de viajes y estado de ruta para más de 30 ciudades.
-    
-*   [GBFS Explorer](https://gbfs.betamobility.com/): Busca y explora bicicletas, scooters y otros micromovilidad en ciudades de todo el mundo con datos GBFS en tiempo real.
-    
-*   [OpenTripPlanner Client GWT](https://github.com/mecatran/OpenTripPlanner-client-gwt): Una interfaz web basada en Google Web Toolkit para OpenTripPlanner.
-    
-*   [OpenTripPlanner.json](https://github.com/conveyal/otp.js): Un cliente basado en Javascript para OpenTripPlanner.
-    
+- [Bikeshare Map](https://bikesharemap.com/): Mapas globales en tiempo real de sistemas de bicicletas compartidas en todo el mundo.
+- [Meddin Bike-sharing World Map](https://bikesharingworldmap.com/): Mapa de los servicios de bicicletas compartidas a nivel mundial.
+- [CityMapper Webapp](https://citymapper.com/nyc): Aplicación web con planificador de rutas y estado del tráfico para más de 30 ciudades.
+- [GBFS Explorer](https://gbfs.betamobility.com/): Permite buscar y explorar bicicletas, scooters y otros medios de micromovilidad en ciudades de todo el mundo con datos GBFS en tiempo real.
+- [OpenTripPlanner Client GWT](https://github.com/mecatran/OpenTripPlanner-client-gwt): Interfaz web basada en Google Web Toolkit para OpenTripPlanner.
+- [OpenTripPlanner.json](https://github.com/conveyal/otp.js): Cliente basado en JavaScript para OpenTripPlanner.
 
- Aplicaciones nativas (código abierto)
+### Aplicaciones nativas (código abierto)
 
-*   [MonTransit](https://play.google.com/store/apps/details?id=org.mtransit.android): Una aplicación de Android para la planificación de viaje y grabación automática ([código fuente](https://github.com/mtransitapps)).
-    
-*   [OneBusAway](https://onebusaway.org/)
-    
-    *   [Android](https://play.google.com/store/apps/details?id=com.joulespersecond.seattlebusbot&amp;pcampaignid=web_share)
-       
-    *   [iOS](https://apps.apple.com/us/app/onebusaway/id329380089)
-    
-*   OpenTripPlanner
-    
-    *   [Android](https://github.com/CUTR-at-USF/OpenTripPlanner-for-Android/wiki)
-       
-    *   [iOS](https://github.com/opentripplanner/OpenTripPlanner-iOS)
-    
+- [MonTransit](https://play.google.com/store/apps/details?id=org.mtransit.android): Aplicación Android para planificación de viajes y registro automático ([código fuente](https://github.com/mtransitapps)).
+- [OneBusAway](https://onebusaway.org/)
+  - [Android](https://play.google.com/store/apps/details?id=com.joulespersecond.seattlebusbot&pcampaignid=web_share)
+  - [iOS](https://apps.apple.com/us/app/onebusaway/id329380089)
+- OpenTripPlanner
+  - [Android](https://github.com/CUTR-at-USF/OpenTripPlanner-for-Android/wiki)
+  - [iOS](https://github.com/opentripplanner/OpenTripPlanner-iOS)
 
- Aplicaciones nativas (código cerrado)
+### Aplicaciones nativas (código cerrado)
 
-*   [CityMapper](https://citymapper.com/)
-    
-*   [Moovit](https://moovitapp.com/)
-    
-*   [Transit](https://www.velodispo.eu/)
-    
-*   [¿A dónde?](https://www.futuretap.com/apps/whereto)
-    
+- [CityMapper](https://citymapper.com/)
+- [Moovit](https://moovitapp.com/)
+- [Transit](https://transitapp.com/)
+- [VeloDispo](https://www.velodispo.eu/)
+- [Where To?](https://www.futuretap.com/apps/whereto)
 
 ## Visualizaciones
 
-*   [GBFS-NOW](https://github.com/hiskoh/GBFS-NOW): Un complemento de QGIS para la adquisición y visualización de datos GBFS.
-    
-*   [Visualizador del sistema GBFS](https://github.com/entur/gbfs-visualize-poc): Una herramienta basada en la web para visualizar y explorar datos de la Especificación general de feeds de bicicletas compartidas (GBFS) en un mapa interactivo.
-    
-*   [Visor GBFS](https://github.com/idoco/gbfs-viewer): Vea datos de micromovilidad en su navegador.
-    
+- [GBFS-NOW](https://github.com/hiskoh/GBFS-NOW): Complemento de QGIS para adquisición y visualización de datos GBFS.
+- [GBFS System Visualizer](https://github.com/entur/gbfs-visualize-poc): Herramienta web para visualizar y explorar datos GBFS en un mapa interactivo.
+- [GBFS-Viewer](https://github.com/idoco/gbfs-viewer): Permite visualizar datos de micromovilidad directamente en el navegador.
 
 ## Validadores
 
-*   [GBFS Validador](https://gbfs-validator.mobilitydata.org/): El validador GBFS canónico es una herramienta para comprobar la conformidad de una fuente GBFS con la especificación oficial, incluidas las versiones anteriores y los candidatos a versiones anteriores.
-    
-*   [Validador Go](https://github.com/petoc/gbfs): Implementación Go de cliente, servidor y validador para GBFS
-    
-*   [Validador Java](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-validator-java): Implementación Java del validador para GBFS. Mantenido por Entur.
-    
+- [GBFS Validator](https://gbfs-validator.mobilitydata.org/): El validador canónico de GBFS verifica la conformidad de un feed GBFS con la especificación oficial, incluyendo versiones anteriores y candidatas.
+- [Go Validator](https://github.com/petoc/gbfs): Implementación en Go de cliente, servidor y validador para GBFS.
+- [Java Validator](https://central.sonatype.com/artifact/org.entur.gbfs/gbfs-validator-java): Implementación Java del validador GBFS. Mantenido por Entur.
 
 ## Otros formatos de datos multimodales
 
-*   [Alianza para estándares de datos de estacionamiento (APDS)](https:): Formada por el [Instituto Internacional de Estacionamiento](https:), la [Asociación Británica de Estacionamiento](http:) y la [Asociación Europea de Estacionamiento](http:), APDS es una organización sin fines de lucro con la misión de desarrollar, promover, administrar y mantener un estándar global uniforme que permitirá a las organizaciones compartir datos de estacionamiento entre plataformas en todo el mundo.
-    
-*   [Estándar de datos de la ciudad- Movilidad (CDS-M)](https:): Un estándar de datos abiertos para el intercambio de datos entre ciudades y la movilidad compartida operadores.
-    
-*   [Especificación de datos de aceras (CDS)](https:) Una especificación de datos para ayudar a las ciudades a gestionar sus programas de zonas de aceras y áreas circundantes, y medir la utilización y el impacto.
-    
-*   [Estándares de datos y orientación para la planificación del transporte y las operaciones de tráfico](https:): Estándares y/o orientación que la comunidad del transporte debe usar y adoptar para recopilar, gestionar y compartir datos de estado y en tiempo real para la planificación y las operaciones del transporte.
-    
-*   [Especificación general de modelado de la red](https:): Un formato legible por máquinas (y humanos) común para compartir archivos de redes de carreteras enrutables.
-    
-*   [Especificación general de alimentación bajo demanda (GOFS)](https://gofs.org/): Estándar de datos de código abierto impulsado por la comunidad para información de cara al viajero sobre transporte que responde a la demanda.
-    
-*   [General Transit Feed Specification (GTFS)](https:): Un estándar abierto impulsado por la comunidad para información de tránsito de cara al pasajero.
-    
-*   [Especificación de alimentación de carriles administrados y con peaje (MTLFS)](https:): Propuesta para un esquema que comprende MTLFS y define el campo utilizado en todos esos archivos desarrollados por la [Autoridad de transporte del valle de Santa Clara](https://www.vta.org/).
-    
-*   [Especificación de datos de movilidad](https//github.com/openmobilityfoundation/mobility-data-specification): Un proyecto de la [Open Mobility Foundation](https:) (OMF), MDS es un conjunto de interfaces de programación de aplicaciones (API) centradas en servicios de movilidad compartida, como scooters sin base, bicicletas, ciclomotores y vehículos compartidos. Inspirado en proyectos como GTFS y GBFS, MDS es una herramienta digital que ayuda a las ciudades a gestionar mejor el transporte en la vía pública.
-    
-*   [NeTex](https://netex-cen.eu/): Un formato XML de propósito general diseñado para el intercambio de datos de transporte estáticos complejos entre sistemas distribuidos gestionados por el [proceso de normas CEN](https://www.cencenelec.eu/).
-    
-*   [TOMP- API](https://github.com/TOMP-WG/TOMP-API): Desarrollo de API del proveedor de movilidad como servicio (TOMP) del operador de transporte Github.
-    
-*   [Especificaciones de datos transaccionales para la planificación del transporte y las operaciones de tráfico](https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4120): Especificaciones técnicas para datos transaccionales para entidades involucradas en la prestación de transporte en función de la demanda.
-    
-*   [Especificación de intercambio de datos ITS de tránsito (TIDES)](https:) Una especificación de datos para operaciones de tránsito, incluidos datos de ubicación de vehículos, datos de conteo de pasajeros y datos de transacciones de tarifas
-    
-*   [Estándar de datos operativos de tránsito (TODS)](https:) Un estándar abierto para describir cómo operar operaciones de tránsito programadas.
+- [Alliance for Parking Data Standards (APDS)](https://www.allianceforparkingdatastandards.org/): Organización sin fines de lucro formada por el [International Parking Institute](https://www.parking.org/), la [British Parking Association](http://www.britishparking.co.uk/) y la [European Parking Association](http://www.europeanparking.eu/). Su misión es desarrollar, promover y mantener un estándar global uniforme para compartir datos de estacionamiento en todo el mundo.
+- [City Data Standard - Mobility (CDS-M)](https://github.com/CDSM-WG/CDS-M): Estándar de datos abiertos para el intercambio de información entre ciudades y operadores de movilidad compartida.
+- [Curb Data Specification (CDS)](https://github.com/openmobilityfoundation/curb-data-specification): Especificación de datos que ayuda a las ciudades a gestionar zonas de estacionamiento y medir su utilización e impacto.
+- [Data Standards and Guidance for Transportation Planning and Traffic Operations](https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4543): Normas y guías para la recopilación, gestión y uso compartido de datos de transporte para planificación y operaciones.
+- [General Modeling Network Specification](https://github.com/zephyr-data-specs/GMNS/tree/main): Formato común legible por máquina y humano para compartir archivos de redes viales enrutables.
+- [General On-Demand Feed Specification (GOFS)](https://gofs.org/): Estándar de datos abierto impulsado por la comunidad para información sobre transporte bajo demanda.
+- [General Transit Feed Specification (GTFS)](https://gtfs.org/): Estándar abierto impulsado por la comunidad para información de transporte público orientada al usuario.
+- [Managed and Tolled Lanes Feed Specification (MTLFS)](https://github.com/vta/Managed-and-Tolled-Lanes-Feed-Specification): Propuesta de esquema desarrollada por la [Santa Clara Valley Transportation Authority](https://www.vta.org/).
+- [Mobility Data Specification](https://github.com/openmobilityfoundation/mobility-data-specification): Proyecto de la [Open Mobility Foundation](https://www.openmobilityfoundation.org/) (OMF). Conjunto de APIs enfocadas en servicios de movilidad compartida como scooters, bicicletas, ciclomotores y autos compartidos. Inspirado en proyectos como GTFS y GBFS.
+- [NeTex](https://netex-cen.eu/): Formato XML de propósito general diseñado para el intercambio de datos complejos de transporte entre sistemas distribuidos, gestionado por el [proceso de estandarización CEN](https://www.cencenelec.eu/).
+- [TOMP-API](https://github.com/TOMP-WG/TOMP-API): API para la interacción entre operadores de transporte y proveedores de servicios de movilidad como servicio (MaaS).
+- [Transactional Data Specifications for Transportation Planning and Traffic Operations](https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4120): Especificaciones técnicas para datos transaccionales de entidades que brindan transporte bajo demanda.
+- [Transit ITS Data Exchange Specification (TIDES)](https://tides-transit.org/main/): Especificación de datos para operaciones de transporte público, incluyendo ubicación de vehículos, conteo de pasajeros y transacciones de tarifas.
+- [Transit Operational Data Standard (TODS)](https://tods-transit.org/): Estándar abierto para describir cómo operar servicios de transporte público programado.
