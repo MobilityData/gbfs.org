@@ -80,7 +80,7 @@ GBFS no contiene datos operativos. GBFS sólo contiene datos en tiempo real que 
 
 **¿Dónde puedo encontrar datos GBFS?**
 
-Un catálogo de fuentes de datos GBFS públicas, conocido como [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems .csv), se mantiene en el repositorio GBFS GitHub.
+Un catálogo de fuentes de datos GBFS públicas, conocido como [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv), se mantiene en el repositorio GBFS GitHub.
 
 <br> **¿Por qué es importante Systems.csv?**
 

@@ -225,7 +225,7 @@ Utilice la [versión actual](https://github.com/MobilityData/gbfs/blob/master/RE
 
 #### Generar un modelo de datos a partir del esquema JSON
 
-La mejor manera de garantizar que los feeds que produce sean válidos es generar un modelo de datos a partir del [esquema JSON GBFS](https://github.com/MobilityData/ esquema-gbfs-json). Varios operadores han notado grandes ganancias en eficiencia al utilizar un modelo de datos generado a partir del esquema JSON, especialmente al actualizar a una nueva versión de GBFS.
+La mejor manera de garantizar que los feeds que produce sean válidos es generar un modelo de datos a partir del [esquema JSON GBFS](https://github.com/MobilityData/gbfs-json-schema). Varios operadores han notado grandes ganancias en eficiencia al utilizar un modelo de datos generado a partir del esquema JSON, especialmente al actualizar a una nueva versión de GBFS.
 
 <div style="zoom: 1.5; font-weight:bold;">
 ``` mermaid
@@ -297,7 +297,7 @@ También puede utilizar el [validador GBFS] en línea de código abierto (https:
 
 <img src="../assets/validator_report.png" width="1000px" alt="Informe del validador">
 
-_Código abierto en línea creado por la comunidad [validador GBFS](https://gbfs-validator.mobilitydata.org/?utm_campaign=producer-guide) basado en el [esquema JSON GBFS](https://github.com/MobilityData/ gbfs-json-schema)._
+_Código abierto en línea creado por la comunidad [validador GBFS](https://gbfs-validator.mobilitydata.org/?utm_campaign=producer-guide) basado en el [esquema JSON GBFS](https://github.com/MobilityData/gbfs-json-schema)._
 
 #### Visualizador en línea
 

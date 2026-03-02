@@ -51,7 +51,7 @@ Las preguntas también se pueden dirigir a la comunidad a través del [canal pú
 
 ## Contribuyendo a este sitio
 
-Para proponer cambios o adiciones a este sitio, [abra una edición](https://github.com/MobilityData/gbfs.org/issues/new) en el [repositorio gbfs.org](https: //github.com/MobilityData/gbfs.org).
+Para proponer cambios o adiciones a este sitio, [abra una edición](https://github.com/MobilityData/gbfs.org/issues/new) en el [repositorio gbfs.org](https://github.com/MobilityData/gbfs.org).
 
 Como alternativa, puede enviar comentarios sobre este sitio mediante el siguiente formulario.
 
