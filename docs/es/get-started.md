@@ -81,7 +81,7 @@ Extraer los datos de su sistema de movilidad es el primer paso para publicar su 
 
 #### Extraer datos desde un software de gestión de flotas de terceros
 
-Si su sistema de movilidad está gestionado por un software de gestión de flotas, es posible que el proveedor que está utilizando ya ofrezca un complemento GBFS. Pregúntele a su proveedor de software actual si ofrece un complemento GBFS o considere este factor al elegir su proveedor. Algunos software ofrecen un complemento GBFS, que incluye, entre otros: [ATOM](https://www.atommobility.com/top-features/integrations), [Fifteen](https://fifteen.eu/en/recursos/blog/fifteen-control-the-management-centre-for-your-bike-sharing-fleet-1), [goUrban](https://gourban.co/gourban-apis/), [Joyride](https://joyride.city/apps/gbfs-general-bike-feed-specification/), [PBSC](https://www.pbsc.com/), [Flota urbana](https://urbansharing.com/), [Vulog](https://www.vulog.com/) y [Wunder Mobility](https://www.wundermobility.com/blog/how-to-use-a-mobility-data-api-to-construir-un-futuro-sostenible-para-lo-compartido).
+Si su sistema de movilidad está gestionado por un software de gestión de flotas, es posible que el proveedor que está utilizando ya ofrezca un complemento GBFS. Pregúntele a su proveedor de software actual si ofrece un complemento GBFS o considere este factor al elegir su proveedor. Algunos software ofrecen un complemento GBFS, que incluye, entre otros: [ATOM](https://www.atommobility.com/top-features/integrations), [Fifteen](https://fifteen.eu/en/recursos/blog/fifteen-control-the-management-centre-for-your-bike-sharing-fleet-1), [goUrban](https://www.gourban.co/solutions/free-floating), [Joyride](https://joyride.city/apps/gbfs-general-bike-feed-specification/), [PBSC](https://www.pbsc.com/), [Flota urbana](https://urbansharing.com/), [Vulog](https://www.vulog.com/) y [Wunder Mobility](https://www.wundermobility.com/blog/how-to-use-a-mobility-data-api-to-construir-un-futuro-sostenible-para-lo-compartido).
 
 Si el proveedor de software de gestión de flotas que está utilizando no ofrece un complemento GBFS, es posible que proporcione una API que pueda consultar para extraer el estado actual de su sistema de movilidad.
 
@@ -225,7 +225,7 @@ Utilice la [versión actual](https://github.com/MobilityData/gbfs/blob/master/RE
 
 #### Generar un modelo de datos a partir del esquema JSON
 
-La mejor manera de garantizar que los feeds que produce sean válidos es generar un modelo de datos a partir del [esquema JSON GBFS](https://github.com/MobilityData/ esquema-gbfs-json). Varios operadores han notado grandes ganancias en eficiencia al utilizar un modelo de datos generado a partir del esquema JSON, especialmente al actualizar a una nueva versión de GBFS.
+La mejor manera de garantizar que los feeds que produce sean válidos es generar un modelo de datos a partir del [esquema JSON GBFS](https://github.com/MobilityData/gbfs-json-schema). Varios operadores han notado grandes ganancias en eficiencia al utilizar un modelo de datos generado a partir del esquema JSON, especialmente al actualizar a una nueva versión de GBFS.
 
 <div style="zoom: 1.5; font-weight:bold;">
 ``` mermaid
@@ -297,7 +297,7 @@ También puede utilizar el [validador GBFS] en línea de código abierto (https:
 
 <img src="../assets/validator_report.png" width="1000px" alt="Informe del validador">
 
-_Código abierto en línea creado por la comunidad [validador GBFS](https://gbfs-validator.mobilitydata.org/?utm_campaign=producer-guide) basado en el [esquema JSON GBFS](https://github.com/MobilityData/ gbfs-json-schema)._
+_Código abierto en línea creado por la comunidad [validador GBFS](https://gbfs-validator.mobilitydata.org/?utm_campaign=producer-guide) basado en el [esquema JSON GBFS](https://github.com/MobilityData/gbfs-json-schema)._
 
 #### Visualizador en línea
 
