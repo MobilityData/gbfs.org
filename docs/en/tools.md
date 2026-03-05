@@ -66,8 +66,6 @@ There are a multitude of tools and services available to help with the creation,
     
 - [MOTIS - Modular Open Transportation Information System](https://github.com/motis-project/motis): An open-source software platform designed to facilitate efficient planning and routing in multi-modal transportation systems.
     
-- [OneBusAway](https://onebusaway.org/): A Java app that consumes GTFS and GTFS-Realtime (along with [other formats](https://github.com/OneBusAway/onebusaway-application-modules/wiki/Real-Time-Data-Configuration-Guide)) and turns them into an easy to use [REST API](http://developer.onebusaway.org/modules/onebusaway-application-modules/current/api/where/index.html).
-    
 - [OpenTripPlanner](http://www.opentripplanner.org/): An open source platform for multi-modal and multi-agency journey planning, as well as returning information about a multi-modal graph (using data sources such as GTFS and [OpenStreetMap](https://www.openstreetmap.org/)).
     
 - [pyBikes](https://github.com/eskerda/pybikes): Software powering [CityBikes](https://www.citybik.es/) for worldwide bikeshare system info.
