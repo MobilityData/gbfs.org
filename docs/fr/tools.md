@@ -10,9 +10,9 @@ De nombreux outils et services sont disponibles pour aider à la création, la m
 - [JSON Schemas](https://github.com/MobilityData/gbfs-json-schema) : Un ensemble de schémas JSON est disponible pour chaque version de la spécification ainsi que pour la version candidate actuelle. Le validateur GBFS se base sur ces schémas.
 - [Mobility Database](https://mobilitydatabase.org/feeds?gbfs=true) : Il existe maintenant plus de 1500 systèmes de mobilité partagée publiant des flux GBFS à travers le monde. Un catalogue de ces flux est maintenu par la communauté GBFS. Cette liste est incomplète; si vous connaissez un flux manquant, veuillez l’ajouter.
 
-## Bibliothèques
+## Librairies
 
-### Liaisons de langage pour GBFS
+### Librairies de types GBFS
 
 - [Java](https://central.sonatype.com/artifact/org.mobilitydata/gbfs-java-model) : Types GBFS en Java. Développé par Entur, hébergé par MobilityData.
 - [TypeScript](https://www.npmjs.com/package/gbfs-typescript-types) : Types GBFS en TypeScript. Hébergé par MobilityData.
