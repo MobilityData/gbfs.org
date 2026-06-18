@@ -1,6 +1,6 @@
 # Outils et ressources communautaires
 
-Dernière mise à jour : octobre 2025.  
+Dernière mise à jour : juin 2026.  
 
 De nombreux outils et services sont disponibles pour aider à la création, la mise en œuvre et l’utilisation du GBFS. Vous trouverez ci-dessous une liste détaillée — mais non exhaustive — d’outils et de services. Vous avez un outil ou une ressource que vous aimeriez voir ajouté à cette page? Écrivez-nous à [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org)
 
@@ -8,11 +8,11 @@ De nombreux outils et services sont disponibles pour aider à la création, la m
 
 - [GBFS Validator](https://gbfs-validator.mobilitydata.org/) : L’outil canonique GBFS Validator permet de vérifier la conformité d’un flux GBFS selon la spécification officielle, y compris les versions antérieures et candidates.
 - [JSON Schemas](https://github.com/MobilityData/gbfs-json-schema) : Un ensemble de schémas JSON est disponible pour chaque version de la spécification ainsi que pour la version candidate actuelle. Le validateur GBFS se base sur ces schémas.
-- [Dataset Catalog (systems.csv)](https://github.com/MobilityData/gbfs/blob/master/systems.csv) : Il existe maintenant plus de 1 250 systèmes de mobilité partagée publiant des flux GBFS à travers le monde. Un catalogue de ces flux est maintenu par la communauté GBFS sur le dépôt GBFS. Cette liste est incomplète; si vous connaissez un flux manquant, veuillez l’ajouter.
+- [Mobility Database](https://mobilitydatabase.org/feeds?gbfs=true) : Il existe maintenant plus de 1500 systèmes de mobilité partagée publiant des flux GBFS à travers le monde. Un catalogue de ces flux est maintenu par la communauté GBFS. Cette liste est incomplète; si vous connaissez un flux manquant, veuillez l’ajouter.
 
-## Bibliothèques
+## Librairies
 
-### Liaisons de langage pour GBFS
+### Librairies de types GBFS
 
 - [Java](https://central.sonatype.com/artifact/org.mobilitydata/gbfs-java-model) : Types GBFS en Java. Développé par Entur, hébergé par MobilityData.
 - [TypeScript](https://www.npmjs.com/package/gbfs-typescript-types) : Types GBFS en TypeScript. Hébergé par MobilityData.

@@ -1,6 +1,6 @@
 # Community Tools and Resources
 
-Last updated: October 2025. 
+Last updated: June 2026. 
 
 There are a multitude of tools and services available to help with the creation, implementation, and consumption of GBFS. Below is an extensive, although by no means exhaustive, list of tools and services. Do you have a tool or resource you’d like to see added to this page? Let us know: [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org)
 
@@ -10,7 +10,7 @@ There are a multitude of tools and services available to help with the creation,
     
 - [JSON Schemas](https://github.com/MobilityData/gbfs-json-schema): A set of JSON schemas is available for each version of the specification as well as the current release candidate. The Canonical GBFS Validator is based on these schemas.
     
-- [Dataset Catalog (systems.csv)](https://github.com/MobilityData/gbfs/blob/master/systems.csv): There are now over 1250 shared mobility systems publishing GBFS worldwide. A catalog of these GBFS feeds is maintained by the GBFS community on the GBFS repo. This is an incomplete list. If you have or are aware of a feed that does not appear on the list please add it.
+- [Mobility Database](https://mobilitydatabase.org/feeds?gbfs=true): There are now over 1500 shared mobility systems publishing GBFS worldwide. A catalog of these GBFS feeds is maintained by the GBFS community. This is an incomplete list. If you have or are aware of a feed that does not appear on the list please add it.
     
 
 ## Libraries
