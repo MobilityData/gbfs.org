@@ -1,6 +1,6 @@
 # Herramientas y recursos comunitarios
 
-Última actualización: octubre de 2025.  
+Última actualización: junio de 2026.  
 
 Existen numerosas herramientas y servicios disponibles para ayudar en la creación, implementación y consumo de GBFS. A continuación se muestra una lista extensa —aunque no exhaustiva— de herramientas y servicios. ¿Tienes una herramienta o recurso que te gustaría ver añadido a esta página? Escríbenos a [sharedmobility@mobilitydata.org](mailto:sharedmobility@mobilitydata.org)
 
