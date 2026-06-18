@@ -8,7 +8,7 @@ Existen numerosas herramientas y servicios disponibles para ayudar en la creaci�
 
 - [GBFS Validator](https://gbfs-validator.mobilitydata.org/): El validador canónico de GBFS es una herramienta para verificar la conformidad de un feed GBFS con la especificación oficial, incluidas versiones anteriores y candidatas a lanzamiento.
 - [JSON Schemas](https://github.com/MobilityData/gbfs-json-schema): Conjunto de esquemas JSON disponible para cada versión de la especificación, así como la versión candidata actual. El validador canónico de GBFS se basa en estos esquemas.
-- [Dataset Catalog (systems.csv)](https://github.com/MobilityData/gbfs/blob/master/systems.csv): Existen más de 1250 sistemas de movilidad compartida que publican GBFS en todo el mundo. Un catálogo de estos feeds GBFS es mantenido por la comunidad en el repositorio de GBFS. Esta lista es incompleta. Si conoces un feed que no aparece, por favor agrégalo.
+- [Mobility Database](https://mobilitydatabase.org/feeds?gbfs=true): Existen más de 1500 sistemas de movilidad compartida que publican GBFS en todo el mundo. Un catálogo de estos feeds GBFS es mantenido por la comunidad. Esta lista es incompleta. Si conoces un feed que no aparece, por favor agrégalo.
 
 ## Bibliotecas
 
