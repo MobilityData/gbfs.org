@@ -237,7 +237,7 @@ graph LR
   schema</a>);
   A --- C;
   B --- C;
-  C((\+)) --> D;
+  C((+)) --> D;
 
   class A,B,C,D blue
 ```
