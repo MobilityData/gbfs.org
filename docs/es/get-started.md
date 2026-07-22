@@ -179,7 +179,7 @@ Ejemplo de [station_status.json](https://github.com/MobilityData/gbfs/blob/maste
 
 ![Scooter compartido](assets/shared_scooter.jpeg)
 
-_Foto de[Elizabeth Woolner](https://unsplash.com/@elizabeth_woolner?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) en [Unsplash](https://unsplash.com/photos/mHrwltZJbKk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)_
+_Foto de [Elizabeth Woolner](https://unsplash.com/@elizabeth_woolner?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) en [Unsplash](https://unsplash.com/photos/mHrwltZJbKk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)_
 
 Ejemplo de [vehicle_status.json](https://github.com/MobilityData/gbfs/blob/master/gbfs.md#Vehicle_statusjson) archivo obligatorio para vehículos flotantes (sin muelle) y opcional para vehículos basados ​​en estaciones (acoplados):
 
@@ -307,7 +307,9 @@ Utilice el [visualizador GBFS](https://gbfs-validator.mobilitydata.org/visualiza
 
 _Código abierto creado por la comunidad [visualizador GBFS](https://gbfs-validator.mobilitydata.org/visualization?utm_campaign=producer-guide)._
 
-## Aparecer en aplicaciones de planificación de trip que sus feeds son válidos y están disponibles públicamente, puede notifique a las aplicaciones de planificación de trip que pueden usar sus feeds GBFS para mostrar su servicio de movilidad a los usuarios.
+## Aparecer en aplicaciones de planificación de trip
+
+Ahora que sus feeds son válidos y están disponibles públicamente, puede notifique a las aplicaciones de planificación de trip que pueden usar sus feeds GBFS para mostrar su servicio de movilidad a los usuarios.
 
 Para aparecer en las aplicaciones de planificación de trip , asegúrese de publicar la información de su feed en MobilityData [systems.csv](https://github.com/MobilityData/gbfs/blob/master/systems.csv) catálogo (consulte la sección [Agregar sus feeds al catálogo](#agregar-sus-feeds-al-catalogo). Las aplicaciones de planificación de viajes comprueban periódicamente los feeds presentes en este catálogo para añadirlos a sus opciones de ruta. También puede comunicarse con el equipo de datos de las aplicaciones para notificarles que su feed está disponible en el catálogo, que incluye, entre otros: [Citymapper](https://citymapper.com/contact/company), [Moovit](https://moovitapp.com/), [Tránsito](mailto:data@transitapp.com) y [¿Adónde?](https://www.whereto.app/).
 
