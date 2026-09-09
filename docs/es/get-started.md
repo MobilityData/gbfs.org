@@ -8,12 +8,12 @@ Esta guía está destinada a equipos técnicos de servicios de movilidad compart
 
 La Especificación general de alimentación de bicicletas compartidas (GBFS) se creó en 2014 por [Mitch Vars](https://github.com/mplsmitch), que luego fue adoptado por [NABSA](https://nabsa.net/), para estandarizar la forma en que los sistemas de bicicletas compartidas se comunican con las aplicaciones de planificación de trip.
 
-Desarrollado por MobilityData desde 2019 y transferido oficialmente a MobilityData en 2022, GBFS ha evolucionado para permitir [más de 1000](https://github.com/MobilityData/gbfs/blob/master/systems.csv) sistemas acoplados y sin acoplamiento en todo el mundo, como scooters, ciclomotores y coches compartidos aparecerán en las aplicaciones de planificación de trip.
+Desarrollado por MobilityData desde 2019 y transferido oficialmente a MobilityData en 2022, GBFS ha evolucionado para permitir [más de 1500](https://github.com/MobilityData/gbfs/blob/master/systems.csv) sistemas acoplados y sin acoplamiento en todo el mundo, como scooters, ciclomotores y coches compartidos aparecerán en las aplicaciones de planificación de trip.
 
 <img src="../assets/gbfs_producer_consumer_logos.png" width="1000px" alt="Logotipos de consumidores de productores de GBFS">
 
 
-_GBFS es un formato de datos estandarizado utilizado por [más de 1000](https://github.com/MobilityData/gbfs/blob/master/systems.csv) servicios de movilidad compartidos en todo el mundo para aparecer en planificadores de trip y otras aplicaciones de consumo._
+_GBFS es un formato de datos estandarizado utilizado por [más de 1500](https://github.com/MobilityData/gbfs/blob/master/systems.csv) servicios de movilidad compartidos en todo el mundo para aparecer en planificadores de trip y otras aplicaciones de consumo._
 
 ## Descripción general de un feed GBFS
 
