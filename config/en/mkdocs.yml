@@ -123,9 +123,7 @@ plugins:
       assets: false
       links_attr_map:
         target: _blank
-  - search:
-      lang: 
-        - en
+  - search
 
 nav:
   - Home: index.md
