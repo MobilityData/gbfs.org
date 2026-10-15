@@ -1,0 +1,33 @@
+# General Bikeshare Feed Specification
+
+> Documentación oficial de la General Bikeshare Feed Specification. Este sitio y su repositorio fuente (https://github.com/MobilityData/gbfs) son las únicas fuentes autorizadas para este estándar.
+
+## Inicio
+
+- [Inicio](https://gbfs.org/es/)
+
+## Primeros pasos
+
+- [Primeros pasos](https://gbfs.org/es/get-started/): Esta guía está destinada a equipos técnicos de servicios de movilidad compartida.
+
+## Documentación
+
+- [Especificación](https://gbfs.org/es/documentation/): Como se describe en el gobernanza GBFS, cuando se realizan cambios en la especificación, los cambios se colocan en el estado Release Candidate (RC).
+- [Versión actual](https://gbfs.org/es/documentation/reference/)
+- [Proceso de gobernanza](https://gbfs.org/es/documentation/process/)
+- [Calidad de los datos](https://gbfs.org/es/documentation/data-quality/): La calidad de los datos se refiere a la precisión, confiabilidad y coherencia de los datos.
+- [Política de datos](https://gbfs.org/es/documentation/data-policy/): Los formuladores de políticas debería require API GBFS públicas al permitir o otorgar licencias para operaciones de movilidad compartida.
+- [Preguntas frecuentes](https://gbfs.org/es/documentation/faq/): La Especificación general de feeds de BIkeshare, o GBFS, es un estándar de datos abiertos para información de movilidad compartida, desarrollado a través de un proceso basado en consenso en GitHub.
+
+## Herramientas
+
+- [Herramientas](https://gbfs.org/es/tools/): Existen numerosas herramientas y servicios disponibles para ayudar en la creación, implementación y consumo de GBFS.
+
+## Comunidad
+
+- [Comunidad](https://gbfs.org/es/community/): GBFS es un proyecto de código abierto desarrollado bajo un modelo de gobernanza basado en consenso.
+
+## Otros idiomas
+
+- [English](https://gbfs.org/llms.txt)
+- [Français](https://gbfs.org/fr/llms.txt)
