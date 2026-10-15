@@ -5,6 +5,8 @@ site_dir: ../../generated/es  # Where to put the Spanish HTML files
 repo_url: https://github.com/MobilityData/gbfs
 repo_name: GBFS Repository
 edit_uri: edit/main/docs/es/
+exclude_docs: |               # Markdown generated for LLMs by .github/workflows/generate-geo-llm-files.yml, not site pages
+  *.generated.md
 
 validation:
   nav:
