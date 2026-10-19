@@ -5,6 +5,8 @@ site_dir: ../../generated/    # Where to put the English HTML files
 repo_url: https://github.com/MobilityData/gbfs
 repo_name: GBFS Repository
 edit_uri: edit/main/docs/en/
+exclude_docs: |               # Markdown generated for LLMs by .github/workflows/generate-geo-llm-files.yml, not site pages
+  *.generated.md
 
 validation:
   nav:
