@@ -19,8 +19,8 @@ Para respaldar este proceso y garantizar que sea lo más oportuno posible, Mobil
 ## Primeros adoptadores
 🎉 ¡Un saludo a los primeros adoptadores! Estas organizaciones invierten una gran amount de tiempo y energía para implementar los cambios contenidos en la versión candidata y asegurarse de que GBFS continúe evolucionando.
 
-- Productores: [Check](https://ridecheck.app/en), [ENTUR](https://entur.no/), [Flamingo](https://flamingoscooters.com/), [TIER](https://www.tier.app/).
-- Consumidores: [Dashboard Deelmobiliteit]( https://dashboarddeelmobiliteit.nl/), [ENTUR](https://entur.no/), [Tránsito](https://transitapp.com/), [transport.data.gouv.fr](https://transport.data.gouv.fr/), [¿A dónde va?](https://www.whereto.app/).
+- Productores: [Check](https://ridecheck.app/en), [CommonsBooking](https://commonsbooking.org/en/), [ENTUR](https://entur.no/), [Flamingo](https://flamingoscooters.com/), [TIER](https://www.tier.app/).
+- Consumidores: [Dashboard Deelmobiliteit]( https://dashboarddeelmobiliteit.nl/), [ENTUR](https://entur.no/), [raumobil](https://raumobil.com/), [Transit](https://transitapp.com/), [transport.data.gouv.fr](https://transport.data.gouv.fr/), [¿A dónde va?](https://www.whereto.app/).
 
 ## Estado de implementación
 Los siguientes elementos han pasado por el proceso de votación y se incluirán en el próxima versión.

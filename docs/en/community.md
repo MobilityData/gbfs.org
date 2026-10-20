@@ -19,8 +19,8 @@ To support this process and ensure it is as timely as possible, MobilityData tra
 ## First Adopters
 🎉 Shoutout to the first adopters! These organizations invest time and energy to implement the changes contained in the Release Candidate and make sure that GBFS continues to evolve.
 
-- Producers: [Check](https://ridecheck.app/en), [ENTUR](https://entur.no/), [Flamingo](https://flamingoscooters.com/), [TIER](https://www.tier.app/).
-- Consumers: [Dashboard Deelmobiliteit](https://dashboarddeelmobiliteit.nl/), [ENTUR](https://entur.no/), [Transit](https://transitapp.com/), [transport.data.gouv.fr](https://transport.data.gouv.fr/), [Where To?](https://www.whereto.app/).
+- Producers: [Check](https://ridecheck.app/en), [CommonsBooking](https://commonsbooking.org/en/), [ENTUR](https://entur.no/), [Flamingo](https://flamingoscooters.com/), [TIER](https://www.tier.app/).
+- Consumers: [Dashboard Deelmobiliteit](https://dashboarddeelmobiliteit.nl/), [ENTUR](https://entur.no/), [raumobil](https://raumobil.com/), [Transit](https://transitapp.com/), [transport.data.gouv.fr](https://transport.data.gouv.fr/), [Where To?](https://www.whereto.app/).
 
 ## Implementation Status
 The following items have passed through the voting process and will be included in the next version.
