@@ -102,6 +102,8 @@ There are a multitude of tools and services available to help with the creation,
         
     - [iOS](https://github.com/opentripplanner/OpenTripPlanner-iOS)
 
+- [Roue Libre](https://play.google.com/store/apps/details?id=io.github.mgdx.rouelibre): An offline, tracker-free Android bike-share map and journey planner ([Google Play](https://play.google.com/store/apps/details?id=io.github.mgdx.rouelibre), [F-Droid](https://f-droid.org/packages/io.github.mgdx.rouelibre/), [source code](https://github.com/mgdx/RoueLibre)).
+
 ###  Native Apps (closed source)
 
 - [CityMapper](https://citymapper.com/)
