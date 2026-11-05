@@ -7,7 +7,7 @@
 ## Versions de cette documentation
 
 - [Version actuelle](reference) - Version 3.1
-- [Pre-release](https://github.com/MobilityData/gbfs/blob/v3.1-RC3/gbfs.md) - Version 3.1-RC3
+- [Pre-release](https://github.com/MobilityData/gbfs/blob/v3.2-RC/gbfs.md) - Version 3.2-RC
 - [v2.3](https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md) - Version 2.3
 - [v2.2](https://github.com/MobilityData/gbfs/blob/v2.2/gbfs.md) - Version 2.2
 - [v2.1](https://github.com/MobilityData/gbfs/blob/v2.1/gbfs.md) - Version 2.1
