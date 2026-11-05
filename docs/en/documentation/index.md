@@ -1,7 +1,7 @@
 # Specification
 
 <div class="button-holder">
-    <a class="md-button md-button--primary" href="reference">Latest Reference (v3.0)</a><a class="md-button md-button--primary" href="https://github.com/MobilityData/gbfs/issues">Change Proposals</a><a class="md-button md-button--primary" href="process">Governance Process</a>
+    <a class="md-button md-button--primary" href="reference">Latest Reference (v3.1)</a><a class="md-button md-button--primary" href="https://github.com/MobilityData/gbfs/issues">Change Proposals</a><a class="md-button md-button--primary" href="process">Governance Process</a>
 </div>
 
 ## Versions of this documentation
